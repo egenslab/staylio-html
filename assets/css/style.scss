@@ -1203,6 +1203,7 @@ blockquote {
   transition: all 0.5s;
   position: relative;
   z-index: 0;
+  padding: 10px 19px;
 
   &:before,
   &:after {
@@ -1227,7 +1228,8 @@ blockquote {
   }
 
   &:hover {
-    color: var(--white-color);
+    color: var(--title-color);
+    border: 1px solid var(--black-color);
 
     &:before {
       animation: criss-cross-left 0.7s both;
@@ -1447,7 +1449,27 @@ blockquote {
     font-weight: 700;
     font-size: 24px;
     line-height: 1;
-    display: block;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    @include xl-down-device() {
+      font-size: 23px;
+    }
+
+    @include md-down-device() {
+      font-size: 21px;
+    }
+
+    @include sm-down-device() {
+      font-size: 19px;
+    }
+
+    svg {
+      fill: var(--title-color);
+    }
   }
 
   h2 {
@@ -1457,6 +1479,23 @@ blockquote {
     font-size: 50px;
     line-height: 64px;
     margin-bottom: 0;
+
+    @include xl-device() {
+      font-size: 45px;
+    }
+
+    @include xl-down-device() {
+      font-size: 42px;
+    }
+
+    @include lg-down-device() {
+      font-size: 37px;
+      line-height: 1.3;
+    }
+
+    @include sm-down-device() {
+      font-size: 25px;
+    }
   }
 
   p {
@@ -1467,6 +1506,14 @@ blockquote {
     line-height: 30px;
     padding-top: 15px;
     margin-bottom: 0;
+
+    @include md-down-device() {
+      font-size: 17px;
+    }
+
+    @include sm-down-device() {
+      font-size: 16px;
+    }
   }
 
   &.white {
@@ -1494,11 +1541,11 @@ blockquote {
   }
 
   .slider-btn {
-    min-width: 36px;
-    max-width: 36px;
-    height: 36px;
+    min-width: 35px;
+    max-width: 35px;
+    height: 35px;
     background-color: transparent;
-    border: 1px solid var(--black-color);
+    border: 1px solid #9B9B9B;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1519,7 +1566,6 @@ blockquote {
 
     &:hover {
       background-color: var(--primary-color1);
-      border-color: var(--primary-color1);
 
       svg {
         stroke: var(--black-color);
@@ -1528,67 +1574,6 @@ blockquote {
 
     &.swiper-button-disabled {
       opacity: 0.5;
-    }
-  }
-
-  &.white {
-    .slider-btn {
-      border: 1px solid rgba(#fff, 0.4);
-
-      i {
-        color: rgba(#fff, 0.4);
-      }
-
-      &:hover {
-        border-color: var(--white-color);
-        background-color: var(--white-color);
-
-        i {
-          color: var(--title-color);
-        }
-      }
-    }
-  }
-
-  &.two {
-    .slider-btn {
-      background-color: var(--white-color);
-      border-color: var(--borders-color);
-
-      svg {
-        stroke: none;
-        fill: var(--title-color);
-      }
-
-      &:hover {
-        background-color: var(--primary-color1);
-        border-color: var(--primary-color1);
-
-        svg {
-          fill: var(--white-color);
-        }
-      }
-    }
-  }
-
-  &.three {
-    .slider-btn {
-      background-color: var(--white-color);
-      border-color: var(--borders-color);
-
-      svg {
-        stroke: none;
-        fill: var(--title-color);
-      }
-
-      &:hover {
-        background-color: var(--primary-color3);
-        border-color: var(--primary-color3);
-
-        svg {
-          fill: var(--title-color2);
-        }
-      }
     }
   }
 }
@@ -2030,16 +2015,8 @@ header.style-1 {
     padding: 0 30px;
   }
 
-  @include xxl-down-device() {
-    padding: 0 10px;
-  }
-
   @include xl-down-device() {
-    padding: 0;
-  }
-
-  @include xl-down-device() {
-    padding: 18px 0;
+    padding: 15px 15px;
   }
 
   &.sticky {
@@ -2171,6 +2148,62 @@ header.style-1 {
       gap: 15px;
     }
 
+    .hotline-area {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .icon {
+        svg {
+          fill: var(--white-color);
+        }
+      }
+
+      .content {
+        position: relative;
+        line-height: 1;
+
+        &::after {
+          content: '';
+          height: 25px;
+          width: 1px;
+          background-color: #74787B;
+          position: absolute;
+          left: -10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        span {
+          font-family: var(--font-dmSans);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1;
+          color: var(--white-color);
+          margin-bottom: 5px;
+          display: inline-block;
+        }
+
+        h6 {
+          margin-bottom: 0;
+          line-height: 1;
+
+          a {
+            font-family: var(--font-dmSans);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--white-color);
+            transition: 0.5s;
+
+            &:hover {
+              color: var(--primary-color1);
+            }
+          }
+        }
+      }
+    }
+
     .mobile-menu-btn {
       display: none;
       visibility: hidden;
@@ -2234,6 +2267,7 @@ header.style-1 {
     border-radius: 100px;
     padding: 10px 30px;
     backdrop-filter: blur(10px);
+
     &:hover {
       color: var(--title-color);
     }
@@ -3007,7 +3041,7 @@ header.style-1 {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 67.86%);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 67.86%);
       z-index: 1;
     }
 
@@ -3035,49 +3069,10 @@ header.style-1 {
         min-height: 580px;
         height: 580px;
       }
-
-      video {
-        width: 100%;
-        min-height: 805px;
-        height: 805px;
-        object-fit: cover;
-
-        @include xxl-device() {
-          min-height: 680px;
-          height: 680px;
-        }
-
-        @include xxl-down-device() {
-          min-height: 640px;
-          height: 640px;
-        }
-
-        @include xl-down-device() {
-          min-height: 600px;
-          height: 600px;
-        }
-
-        @include md-down-device() {
-          min-height: 580px;
-          height: 580px;
-        }
-      }
     }
 
     .banner-img-area {
       min-height: 800px;
-
-      @include xxl-device() {
-        min-height: 680px;
-      }
-
-      @include xxl-down-device() {
-        min-height: 640px;
-      }
-
-      @include xl-down-device() {
-        min-height: 600px;
-      }
 
       @include md-down-device() {
         min-height: 580px;
@@ -3090,19 +3085,6 @@ header.style-1 {
         object-position: center center;
         animation: imageAnimation 15s ease-in-out infinite;
         transform-origin: center center;
-
-        @include xxl-device() {
-          min-height: 680px;
-          height: 680px;
-        }
-
-        @include xxl-down-device() {
-          min-height: 640px;
-        }
-
-        @include xl-down-device() {
-          min-height: 600px;
-        }
 
         @include md-down-device() {
           min-height: 580px;
@@ -3228,7 +3210,7 @@ header.style-1 {
     }
 
     @include xl-down-device() {
-      padding: 160px 0 120px;
+      padding: 192px 0 120px;
     }
 
     @include md-down-device() {
@@ -3247,7 +3229,7 @@ header.style-1 {
         font-weight: 400;
         font-size: 70px;
         line-height: 1.1;
-        margin-bottom: 57px;
+        margin-bottom: 0;
 
         @include xxl-device() {
           font-size: 62px;
@@ -3255,15 +3237,22 @@ header.style-1 {
 
         @include xxl-down-device() {
           font-size: 55px;
-          margin-bottom: 30px;
         }
 
         @include xl-down-device() {
           font-size: 50px;
         }
 
+        @include lg-down-device() {
+          font-size: 46px;
+        }
+
+        @include md-down-device() {
+          font-size: 42px;
+        }
+
         @include sm-down-device() {
-          font-size: 44px;
+          font-size: 35px;
         }
       }
 
@@ -3273,6 +3262,11 @@ header.style-1 {
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
+
+        @include sm-down-device() {
+          gap: 10px;
+        }
+
         span {
           color: var(--white-color);
           font-family: var(--font-dmSans);
@@ -3280,7 +3274,404 @@ header.style-1 {
           font-size: 22px;
           line-height: 1;
           display: block;
+
+          @include xl-down-device() {
+            font-size: 20px;
+          }
+
+          @include md-down-device() {
+            font-size: 18px;
+          }
+
+          @include sm-down-device() {
+            font-size: 16px;
+          }
         }
+
+        svg {
+          fill: var(--white-color);
+
+          @include sm-down-device() {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=====================================
+  05. About Us Section CSS
+========================================*/
+.home1-about-section {
+  .section-title {
+    margin-bottom: 45px;
+
+    span {
+      justify-content: start;
+    }
+
+    h2 {
+      min-width: 630px;
+
+      @include xl-down-device() {
+        min-width: unset;
+      }
+    }
+
+    p {
+      min-width: 490px;
+
+      @include xl-device() {
+        min-width: 419px;
+      }
+
+      @include xl-down-device() {
+        min-width: unset;
+      }
+    }
+  }
+
+  .about-content-wrap {
+    .about-img {
+      img {
+        object-fit: cover;
+        max-width: 368px;
+        width: 100%;
+
+        @include lg-down-device() {
+          max-width: unset;
+        }
+      }
+    }
+  }
+
+  .countdown-wrap {
+    margin: 50px 0;
+
+    @include xl-down-device() {
+      margin-bottom: 0;
+    }
+
+    @include lg-down-device() {
+      margin-top: 40px;
+    }
+
+    @include sm-down-device() {
+      margin-top: 30px;
+    }
+
+    .countdown-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @include sm-down-device() {
+        justify-content: space-around;
+      }
+
+      .single-countdown {
+        text-align: center;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -100px;
+          width: 1px;
+          height: 48px;
+          background-color: #D9D9D9;
+
+          @include xl-device() {
+            left: -25px;
+          }
+
+          @include md-down-device() {
+            left: -20px;
+          }
+
+          @include sm-down-device() {
+            display: none;
+          }
+        }
+
+        &:first-child {
+          &::after {
+            display: none;
+          }
+        }
+
+        .number {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 10px;
+          position: relative;
+          padding-left: 40px;
+
+          @include sm-down-device() {
+            padding-left: 0;
+          }
+
+          svg {
+            fill: rgba(121, 100, 64, 0.1);
+            position: absolute;
+            left: 0;
+
+            @include sm-down-device() {
+              display: none;
+            }
+          }
+
+          h3,
+          strong {
+            color: var(--title-color);
+            font-family: var(--font-dmSans);
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 0;
+
+            @include sm-down-device() {
+              font-size: 28px;
+            }
+          }
+        }
+
+        span {
+          color: var(--text-color);
+          font-family: var(--font-dmSans);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1;
+
+          @include sm-down-device() {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=====================================
+  06. Room And Suites Section CSS
+========================================*/
+.room-and-suites-section {
+  background-color: #FFF6E5;
+  padding: 70px 0;
+
+  @include xl-down-device() {
+    padding: 60px 0;
+  }
+
+  @include lg-down-device() {
+    padding: 50px 0;
+  }
+
+  .room-and-suites-card {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      position: absolute;
+      width: 200%;
+      height: 0%;
+      left: 50%;
+      top: 50%;
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%) rotate(-45deg);
+      content: "";
+      z-index: 1;
+    }
+
+    .room-and-suites-content-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(1.13deg, #000000 5.68%, rgba(109, 109, 109, 0) 44.54%);
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 0 35px;
+      z-index: 9;
+
+      @include xxl-down-device() {
+        padding: 0 25px;
+      }
+
+      @include sm-down-device() {
+        padding: 0 20px;
+      }
+
+      .room-and-suites-content {
+        transform: translateY(55px);
+        transition: transform 0.5s ease;
+
+        h3 {
+          color: var(--white-color);
+          margin-bottom: 15px;
+          font-family: var(--font-marcellus);
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 1;
+
+          @include xl-device() {
+            font-size: 26px;
+          }
+
+          @include lg-device() {
+            font-size: 22px;
+          }
+
+          @include lg-down-device() {
+            font-size: 24px;
+          }
+        }
+
+        .guests-and-hotel-room {
+          display: flex;
+          gap: 30px;
+          position: relative;
+
+          span {
+            color: var(--white-color);
+            font-family: var(--font-dmSans);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @include xl-down-device() {
+              font-size: 15px;
+            }
+
+            svg {
+              fill: var(--white-color);
+            }
+
+            &.two {
+              position: relative;
+
+              &::after {
+                content: '';
+                height: 13px;
+                width: 1px;
+                background-color: #D9D9D9;
+                position: absolute;
+                left: -15px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+          }
+        }
+      }
+
+      .hover-content {
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 0.5s ease;
+        transform-origin: bottom;
+        margin: 15px 0 30px 0;
+
+        @include lg-device() {
+          margin: 10px 0 20px 0;
+        }
+
+        .price {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          margin-bottom: 20px;
+
+          @include xl-down-device() {
+            margin-bottom: 15px;
+          }
+
+          span {
+            color: var(--white-color);
+            display: block;
+            font-family: var(--font-marcellus);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1;
+          }
+
+          h3 {
+            color: var(--white-color);
+            margin-bottom: 0;
+            font-family: var(--font-marcellus);
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 1;
+
+            @include xl-down-device() {
+              font-size: 27px;
+            }
+          }
+        }
+
+        a {
+          color: var(--white-color);
+          font-family: var(--font-dmSans);
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1;
+          display: inline-block;
+          background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
+          background-size: 0px 1px;
+          background-repeat: no-repeat;
+          background-position: right 90%;
+          transition: background-size 0.75s;
+
+          &:hover {
+            background-size: 100% 1px;
+            background-position: 0% 90%;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      &::after {
+        height: 250%;
+        transition: all 600ms linear;
+        background-color: transparent;
+      }
+
+      .room-and-suites-content-wrap {
+        .room-and-suites-content {
+          transform: translateY(0);
+        }
+
+        .hover-content {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .slider-btn-grp {
+    .slider-btn {
+      svg {
+        fill: #9B9B9B;
+        stroke: none;
+      }
+
+      &:hover {
+        border: 1px solid var(--primary-color1);
 
         svg {
           fill: var(--white-color);

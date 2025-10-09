@@ -77,7 +77,7 @@
     time: 1000,
   });
   // Blog Card Slider
-  var swiper = new Swiper(".blog-card-slider", {
+  var swiper = new Swiper(".room-and-suites-slider", {
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
@@ -87,12 +87,8 @@
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: ".blog-slider-next",
-      prevEl: ".blog-slider-prev",
-    },
-    pagination: {
-      el: ".franctional-pagi1",
-      type: "fraction",
+      nextEl: ".room-and-suites-slider-next",
+      prevEl: ".room-and-suites-slider-prev",
     },
     breakpoints: {
       280: {
