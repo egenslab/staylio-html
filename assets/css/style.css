@@ -1104,6 +1104,10 @@ blockquote .quote {
   animation: criss-cross-right 0.7s both;
   animation-direction: alternate;
 }
+.primary-btn1.black-bg {
+  background-color: var(--black-color);
+  border: 1px solid var(--black-color);
+}
 
 .primary-btn2 {
   color: var(--white-color);
@@ -3052,18 +3056,6 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 }
 .room-and-suites-section .room-and-suites-card {
   position: relative;
-  overflow: hidden;
-}
-.room-and-suites-section .room-and-suites-card::after {
-  position: absolute;
-  width: 200%;
-  height: 0%;
-  left: 50%;
-  top: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  content: "";
-  z-index: 1;
 }
 .room-and-suites-section .room-and-suites-card .room-and-suites-content-wrap {
   position: absolute;
@@ -3234,4 +3226,210 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 }
 .room-and-suites-section .slider-btn-grp .slider-btn:hover svg {
   fill: var(--white-color);
+}
+
+/*=====================================
+  07. Signature Experiences Section CSS
+========================================*/
+.signature-experience .research-card {
+  display: flex;
+  gap: 35px;
+  border: 1px solid rgba(var(--title-color-opc), 0.07);
+  border-radius: 5px;
+  background-color: #FFF6EB;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1199px) {
+  .signature-experience .research-card {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+.signature-experience .research-card .research-image {
+  min-width: 312px;
+  max-width: 312px;
+}
+@media (max-width: 1199px) {
+  .signature-experience .research-card .research-image {
+    min-width: unset;
+    max-width: unset;
+  }
+}
+.signature-experience .research-card .research-content {
+  position: relative;
+  padding: 25px 30px 10px 0;
+}
+.signature-experience .research-card .research-content h4 {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+@media (max-width: 1399px) {
+  .signature-experience .research-card .research-content h4 {
+    margin-bottom: 10px;
+  }
+}
+.signature-experience .research-card .research-content h4 a {
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  transition: 0.35s;
+}
+@media (max-width: 1399px) {
+  .signature-experience .research-card .research-content h4 a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1399px) {
+  .signature-experience .research-card .research-content h4 a {
+    font-size: 25px;
+  }
+}
+.signature-experience .research-card .research-content h4 a:hover {
+  color: var(--primary-color4);
+}
+.signature-experience .research-card .research-content p {
+  color: var(--text-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+@media (max-width: 1399px) {
+  .signature-experience .research-card .research-content p {
+    margin-bottom: 5px;
+  }
+}
+.signature-experience .research-card .research-content p::after {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0;
+  width: 1px;
+  height: 32px;
+  background-color: #D9D9D9;
+}
+.signature-experience .research-card .research-content svg {
+  fill: var(--title-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*=====================================
+  08. Home1 Blog Section CSS
+========================================*/
+.home1-blog-section .blog-card .blog-img {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.home1-blog-section .blog-card .blog-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s;
+}
+.home1-blog-section .blog-card .blog-img::after {
+  position: absolute;
+  width: 200%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  content: "";
+  z-index: 1;
+}
+.home1-blog-section .blog-card .blog-card-content {
+  padding-top: 30px;
+}
+@media (max-width: 1399px) {
+  .home1-blog-section .blog-card .blog-card-content {
+    padding-top: 20px;
+  }
+}
+.home1-blog-section .blog-card .blog-card-content .date-and-event {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.home1-blog-section .blog-card .blog-card-content .date-and-event a {
+  color: var(--text-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  transition: all 0.5s;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home1-blog-section .blog-card .blog-card-content .date-and-event a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 576px) {
+  .home1-blog-section .blog-card .blog-card-content .date-and-event a {
+    font-size: 16px;
+  }
+}
+.home1-blog-section .blog-card .blog-card-content .date-and-event a:hover {
+  color: var(--primary-color1);
+}
+.home1-blog-section .blog-card .blog-card-content .date-and-event svg {
+  fill: var(--text-color);
+}
+.home1-blog-section .blog-card .blog-card-content h4 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+.home1-blog-section .blog-card .blog-card-content h4 a {
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
+  background-position: right 90%;
+  transition: background-size 0.75s;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .home1-blog-section .blog-card .blog-card-content h4 a {
+    font-size: 21px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home1-blog-section .blog-card .blog-card-content h4 a {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 991px) {
+  .home1-blog-section .blog-card .blog-card-content h4 a {
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 576px) {
+  .home1-blog-section .blog-card .blog-card-content h4 a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.home1-blog-section .blog-card .blog-card-content h4 a:hover {
+  background-size: 100% 1px;
+  background-position: 0% 90%;
+}
+.home1-blog-section .blog-card:hover .blog-img img {
+  transform: scale(1.1);
+}
+.home1-blog-section .blog-card:hover .blog-img::after {
+  height: 250%;
+  transition: all 600ms linear;
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */
