@@ -612,4 +612,39 @@
     });
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const text = document.querySelector(".circular-text .text");
+    if (text) {
+      text.innerHTML = text.innerText
+        .split("")
+        .map(
+          (char, i) =>
+            `<span style="transform:rotate(${i * 13}deg)">${char}</span>`
+        )
+        .join("");
+    }
+  });
+
+  // Hover effect for service-list
+  $(".item-list li").on("mouseenter", function () {
+    var index = $(this).index();
+
+    // Add active class to the corresponding image
+    $(".item-img-list li").removeClass("show");
+    $(".item-img-list li").eq(index).addClass("show");
+
+    // Manage .prev class
+    $(".item-list li").removeClass("prev");
+    if (index > 0) {
+      $(".item-listt li")
+        .eq(index - 1)
+        .addClass("prev");
+    }
+  });
+
+  $(".item-list li").on("mouseleave", function () {
+    // Remove active class from all images when mouse leaves
+    $(".item-img-list li").removeClass("show");
+  });
+
 })(jQuery);

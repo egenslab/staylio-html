@@ -1316,6 +1316,9 @@ blockquote .quote {
 .section-title span svg {
   fill: var(--title-color);
 }
+.section-title span.two {
+  justify-content: start;
+}
 .section-title h2 {
   color: var(--title-color);
   font-family: var(--font-marcellus);
@@ -2890,9 +2893,6 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 .home1-about-section .section-title {
   margin-bottom: 45px;
 }
-.home1-about-section .section-title span {
-  justify-content: start;
-}
 .home1-about-section .section-title h2 {
   min-width: 630px;
 }
@@ -3554,4 +3554,224 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   height: 250%;
   transition: all 600ms linear;
   background-color: transparent;
+}
+
+/*=====================================
+  09. Dining And Cuisine Section CSS
+========================================*/
+@keyframes textRotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper {
+  padding: 65px 0;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper {
+    padding: 60px 30px;
+  }
+}
+@media (max-width: 991px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper {
+    padding: 30px 15px;
+  }
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper::before {
+  content: "";
+  position: absolute;
+  background-color: #FAF1E6;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper::before {
+    width: 100%;
+  }
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-img-1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
+  color: var(--text-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
+    font-size: 18px;
+    line-height: 31px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now {
+  position: relative;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list {
+  padding-left: 40px;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list {
+    padding-left: 22px;
+  }
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+  margin-bottom: 25px;
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1;
+  transition: all 0.5s;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+    font-size: 21px;
+  }
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+    font-size: 18px;
+    margin-bottom: 17px;
+  }
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li:last-child {
+  margin-bottom: 0;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li:hover {
+  color: var(--primary-color1);
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper {
+  position: absolute;
+  right: 50px;
+  bottom: 70px;
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper {
+    right: 0;
+    bottom: 40px;
+  }
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text {
+  position: relative;
+  min-width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .center-icon svg {
+  fill: var(--title-color);
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .center-icon svg {
+    width: 15px;
+  }
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: textRotation 8s linear infinite;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .text span {
+  position: absolute;
+  left: 50%;
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-size: 14px;
+  font-weight: 600;
+  transform-origin: 0 60px;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 48px;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li .dining-and-cuisine-img-2 img {
+  min-height: 284px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li.active {
+  opacity: 1;
+}
+@media (max-width: 991px) {
+  .dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li.active {
+    display: block;
+  }
+}
+.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li.show {
+  opacity: 1;
+  z-index: 9;
+}
+
+/*=====================================
+  09. Home1 Event Section CSS
+========================================*/
+.home1-event-section .single-event {
+  background-color: #FFF6EC;
+  padding: 60px 0 100px 300px;
+}
+.home1-event-section .single-event .event-info {
+  border-top: 1px solid #D9D9D9;
+  margin-top: 200px;
 }/*# sourceMappingURL=style.css.map */
