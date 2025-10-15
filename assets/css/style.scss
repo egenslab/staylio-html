@@ -4788,6 +4788,10 @@ header.style-1 {
       margin-bottom: 40px;
       padding-top: 65px;
 
+      @include md-down-device() {
+        max-width: unset;
+      }
+
       .footer-logo {
         max-width: 158px;
         width: 100%;
@@ -4826,6 +4830,12 @@ header.style-1 {
         @include lg-device() {
           font-size: 24px;
           line-height: 35px;
+        }
+
+        @include lg-down-device() {
+          font-size: 22px;
+          line-height: 32px;
+
         }
       }
 
@@ -4866,6 +4876,15 @@ header.style-1 {
       border-bottom: unset;
       padding: 80px 0;
 
+      @include lg-down-device() {
+        padding: 80px 0 0 0;
+        border: unset;
+      }
+
+      @include sm-down-device() {
+        padding-top: 50px;
+      }
+
       .contact-area {
         border-bottom: 1px solid rgba(var(--white-color-opc), 0.06);
         padding: 0 91px 25px 91px;
@@ -4876,6 +4895,16 @@ header.style-1 {
 
         @include xxl-down-device() {
           padding: 0 70px 20px 70px;
+        }
+
+        @include lg-down-device() {
+          margin-bottom: 60px;
+          padding: unset;
+          border: unset;
+        }
+
+        @include sm-down-device() {
+          margin-bottom: 30px;
         }
 
         .icon-and-contact {
@@ -4951,6 +4980,10 @@ header.style-1 {
           padding: 20px 0 0 70px;
         }
 
+        @include lg-down-device() {
+          padding: unset;
+        }
+
         h5 {
           color: var(--white-color);
           font-family: var(--font-marcellus);
@@ -4959,7 +4992,7 @@ header.style-1 {
           line-height: 1;
           margin-bottom: 18px;
 
-          @include lg-device() {
+          @include xl-down-device() {
             font-size: 22px;
           }
         }
@@ -4995,83 +5028,114 @@ header.style-1 {
     .location-and-payment {
       padding-top: 80px;
 
-      ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
+      @include lg-down-device() {
         display: flex;
-        align-items: start;
-        gap: 20px;
-        margin-bottom: 60px;
+      }
 
-        @include lg-device() {
-          margin-bottom: 40px;
+      @include md-down-device() {
+        display: block;
+        padding: 80px 0 40px 0;
+      }
+
+      @include sm-down-device() {
+        padding: 50px 0 40px 0;
+      }
+
+      .title-and-location-area {
+        @include lg-down-device() {
+          padding: 0 35px 0 0;
         }
 
-        li {
-          .icon {
-            min-width: 30px;
-            max-width: 30px;
-            height: 30px;
-            background-color: #2D2C2C;
-            border: 1px solid #424242;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 6px;
+        @include md-down-device() {
+          padding: unset;
+        }
 
-            svg {
-              fill: var(--white-color);
-            }
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          align-items: start;
+          gap: 20px;
+          margin-bottom: 60px;
+
+          @include lg-device() {
+            margin-bottom: 40px;
           }
 
-          .location {
-            color: var(--footer-text);
-            font-family: DM Sans;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 30px;
-            background: linear-gradient(to bottom, var(--footer-text) 0%, var(--footer-text) 98%);
-            background-size: 0px 1px;
-            background-repeat: no-repeat;
-            background-position: right 90%;
-            transition: background-size 0.75s;
-            margin-bottom: 20px;
-
-            @include xxl-down-device() {
-              font-size: 17px;
-            }
-
-            @include lg-device() {
-              font-size: 16px;
-            }
-
-            &:hover {
-              background-size: 100% 1px;
-              background-position: 0% 90%;
-            }
+          @include sm-down-device() {
+            margin-bottom: 30px;
           }
 
-          .content {
-            line-height: 1;
-            margin-top: 20px;
+          li {
+            .icon {
+              min-width: 30px;
+              max-width: 30px;
+              height: 30px;
+              background-color: #2D2C2C;
+              border: 1px solid #424242;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 6px;
 
-            .get-direction {
-              color: var(--white-color);
-              font-family: var(--font-dmSans);
-              font-weight: 600;
+              svg {
+                fill: var(--white-color);
+              }
+            }
+
+            .location {
+              color: var(--footer-text);
+              font-family: DM Sans;
+              font-weight: 400;
               font-size: 18px;
-              line-height: 1;
-              background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
+              line-height: 30px;
+              background: linear-gradient(to bottom, var(--footer-text) 0%, var(--footer-text) 98%);
               background-size: 0px 1px;
               background-repeat: no-repeat;
               background-position: right 90%;
               transition: background-size 0.75s;
+              margin-bottom: 20px;
+
+              @include xxl-down-device() {
+                font-size: 17px;
+              }
+
+              @include lg-device() {
+                font-size: 16px;
+              }
+
+              @include sm-down-device() {
+                font-size: 16px;
+              }
 
               &:hover {
                 background-size: 100% 1px;
                 background-position: 0% 90%;
+              }
+            }
+
+            .content {
+              line-height: 1;
+              margin-top: 20px;
+
+              .get-direction {
+                color: var(--white-color);
+                font-family: var(--font-dmSans);
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1;
+                background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
+                background-size: 0px 1px;
+                background-repeat: no-repeat;
+                background-position: right 90%;
+                transition: background-size 0.75s;
+
+                &:hover {
+                  background-size: 100% 1px;
+                  background-position: 0% 90%;
+                }
               }
             }
           }
@@ -5086,6 +5150,14 @@ header.style-1 {
           font-weight: 400;
           font-size: 24px;
           line-height: 1.4;
+
+          @include lg-down-device() {
+            font-size: 22px;
+          }
+
+          @include md-down-device() {
+            font-size: 20px;
+          }
         }
 
         .payment-list {
@@ -5094,6 +5166,8 @@ header.style-1 {
           list-style: none;
           background-color: var(--white-color);
           padding: 7px 8px;
+          display: flex;
+          justify-content: space-between;
         }
       }
     }
@@ -5104,6 +5178,10 @@ header.style-1 {
 
     @include lg-device() {
       margin-bottom: 30px;
+    }
+
+    @include sm-down-device() {
+      margin-bottom: 20px;
     }
 
     h5 {
@@ -5126,6 +5204,10 @@ header.style-1 {
       padding: 25px;
     }
 
+    @include md-down-device() {
+      padding: 20px 0;
+    }
+
     .footer-menu-wrap {
       .footer-menu-list {
         padding: 0;
@@ -5137,6 +5219,14 @@ header.style-1 {
 
         @include xxl-down-device() {
           gap: 30px;
+        }
+
+        @include lg-down-device() {
+          gap: 24px;
+        }
+
+        @include md-down-device() {
+          display: block;
         }
 
         .menu-list {
@@ -5151,6 +5241,10 @@ header.style-1 {
             padding-left: 30px;
           }
 
+          @include lg-down-device() {
+            padding-left: 0;
+          }
+
           a {
             color: var(--white-color);
             font-family: var(--font-dmSans);
@@ -5159,8 +5253,12 @@ header.style-1 {
             line-height: 1;
             transition: all 0.5s;
 
-            @include lg-device() {
+            @include xl-down-device() {
               font-size: 15px;
+            }
+
+            @include lg-down-device() {
+              font-size: 14px;
             }
 
             &:hover {
@@ -5185,6 +5283,10 @@ header.style-1 {
 
             @include lg-device() {
               right: -35px;
+            }
+
+            @include lg-down-device() {
+              content: unset;
             }
           }
 
@@ -5215,6 +5317,11 @@ header.style-1 {
       display: flex;
       align-items: start;
       gap: 7px;
+
+      @include sm-down-device() {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
       a {
         color: var(--white-color);

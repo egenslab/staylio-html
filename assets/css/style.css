@@ -4324,6 +4324,11 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   margin-bottom: 40px;
   padding-top: 65px;
 }
+@media (max-width: 767px) {
+  .footer-section .footer-top .footer-logo-and-title {
+    max-width: unset;
+  }
+}
 .footer-section .footer-top .footer-logo-and-title .footer-logo {
   max-width: 158px;
   width: 100%;
@@ -4362,6 +4367,12 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
     line-height: 35px;
   }
 }
+@media (max-width: 991px) {
+  .footer-section .footer-top .newsletter-area h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
 .footer-section .footer-top .newsletter-area .newsletter-form {
   padding: 15px 20px;
   background-color: rgba(107, 107, 107, 0.1215686275);
@@ -4398,6 +4409,17 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   border-bottom: unset;
   padding: 80px 0;
 }
+@media (max-width: 991px) {
+  .footer-section .footer-top .contact-wrapper {
+    padding: 80px 0 0 0;
+    border: unset;
+  }
+}
+@media (max-width: 576px) {
+  .footer-section .footer-top .contact-wrapper {
+    padding-top: 50px;
+  }
+}
 .footer-section .footer-top .contact-wrapper .contact-area {
   border-bottom: 1px solid rgba(var(--white-color-opc), 0.06);
   padding: 0 91px 25px 91px;
@@ -4410,6 +4432,18 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 @media (max-width: 1399px) {
   .footer-section .footer-top .contact-wrapper .contact-area {
     padding: 0 70px 20px 70px;
+  }
+}
+@media (max-width: 991px) {
+  .footer-section .footer-top .contact-wrapper .contact-area {
+    margin-bottom: 60px;
+    padding: unset;
+    border: unset;
+  }
+}
+@media (max-width: 576px) {
+  .footer-section .footer-top .contact-wrapper .contact-area {
+    margin-bottom: 30px;
   }
 }
 .footer-section .footer-top .contact-wrapper .contact-area .icon-and-contact {
@@ -4476,6 +4510,11 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
     padding: 20px 0 0 70px;
   }
 }
+@media (max-width: 991px) {
+  .footer-section .footer-top .contact-wrapper .social-area {
+    padding: unset;
+  }
+}
 .footer-section .footer-top .contact-wrapper .social-area h5 {
   color: var(--white-color);
   font-family: var(--font-marcellus);
@@ -4484,7 +4523,7 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   line-height: 1;
   margin-bottom: 18px;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .footer-section .footer-top .contact-wrapper .social-area h5 {
     font-size: 22px;
   }
@@ -4513,7 +4552,33 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 .footer-section .footer-top .location-and-payment {
   padding-top: 80px;
 }
-.footer-section .footer-top .location-and-payment ul {
+@media (max-width: 991px) {
+  .footer-section .footer-top .location-and-payment {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section .footer-top .location-and-payment {
+    display: block;
+    padding: 80px 0 40px 0;
+  }
+}
+@media (max-width: 576px) {
+  .footer-section .footer-top .location-and-payment {
+    padding: 50px 0 40px 0;
+  }
+}
+@media (max-width: 991px) {
+  .footer-section .footer-top .location-and-payment .title-and-location-area {
+    padding: 0 35px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section .footer-top .location-and-payment .title-and-location-area {
+    padding: unset;
+  }
+}
+.footer-section .footer-top .location-and-payment .title-and-location-area ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -4523,11 +4588,16 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   margin-bottom: 60px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .footer-section .footer-top .location-and-payment ul {
+  .footer-section .footer-top .location-and-payment .title-and-location-area ul {
     margin-bottom: 40px;
   }
 }
-.footer-section .footer-top .location-and-payment ul li .icon {
+@media (max-width: 576px) {
+  .footer-section .footer-top .location-and-payment .title-and-location-area ul {
+    margin-bottom: 30px;
+  }
+}
+.footer-section .footer-top .location-and-payment .title-and-location-area ul li .icon {
   min-width: 30px;
   max-width: 30px;
   height: 30px;
@@ -4539,10 +4609,10 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   justify-content: center;
   margin-top: 6px;
 }
-.footer-section .footer-top .location-and-payment ul li .icon svg {
+.footer-section .footer-top .location-and-payment .title-and-location-area ul li .icon svg {
   fill: var(--white-color);
 }
-.footer-section .footer-top .location-and-payment ul li .location {
+.footer-section .footer-top .location-and-payment .title-and-location-area ul li .location {
   color: var(--footer-text);
   font-family: DM Sans;
   font-weight: 400;
@@ -4556,24 +4626,29 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   margin-bottom: 20px;
 }
 @media (max-width: 1399px) {
-  .footer-section .footer-top .location-and-payment ul li .location {
+  .footer-section .footer-top .location-and-payment .title-and-location-area ul li .location {
     font-size: 17px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .footer-section .footer-top .location-and-payment ul li .location {
+  .footer-section .footer-top .location-and-payment .title-and-location-area ul li .location {
     font-size: 16px;
   }
 }
-.footer-section .footer-top .location-and-payment ul li .location:hover {
+@media (max-width: 576px) {
+  .footer-section .footer-top .location-and-payment .title-and-location-area ul li .location {
+    font-size: 16px;
+  }
+}
+.footer-section .footer-top .location-and-payment .title-and-location-area ul li .location:hover {
   background-size: 100% 1px;
   background-position: 0% 90%;
 }
-.footer-section .footer-top .location-and-payment ul li .content {
+.footer-section .footer-top .location-and-payment .title-and-location-area ul li .content {
   line-height: 1;
   margin-top: 20px;
 }
-.footer-section .footer-top .location-and-payment ul li .content .get-direction {
+.footer-section .footer-top .location-and-payment .title-and-location-area ul li .content .get-direction {
   color: var(--white-color);
   font-family: var(--font-dmSans);
   font-weight: 600;
@@ -4585,7 +4660,7 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   background-position: right 90%;
   transition: background-size 0.75s;
 }
-.footer-section .footer-top .location-and-payment ul li .content .get-direction:hover {
+.footer-section .footer-top .location-and-payment .title-and-location-area ul li .content .get-direction:hover {
   background-size: 100% 1px;
   background-position: 0% 90%;
 }
@@ -4597,12 +4672,24 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   font-size: 24px;
   line-height: 1.4;
 }
+@media (max-width: 991px) {
+  .footer-section .footer-top .location-and-payment .payment-getway h5 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section .footer-top .location-and-payment .payment-getway h5 {
+    font-size: 20px;
+  }
+}
 .footer-section .footer-top .location-and-payment .payment-getway .payment-list {
   padding: 0;
   margin: 0;
   list-style: none;
   background-color: var(--white-color);
   padding: 7px 8px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-section .widget-title {
   margin-bottom: 40px;
@@ -4610,6 +4697,11 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer-section .widget-title {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .footer-section .widget-title {
+    margin-bottom: 20px;
   }
 }
 .footer-section .widget-title h5 {
@@ -4631,6 +4723,11 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
     padding: 25px;
   }
 }
+@media (max-width: 767px) {
+  .footer-section .footer-menu {
+    padding: 20px 0;
+  }
+}
 .footer-section .footer-menu .footer-menu-wrap .footer-menu-list {
   padding: 0;
   margin: 0;
@@ -4642,6 +4739,16 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 @media (max-width: 1399px) {
   .footer-section .footer-menu .footer-menu-wrap .footer-menu-list {
     gap: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .footer-section .footer-menu .footer-menu-wrap .footer-menu-list {
+    gap: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section .footer-menu .footer-menu-wrap .footer-menu-list {
+    display: block;
   }
 }
 .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list {
@@ -4658,6 +4765,11 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
     padding-left: 30px;
   }
 }
+@media (max-width: 991px) {
+  .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list {
+    padding-left: 0;
+  }
+}
 .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list a {
   color: var(--white-color);
   font-family: var(--font-dmSans);
@@ -4666,9 +4778,14 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   line-height: 1;
   transition: all 0.5s;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list a {
     font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list a {
+    font-size: 14px;
   }
 }
 .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list a:hover {
@@ -4695,6 +4812,11 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
     right: -35px;
   }
 }
+@media (max-width: 991px) {
+  .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list::before {
+    content: unset;
+  }
+}
 .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list:last-child::before {
   content: unset;
 }
@@ -4714,6 +4836,12 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   display: flex;
   align-items: start;
   gap: 7px;
+}
+@media (max-width: 576px) {
+  .footer-section .footer-bottom p {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .footer-section .footer-bottom p a {
   color: var(--white-color);
