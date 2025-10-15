@@ -137,6 +137,24 @@
       clickable: true,
     },
   });
+  var swiper = new Swiper(".home1-testimonial-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      nextEl: ".testimonial-slider-next",
+      prevEl: ".testimonial-slider-prev",
+    },
+  });
   //wow js
   jQuery(window).on("load", function () {
     new WOW().init();
@@ -646,5 +664,46 @@
     // Remove active class from all images when mouse leaves
     $(".item-img-list li").removeClass("show");
   });
+
+  // Click effect for service-list
+  function setupServiceImageInteraction() {
+    const isMobile = window.innerWidth <= 991;
+
+    // Remove previous bindings to avoid stacking
+    $(".item-list li").off("click");
+
+    $(".item-list li").on("click", function () {
+      var index = $(this).index();
+
+      // Update active class on service list
+      $(".item-list li").removeClass("active");
+      $(this).addClass("active");
+
+      // Update image preview
+      $(".item-img-list li").removeClass("active");
+      $(".item-img-list li").eq(index).addClass("active");
+
+      // Manage .prev class
+      $(".item-list li").removeClass("prev");
+      if (index > 0) {
+        $(".item-list li")
+          .eq(index - 1)
+          .addClass("prev");
+      }
+
+      // Extra scroll behavior for mobile
+      if (isMobile) {
+        $("html, body").animate(
+          {
+            scrollTop: $(".item-img-list").offset().top - 100,
+          },
+          600
+        );
+      }
+    });
+  }
+  // Initial setup and on resize
+  setupServiceImageInteraction();
+  $(window).on("resize", setupServiceImageInteraction);
 
 })(jQuery);
