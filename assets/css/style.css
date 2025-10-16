@@ -3266,63 +3266,46 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   content: "";
   z-index: 1;
 }
-.signature-experience .research-card .research-content {
+.signature-experience .research-card .experience-content {
   position: relative;
   padding: 10px 10px 10px 16px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .research-content {
+  .signature-experience .research-card .experience-content {
     padding: unset;
   }
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .research-content {
+  .signature-experience .research-card .experience-content {
     padding: 30px 15px;
   }
 }
-.signature-experience .research-card .research-content h4 {
-  line-height: 1.4;
+.signature-experience .research-card .experience-content h4 {
   margin-bottom: 20px;
-}
-@media (max-width: 1399px) {
-  .signature-experience .research-card .research-content h4 {
-    margin-bottom: 10px;
-  }
-}
-.signature-experience .research-card .research-content h4 a {
   color: var(--title-color);
   font-family: var(--font-marcellus);
   font-weight: 400;
   font-size: 26px;
   line-height: 36px;
-  transition: 0.35s;
-  background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
-  background-size: 0px 1px;
-  background-repeat: no-repeat;
-  background-position: right 90%;
-  transition: background-size 0.75s;
 }
 @media (max-width: 1399px) {
-  .signature-experience .research-card .research-content h4 a {
+  .signature-experience .research-card .experience-content h4 {
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 1.4;
   }
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .research-content h4 a {
+  .signature-experience .research-card .experience-content h4 {
     font-size: 25px;
   }
 }
 @media (max-width: 767px) {
-  .signature-experience .research-card .research-content h4 a {
+  .signature-experience .research-card .experience-content h4 {
     font-size: 22px;
   }
 }
-.signature-experience .research-card .research-content h4 a:hover {
-  background-size: 100% 1px;
-  background-position: 0% 90%;
-}
-.signature-experience .research-card .research-content p {
+.signature-experience .research-card .experience-content p {
   color: var(--text-color);
   font-family: var(--font-dmSans);
   font-weight: 400;
@@ -3332,16 +3315,16 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   margin-left: 20px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .research-content p {
+  .signature-experience .research-card .experience-content p {
     font-size: 14px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .signature-experience .research-card .research-content p {
+  .signature-experience .research-card .experience-content p {
     font-size: 14px;
   }
 }
-.signature-experience .research-card .research-content p::after {
+.signature-experience .research-card .experience-content p::after {
   content: "";
   position: absolute;
   transform: translateY(-50%);
@@ -3351,11 +3334,11 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   background-color: #D9D9D9;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .research-content p::after {
+  .signature-experience .research-card .experience-content p::after {
     left: 0;
   }
 }
-.signature-experience .research-card .research-content svg {
+.signature-experience .research-card .experience-content svg {
   fill: var(--title-color);
   position: absolute;
   top: -10px;
@@ -3363,68 +3346,68 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   transition: all 0.5s;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .signature-experience .research-card .research-content svg {
+  .signature-experience .research-card .experience-content svg {
     width: 35px;
     right: 10px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .research-content svg {
+  .signature-experience .research-card .experience-content svg {
     width: 30px;
     right: 10px;
   }
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .research-content svg {
+  .signature-experience .research-card .experience-content svg {
     top: 10px;
     right: 30px;
   }
 }
 @media (max-width: 767px) {
-  .signature-experience .research-card .research-content svg {
+  .signature-experience .research-card .experience-content svg {
     width: 30px;
     right: 15px;
   }
 }
-.signature-experience .research-card .research-content.two {
-  padding: 10px 10px 10px 20px;
+.signature-experience .research-card .experience-content.two {
+  padding: 10px 10px 10px 23px;
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .research-content.two {
+  .signature-experience .research-card .experience-content.two {
     padding: 30px 15px;
   }
 }
-.signature-experience .research-card .research-content.two p::after {
+.signature-experience .research-card .experience-content.two p::after {
   left: 30px;
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .research-content.two p::after {
+  .signature-experience .research-card .experience-content.two p::after {
     left: 20px;
   }
 }
-.signature-experience .research-card .research-content.two svg {
+.signature-experience .research-card .experience-content.two svg {
   right: 5px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .signature-experience .research-card .research-content.two svg {
+  .signature-experience .research-card .experience-content.two svg {
     right: -10px;
     width: 35px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .research-content.two svg {
+  .signature-experience .research-card .experience-content.two svg {
     width: 30px;
     right: -15px;
     top: -5px;
   }
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .research-content.two svg {
+  .signature-experience .research-card .experience-content.two svg {
     right: 25px;
   }
 }
 @media (max-width: 767px) {
-  .signature-experience .research-card .research-content.two svg {
+  .signature-experience .research-card .experience-content.two svg {
     width: 30px;
     right: 15px;
   }
@@ -3443,241 +3426,7 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 }
 
 /*=====================================
-  08. Enchanting Moments Section CSS
-========================================*/
-.enchanting-moments-section {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.enchanting-moments-section .video-and-title {
-  padding: 210px 0 200px 0;
-}
-@media (max-width: 991px) {
-  .enchanting-moments-section .video-and-title {
-    padding: 190px 0 180px 0;
-  }
-}
-@media (max-width: 576px) {
-  .enchanting-moments-section .video-and-title {
-    padding: 150px 0;
-  }
-}
-.enchanting-moments-section .video-and-title .video-area {
-  min-width: 100px;
-  max-width: 100px;
-  height: 100px;
-  border: 1px solid #EEEEEE;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 40px;
-}
-@media (max-width: 1399px) {
-  .enchanting-moments-section .video-and-title .video-area {
-    margin-bottom: 20px;
-    min-width: 90px;
-    max-width: 90px;
-    height: 90px;
-  }
-}
-@media (max-width: 991px) {
-  .enchanting-moments-section .video-and-title .video-area {
-    min-width: 80px;
-    max-width: 80px;
-    height: 80px;
-  }
-}
-@media (max-width: 576px) {
-  .enchanting-moments-section .video-and-title .video-area {
-    min-width: 70px;
-    max-width: 70px;
-    height: 70px;
-  }
-}
-.enchanting-moments-section .video-and-title .video-area svg {
-  fill: var(--white-color);
-}
-@media (max-width: 991px) {
-  .enchanting-moments-section .video-and-title .video-area svg {
-    width: 25px;
-  }
-}
-@media (max-width: 576px) {
-  .enchanting-moments-section .video-and-title .video-area svg {
-    width: 20px;
-  }
-}
-.enchanting-moments-section .bottom-content {
-  background-color: rgba(88, 87, 87, 0.3215686275);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-  padding: 25px 0;
-}
-@media (max-width: 576px) {
-  .enchanting-moments-section .bottom-content {
-    padding: 10px;
-  }
-}
-.enchanting-moments-section .bottom-content span {
-  display: flex;
-  justify-content: center;
-  color: var(--dark-text-color);
-  font-family: var(--font-dmSans);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
-  text-align: center;
-  gap: 10px;
-  margin-bottom: 0;
-}
-@media (max-width: 991px) {
-  .enchanting-moments-section .bottom-content span {
-    font-size: 19px;
-  }
-}
-@media (max-width: 991px) {
-  .enchanting-moments-section .bottom-content span {
-    font-size: 18px;
-  }
-}
-@media (max-width: 576px) {
-  .enchanting-moments-section .bottom-content span {
-    font-size: 17px;
-    line-height: 1.3;
-    flex-wrap: wrap;
-    row-gap: 15px;
-  }
-}
-.enchanting-moments-section .bottom-content span a {
-  color: var(--white-color);
-  background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
-  background-size: 0px 1px;
-  background-repeat: no-repeat;
-  background-position: right 90%;
-  transition: background-size 0.75s;
-}
-.enchanting-moments-section .bottom-content span a:hover {
-  background-size: 100% 1px;
-  background-position: 0% 90%;
-}
-
-/*=====================================
-  09. Home1 Blog Section CSS
-========================================*/
-.home1-blog-section .blog-card .blog-img {
-  display: block;
-  overflow: hidden;
-  position: relative;
-}
-.home1-blog-section .blog-card .blog-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: all 0.5s;
-}
-.home1-blog-section .blog-card .blog-img::after {
-  position: absolute;
-  width: 200%;
-  height: 0%;
-  left: 50%;
-  top: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  content: "";
-  z-index: 1;
-}
-.home1-blog-section .blog-card .blog-card-content {
-  padding-top: 30px;
-}
-@media (max-width: 1399px) {
-  .home1-blog-section .blog-card .blog-card-content {
-    padding-top: 20px;
-  }
-}
-.home1-blog-section .blog-card .blog-card-content .date-and-event {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-.home1-blog-section .blog-card .blog-card-content .date-and-event a {
-  color: var(--text-color);
-  font-family: var(--font-dmSans);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1;
-  transition: all 0.5s;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .home1-blog-section .blog-card .blog-card-content .date-and-event a {
-    font-size: 17px;
-  }
-}
-@media (max-width: 576px) {
-  .home1-blog-section .blog-card .blog-card-content .date-and-event a {
-    font-size: 16px;
-  }
-}
-.home1-blog-section .blog-card .blog-card-content .date-and-event a:hover {
-  color: var(--primary-color1);
-}
-.home1-blog-section .blog-card .blog-card-content .date-and-event svg {
-  fill: var(--text-color);
-}
-.home1-blog-section .blog-card .blog-card-content h4 {
-  margin-bottom: 0;
-  line-height: 1;
-}
-.home1-blog-section .blog-card .blog-card-content h4 a {
-  color: var(--title-color);
-  font-family: var(--font-marcellus);
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
-  background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
-  background-size: 0px 1px;
-  background-repeat: no-repeat;
-  background-position: right 90%;
-  transition: background-size 0.75s;
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .home1-blog-section .blog-card .blog-card-content h4 a {
-    font-size: 21px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .home1-blog-section .blog-card .blog-card-content h4 a {
-    font-size: 20px;
-    line-height: 34px;
-  }
-}
-@media (max-width: 991px) {
-  .home1-blog-section .blog-card .blog-card-content h4 a {
-    font-size: 22px;
-    line-height: 34px;
-  }
-}
-@media (max-width: 576px) {
-  .home1-blog-section .blog-card .blog-card-content h4 a {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-.home1-blog-section .blog-card .blog-card-content h4 a:hover {
-  background-size: 100% 1px;
-  background-position: 0% 90%;
-}
-.home1-blog-section .blog-card:hover .blog-img img {
-  transform: scale(1.1);
-}
-.home1-blog-section .blog-card:hover .blog-img::after {
-  height: 250%;
-  transition: all 600ms linear;
-  background-color: transparent;
-}
-
-/*=====================================
-  09. Dining And Cuisine Section CSS
+  08. Dining And Cuisine Section CSS
 ========================================*/
 @keyframes textRotation {
   to {
@@ -3953,7 +3702,7 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   display: flex;
   align-items: center;
   gap: 42px;
-  padding-top: 60px;
+  padding-top: 55px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .home1-event-section .single-event .event-content-and-title .event-info {
@@ -3995,35 +3744,60 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
   }
 }
 .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 {
-  color: var(--title-color);
-  font-family: var(--font-marcellus);
-  font-weight: 400;
-  font-size: 40px;
   line-height: 1;
   margin-bottom: 15px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 {
-    font-size: 36px;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 {
-    font-size: 30px;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
   .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 {
-    font-size: 30px;
     margin-bottom: 10px;
   }
 }
+.home1-event-section .single-event .event-content-and-title .event-info .event-content h2 a {
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  display: inline-block;
+  background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
+  background-position: right 90%;
+  transition: background-size 0.75s;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 a {
+    font-size: 36px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 a {
+    font-size: 30px;
+  }
+}
 @media (max-width: 576px) {
-  .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 {
+  .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 a {
     font-size: 25px;
   }
+}
+.home1-event-section .single-event .event-content-and-title .event-info .event-content h2 a:hover {
+  background-size: 100% 1px;
+  background-position: 0% 90%;
 }
 .home1-event-section .single-event .event-content-and-title .event-info .event-content span {
   color: var(--text-color);
@@ -4313,7 +4087,255 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 }
 
 /*=====================================
-  11. Footer Section CSS
+  11. Enchanting Moments Section CSS
+========================================*/
+.enchanting-moments-section {
+  position: relative;
+}
+.enchanting-moments-section .enchanting-video-area {
+  min-height: 805px;
+  height: 805px;
+  position: relative;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .enchanting-moments-section .enchanting-video-area {
+    min-height: 680px;
+    height: 680px;
+  }
+}
+@media (max-width: 1399px) {
+  .enchanting-moments-section .enchanting-video-area {
+    min-height: 640px;
+    height: 640px;
+  }
+}
+@media (max-width: 1199px) {
+  .enchanting-moments-section .enchanting-video-area {
+    min-height: 600px;
+    height: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .enchanting-moments-section .enchanting-video-area {
+    min-height: 580px;
+    height: 580px;
+  }
+}
+.enchanting-moments-section .enchanting-video-area video {
+  width: 100%;
+  min-height: 805px;
+  height: 805px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .enchanting-moments-section .enchanting-video-area video {
+    min-height: 680px;
+    height: 680px;
+  }
+}
+@media (max-width: 1399px) {
+  .enchanting-moments-section .enchanting-video-area video {
+    min-height: 640px;
+    height: 640px;
+  }
+}
+@media (max-width: 1199px) {
+  .enchanting-moments-section .enchanting-video-area video {
+    min-height: 600px;
+    height: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .enchanting-moments-section .enchanting-video-area video {
+    min-height: 580px;
+    height: 580px;
+  }
+}
+.enchanting-moments-section .title-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 70px 0 137px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enchanting-moments-section .bottom-content {
+  background-color: rgba(88, 87, 87, 0.3215686275);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 25px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .enchanting-moments-section .bottom-content {
+    padding: 10px;
+  }
+}
+.enchanting-moments-section .bottom-content span {
+  display: flex;
+  justify-content: center;
+  color: var(--dark-text-color);
+  font-family: var(--font-dmSans);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .enchanting-moments-section .bottom-content span {
+    font-size: 19px;
+  }
+}
+@media (max-width: 991px) {
+  .enchanting-moments-section .bottom-content span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .enchanting-moments-section .bottom-content span {
+    font-size: 17px;
+    line-height: 1.3;
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+}
+.enchanting-moments-section .bottom-content span a {
+  color: var(--white-color);
+  background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
+  background-position: right 90%;
+  transition: background-size 0.75s;
+}
+.enchanting-moments-section .bottom-content span a:hover {
+  background-size: 100% 1px;
+  background-position: 0% 90%;
+}
+
+/*=====================================
+  12. Home1 Blog Section CSS
+========================================*/
+.home1-blog-section .blog-card .blog-img {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.home1-blog-section .blog-card .blog-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s;
+}
+.home1-blog-section .blog-card .blog-img::after {
+  position: absolute;
+  width: 200%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  content: "";
+  z-index: 1;
+}
+.home1-blog-section .blog-card .blog-card-content {
+  padding-top: 30px;
+}
+@media (max-width: 1399px) {
+  .home1-blog-section .blog-card .blog-card-content {
+    padding-top: 20px;
+  }
+}
+.home1-blog-section .blog-card .blog-card-content .date-and-event {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.home1-blog-section .blog-card .blog-card-content .date-and-event a {
+  color: var(--text-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  transition: all 0.5s;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home1-blog-section .blog-card .blog-card-content .date-and-event a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 576px) {
+  .home1-blog-section .blog-card .blog-card-content .date-and-event a {
+    font-size: 16px;
+  }
+}
+.home1-blog-section .blog-card .blog-card-content .date-and-event a:hover {
+  color: var(--primary-color1);
+}
+.home1-blog-section .blog-card .blog-card-content .date-and-event svg {
+  fill: var(--text-color);
+}
+.home1-blog-section .blog-card .blog-card-content h4 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+.home1-blog-section .blog-card .blog-card-content h4 a {
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
+  background-position: right 90%;
+  transition: background-size 0.75s;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .home1-blog-section .blog-card .blog-card-content h4 a {
+    font-size: 21px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home1-blog-section .blog-card .blog-card-content h4 a {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 991px) {
+  .home1-blog-section .blog-card .blog-card-content h4 a {
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 576px) {
+  .home1-blog-section .blog-card .blog-card-content h4 a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.home1-blog-section .blog-card .blog-card-content h4 a:hover {
+  background-size: 100% 1px;
+  background-position: 0% 90%;
+}
+.home1-blog-section .blog-card:hover .blog-img img {
+  transform: scale(1.1);
+}
+.home1-blog-section .blog-card:hover .blog-img::after {
+  height: 250%;
+  transition: all 600ms linear;
+  background-color: transparent;
+}
+
+/*=====================================
+  13. Footer Section CSS
 ========================================*/
 .footer-section {
   background-color: var(--black-color);
@@ -4854,4 +4876,7 @@ header.style-1.two .nav-right .contact-area .primary-btn2:hover svg {
 .footer-section .footer-bottom p a:hover {
   background-size: 100% 1px;
   background-position: 0% 90%;
+}
+.footer-section.two {
+  background-color: #02464A;
 }/*# sourceMappingURL=style.css.map */
