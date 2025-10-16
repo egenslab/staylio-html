@@ -76,8 +76,82 @@
     delay: 10,
     time: 1000,
   });
-  // Blog Card Slider
+  // Room And Suites Slider
   var swiper = new Swiper(".room-and-suites-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".room-and-suites-slider-next",
+      prevEl: ".room-and-suites-slider-prev",
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      386: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  var swiper = new Swiper(".room-and-suites-card-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".room-suites-card-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      386: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  // Home2 Banner Slider
+  var swiper = new Swiper(".home2-banner-slider", {
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
@@ -137,6 +211,7 @@
       clickable: true,
     },
   });
+  // Testimonial SLider
   var swiper = new Swiper(".home1-testimonial-slider", {
     slidesPerView: 1,
     speed: 1500,
