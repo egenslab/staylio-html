@@ -114,42 +114,44 @@
       },
     },
   });
-  // var swiper = new Swiper(".room-and-suites-card-slider", {
-  //   slidesPerView: 1,
-  //   speed: 1500,
-  //   spaceBetween: 24,
-  //   // autoplay: {
-  //   //   delay: 2500, // Autoplay duration in milliseconds
-  //   //   disableOnInteraction: false,
-  //   // },
-  //   pagination: {
-  //     el: ".room-suites-card-pagination",
-  //     clickable: true,
-  //   },
-  //   breakpoints: {
-  //     280: {
-  //       slidesPerView: 1,
-  //     },
-  //     386: {
-  //       slidesPerView: 1,
-  //     },
-  //     576: {
-  //       slidesPerView: 1,
-  //     },
-  //     768: {
-  //       slidesPerView: 2,
-  //     },
-  //     992: {
-  //       slidesPerView: 3,
-  //     },
-  //     1200: {
-  //       slidesPerView: 3,
-  //     },
-  //     1400: {
-  //       slidesPerView: 3,
-  //     },
-  //   },
-  // });
+  var swiper = new Swiper(".home2-testimonial-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".home2-testimonial-card-slider-next",
+      prevEl: ".home2-testimonial-card-slider-prev",
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      386: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  });
   document.querySelectorAll(".room-and-suites-card-slider").forEach((slider, index) => {
     // Add unique pagination class
     $(slider)
@@ -825,5 +827,22 @@
   // Initial setup and on resize
   setupServiceImageInteraction();
   $(window).on("resize", setupServiceImageInteraction);
+
+  // BTN Hover
+  $(".btn-hover")
+    .on("mouseenter", function (e) {
+      var parentOffset = $(this).offset(),
+        relX = e.pageX - parentOffset.left,
+        relY = e.pageY - parentOffset.top;
+      $(this).find("span").css({ top: 0, left: 0 });
+      $(this).find("span").css({ top: relY, left: relX });
+    })
+    .on("mouseout", function (e) {
+      var parentOffset = $(this).offset(),
+        relX = e.pageX - parentOffset.left,
+        relY = e.pageY - parentOffset.top;
+      $(this).find("span").css({ top: 0, left: 0 });
+      $(this).find("span").css({ top: relY, left: relX });
+    });
 
 })(jQuery);
