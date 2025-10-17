@@ -449,12 +449,15 @@ p {
 .mb-100 {
   margin-bottom: 100px;
 
-  @include lg-down-device() {
+  @include xl-down-device() {
     margin-bottom: 80px;
+  }
+  @include lg-down-device() {
+    margin-bottom: 60px;
   }
 
   @include md-down-device() {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 }
 
@@ -6369,10 +6372,10 @@ header.style-2 {
 /*=====================================
   17.Comfort And Signature Moments Section CSS
 ========================================*/
-.confort-and-signature-moment {
+.comfort-and-signature-moment {
   overflow: hidden;
 
-  .project-info-flow-card {
+  .comfort-signature-card {
     position: relative;
 
     .comfort-signature-card-img{
@@ -6380,7 +6383,7 @@ header.style-2 {
       width: 100%;
     }
 
-    .info-flow-content {
+    .info-content {
       position: absolute;
       top: 0;
       left: 0;
@@ -6414,8 +6417,14 @@ header.style-2 {
     }
 
     &:hover {
-      .info-flow-content {
+      .info-content {
         opacity: 1;
+      }
+    }
+    &.two {
+      margin-top: -40px;
+      @include lg-down-device() {
+        margin-top: unset;
       }
     }
   }

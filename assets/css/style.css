@@ -330,14 +330,19 @@ p {
 .mb-100 {
   margin-bottom: 100px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .mb-100 {
     margin-bottom: 80px;
   }
 }
+@media (max-width: 991px) {
+  .mb-100 {
+    margin-bottom: 60px;
+  }
+}
 @media (max-width: 767px) {
   .mb-100 {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 }
 
@@ -5798,17 +5803,17 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
 /*=====================================
   17.Comfort And Signature Moments Section CSS
 ========================================*/
-.confort-and-signature-moment {
+.comfort-and-signature-moment {
   overflow: hidden;
 }
-.confort-and-signature-moment .project-info-flow-card {
+.comfort-and-signature-moment .comfort-signature-card {
   position: relative;
 }
-.confort-and-signature-moment .project-info-flow-card .comfort-signature-card-img {
+.comfort-and-signature-moment .comfort-signature-card .comfort-signature-card-img {
   max-width: 392px;
   width: 100%;
 }
-.confort-and-signature-moment .project-info-flow-card .info-flow-content {
+.comfort-and-signature-moment .comfort-signature-card .info-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -5816,7 +5821,7 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   z-index: 1;
   transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.confort-and-signature-moment .project-info-flow-card .info-flow-content h6 {
+.comfort-and-signature-moment .comfort-signature-card .info-content h6 {
   margin-bottom: 4px;
   line-height: 1;
   color: var(--title-color);
@@ -5828,7 +5833,7 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
           backdrop-filter: blur(30px);
   padding: 17px 21px;
 }
-.confort-and-signature-moment .project-info-flow-card .info-flow-content span {
+.comfort-and-signature-moment .comfort-signature-card .info-content span {
   color: var(--title-color);
   font-family: var(--font-dmSans);
   font-size: 16px;
@@ -5840,6 +5845,14 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
 }
-.confort-and-signature-moment .project-info-flow-card:hover .info-flow-content {
+.comfort-and-signature-moment .comfort-signature-card:hover .info-content {
   opacity: 1;
+}
+.comfort-and-signature-moment .comfort-signature-card.two {
+  margin-top: -40px;
+}
+@media (max-width: 991px) {
+  .comfort-and-signature-moment .comfort-signature-card.two {
+    margin-top: unset;
+  }
 }/*# sourceMappingURL=style.css.map */
