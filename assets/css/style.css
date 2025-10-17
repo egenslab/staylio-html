@@ -1409,31 +1409,24 @@ blockquote .quote {
   opacity: 0.5;
 }
 
-.paginations {
+.swiper-paginations {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: unset;
   z-index: 9;
-  gap: 8px;
+  gap: 6px;
 }
-@media (max-width: 576px) {
-  .paginations {
-    justify-content: center;
-  }
-}
-.paginations .swiper-pagination-bullet {
+.swiper-paginations .swiper-pagination-bullet {
   height: 10px;
   width: 10px;
   background: rgba(153, 153, 153, 0.5019607843);
   opacity: 1;
   position: relative;
-  border-radius: 50%;
+  border-radius: unset;
 }
-.paginations .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 30px;
-  border-radius: 50px;
-  background-color: var(--primary-color1);
+.swiper-paginations .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #5CA1A4;
 }
 
 .form-inner {
@@ -3781,8 +3774,31 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   transform: unset;
   padding-top: 25px;
 }
+@media (max-width: 991px) {
+  .room-and-suites-content.two {
+    padding-top: 20px;
+  }
+}
 .room-and-suites-content.two h3 {
+  margin-bottom: 15px;
+  line-height: 1;
+}
+.room-and-suites-content.two h3 a {
   color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
+  display: inline-block;
+  background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
+  background-position: right 90%;
+  transition: background-size 0.75s;
+}
+.room-and-suites-content.two h3 a:hover {
+  background-size: 100% 1px;
+  background-position: 0% 90%;
 }
 .room-and-suites-content.two .guests-and-hotel-room span {
   color: var(--title-color);
@@ -5633,23 +5649,4 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   font-size: 20px;
   line-height: 1;
   margin-bottom: 0;
-}
-.home2-room-and-suites-section .room-suites-card-pagination {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: unset;
-  z-index: 9;
-  gap: 6px;
-}
-.home2-room-and-suites-section .room-suites-card-pagination .swiper-pagination-bullet {
-  height: 10px;
-  width: 10px;
-  background: rgba(153, 153, 153, 0.5019607843);
-  opacity: 1;
-  position: relative;
-  border-radius: unset;
-}
-.home2-room-and-suites-section .room-suites-card-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #5CA1A4;
 }/*# sourceMappingURL=style.css.map */

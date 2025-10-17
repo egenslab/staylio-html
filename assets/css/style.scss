@@ -1572,17 +1572,13 @@ blockquote {
   }
 }
 
-.paginations {
+.swiper-paginations {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: unset;
   z-index: 9;
-  gap: 8px;
-
-  @include sm-down-device() {
-    justify-content: center;
-  }
+  gap: 6px;
 
   .swiper-pagination-bullet {
     height: 10px;
@@ -1590,12 +1586,10 @@ blockquote {
     background: #99999980;
     opacity: 1;
     position: relative;
-    border-radius: 50%;
+    border-radius: unset;
 
     &.swiper-pagination-bullet-active {
-      width: 30px;
-      border-radius: 50px;
-      background-color: var(--primary-color1);
+      background-color: #5CA1A4;
     }
   }
 }
@@ -4272,8 +4266,32 @@ header.style-2 {
     transform: unset;
     padding-top: 25px;
 
+    @include lg-down-device() {
+      padding-top: 20px;
+    }
+
     h3 {
-      color: var(--title-color);
+      margin-bottom: 15px;
+      line-height: 1;
+
+      a {
+        color: var(--title-color);
+        font-family: var(--font-marcellus);
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1;
+        display: inline-block;
+        background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
+        background-size: 0px 1px;
+        background-repeat: no-repeat;
+        background-position: right 90%;
+        transition: background-size 0.75s;
+
+        &:hover {
+          background-size: 100% 1px;
+          background-position: 0% 90%;
+        }
+      }
     }
 
     .guests-and-hotel-room {
@@ -6152,39 +6170,39 @@ header.style-2 {
     align-items: end;
     justify-content: space-between;
 
-.nav-pills {
-  .nav-item {
-    .nav-link {
-      color: var(--text-color);
-      font-family: var(--font-dmSans);
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1;
-      position: relative;
+    .nav-pills {
+      .nav-item {
+        .nav-link {
+          color: var(--text-color);
+          font-family: var(--font-dmSans);
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1;
+          position: relative;
 
-      &::before {
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 10px;
-        top: 39%;
-        left: 0;
-        background-color: #A6A6A6;
-      }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 10px;
+            top: 39%;
+            left: 0;
+            background-color: #A6A6A6;
+          }
 
-      &.active {
-        background-color: unset;
-        color: #5CA1A4;
+          &.active {
+            background-color: unset;
+            color: #5CA1A4;
+          }
+        }
+
+        &:first-child {
+          .nav-link::before {
+            content: unset;
+          }
+        }
       }
     }
-
-    &:first-child {
-      .nav-link::before {
-        content: unset;
-      }
-    }
-  }
-}
 
   }
 
@@ -6212,28 +6230,6 @@ header.style-2 {
           line-height: 1;
           margin-bottom: 0;
         }
-      }
-    }
-  }
-
-  .room-suites-card-pagination {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: unset;
-    z-index: 9;
-    gap: 6px;
-
-    .swiper-pagination-bullet {
-      height: 10px;
-      width: 10px;
-      background: #99999980;
-      opacity: 1;
-      position: relative;
-      border-radius: unset;
-
-      &.swiper-pagination-bullet-active {
-        background-color: #5CA1A4;
       }
     }
   }

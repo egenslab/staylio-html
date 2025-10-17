@@ -114,41 +114,86 @@
       },
     },
   });
-  var swiper = new Swiper(".room-and-suites-card-slider", {
-    slidesPerView: 1,
-    speed: 1500,
-    spaceBetween: 24,
-    autoplay: {
-      delay: 2500, // Autoplay duration in milliseconds
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".room-suites-card-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      280: {
+  // var swiper = new Swiper(".room-and-suites-card-slider", {
+  //   slidesPerView: 1,
+  //   speed: 1500,
+  //   spaceBetween: 24,
+  //   // autoplay: {
+  //   //   delay: 2500, // Autoplay duration in milliseconds
+  //   //   disableOnInteraction: false,
+  //   // },
+  //   pagination: {
+  //     el: ".room-suites-card-pagination",
+  //     clickable: true,
+  //   },
+  //   breakpoints: {
+  //     280: {
+  //       slidesPerView: 1,
+  //     },
+  //     386: {
+  //       slidesPerView: 1,
+  //     },
+  //     576: {
+  //       slidesPerView: 1,
+  //     },
+  //     768: {
+  //       slidesPerView: 2,
+  //     },
+  //     992: {
+  //       slidesPerView: 3,
+  //     },
+  //     1200: {
+  //       slidesPerView: 3,
+  //     },
+  //     1400: {
+  //       slidesPerView: 3,
+  //     },
+  //   },
+  // });
+  document.querySelectorAll(".room-and-suites-card-slider").forEach((slider, index) => {
+    // Add unique pagination class
+    $(slider)
+      .next(".slider-pagi-wrap")
+      .children(".room-and-suites-card-pagi")
+      .addClass(`room-and-suites-card-pagi-${index}`);
+    setTimeout(() => {
+      new Swiper(slider, {
         slidesPerView: 1,
-      },
-      386: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-      1400: {
-        slidesPerView: 3,
-      },
-    },
+        speed: 1600,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: `.room-and-suites-card-pagi-${index}`,
+          clickable: true,
+        },
+        breakpoints: {
+          280: {
+            slidesPerView: 1,
+          },
+          386: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
+          1400: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    }, 0);
   });
   // Home2 Banner Slider
   var swiper = new Swiper(".home2-banner-slider", {
