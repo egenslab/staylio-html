@@ -1250,20 +1250,12 @@ blockquote {
     background-color: var(--black-color);
     color: var(--white-color);
 
-    svg {
-      fill: var(--white-color);
-    }
-
     span {
       background-color: var(--primary-color1);
     }
 
     &:hover {
-      color: var(--title-color);
-
-      svg {
-        fill: var(--title-color);
-      }
+      color: var(--white-color);
     }
   }
 

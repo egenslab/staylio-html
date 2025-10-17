@@ -1113,17 +1113,11 @@ blockquote .quote {
   background-color: var(--black-color);
   color: var(--white-color);
 }
-.primary-btn1.black-bg svg {
-  fill: var(--white-color);
-}
 .primary-btn1.black-bg span {
   background-color: var(--primary-color1);
 }
 .primary-btn1.black-bg:hover {
-  color: var(--title-color);
-}
-.primary-btn1.black-bg:hover svg {
-  fill: var(--title-color);
+  color: var(--white-color);
 }
 .primary-btn1.two {
   border-radius: 100px;
