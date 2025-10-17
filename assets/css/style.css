@@ -4768,6 +4768,7 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 .enchanting-moments-section .bottom-content {
   background-color: rgba(88, 87, 87, 0.3215686275);
@@ -4777,7 +4778,7 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   position: absolute;
   bottom: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 @media (max-width: 576px) {
   .enchanting-moments-section .bottom-content {
@@ -4819,12 +4820,12 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
   background-size: 0px 1px;
   background-repeat: no-repeat;
-  background-position: right 90%;
+  background-position: right 100%;
   transition: background-size 0.75s;
 }
 .enchanting-moments-section .bottom-content span a:hover {
   background-size: 100% 1px;
-  background-position: 0% 90%;
+  background-position: 0% 100%;
 }
 
 /*=====================================

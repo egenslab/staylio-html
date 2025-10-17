@@ -5263,6 +5263,7 @@ header.style-2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
   }
 
   .bottom-content {
@@ -5272,7 +5273,7 @@ header.style-2 {
     position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 
     @include sm-down-device() {
       padding: 10px;
@@ -5310,12 +5311,12 @@ header.style-2 {
         background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
         background-size: 0px 1px;
         background-repeat: no-repeat;
-        background-position: right 90%;
+        background-position: right 100%;
         transition: background-size 0.75s;
 
         &:hover {
           background-size: 100% 1px;
-          background-position: 0% 90%;
+          background-position: 0% 100%;
         }
       }
     }
