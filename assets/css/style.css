@@ -1124,59 +1124,56 @@ blockquote .quote {
 }
 
 .primary-btn2 {
-  position: relative;
-  display: inline-flex;
-  overflow: hidden;
-  background-color: var(--primary-color2);
-  border: 1px solid var(--primary-color2);
   color: var(--white-color);
   font-family: var(--font-dmSans);
   font-size: 16px;
   font-weight: 600;
-  transition: all 0.5s;
+  padding: 18px 20px;
+  background-color: var(--primary-color2);
+  white-space: nowrap;
+  overflow: hidden;
   position: relative;
-  z-index: 0;
-  padding: 10px 19px;
+  z-index: 1;
+  transition: all 0.6s;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  gap: 8px;
 }
-.primary-btn2:before, .primary-btn2:after {
-  content: "";
+.primary-btn2 span {
   position: absolute;
-  top: 50%;
-  background-color: var(--white-color);
-  border-radius: 50%;
-  transform: translateY(-50%);
-  transition: 0.5s ease-in-out;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 36px;
+  background-color: var(--title-color);
+  transition: all 0.6s;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
-.primary-btn2:before {
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.primary-btn2:after {
-  right: 50%;
-  transform: translate(50%, -50%);
-}
 .primary-btn2:hover {
+  color: var(--white-color);
+}
+.primary-btn2:hover span {
+  width: 225%;
+  height: 1000.5px;
+}
+.primary-btn2.white-bg {
+  background-color: var(--white-color);
   color: var(--title-color);
-  border: 1px solid var(--black-color);
 }
-.primary-btn2:hover:before {
-  animation: criss-cross-left 0.7s both;
-  animation-direction: alternate;
-}
-.primary-btn2:hover:after {
-  animation: criss-cross-right 0.7s both;
-  animation-direction: alternate;
+.primary-btn2.white-bg span {
+  background-color: var(--primary-color1);
 }
 .primary-btn2.black-bg {
   background-color: var(--black-color);
-  border: 1px solid var(--black-color);
+  color: var(--white-color);
 }
-.primary-btn2.black-bg:before, .primary-btn2.black-bg:after {
+.primary-btn2.black-bg span {
   background-color: var(--primary-color1);
 }
 .primary-btn2.black-bg:hover {
-  border: 1px solid var(--primary-color1);
+  color: var(--white-color);
 }
 .primary-btn2.two {
   border-radius: 100px;
@@ -2558,7 +2555,7 @@ header.style-2 .nav-right {
   }
 }
 header.style-2 .nav-right .contact-area .primary-btn2 {
-  padding: 8px 37px;
+  padding: 16px 39px;
 }
 header.style-2 .nav-right .mobile-menu-btn {
   display: none;
@@ -5796,4 +5793,53 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   .home2-testimonial-section .vector-img {
     display: none;
   }
+}
+
+/*=====================================
+  17.Comfort And Signature Moments Section CSS
+========================================*/
+.confort-and-signature-moment {
+  overflow: hidden;
+}
+.confort-and-signature-moment .project-info-flow-card {
+  position: relative;
+}
+.confort-and-signature-moment .project-info-flow-card .comfort-signature-card-img {
+  max-width: 392px;
+  width: 100%;
+}
+.confort-and-signature-moment .project-info-flow-card .info-flow-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.confort-and-signature-moment .project-info-flow-card .info-flow-content h6 {
+  margin-bottom: 4px;
+  line-height: 1;
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgba(var(--white-color-opc), 0.8);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 17px 21px;
+}
+.confort-and-signature-moment .project-info-flow-card .info-flow-content span {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(var(--white-color-opc), 0.8);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+.confort-and-signature-moment .project-info-flow-card:hover .info-flow-content {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
