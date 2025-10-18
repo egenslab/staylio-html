@@ -1828,6 +1828,7 @@ blockquote {
     }
   }
 }
+
 .language-area {
   position: relative;
 
@@ -3257,10 +3258,12 @@ header.style-2 {
         padding-bottom: 30px;
         border: unset;
       }
+
       .primary-btn2 {
         width: 100%;
         justify-content: center;
       }
+
       >ul {
         float: none;
         text-align: left;
@@ -6369,7 +6372,7 @@ header.style-2 {
 }
 
 /*=====================================
-  18.Explore Endulge Section Section CSS
+  18.Explore Endulge Section CSS
 ========================================*/
 .explore-endulge-section {
   background-color: #EEF6FE;
@@ -6574,6 +6577,52 @@ header.style-2 {
 
     @include sm-down-device() {
       display: none;
+    }
+  }
+}
+
+/*=====================================
+  19.Resort Deal Section CSS
+========================================*/
+.resort-deal-section {
+  .resort-deal-card {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 54.19%);
+    }
+
+    .resort-card-img {
+
+      .resort-deal-card-content {
+        position: absolute;
+        bottom: 0;
+        padding: 40px;
+
+        h5 {
+          color: var(--white-color);
+          font-family: var(--font-marcellus);
+          font-weight: 400;
+          font-size: 26px;
+          line-height: 40px;
+          margin-bottom: 10px;
+        }
+
+        a {
+          color: var(--white-color);
+          font-family: var(--font-dmSans);
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 1;
+          display: block;
+        }
+      }
     }
   }
 }
