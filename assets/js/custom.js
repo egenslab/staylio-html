@@ -306,6 +306,7 @@
     if (!$(e.target).closest(".language-btn").length) {
       $(".language-list").removeClass("active");
     }
+    
   });
 
   //Quantity Increment
