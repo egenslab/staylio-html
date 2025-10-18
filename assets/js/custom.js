@@ -296,6 +296,18 @@
     $("select").niceSelect();
   }
 
+  // Language Btn
+  $(".language-btn").on("click", function (e) {
+    let parent = $(this).parent();
+    parent.find(".language-list").toggleClass("active");
+    e.stopPropagation();
+  });
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".language-btn").length) {
+      $(".language-list").removeClass("active");
+    }
+  });
+
   //Quantity Increment
   $(".quantity__minus").on("click", function (e) {
     e.preventDefault();
@@ -846,18 +858,18 @@
     });
 
   //Project Info Flow
-const infoflow1TextItem = document.querySelectorAll(".comfort-signature-card");
-	function followImageCursor(event, infoflow1TextItem) {
-	const contentBox = infoflow1TextItem.getBoundingClientRect();
-	const dx = event.clientX - contentBox.x;
-	const dy = event.clientY - contentBox.y;
-	infoflow1TextItem.children[1].style.transform = `translate(${dx}px, ${dy}px)`;
-	}
+  const infoflow1TextItem = document.querySelectorAll(".comfort-signature-card");
+  function followImageCursor(event, infoflow1TextItem) {
+    const contentBox = infoflow1TextItem.getBoundingClientRect();
+    const dx = event.clientX - contentBox.x;
+    const dy = event.clientY - contentBox.y;
+    infoflow1TextItem.children[1].style.transform = `translate(${dx}px, ${dy}px)`;
+  }
 
-	infoflow1TextItem.forEach((item, i) => {
-		item.addEventListener("mousemove", (event) => {
-			setInterval(followImageCursor(event, item), 100);
-		});
-	});
+  infoflow1TextItem.forEach((item, i) => {
+    item.addEventListener("mousemove", (event) => {
+      setInterval(followImageCursor(event, item), 100);
+    });
+  });
 
 })(jQuery);
