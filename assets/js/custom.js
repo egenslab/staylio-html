@@ -114,44 +114,6 @@
       },
     },
   });
-  var swiper = new Swiper(".home2-testimonial-slider", {
-    slidesPerView: 1,
-    speed: 1500,
-    spaceBetween: 24,
-    autoplay: {
-      delay: 2500, // Autoplay duration in milliseconds
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".home2-testimonial-card-slider-next",
-      prevEl: ".home2-testimonial-card-slider-prev",
-    },
-    breakpoints: {
-      280: {
-        slidesPerView: 1,
-      },
-      386: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 3,
-      },
-    },
-  });
   document.querySelectorAll(".room-and-suites-card-slider").forEach((slider, index) => {
     // Add unique pagination class
     $(slider)
@@ -277,6 +239,82 @@
       prevEl: ".testimonial-slider-prev",
     },
   });
+  var swiper = new Swiper(".home2-testimonial-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".home2-testimonial-card-slider-next",
+      prevEl: ".home2-testimonial-card-slider-prev",
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      386: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  var swiper = new Swiper(".home3-testimonial-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".home2-testimonial-card-slider-next",
+      prevEl: ".home2-testimonial-card-slider-prev",
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      386: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 2,
+      },
+    },
+  });
   //wow js
   jQuery(window).on("load", function () {
     new WOW().init();
@@ -306,7 +344,7 @@
     if (!$(e.target).closest(".language-btn").length) {
       $(".language-list").removeClass("active");
     }
-    
+
   });
 
   //Quantity Increment
@@ -871,6 +909,23 @@
     item.addEventListener("mousemove", (event) => {
       setInterval(followImageCursor(event, item), 100);
     });
+  });
+
+  // Feature Banner
+  const buttons = document.querySelectorAll(
+    ".feature-list .feature-single-item"
+  );
+  const stage = document.querySelector("#background-panel");
+
+  buttons.forEach((button) => {
+    button.onmouseover = function () {
+      document.querySelector(button.dataset.show).style.opacity = 1;
+      jQuery(button.dataset.show).addClass("active");
+    };
+    button.onmouseout = function () {
+      document.querySelector(button.dataset.show).style.opacity = 0;
+      jQuery(button.dataset.show).removeClass("active");
+    };
   });
 
 })(jQuery);
