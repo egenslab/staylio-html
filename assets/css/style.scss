@@ -6202,6 +6202,7 @@ header.style-2 {
         background-color: rgba(var(--white-color-opc), 0.8);
         backdrop-filter: blur(30px);
         padding: 9px;
+        z-index: 2;
 
         span,
         h3 {
@@ -6425,8 +6426,7 @@ header.style-2 {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 78px;
-    row-gap: 40px;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -6436,17 +6436,16 @@ header.style-2 {
     }
 
     @include xxl-down-device() {
-      gap: 50px;
-      row-gap: 35px;
+      gap: 40px;
     }
 
     @include lg-down-device() {
-      gap: 40px;
-      row-gap: 30px;
+      gap: 30px;
+      row-gap: 35px;
     }
 
     @include md-down-device() {
-      gap: 20px;
+      gap: 15px;
       row-gap: 25px;
     }
 
@@ -6465,21 +6464,25 @@ header.style-2 {
         span {
           color: var(--title-color);
           font-family: var(--font-dmSans);
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 400;
           line-height: 1;
           display: block;
-
-          @include xl-device() {
-            font-size: 22px;
-          }
+          border: 1px solid #C3DDF8;
+          padding: 10px 14px;
 
           @include xl-down-device() {
-            font-size: 21px;
+            font-size: 19px;
           }
 
           @include lg-down-device() {
             font-size: 18px;
+            padding: 8px 10px;
+          }
+
+          @include md-down-device() {
+            font-size: 16px;
+            padding: 8px 10px;
           }
 
           @include sm-down-device() {
@@ -6551,6 +6554,10 @@ header.style-2 {
       top: 40px;
     }
 
+    @include lg-down-device() {
+      top: 10px;
+    }
+
     @include md-down-device() {
       display: none;
     }
@@ -6568,6 +6575,10 @@ header.style-2 {
 
     @include xl-device() {
       bottom: 30px;
+    }
+
+    @include lg-device() {
+      bottom: 18px;
     }
 
     @include lg-down-device() {
@@ -6592,18 +6603,47 @@ header.style-2 {
       content: "";
       position: absolute;
       top: 0;
-      bottom: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 54.19%);
     }
 
     .resort-card-img {
+      img {
+        min-height: 505px;
+        object-fit: cover;
+
+        @include lg-device() {
+          min-height: 450px;
+        }
+
+        @include md-down-device() {
+          min-height: unset;
+        }
+      }
 
       .resort-deal-card-content {
         position: absolute;
         bottom: 0;
-        padding: 40px;
+        max-width: 330px;
+        width: 100%;
+        bottom: 40px;
+        left: 40px;
+        z-index: 5;
+
+        @include xxl-down-device() {
+          max-width: 290px;
+          left: 35px;
+        }
+
+        @include lg-device() {
+          max-width: 230px;
+        }
+
+        @include sm-down-device() {
+          left: 20px;
+        }
 
         h5 {
           color: var(--white-color);
@@ -6612,6 +6652,17 @@ header.style-2 {
           font-size: 26px;
           line-height: 40px;
           margin-bottom: 10px;
+
+          @include xxl-down-device() {
+            font-size: 23px;
+            line-height: 35px;
+          }
+
+          @include lg-device() {
+            font-size: 20px;
+            margin-bottom: 5px;
+            line-height: 30px;
+          }
         }
 
         a {
@@ -6620,9 +6671,140 @@ header.style-2 {
           font-weight: 600;
           font-size: 14px;
           line-height: 1;
-          display: block;
+          display: inline-block;
+          background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
+          background-size: 0px 1px;
+          background-repeat: no-repeat;
+          background-position: right 100%;
+          transition: background-size 0.75s;
+
+          &:hover {
+            background-size: 100% 1px;
+            background-position: 0% 100%;
+          }
+        }
+
+        &.three {
+          h5 {
+            margin-bottom: 0;
+            text-align: center;
+          }
         }
       }
     }
+
+    &.two {
+      margin-bottom: 23px;
+
+      @include lg-device() {
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        background: linear-gradient(359.81deg, rgba(0, 0, 0, 0.88) 0.7%, rgba(24, 24, 24, 0.591133) 50.5%, rgba(59, 59, 59, 0) 69.07%);
+      }
+
+      .resort-card-img {
+
+        img {
+          max-height: 241px;
+          width: 100%;
+          object-fit: cover;
+          min-height: 241px;
+
+          @include lg-device() {
+            max-height: 215px;
+            min-height: 215px;
+          }
+
+          @include sm-device() {
+            max-height: unset;
+            min-height: unset;
+          }
+        }
+      }
+
+      .resort-deal-card-content {
+        max-width: 202px;
+        width: 100%;
+        left: 30px;
+        bottom: 67px;
+
+        h6 {
+          color: var(--white-color);
+          font-family: var(--font-marcellus);
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 30px;
+          margin-bottom: 10px;
+
+          @include lg-device() {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 5px;
+          }
+        }
+
+        &.two {
+          right: 30px;
+          bottom: 40px;
+          left: unset;
+          text-align: end;
+        }
+      }
+
+      &.three {
+        margin-bottom: 0;
+
+        &::before {
+          background: linear-gradient(358.45deg, rgba(0, 0, 0, 0.88) -8.44%, rgba(13, 13, 13, 0.69) 34.41%, rgba(59, 59, 59, 0) 95.98%);
+        }
+      }
+    }
+
+    &.four {
+      &::before {
+        background: linear-gradient(359.17deg, #000000 1.87%, rgba(31, 31, 31, 0.470469) 45.13%, rgba(59, 59, 59, 0) 71.85%);
+      }
+    }
+  }
+}
+
+/*=====================================
+  20.Home2 About Section CSS
+========================================*/
+.home2-about-section {
+  background-color: #EDF5EF;
+  padding: 70px 0;
+  margin: 0 50px 120px 50px;
+  @include xxl-device() {
+    margin: 0 40px 120px 40px;
+  }
+
+  @include xxl-down-device() {
+    margin: 0 30px 120px 30px;
+  }
+
+  @include lg-device() {
+    margin-bottom: 90px;
+  }
+
+  @include lg-down-device() {
+    margin: 0 20px 80px 20px;
+    padding: 60px 0;
+  }
+
+  @include md-down-device() {
+    margin: 0 20px 60px 20px;
+    padding: 50px 0;
+  }
+
+  @include sm-down-device() {
+    margin: 0 10px 60px 10px;
+  }
+
+  .about-content-wrapper {
+    max-width: 659px;
+    width: 100%;
   }
 }

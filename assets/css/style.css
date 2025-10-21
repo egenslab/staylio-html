@@ -5633,6 +5633,7 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
   padding: 9px;
+  z-index: 2;
 }
 .home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price span,
 .home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price h3 {
@@ -5852,8 +5853,7 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 78px;
-  row-gap: 40px;
+  gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -5865,19 +5865,18 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
 }
 @media (max-width: 1399px) {
   .explore-endulge-section .explore-list {
-    gap: 50px;
-    row-gap: 35px;
+    gap: 40px;
   }
 }
 @media (max-width: 991px) {
   .explore-endulge-section .explore-list {
-    gap: 40px;
-    row-gap: 30px;
+    gap: 30px;
+    row-gap: 35px;
   }
 }
 @media (max-width: 767px) {
   .explore-endulge-section .explore-list {
-    gap: 20px;
+    gap: 15px;
     row-gap: 25px;
   }
 }
@@ -5897,24 +5896,28 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
 .explore-endulge-section .explore-list li a span {
   color: var(--title-color);
   font-family: var(--font-dmSans);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1;
   display: block;
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .explore-endulge-section .explore-list li a span {
-    font-size: 22px;
-  }
+  border: 1px solid #C3DDF8;
+  padding: 10px 14px;
 }
 @media (max-width: 1199px) {
   .explore-endulge-section .explore-list li a span {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
 @media (max-width: 991px) {
   .explore-endulge-section .explore-list li a span {
     font-size: 18px;
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .explore-endulge-section .explore-list li a span {
+    font-size: 16px;
+    padding: 8px 10px;
   }
 }
 @media (max-width: 576px) {
@@ -5979,6 +5982,11 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
     top: 40px;
   }
 }
+@media (max-width: 991px) {
+  .explore-endulge-section .vector-img1 {
+    top: 10px;
+  }
+}
 @media (max-width: 767px) {
   .explore-endulge-section .vector-img1 {
     display: none;
@@ -5998,6 +6006,11 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
 @media (min-width: 1200px) and (max-width: 1399px) {
   .explore-endulge-section .vector-img2 {
     bottom: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .explore-endulge-section .vector-img2 {
+    bottom: 18px;
   }
 }
 @media (max-width: 991px) {
@@ -6022,15 +6035,50 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 54.19%);
 }
+.resort-deal-section .resort-deal-card .resort-card-img img {
+  min-height: 505px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resort-deal-section .resort-deal-card .resort-card-img img {
+    min-height: 450px;
+  }
+}
+@media (max-width: 767px) {
+  .resort-deal-section .resort-deal-card .resort-card-img img {
+    min-height: unset;
+  }
+}
 .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content {
   position: absolute;
   bottom: 0;
-  padding: 40px;
+  max-width: 330px;
+  width: 100%;
+  bottom: 40px;
+  left: 40px;
+  z-index: 5;
+}
+@media (max-width: 1399px) {
+  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content {
+    max-width: 290px;
+    left: 35px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content {
+    max-width: 230px;
+  }
+}
+@media (max-width: 576px) {
+  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content {
+    left: 20px;
+  }
 }
 .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content h5 {
   color: var(--white-color);
@@ -6040,11 +6088,148 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   line-height: 40px;
   margin-bottom: 10px;
 }
+@media (max-width: 1399px) {
+  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content h5 {
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    line-height: 30px;
+  }
+}
 .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content a {
   color: var(--white-color);
   font-family: var(--font-dmSans);
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
-  display: block;
+  display: inline-block;
+  background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
+  background-position: right 100%;
+  transition: background-size 0.75s;
+}
+.resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content a:hover {
+  background-size: 100% 1px;
+  background-position: 0% 100%;
+}
+.resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content.three h5 {
+  margin-bottom: 0;
+  text-align: center;
+}
+.resort-deal-section .resort-deal-card.two {
+  margin-bottom: 23px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resort-deal-section .resort-deal-card.two {
+    margin-bottom: 20px;
+  }
+}
+.resort-deal-section .resort-deal-card.two::before {
+  background: linear-gradient(359.81deg, rgba(0, 0, 0, 0.88) 0.7%, rgba(24, 24, 24, 0.591133) 50.5%, rgba(59, 59, 59, 0) 69.07%);
+}
+.resort-deal-section .resort-deal-card.two .resort-card-img img {
+  max-height: 241px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 241px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resort-deal-section .resort-deal-card.two .resort-card-img img {
+    max-height: 215px;
+    min-height: 215px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .resort-deal-section .resort-deal-card.two .resort-card-img img {
+    max-height: unset;
+    min-height: unset;
+  }
+}
+.resort-deal-section .resort-deal-card.two .resort-deal-card-content {
+  max-width: 202px;
+  width: 100%;
+  left: 30px;
+  bottom: 67px;
+}
+.resort-deal-section .resort-deal-card.two .resort-deal-card-content h6 {
+  color: var(--white-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resort-deal-section .resort-deal-card.two .resort-deal-card-content h6 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 5px;
+  }
+}
+.resort-deal-section .resort-deal-card.two .resort-deal-card-content.two {
+  right: 30px;
+  bottom: 40px;
+  left: unset;
+  text-align: end;
+}
+.resort-deal-section .resort-deal-card.two.three {
+  margin-bottom: 0;
+}
+.resort-deal-section .resort-deal-card.two.three::before {
+  background: linear-gradient(358.45deg, rgba(0, 0, 0, 0.88) -8.44%, rgba(13, 13, 13, 0.69) 34.41%, rgba(59, 59, 59, 0) 95.98%);
+}
+.resort-deal-section .resort-deal-card.four::before {
+  background: linear-gradient(359.17deg, #000000 1.87%, rgba(31, 31, 31, 0.470469) 45.13%, rgba(59, 59, 59, 0) 71.85%);
+}
+
+/*=====================================
+  20.Home2 About Section CSS
+========================================*/
+.home2-about-section {
+  background-color: #EDF5EF;
+  padding: 70px 0;
+  margin: 0 50px 120px 50px;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .home2-about-section {
+    margin: 0 40px 120px 40px;
+  }
+}
+@media (max-width: 1399px) {
+  .home2-about-section {
+    margin: 0 30px 120px 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home2-about-section {
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 991px) {
+  .home2-about-section {
+    margin: 0 20px 80px 20px;
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767px) {
+  .home2-about-section {
+    margin: 0 20px 60px 20px;
+    padding: 50px 0;
+  }
+}
+@media (max-width: 576px) {
+  .home2-about-section {
+    margin: 0 10px 60px 10px;
+  }
+}
+.home2-about-section .about-content-wrapper {
+  max-width: 659px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
