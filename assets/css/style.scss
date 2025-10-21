@@ -1488,7 +1488,7 @@ blockquote {
     }
 
     @include sm-down-device() {
-      font-size: 25px;
+      font-size: 23px;
     }
   }
 
@@ -1506,7 +1506,7 @@ blockquote {
     }
 
     @include sm-down-device() {
-      font-size: 16px;
+      font-size: 15px;
     }
   }
 
@@ -3845,8 +3845,19 @@ header.style-2 {
         }
       }
     }
+
+    &.two {
+      .countdown-list {
+        .single-countdown {
+          .number {
+            padding-left: 0;
+          }
+        }
+      }
+    }
   }
 }
+
 
 /*=====================================
   06. Room And Suites Section CSS
@@ -6777,6 +6788,7 @@ header.style-2 {
   background-color: #EDF5EF;
   padding: 70px 0;
   margin: 0 50px 120px 50px;
+
   @include xxl-device() {
     margin: 0 40px 120px 40px;
   }
@@ -6806,5 +6818,117 @@ header.style-2 {
   .about-content-wrapper {
     max-width: 659px;
     width: 100%;
+
+    @include xl-device() {
+      max-width: 600px;
+    }
+
+    @include lg-down-device() {
+      max-width: unset;
+    }
+  }
+
+}
+.divider {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    line-height: 1;
+    width: 1px;
+    height: 48px;
+    background-color: #D9D9D9;
+
+    @include lg-down-device() {
+      display: none;
+    }
+  }
+
+  &:nth-child(1) {
+    &::before {
+      right: 10px;
+
+      @include xl-down-device() {
+        right: 0;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      right: -20px;
+
+      @include xl-down-device() {
+        right: 0;
+      }
+    }
+  }
+
+}
+.single-counter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @include lg-device() {
+    gap: 15px;
+  }
+
+  @include sm-down-device() {
+    gap: 15px;
+  }
+
+  .content {
+    .number {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+
+      @include sm-down-device() {
+        margin-bottom: 5px;
+      }
+
+      h2,
+      span {
+        color: var(--title-color);
+        font-family: var(--font-dmSans);
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 0;
+
+        @include xl-down-device() {
+          font-size: 35px;
+        }
+
+        @include sm-down-device() {
+          font-size: 30px;
+        }
+      }
+    }
+
+    span {
+      color: var(--title-color);
+      font-family: var(--font-dmSans);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+
+      @include lg-device() {
+        font-size: 15px;
+      }
+
+      @include sm-down-device() {
+        font-size: 15px;
+      }
+    }
   }
 }
+
+/*=====================================
+  21.Home2 About Section CSS
+========================================*/

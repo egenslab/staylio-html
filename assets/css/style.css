@@ -1336,7 +1336,7 @@ blockquote .quote {
 }
 @media (max-width: 576px) {
   .section-title h2 {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 .section-title p {
@@ -1355,7 +1355,7 @@ blockquote .quote {
 }
 @media (max-width: 576px) {
   .section-title p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .section-title.white h2 {
@@ -3391,6 +3391,9 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
   .home1-about-section .countdown-wrap .countdown-list .single-countdown span {
     font-size: 14px;
   }
+}
+.home1-about-section .countdown-wrap.two .countdown-list .single-countdown .number {
+  padding-left: 0;
 }
 
 /*=====================================
@@ -6232,4 +6235,118 @@ header.style-2 .mobile-logo-area .menu-close-btn:hover i {
 .home2-about-section .about-content-wrapper {
   max-width: 659px;
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .home2-about-section .about-content-wrapper {
+    max-width: 600px;
+  }
+}
+@media (max-width: 991px) {
+  .home2-about-section .about-content-wrapper {
+    max-width: unset;
+  }
+}
+
+.divider {
+  position: relative;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  line-height: 1;
+  width: 1px;
+  height: 48px;
+  background-color: #D9D9D9;
+}
+@media (max-width: 991px) {
+  .divider::before {
+    display: none;
+  }
+}
+.divider:nth-child(1)::before {
+  right: 10px;
+}
+@media (max-width: 1199px) {
+  .divider:nth-child(1)::before {
+    right: 0;
+  }
+}
+.divider:nth-child(3)::before {
+  right: -20px;
+}
+@media (max-width: 1199px) {
+  .divider:nth-child(3)::before {
+    right: 0;
+  }
+}
+
+.single-counter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .single-counter {
+    gap: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .single-counter {
+    gap: 15px;
+  }
+}
+.single-counter .content .number {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+@media (max-width: 576px) {
+  .single-counter .content .number {
+    margin-bottom: 5px;
+  }
+}
+.single-counter .content .number h2,
+.single-counter .content .number span {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 0;
+}
+@media (max-width: 1199px) {
+  .single-counter .content .number h2,
+  .single-counter .content .number span {
+    font-size: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .single-counter .content .number h2,
+  .single-counter .content .number span {
+    font-size: 30px;
+  }
+}
+.single-counter .content span {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .single-counter .content span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .single-counter .content span {
+    font-size: 15px;
+  }
+}
+
+/*=====================================
+  21.Home2 About Section CSS
+========================================*//*# sourceMappingURL=style.css.map */
