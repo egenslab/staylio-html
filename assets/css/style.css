@@ -1177,7 +1177,7 @@ blockquote .quote {
   color: var(--white-color);
 }
 .primary-btn2.black-bg span {
-  background-color: var(--primary-color1);
+  background-color: var(--primary-color2);
 }
 .primary-btn2.black-bg:hover {
   color: var(--white-color);
@@ -1187,6 +1187,16 @@ blockquote .quote {
 }
 .primary-btn2.three {
   background-color: var(--primary-color3);
+}
+.primary-btn2.three.black-bg {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.primary-btn2.three.black-bg span {
+  background-color: var(--primary-color3);
+}
+.primary-btn2.three.black-bg:hover {
+  color: var(--white-color);
 }
 
 .select {
@@ -2940,7 +2950,7 @@ header.style-3 {
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   header.style-3 {
-    padding: 15px 20px;
+    padding: 8px 20px;
   }
 }
 @media (max-width: 1199px) {
@@ -6576,6 +6586,7 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   display: block;
   border: 1px solid #C3DDF8;
   padding: 10px 14px;
+  transition: all 0.5s;
 }
 @media (max-width: 1199px) {
   .explore-endulge-section .explore-list li a span {
@@ -6598,6 +6609,9 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   .explore-endulge-section .explore-list li a span {
     font-size: 17px;
   }
+}
+.explore-endulge-section .explore-list li a span:hover {
+  border-color: var(--primary-color2);
 }
 .explore-endulge-section .explore-list li a .hover-img {
   rotate: -25deg;
@@ -7042,12 +7056,12 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
 }
 @media (max-width: 1199px) {
   .feature-section .section-title {
-    padding: 60px;
+    padding: 60px 0;
   }
 }
 @media (max-width: 991px) {
   .feature-section .section-title {
-    padding: 50px;
+    padding: 40px 0;
   }
 }
 .feature-section .feature-banner-section {
@@ -7189,8 +7203,23 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
 .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title .icon {
   margin-bottom: 8px;
 }
+@media (max-width: 576px) {
+  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title .icon {
+    margin-bottom: 5px;
+  }
+}
 .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title .icon svg {
   fill: var(--white-color);
+}
+@media (max-width: 767px) {
+  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title .icon svg {
+    width: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title .icon svg {
+    width: 30px;
+  }
 }
 .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 {
   margin-bottom: 0;
@@ -7269,7 +7298,7 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
 }
 @media (max-width: 576px) {
   .feature-section .feature-banner-section .feature-list .feature-single-item .card-content p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .feature-section .feature-banner-section .feature-list .feature-single-item:hover .card-content .catgory-and-title {
@@ -7278,4 +7307,444 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
 .feature-section .feature-banner-section .feature-list .feature-single-item:hover .card-content p {
   opacity: 1;
   transform: translateY(0);
+}
+
+/*=====================================
+  31. Home3 Banner Section CSS
+========================================*/
+.home3-banner-section {
+  overflow: hidden;
+  background-color: #FEFCF9;
+}
+.home3-banner-section .banner-content {
+  max-width: 750px;
+  width: 100%;
+  padding: 100px 0 100px 200px;
+}
+@media (max-width: 1699px) {
+  .home3-banner-section .banner-content {
+    padding: 100px 0 100px 120px;
+  }
+}
+@media (max-width: 1399px) {
+  .home3-banner-section .banner-content {
+    padding: 80px 0 80px 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home3-banner-section .banner-content {
+    padding: 70px 0 70px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .home3-banner-section .banner-content {
+    max-width: unset;
+    padding: 60px 0 60px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content {
+    padding: 40px 0 40px 10px;
+  }
+}
+.home3-banner-section .banner-content span {
+  color: #CB0404;
+  font-family: var(--font-dancing);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  .home3-banner-section .banner-content span {
+    font-size: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .home3-banner-section .banner-content span {
+    font-size: 21px;
+  }
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content span {
+    font-size: 17px;
+  }
+}
+.home3-banner-section .banner-content span svg {
+  fill: #CB0404;
+}
+.home3-banner-section .banner-content h1 {
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 73px;
+  margin-bottom: 15px;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .home3-banner-section .banner-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 1399px) {
+  .home3-banner-section .banner-content h1 {
+    font-size: 52px;
+    line-height: 65px;
+  }
+}
+@media (max-width: 1199px) {
+  .home3-banner-section .banner-content h1 {
+    font-size: 43px;
+    line-height: 56px;
+  }
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+.home3-banner-section .banner-content p {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1399px) {
+  .home3-banner-section .banner-content p {
+    font-size: 17px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home3-banner-section .banner-content p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content p {
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+.home3-banner-section .banner-content .facilites-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 61px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home3-banner-section .banner-content .facilites-list {
+    gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content .facilites-list {
+    gap: 15px;
+  }
+}
+.home3-banner-section .banner-content .facilites-list .single-list {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content .facilites-list .single-list {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+.home3-banner-section .banner-content .facilites-list .single-list .icon {
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content .facilites-list .single-list .icon {
+    margin-bottom: 5px;
+  }
+}
+.home3-banner-section .banner-content .facilites-list .single-list .icon svg {
+  fill: var(--title-color);
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content .facilites-list .single-list .icon svg {
+    width: 30px;
+  }
+}
+.home3-banner-section .banner-content .facilites-list .single-list::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 34px;
+  background-color: #D9D9D9;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30px;
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content .facilites-list .single-list::before {
+    display: none;
+  }
+}
+.home3-banner-section .banner-content .facilites-list .single-list:first-child::before {
+  content: unset;
+}
+.home3-banner-section .banner-content .primary-btn2 {
+  padding: 18px 42px;
+}
+@media (max-width: 767px) {
+  .home3-banner-section .banner-content .primary-btn2 {
+    padding: 17px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-content .primary-btn2 {
+    padding: 16px 26px;
+  }
+}
+.home3-banner-section .banner-img {
+  position: relative;
+}
+.home3-banner-section .banner-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1699px) {
+  .home3-banner-section .banner-img img {
+    min-height: 700px;
+  }
+}
+@media (max-width: 1199px) {
+  .home3-banner-section .banner-img img {
+    min-height: 650px;
+  }
+}
+@media (max-width: 991px) {
+  .home3-banner-section .banner-img img {
+    min-height: 590px;
+  }
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-img img {
+    min-height: 450px;
+  }
+}
+.home3-banner-section .banner-img .circular-text-wrapper {
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 991px) {
+  .home3-banner-section .banner-img .circular-text-wrapper {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-img .circular-text-wrapper {
+    top: 50%;
+  }
+}
+.home3-banner-section .banner-img .circular-text-wrapper .circular-text {
+  position: relative;
+  min-width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+}
+.home3-banner-section .banner-img .circular-text-wrapper .circular-text .center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.home3-banner-section .banner-img .circular-text-wrapper .circular-text .center-icon svg {
+  fill: var(--title-color);
+}
+@media (max-width: 576px) {
+  .home3-banner-section .banner-img .circular-text-wrapper .circular-text .center-icon svg {
+    width: 15px;
+  }
+}
+.home3-banner-section .banner-img .circular-text-wrapper .circular-text .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: textRotation 8s linear infinite;
+}
+.home3-banner-section .banner-img .circular-text-wrapper .circular-text .text span {
+  position: absolute;
+  left: 50%;
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-size: 14px;
+  font-weight: 600;
+  transform-origin: 0 60px;
+}
+@keyframes textRotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*=====================================
+  32. Home3 Service Section CSS
+========================================*/
+.home3-service-section .service-card {
+  position: relative;
+}
+.home3-service-section .service-card .service-content-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(359.17deg, #000000 9.71%, rgba(59, 59, 59, 0) 99.29%);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 35px;
+  z-index: 9;
+}
+@media (max-width: 1399px) {
+  .home3-service-section .service-card .service-content-wrap {
+    padding: 0 25px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home3-service-section .service-card .service-content-wrap {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 576px) {
+  .home3-service-section .service-card .service-content-wrap {
+    padding: 0 20px;
+  }
+}
+.home3-service-section .service-card .service-content-wrap .service-content {
+  transform: translateY(55px);
+  transition: transform 0.5s ease;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.home3-service-section .service-card .service-content-wrap .service-content .icon svg {
+  fill: var(--white-color);
+}
+.home3-service-section .service-card .service-content-wrap .service-content h3 {
+  color: var(--white-color);
+  margin-bottom: 0;
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .home3-service-section .service-card .service-content-wrap .service-content h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home3-service-section .service-card .service-content-wrap .service-content h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .home3-service-section .service-card .service-content-wrap .service-content h3 {
+    font-size: 24px;
+  }
+}
+.home3-service-section .service-card .service-content-wrap .hover-content {
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  transform-origin: bottom;
+  margin: 15px 0 30px 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home3-service-section .service-card .service-content-wrap .hover-content {
+    margin: 10px 0 20px 0;
+  }
+}
+.home3-service-section .service-card .service-content-wrap .hover-content p {
+  color: var(--white-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home3-service-section .service-card .service-content-wrap .hover-content p {
+    font-size: 15px;
+  }
+}
+.home3-service-section .service-card:hover .service-content-wrap .service-content {
+  transform: translateY(0);
+}
+.home3-service-section .service-card:hover .service-content-wrap .hover-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+.home3-service-section .pt-40 {
+  padding-top: 40px;
+}
+@media (max-width: 991px) {
+  .home3-service-section .pt-40 {
+    padding-top: 0;
+  }
+}
+
+/*=====================================
+  33. About Gallary Section CSS
+========================================*/
+.gallary-section .gallary-img-wrap img {
+  min-height: 228px;
+  max-height: 228px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 991px) {
+  .gallary-section .gallary-img-wrap img {
+    max-height: unset;
+    min-height: unset;
+  }
+}
+.gallary-section .gallary-img-wrap.two img {
+  min-height: 322px;
+  max-height: 322px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .gallary-section .gallary-img-wrap.two img {
+    min-height: 300px;
+    max-height: 300px;
+  }
+}
+@media (max-width: 991px) {
+  .gallary-section .gallary-img-wrap.two img {
+    max-height: unset;
+    min-height: unset;
+  }
+}
+.gallary-section .mb-24 {
+  margin-bottom: 24px;
 }/*# sourceMappingURL=style.css.map */

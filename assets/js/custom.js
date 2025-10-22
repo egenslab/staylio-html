@@ -816,6 +816,20 @@
     }
   });
 
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const text = document.querySelector(".circular-text .text");
+    if (text) {
+      text.innerHTML = text.innerText
+        .split("")
+        .map(
+          (char, i) =>
+            `<span style="transform:rotate(${i * 13}deg)">${char}</span>`
+        )
+        .join("");
+    }
+  });
+
   // Hover effect for service-list
   $(".item-list li").on("mouseenter", function () {
     var index = $(this).index();
