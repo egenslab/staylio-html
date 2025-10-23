@@ -159,7 +159,7 @@
       });
     }, 0);
   });
-  // Home2 Banner Slider
+  // Home Banner Slider
   var swiper = new Swiper(".home2-banner-slider", {
     slidesPerView: 1,
     speed: 1500,
@@ -197,7 +197,6 @@
       },
     },
   });
-  // Home1 Banner Slider
   var swiper = new Swiper(".home1-banner-slider", {
     slidesPerView: 1,
     speed: 1500,
@@ -217,6 +216,24 @@
     },
     pagination: {
       el: ".banner-pagination",
+      clickable: true,
+    },
+  });
+  var swiper = new Swiper(".home4-banner-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    // autoplay: {
+    //   delay: 3000,
+    //   pauseOnMouseEnter: true,
+    //   disableOnInteraction: false,
+    // },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    pagination: {
+      el: ".home4-banner-pagi",
       clickable: true,
     },
   });
@@ -281,10 +298,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 2500, // Autoplay duration in milliseconds
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".home2-testimonial-card-slider-next",
       prevEl: ".home2-testimonial-card-slider-prev",
