@@ -2940,6 +2940,28 @@ header.style-2 {
     padding: 15px 10px;
   }
 
+  &.sticky {
+    box-sizing: border-box;
+    background-color: var(--white-color);
+    box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
+    z-index: 999;
+    animation: smooth-header 0.65s linear;
+    position: fixed;
+
+    @keyframes smooth-header {
+      0% {
+        transform: translateY(-30px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+
+    }
+
+
+  }
+
   .header-logo {
     min-width: 120px;
 
@@ -4323,14 +4345,6 @@ header.style-3 {
       width: 100%;
     }
   }
-
-  &.two {
-    &.sticky {
-      position: unset;
-      animation: unset;
-      box-shadow: unset;
-    }
-  }
 }
 
 /*=====================================
@@ -5042,9 +5056,9 @@ header.style-3 {
 }
 
 /*=====================================
-  07. Signature Experiences Section CSS
+  07. Home1 Signature Experiences Section CSS
 ========================================*/
-.signature-experience {
+.home1-signature-experience {
   .research-card {
     border: 1px solid rgba(var(--title-color-opc), 0.07);
     border-radius: 5px;
@@ -5247,7 +5261,7 @@ header.style-3 {
 }
 
 /*=====================================
-  08. Dining And Cuisine Section CSS
+  08.Home1 Dining And Cuisine Section CSS
 ========================================*/
 @keyframes textRotation {
   to {
@@ -5255,7 +5269,7 @@ header.style-3 {
   }
 }
 
-.dining-and-cuisine-section {
+.home1-dining-and-cuisine-section {
   .dining-and-cuisine-wrapper {
     padding: 65px 0;
     position: relative;
@@ -6985,6 +6999,7 @@ header.style-3 {
                 background-color: #036066;
                 border: 1px solid #06565B;
                 transition: all 0.5s;
+
                 &:hover {
                   background-color: var(--black-color);
                   border: 1px solid var(--black-color);
@@ -7245,6 +7260,25 @@ header.style-3 {
             font-size: 17px;
           }
         }
+
+        h6 {
+          color: var(--white-color);
+          font-family: var(--font-marcellus);
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 1;
+          margin-bottom: 0;
+          display: flex;
+          align-items: end;
+
+          @include md-down-device() {
+            font-size: 14px;
+          }
+        }
+
+        &.two {
+          gap: 5px;
+        }
       }
     }
 
@@ -7278,6 +7312,19 @@ header.style-3 {
         }
       }
     }
+
+    &.three {
+      .room-and-suites-card-img {
+        .price {
+          background-color: #282828;
+
+          span,
+          h3 {
+            color: var(--white-color);
+          }
+        }
+      }
+    }
   }
 
   &.two {
@@ -7287,6 +7334,20 @@ header.style-3 {
           .nav-link {
             &.active {
               color: var(--primary-color3);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.three {
+    .section-title-and-nav-pills {
+      .nav-pills {
+        .nav-item {
+          .nav-link {
+            &.active {
+              color: var(--primary-color4);
             }
           }
         }
@@ -7363,9 +7424,9 @@ header.style-3 {
 }
 
 /*=====================================
-  17.Comfort And Signature Moments Section CSS
+  17.Home2 Comfort And Signature Moments Section CSS
 ========================================*/
-.comfort-and-signature-moment {
+.home2-comfort-and-signature-moment {
   overflow: hidden;
 
   .comfort-signature-card {
@@ -7651,10 +7712,10 @@ header.style-3 {
 }
 
 /*=====================================
-  19.Resort Deal Section CSS
+  19.Home2 Offer Section CSS
 ========================================*/
-.resort-deal-section {
-  .resort-deal-card {
+.home2-offer-section {
+  .offer-card {
     position: relative;
 
     &::before {
@@ -7664,10 +7725,10 @@ header.style-3 {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 54.19%);
+      background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 38.39%);
     }
 
-    .resort-card-img {
+    .offer-card-img {
       img {
         min-height: 505px;
         object-fit: cover;
@@ -7681,7 +7742,7 @@ header.style-3 {
         }
       }
 
-      .resort-deal-card-content {
+      .offer-card-content {
         position: absolute;
         bottom: 0;
         max-width: 330px;
@@ -7759,11 +7820,10 @@ header.style-3 {
       }
 
       &::before {
-        background: linear-gradient(359.81deg, rgba(0, 0, 0, 0.88) 0.7%, rgba(24, 24, 24, 0.591133) 50.5%, rgba(59, 59, 59, 0) 69.07%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0.65%, rgba(24, 24, 24, 0.591133) 42.51%, rgba(59, 59, 59, 0) 62.24%);
       }
 
-      .resort-card-img {
-
+      .offer-card-img {
         img {
           max-height: 241px;
           width: 100%;
@@ -7782,7 +7842,7 @@ header.style-3 {
         }
       }
 
-      .resort-deal-card-content {
+      .offer-card-content {
         max-width: 202px;
         width: 100%;
         left: 30px;
@@ -7815,14 +7875,14 @@ header.style-3 {
         margin-bottom: 0;
 
         &::before {
-          background: linear-gradient(358.45deg, rgba(0, 0, 0, 0.88) -8.44%, rgba(13, 13, 13, 0.69) 34.41%, rgba(59, 59, 59, 0) 95.98%);
+          background: linear-gradient(270deg, rgba(0, 0, 0, 0.88) -8.69%, rgba(13, 13, 13, 0.69) 35.8%, rgba(59, 59, 59, 0) 64%);
         }
       }
     }
 
     &.four {
       &::before {
-        background: linear-gradient(359.17deg, #000000 1.87%, rgba(31, 31, 31, 0.470469) 45.13%, rgba(59, 59, 59, 0) 71.85%);
+        background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 36.63%);
       }
     }
   }
@@ -8759,10 +8819,47 @@ header.style-3 {
   .mb-24 {
     margin-bottom: 24px;
   }
+
+  &.two {
+    background-color: #EEEDF5;
+    padding: 70px 0;
+
+    @include lg-down-device() {
+      padding: 60px 0;
+    }
+
+    @include md-down-device() {
+      padding: 50px 0;
+    }
+
+    .gallary-img-wrap {
+      img {
+        min-height: 322px;
+        max-height: 322px;
+
+        @include lg-down-device() {
+          max-height: unset;
+          min-height: unset;
+        }
+      }
+
+      &.two {
+        img {
+          min-height: 228px;
+          max-height: 228px;
+
+          @include lg-down-device() {
+            max-height: unset;
+            min-height: unset;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*=====================================
-  04. Home4 Banner Section CSS
+  34. Home4 Banner Section CSS
 ========================================*/
 .home4-banner-section {
   overflow: hidden;
@@ -9044,5 +9141,195 @@ header.style-3 {
 
   .swiper-paginations.two .swiper-pagination-bullet-active {
     background: var(--white-color);
+  }
+}
+
+/*=====================================
+  35. Offer Section CSS
+========================================*/
+.home4-offer-section {
+  .offer-card {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 39.82%);
+    }
+
+    .offer-card-img {
+      .offer-card-content {
+        position: absolute;
+        max-width: 390px;
+        width: 100%;
+        bottom: 40px;
+        left: 40px;
+        z-index: 5;
+
+        @include xxl-down-device() {
+          max-width: 290px;
+          left: 35px;
+        }
+
+        @include lg-device() {
+          max-width: 230px;
+        }
+
+        @include sm-down-device() {
+          left: 20px;
+        }
+
+        h3 {
+          color: var(--white-color);
+          font-family: var(--font-marcellus);
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 40px;
+          margin-bottom: 10px;
+
+          @include xxl-down-device() {
+            font-size: 23px;
+            line-height: 35px;
+          }
+
+          @include lg-device() {
+            font-size: 20px;
+            margin-bottom: 5px;
+            line-height: 30px;
+          }
+
+          @include md-down-device() {
+            font-size: 20px;
+          }
+
+          span {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 100%;
+              background: url(../img/home4/vector/offer-vector-img.png) no-repeat center center;
+              height: 7px;
+            }
+          }
+        }
+
+        .view-details {
+          color: var(--white-color);
+          font-family: var(--font-dmSans);
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 1;
+          display: inline-block;
+          background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
+          background-size: 0px 1px;
+          background-repeat: no-repeat;
+          background-position: right 100%;
+          transition: background-size 0.75s;
+
+          &:hover {
+            background-size: 100% 1px;
+            background-position: 0% 100%;
+          }
+        }
+      }
+    }
+
+    &.two {
+      &::before {
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.88) 1.85%, rgba(24, 24, 24, 0.591133) 31.03%, rgba(59, 59, 59, 0) 40.53%);
+      }
+
+      .offer-card-img {
+        img {
+          object-fit: cover;
+
+          @include lg-down-device() {
+            min-height: 280px;
+          }
+        }
+
+        .offer-card-content {
+          max-width: 204px;
+          width: 100%;
+          left: 30px;
+          bottom: 67px;
+
+          @include xl-device() {
+            bottom: 35px;
+          }
+
+          @include xl-down-device() {
+            bottom: 40px;
+            max-width: 230px;
+          }
+
+          @include md-down-device() {
+            bottom: 60px;
+          }
+
+          h6 {
+            color: var(--white-color);
+            font-family: var(--font-marcellus);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 10px;
+
+            @include xl-down-device() {
+              font-size: 18px;
+              line-height: 27px;
+            }
+
+            span {
+              border-bottom: 1px solid var(--white-color);
+            }
+          }
+
+          .primary-btn4 {
+            font-size: 14px;
+            padding: 11px 20px;
+
+            span {
+              background-color: var(--white-color);
+            }
+
+            &:hover {
+              color: var(--title-color);
+            }
+          }
+
+          &.two {
+            right: 30px;
+            bottom: 40px;
+            left: unset;
+            text-align: end;
+          }
+        }
+      }
+    }
+
+    &.three {
+      &::before {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.88) 1.85%, rgba(24, 24, 24, 0.591133) 31.03%, rgba(59, 59, 59, 0) 40.53%);
+      }
+    }
+  }
+
+  .mb-23 {
+    margin-bottom: 23px;
+
+    @include lg-device() {
+      margin-bottom: 17px;
+    }
   }
 }

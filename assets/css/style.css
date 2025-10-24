@@ -2572,6 +2572,22 @@ header.style-2 {
     padding: 15px 10px;
   }
 }
+header.style-2.sticky {
+  box-sizing: border-box;
+  background-color: var(--white-color);
+  box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
+  z-index: 999;
+  animation: smooth-header 0.65s linear;
+  position: fixed;
+}
+@keyframes smooth-header {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 header.style-2 .header-logo {
   min-width: 120px;
 }
@@ -3721,11 +3737,6 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
     width: 100%;
   }
 }
-header.style-3.two.sticky {
-  position: unset;
-  animation: unset;
-  box-shadow: unset;
-}
 
 /*=====================================
   04. Home1 Banner Section CSS
@@ -4387,14 +4398,14 @@ header.style-3.two.sticky {
 }
 
 /*=====================================
-  07. Signature Experiences Section CSS
+  07. Home1 Signature Experiences Section CSS
 ========================================*/
-.signature-experience .research-card {
+.home1-signature-experience .research-card {
   border: 1px solid rgba(var(--title-color-opc), 0.07);
   border-radius: 5px;
   background-color: #FFF6EB;
 }
-.signature-experience .research-card .research-image {
+.home1-signature-experience .research-card .research-image {
   min-width: 312px;
   max-width: 312px;
   height: 100%;
@@ -4405,23 +4416,23 @@ header.style-3.two.sticky {
   position: relative;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .signature-experience .research-card .research-image {
+  .home1-signature-experience .research-card .research-image {
     min-width: 270px;
     max-width: 270px;
   }
 }
 @media (max-width: 1199px) {
-  .signature-experience .research-card .research-image {
+  .home1-signature-experience .research-card .research-image {
     min-width: unset;
     max-width: unset;
   }
 }
-.signature-experience .research-card .research-image img {
+.home1-signature-experience .research-card .research-image img {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.5s;
 }
-.signature-experience .research-card .research-image::after {
+.home1-signature-experience .research-card .research-image::after {
   position: absolute;
   width: 200%;
   height: 0%;
@@ -4432,21 +4443,21 @@ header.style-3.two.sticky {
   content: "";
   z-index: 1;
 }
-.signature-experience .research-card .experience-content {
+.home1-signature-experience .research-card .experience-content {
   position: relative;
   padding: 10px 10px 10px 16px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .experience-content {
+  .home1-signature-experience .research-card .experience-content {
     padding: unset;
   }
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .experience-content {
+  .home1-signature-experience .research-card .experience-content {
     padding: 30px 15px;
   }
 }
-.signature-experience .research-card .experience-content h4 {
+.home1-signature-experience .research-card .experience-content h4 {
   margin-bottom: 20px;
   color: var(--title-color);
   font-family: var(--font-marcellus);
@@ -4455,23 +4466,23 @@ header.style-3.two.sticky {
   line-height: 36px;
 }
 @media (max-width: 1399px) {
-  .signature-experience .research-card .experience-content h4 {
+  .home1-signature-experience .research-card .experience-content h4 {
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 1.4;
   }
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .experience-content h4 {
+  .home1-signature-experience .research-card .experience-content h4 {
     font-size: 25px;
   }
 }
 @media (max-width: 767px) {
-  .signature-experience .research-card .experience-content h4 {
+  .home1-signature-experience .research-card .experience-content h4 {
     font-size: 22px;
   }
 }
-.signature-experience .research-card .experience-content p {
+.home1-signature-experience .research-card .experience-content p {
   color: var(--text-color);
   font-family: var(--font-dmSans);
   font-weight: 400;
@@ -4481,16 +4492,16 @@ header.style-3.two.sticky {
   margin-left: 20px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .experience-content p {
+  .home1-signature-experience .research-card .experience-content p {
     font-size: 14px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .signature-experience .research-card .experience-content p {
+  .home1-signature-experience .research-card .experience-content p {
     font-size: 14px;
   }
 }
-.signature-experience .research-card .experience-content p::after {
+.home1-signature-experience .research-card .experience-content p::after {
   content: "";
   position: absolute;
   transform: translateY(-50%);
@@ -4500,11 +4511,11 @@ header.style-3.two.sticky {
   background-color: #D9D9D9;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .experience-content p::after {
+  .home1-signature-experience .research-card .experience-content p::after {
     left: 0;
   }
 }
-.signature-experience .research-card .experience-content svg {
+.home1-signature-experience .research-card .experience-content svg {
   fill: var(--title-color);
   position: absolute;
   top: -10px;
@@ -4512,113 +4523,113 @@ header.style-3.two.sticky {
   transition: all 0.5s;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .signature-experience .research-card .experience-content svg {
+  .home1-signature-experience .research-card .experience-content svg {
     width: 35px;
     right: 10px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .experience-content svg {
+  .home1-signature-experience .research-card .experience-content svg {
     width: 30px;
     right: 10px;
   }
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .experience-content svg {
+  .home1-signature-experience .research-card .experience-content svg {
     top: 10px;
     right: 30px;
   }
 }
 @media (max-width: 767px) {
-  .signature-experience .research-card .experience-content svg {
+  .home1-signature-experience .research-card .experience-content svg {
     width: 30px;
     right: 15px;
   }
 }
-.signature-experience .research-card .experience-content.two {
+.home1-signature-experience .research-card .experience-content.two {
   padding: 10px 10px 10px 23px;
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .experience-content.two {
+  .home1-signature-experience .research-card .experience-content.two {
     padding: 30px 15px;
   }
 }
-.signature-experience .research-card .experience-content.two p::after {
+.home1-signature-experience .research-card .experience-content.two p::after {
   left: 30px;
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .experience-content.two p::after {
+  .home1-signature-experience .research-card .experience-content.two p::after {
     left: 20px;
   }
 }
-.signature-experience .research-card .experience-content.two svg {
+.home1-signature-experience .research-card .experience-content.two svg {
   right: 5px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .signature-experience .research-card .experience-content.two svg {
+  .home1-signature-experience .research-card .experience-content.two svg {
     right: -10px;
     width: 35px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .signature-experience .research-card .experience-content.two svg {
+  .home1-signature-experience .research-card .experience-content.two svg {
     width: 30px;
     right: -15px;
     top: -5px;
   }
 }
 @media (max-width: 991px) {
-  .signature-experience .research-card .experience-content.two svg {
+  .home1-signature-experience .research-card .experience-content.two svg {
     right: 25px;
   }
 }
 @media (max-width: 767px) {
-  .signature-experience .research-card .experience-content.two svg {
+  .home1-signature-experience .research-card .experience-content.two svg {
     width: 30px;
     right: 15px;
   }
 }
-.signature-experience .research-card:hover .research-image img {
+.home1-signature-experience .research-card:hover .research-image img {
   transform: scale(1.1);
 }
-.signature-experience .research-card:hover .research-image::after {
+.home1-signature-experience .research-card:hover .research-image::after {
   height: 250%;
   transition: all 600ms linear;
   background-color: transparent;
 }
-.signature-experience .research-card:hover svg {
+.home1-signature-experience .research-card:hover svg {
   fill: var(--primary-color1);
   animation: bounceIn 1.2s linear;
 }
 
 /*=====================================
-  08. Dining And Cuisine Section CSS
+  08.Home1 Dining And Cuisine Section CSS
 ========================================*/
 @keyframes textRotation {
   to {
     transform: rotate(360deg);
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper {
   padding: 65px 0;
   position: relative;
 }
 @media (max-width: 1199px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper {
     padding: 60px 30px;
   }
 }
 @media (max-width: 991px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper {
     padding: 40px 20px;
   }
 }
 @media (max-width: 576px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper {
     padding: 30px 15px;
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper::before {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper::before {
   content: "";
   position: absolute;
   background-color: #FAF1E6;
@@ -4630,15 +4641,15 @@ header.style-3.two.sticky {
   z-index: -1;
 }
 @media (max-width: 1199px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper::before {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper::before {
     width: 100%;
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-img-1 img {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-img-1 img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
   color: var(--text-color);
   font-family: var(--font-dmSans);
   font-weight: 400;
@@ -4647,37 +4658,37 @@ header.style-3.two.sticky {
   margin-bottom: 40px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
     margin-bottom: 30px;
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
     font-size: 18px;
     line-height: 31px;
     margin-bottom: 25px;
   }
 }
 @media (max-width: 576px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
     font-size: 17px;
     line-height: 29px;
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now {
   position: relative;
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list {
   padding-left: 40px;
   margin: 0;
 }
 @media (max-width: 576px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list {
     padding-left: 22px;
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
   margin-bottom: 25px;
   color: var(--title-color);
   font-family: var(--font-marcellus);
@@ -4688,46 +4699,46 @@ header.style-3.two.sticky {
   cursor: pointer;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
     margin-bottom: 20px;
     font-size: 24px;
   }
 }
 @media (max-width: 991px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
     font-size: 23px;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
     font-size: 21px;
   }
 }
 @media (max-width: 576px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li {
     font-size: 18px;
     margin-bottom: 17px;
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li:last-child {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li:last-child {
   margin-bottom: 0;
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li:hover {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li:hover {
   color: var(--primary-color1);
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper {
   position: absolute;
   right: 50px;
   bottom: 70px;
 }
 @media (max-width: 576px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper {
     right: 0;
     bottom: 40px;
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text {
   position: relative;
   min-width: 120px;
   height: 120px;
@@ -4736,28 +4747,28 @@ header.style-3.two.sticky {
   align-items: center;
   justify-content: center;
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .center-icon {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .center-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .center-icon svg {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .center-icon svg {
   fill: var(--title-color);
 }
 @media (max-width: 576px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .center-icon svg {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .center-icon svg {
     width: 15px;
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .text {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .text {
   position: absolute;
   width: 100%;
   height: 100%;
   animation: textRotation 8s linear infinite;
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .text span {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circular-text-wrapper .circular-text .text span {
   position: absolute;
   left: 50%;
   color: var(--title-color);
@@ -4766,13 +4777,13 @@ header.style-3.two.sticky {
   font-weight: 600;
   transform-origin: 0 60px;
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list {
   padding: 0;
   margin: 0;
   list-style: none;
   position: relative;
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li {
   position: absolute;
   display: block;
   width: 100%;
@@ -4783,26 +4794,26 @@ header.style-3.two.sticky {
   transition: 0.5s;
 }
 @media (max-width: 991px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li {
     top: 0;
     position: relative;
     display: none;
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li .dining-and-cuisine-img-2 img {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li .dining-and-cuisine-img-2 img {
   min-height: 284px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li.active {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li.active {
   opacity: 1;
 }
 @media (max-width: 991px) {
-  .dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li.active {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li.active {
     display: block;
   }
 }
-.dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li.show {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list li.show {
   opacity: 1;
   z-index: 9;
 }
@@ -6503,6 +6514,24 @@ header.style-3.two.sticky {
     font-size: 17px;
   }
 }
+.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price h6 {
+  color: var(--white-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 0;
+  display: flex;
+  align-items: end;
+}
+@media (max-width: 767px) {
+  .home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price h6 {
+    font-size: 14px;
+  }
+}
+.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price.two {
+  gap: 5px;
+}
 .home2-room-and-suites-section .room-suite-card:hover .room-and-suites-card-img img {
   transform: scale(1.1);
 }
@@ -6523,8 +6552,18 @@ header.style-3.two.sticky {
 .home2-room-and-suites-section .room-suite-card.two .room-and-suites-card-img .price h3 {
   color: var(--white-color);
 }
+.home2-room-and-suites-section .room-suite-card.three .room-and-suites-card-img .price {
+  background-color: #282828;
+}
+.home2-room-and-suites-section .room-suite-card.three .room-and-suites-card-img .price span,
+.home2-room-and-suites-section .room-suite-card.three .room-and-suites-card-img .price h3 {
+  color: var(--white-color);
+}
 .home2-room-and-suites-section.two .section-title-and-nav-pills .nav-pills .nav-item .nav-link.active {
   color: var(--primary-color3);
+}
+.home2-room-and-suites-section.three .section-title-and-nav-pills .nav-pills .nav-item .nav-link.active {
+  color: var(--primary-color4);
 }
 
 /*=====================================
@@ -6597,19 +6636,19 @@ header.style-3.two.sticky {
 }
 
 /*=====================================
-  17.Comfort And Signature Moments Section CSS
+  17.Home2 Comfort And Signature Moments Section CSS
 ========================================*/
-.comfort-and-signature-moment {
+.home2-comfort-and-signature-moment {
   overflow: hidden;
 }
-.comfort-and-signature-moment .comfort-signature-card {
+.home2-comfort-and-signature-moment .comfort-signature-card {
   position: relative;
 }
-.comfort-and-signature-moment .comfort-signature-card .comfort-signature-card-img {
+.home2-comfort-and-signature-moment .comfort-signature-card .comfort-signature-card-img {
   max-width: 392px;
   width: 100%;
 }
-.comfort-and-signature-moment .comfort-signature-card .info-content {
+.home2-comfort-and-signature-moment .comfort-signature-card .info-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -6617,7 +6656,7 @@ header.style-3.two.sticky {
   z-index: 1;
   transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.comfort-and-signature-moment .comfort-signature-card .info-content h6 {
+.home2-comfort-and-signature-moment .comfort-signature-card .info-content h6 {
   margin-bottom: 4px;
   line-height: 1;
   color: var(--title-color);
@@ -6629,7 +6668,7 @@ header.style-3.two.sticky {
           backdrop-filter: blur(30px);
   padding: 17px 21px;
 }
-.comfort-and-signature-moment .comfort-signature-card .info-content span {
+.home2-comfort-and-signature-moment .comfort-signature-card .info-content span {
   color: var(--title-color);
   font-family: var(--font-dmSans);
   font-size: 16px;
@@ -6641,14 +6680,14 @@ header.style-3.two.sticky {
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
 }
-.comfort-and-signature-moment .comfort-signature-card:hover .info-content {
+.home2-comfort-and-signature-moment .comfort-signature-card:hover .info-content {
   opacity: 1;
 }
-.comfort-and-signature-moment .comfort-signature-card.two {
+.home2-comfort-and-signature-moment .comfort-signature-card.two {
   margin-top: -40px;
 }
 @media (max-width: 991px) {
-  .comfort-and-signature-moment .comfort-signature-card.two {
+  .home2-comfort-and-signature-moment .comfort-signature-card.two {
     margin-top: unset;
   }
 }
@@ -6891,36 +6930,36 @@ header.style-3.two.sticky {
 }
 
 /*=====================================
-  19.Resort Deal Section CSS
+  19.Home2 Offer Section CSS
 ========================================*/
-.resort-deal-section .resort-deal-card {
+.home2-offer-section .offer-card {
   position: relative;
 }
-.resort-deal-section .resort-deal-card::before {
+.home2-offer-section .offer-card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 54.19%);
+  background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 38.39%);
 }
-.resort-deal-section .resort-deal-card .resort-card-img img {
+.home2-offer-section .offer-card .offer-card-img img {
   min-height: 505px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .resort-deal-section .resort-deal-card .resort-card-img img {
+  .home2-offer-section .offer-card .offer-card-img img {
     min-height: 450px;
   }
 }
 @media (max-width: 767px) {
-  .resort-deal-section .resort-deal-card .resort-card-img img {
+  .home2-offer-section .offer-card .offer-card-img img {
     min-height: unset;
   }
 }
-.resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content {
+.home2-offer-section .offer-card .offer-card-img .offer-card-content {
   position: absolute;
   bottom: 0;
   max-width: 330px;
@@ -6930,22 +6969,22 @@ header.style-3.two.sticky {
   z-index: 5;
 }
 @media (max-width: 1399px) {
-  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content {
+  .home2-offer-section .offer-card .offer-card-img .offer-card-content {
     max-width: 290px;
     left: 35px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content {
+  .home2-offer-section .offer-card .offer-card-img .offer-card-content {
     max-width: 230px;
   }
 }
 @media (max-width: 576px) {
-  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content {
+  .home2-offer-section .offer-card .offer-card-img .offer-card-content {
     left: 20px;
   }
 }
-.resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content h5 {
+.home2-offer-section .offer-card .offer-card-img .offer-card-content h5 {
   color: var(--white-color);
   font-family: var(--font-marcellus);
   font-weight: 400;
@@ -6954,19 +6993,19 @@ header.style-3.two.sticky {
   margin-bottom: 10px;
 }
 @media (max-width: 1399px) {
-  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content h5 {
+  .home2-offer-section .offer-card .offer-card-img .offer-card-content h5 {
     font-size: 23px;
     line-height: 35px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content h5 {
+  .home2-offer-section .offer-card .offer-card-img .offer-card-content h5 {
     font-size: 20px;
     margin-bottom: 5px;
     line-height: 30px;
   }
 }
-.resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content a {
+.home2-offer-section .offer-card .offer-card-img .offer-card-content a {
   color: var(--white-color);
   font-family: var(--font-dmSans);
   font-weight: 600;
@@ -6979,26 +7018,26 @@ header.style-3.two.sticky {
   background-position: right 100%;
   transition: background-size 0.75s;
 }
-.resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content a:hover {
+.home2-offer-section .offer-card .offer-card-img .offer-card-content a:hover {
   background-size: 100% 1px;
   background-position: 0% 100%;
 }
-.resort-deal-section .resort-deal-card .resort-card-img .resort-deal-card-content.three h5 {
+.home2-offer-section .offer-card .offer-card-img .offer-card-content.three h5 {
   margin-bottom: 0;
   text-align: center;
 }
-.resort-deal-section .resort-deal-card.two {
+.home2-offer-section .offer-card.two {
   margin-bottom: 23px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .resort-deal-section .resort-deal-card.two {
+  .home2-offer-section .offer-card.two {
     margin-bottom: 20px;
   }
 }
-.resort-deal-section .resort-deal-card.two::before {
-  background: linear-gradient(359.81deg, rgba(0, 0, 0, 0.88) 0.7%, rgba(24, 24, 24, 0.591133) 50.5%, rgba(59, 59, 59, 0) 69.07%);
+.home2-offer-section .offer-card.two::before {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0.65%, rgba(24, 24, 24, 0.591133) 42.51%, rgba(59, 59, 59, 0) 62.24%);
 }
-.resort-deal-section .resort-deal-card.two .resort-card-img img {
+.home2-offer-section .offer-card.two .offer-card-img img {
   max-height: 241px;
   width: 100%;
   -o-object-fit: cover;
@@ -7006,24 +7045,24 @@ header.style-3.two.sticky {
   min-height: 241px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .resort-deal-section .resort-deal-card.two .resort-card-img img {
+  .home2-offer-section .offer-card.two .offer-card-img img {
     max-height: 215px;
     min-height: 215px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .resort-deal-section .resort-deal-card.two .resort-card-img img {
+  .home2-offer-section .offer-card.two .offer-card-img img {
     max-height: unset;
     min-height: unset;
   }
 }
-.resort-deal-section .resort-deal-card.two .resort-deal-card-content {
+.home2-offer-section .offer-card.two .offer-card-content {
   max-width: 202px;
   width: 100%;
   left: 30px;
   bottom: 67px;
 }
-.resort-deal-section .resort-deal-card.two .resort-deal-card-content h6 {
+.home2-offer-section .offer-card.two .offer-card-content h6 {
   color: var(--white-color);
   font-family: var(--font-marcellus);
   font-weight: 400;
@@ -7032,26 +7071,26 @@ header.style-3.two.sticky {
   margin-bottom: 10px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .resort-deal-section .resort-deal-card.two .resort-deal-card-content h6 {
+  .home2-offer-section .offer-card.two .offer-card-content h6 {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 5px;
   }
 }
-.resort-deal-section .resort-deal-card.two .resort-deal-card-content.two {
+.home2-offer-section .offer-card.two .offer-card-content.two {
   right: 30px;
   bottom: 40px;
   left: unset;
   text-align: end;
 }
-.resort-deal-section .resort-deal-card.two.three {
+.home2-offer-section .offer-card.two.three {
   margin-bottom: 0;
 }
-.resort-deal-section .resort-deal-card.two.three::before {
-  background: linear-gradient(358.45deg, rgba(0, 0, 0, 0.88) -8.44%, rgba(13, 13, 13, 0.69) 34.41%, rgba(59, 59, 59, 0) 95.98%);
+.home2-offer-section .offer-card.two.three::before {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.88) -8.69%, rgba(13, 13, 13, 0.69) 35.8%, rgba(59, 59, 59, 0) 64%);
 }
-.resort-deal-section .resort-deal-card.four::before {
-  background: linear-gradient(359.17deg, #000000 1.87%, rgba(31, 31, 31, 0.470469) 45.13%, rgba(59, 59, 59, 0) 71.85%);
+.home2-offer-section .offer-card.four::before {
+  background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 36.63%);
 }
 
 /*=====================================
@@ -7982,9 +8021,43 @@ header.style-3.two.sticky {
 .gallary-section .mb-24 {
   margin-bottom: 24px;
 }
+.gallary-section.two {
+  background-color: #EEEDF5;
+  padding: 70px 0;
+}
+@media (max-width: 991px) {
+  .gallary-section.two {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767px) {
+  .gallary-section.two {
+    padding: 50px 0;
+  }
+}
+.gallary-section.two .gallary-img-wrap img {
+  min-height: 322px;
+  max-height: 322px;
+}
+@media (max-width: 991px) {
+  .gallary-section.two .gallary-img-wrap img {
+    max-height: unset;
+    min-height: unset;
+  }
+}
+.gallary-section.two .gallary-img-wrap.two img {
+  min-height: 228px;
+  max-height: 228px;
+}
+@media (max-width: 991px) {
+  .gallary-section.two .gallary-img-wrap.two img {
+    max-height: unset;
+    min-height: unset;
+  }
+}
 
 /*=====================================
-  04. Home4 Banner Section CSS
+  34. Home4 Banner Section CSS
 ========================================*/
 .home4-banner-section {
   overflow: hidden;
@@ -8271,4 +8344,179 @@ header.style-3.two.sticky {
 }
 .home4-banner-section .swiper-paginations.two .swiper-pagination-bullet-active {
   background: var(--white-color);
+}
+
+/*=====================================
+  35. Offer Section CSS
+========================================*/
+.home4-offer-section .offer-card {
+  position: relative;
+}
+.home4-offer-section .offer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 39.82%);
+}
+.home4-offer-section .offer-card .offer-card-img .offer-card-content {
+  position: absolute;
+  max-width: 390px;
+  width: 100%;
+  bottom: 40px;
+  left: 40px;
+  z-index: 5;
+}
+@media (max-width: 1399px) {
+  .home4-offer-section .offer-card .offer-card-img .offer-card-content {
+    max-width: 290px;
+    left: 35px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home4-offer-section .offer-card .offer-card-img .offer-card-content {
+    max-width: 230px;
+  }
+}
+@media (max-width: 576px) {
+  .home4-offer-section .offer-card .offer-card-img .offer-card-content {
+    left: 20px;
+  }
+}
+.home4-offer-section .offer-card .offer-card-img .offer-card-content h3 {
+  color: var(--white-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1399px) {
+  .home4-offer-section .offer-card .offer-card-img .offer-card-content h3 {
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home4-offer-section .offer-card .offer-card-img .offer-card-content h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .home4-offer-section .offer-card .offer-card-img .offer-card-content h3 {
+    font-size: 20px;
+  }
+}
+.home4-offer-section .offer-card .offer-card-img .offer-card-content h3 span {
+  position: relative;
+  display: inline-block;
+}
+.home4-offer-section .offer-card .offer-card-img .offer-card-content h3 span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: url(../img/home4/vector/offer-vector-img.png) no-repeat center center;
+  height: 7px;
+}
+.home4-offer-section .offer-card .offer-card-img .offer-card-content .view-details {
+  color: var(--white-color);
+  font-family: var(--font-dmSans);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
+  background-position: right 100%;
+  transition: background-size 0.75s;
+}
+.home4-offer-section .offer-card .offer-card-img .offer-card-content .view-details:hover {
+  background-size: 100% 1px;
+  background-position: 0% 100%;
+}
+.home4-offer-section .offer-card.two::before {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.88) 1.85%, rgba(24, 24, 24, 0.591133) 31.03%, rgba(59, 59, 59, 0) 40.53%);
+}
+.home4-offer-section .offer-card.two .offer-card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 991px) {
+  .home4-offer-section .offer-card.two .offer-card-img img {
+    min-height: 280px;
+  }
+}
+.home4-offer-section .offer-card.two .offer-card-img .offer-card-content {
+  max-width: 204px;
+  width: 100%;
+  left: 30px;
+  bottom: 67px;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .home4-offer-section .offer-card.two .offer-card-img .offer-card-content {
+    bottom: 35px;
+  }
+}
+@media (max-width: 1199px) {
+  .home4-offer-section .offer-card.two .offer-card-img .offer-card-content {
+    bottom: 40px;
+    max-width: 230px;
+  }
+}
+@media (max-width: 767px) {
+  .home4-offer-section .offer-card.two .offer-card-img .offer-card-content {
+    bottom: 60px;
+  }
+}
+.home4-offer-section .offer-card.two .offer-card-img .offer-card-content h6 {
+  color: var(--white-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  .home4-offer-section .offer-card.two .offer-card-img .offer-card-content h6 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.home4-offer-section .offer-card.two .offer-card-img .offer-card-content h6 span {
+  border-bottom: 1px solid var(--white-color);
+}
+.home4-offer-section .offer-card.two .offer-card-img .offer-card-content .primary-btn4 {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.home4-offer-section .offer-card.two .offer-card-img .offer-card-content .primary-btn4 span {
+  background-color: var(--white-color);
+}
+.home4-offer-section .offer-card.two .offer-card-img .offer-card-content .primary-btn4:hover {
+  color: var(--title-color);
+}
+.home4-offer-section .offer-card.two .offer-card-img .offer-card-content.two {
+  right: 30px;
+  bottom: 40px;
+  left: unset;
+  text-align: end;
+}
+.home4-offer-section .offer-card.three::before {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.88) 1.85%, rgba(24, 24, 24, 0.591133) 31.03%, rgba(59, 59, 59, 0) 40.53%);
+}
+.home4-offer-section .mb-23 {
+  margin-bottom: 23px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home4-offer-section .mb-23 {
+    margin-bottom: 17px;
+  }
 }/*# sourceMappingURL=style.css.map */

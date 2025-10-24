@@ -125,10 +125,10 @@
         slidesPerView: 1,
         speed: 1600,
         spaceBetween: 30,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
         pagination: {
           el: `.room-and-suites-card-pagi-${index}`,
           clickable: true,
@@ -223,11 +223,11 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 3000,
-    //   pauseOnMouseEnter: true,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     effect: "fade",
     fadeEffect: {
       crossFade: true,
