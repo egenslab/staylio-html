@@ -1415,7 +1415,7 @@ blockquote .quote {
 }
 @media (max-width: 576px) {
   .section-title span {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
 .section-title span svg {
@@ -7243,6 +7243,9 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
     right: 0;
   }
 }
+.divider.two::before {
+  background-color: rgba(199, 138, 59, 0.3215686275);
+}
 
 .single-counter {
   display: flex;
@@ -7287,7 +7290,7 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
 @media (max-width: 576px) {
   .single-counter .content .number h2,
   .single-counter .content .number span {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .single-counter .content span {
@@ -8519,4 +8522,245 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   .home4-offer-section .mb-23 {
     margin-bottom: 17px;
   }
+}
+
+/*=====================================
+  36. Why Stay With Us Section CSS
+========================================*/
+.why-stay-with-us .why-stay-with-us-img-wrap {
+  position: relative;
+  z-index: 1;
+}
+.why-stay-with-us .why-stay-with-us-img-wrap img {
+  margin-left: 20px;
+}
+@media (max-width: 1399px) {
+  .why-stay-with-us .why-stay-with-us-img-wrap img {
+    margin-left: 0;
+  }
+}
+.why-stay-with-us .why-stay-with-us-img-wrap::before {
+  content: "";
+  position: absolute;
+  width: 291px;
+  height: 190px;
+  border: 1px solid #D9D9D9;
+  z-index: -1;
+  top: -20px;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .why-stay-with-us .why-stay-with-us-img-wrap::before {
+    left: -20px;
+  }
+}
+@media (max-width: 1199px) {
+  .why-stay-with-us .why-stay-with-us-img-wrap::before {
+    display: none;
+  }
+}
+.why-stay-with-us .why-stay-with-us-img-wrap::after {
+  content: "";
+  position: absolute;
+  width: 291px;
+  height: 190px;
+  border: 1px solid #D9D9D9;
+  z-index: -1;
+  bottom: -20px;
+  right: -40px;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .why-stay-with-us .why-stay-with-us-img-wrap::after {
+    right: -20px;
+  }
+}
+@media (max-width: 1199px) {
+  .why-stay-with-us .why-stay-with-us-img-wrap::after {
+    display: none;
+  }
+}
+.why-stay-with-us .why-stay-with-us-content {
+  max-width: 600px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .why-stay-with-us .why-stay-with-us-content {
+    max-width: unset;
+  }
+}
+.why-stay-with-us .why-stay-with-us-content .section-title {
+  margin-bottom: 40px;
+}
+@media (max-width: 1199px) {
+  .why-stay-with-us .why-stay-with-us-content .section-title {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .why-stay-with-us .why-stay-with-us-content .section-title h2 {
+    line-height: 50px;
+  }
+}
+@media (max-width: 1199px) {
+  .why-stay-with-us .why-stay-with-us-content .section-title p {
+    font-size: 16px;
+  }
+}
+.why-stay-with-us .why-stay-with-us-content .why-stay-with-us-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  row-gap: 30px;
+  padding-left: 20px;
+}
+@media (max-width: 1199px) {
+  .why-stay-with-us .why-stay-with-us-content .why-stay-with-us-list {
+    gap: 50px;
+    row-gap: 25px;
+  }
+}
+.why-stay-with-us .why-stay-with-us-content .why-stay-with-us-list .single-list {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+}
+@media (max-width: 991px) {
+  .why-stay-with-us .why-stay-with-us-content .why-stay-with-us-list .single-list {
+    font-size: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .why-stay-with-us .why-stay-with-us-content .why-stay-with-us-list .single-list {
+    font-size: 16px;
+  }
+}
+.why-stay-with-us .mb-90 {
+  margin-bottom: 90px;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .why-stay-with-us .mb-90 {
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 1199px) {
+  .why-stay-with-us .mb-90 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .why-stay-with-us .mb-90 {
+    margin-bottom: 40px;
+  }
+}
+
+/*=====================================
+  94. Portfolio Carousal Page CSS
+========================================*/
+.modern-comfort-vibes-section {
+  padding: 350px 0 110px;
+  position: relative;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .modern-comfort-vibes-section {
+    padding: 220px 0 70px;
+  }
+}
+@media (max-width: 1399px) {
+  .modern-comfort-vibes-section {
+    padding: 170px 0 70px;
+  }
+}
+@media (max-width: 767px) {
+  .modern-comfort-vibes-section {
+    padding: 120px 0 70px;
+  }
+}
+.modern-comfort-vibes-section .comfort-vibes-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+    font-size: 44px;
+  }
+}
+@media (max-width: 1399px) {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+    font-size: 37px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+    font-size: 25px;
+  }
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-link {
+  color: #B7B6B6;
+  transition: all 0.3s ease-in-out;
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 40, 40, 0.4);
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item:first-child .comfort-vibes-img {
+  opacity: 1;
+  visibility: visible;
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item.active .comfort-vibes-link {
+  color: var(--white-color);
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item.active .comfort-vibes-img {
+  opacity: 1;
+  visibility: visible;
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

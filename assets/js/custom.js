@@ -959,4 +959,12 @@
     };
   });
 
+	$(".comfort-vibes-link").each(function () {
+		$(this)
+			.on("mouseover", function () {
+				$(".comfort-vibes-item").removeClass("active");
+				$(this).parent().addClass("active");
+			})
+	});
+
 })(jQuery);
