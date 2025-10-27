@@ -4946,11 +4946,7 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   font-size: 40px;
   line-height: 1;
   display: inline-block;
-  background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
-  background-size: 0px 1px;
-  background-repeat: no-repeat;
-  background-position: right 90%;
-  transition: background-size 0.75s;
+  transition: all 0.5s;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 a {
@@ -4973,8 +4969,7 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   }
 }
 .home1-event-section .single-event .event-content-and-title .event-info .event-content h2 a:hover {
-  background-size: 100% 1px;
-  background-position: 0% 90%;
+  color: var(--primary-color1);
 }
 .home1-event-section .single-event .event-content-and-title .event-info .event-content span {
   color: var(--text-color);
@@ -5433,49 +5428,39 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
 /*=====================================
   11. Enchanting Moments Section CSS
 ========================================*/
-.enchanting-moments-section {
+.home1-video-banner-section {
   position: relative;
 }
-.enchanting-moments-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(22, 14, 2, 0.42) 0%, rgba(22, 14, 2, 0.42) 67.86%);
-  z-index: 1;
-}
-.enchanting-moments-section .enchanting-video-area {
+.home1-video-banner-section .video-area {
   min-height: 805px;
   height: 805px;
   position: relative;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
-  .enchanting-moments-section .enchanting-video-area {
+  .home1-video-banner-section .video-area {
     min-height: 680px;
     height: 680px;
   }
 }
 @media (max-width: 1399px) {
-  .enchanting-moments-section .enchanting-video-area {
+  .home1-video-banner-section .video-area {
     min-height: 640px;
     height: 640px;
   }
 }
 @media (max-width: 1199px) {
-  .enchanting-moments-section .enchanting-video-area {
+  .home1-video-banner-section .video-area {
     min-height: 600px;
     height: 600px;
   }
 }
 @media (max-width: 767px) {
-  .enchanting-moments-section .enchanting-video-area {
+  .home1-video-banner-section .video-area {
     min-height: 580px;
     height: 580px;
   }
 }
-.enchanting-moments-section .enchanting-video-area video {
+.home1-video-banner-section .video-area video {
   width: 100%;
   min-height: 805px;
   height: 805px;
@@ -5483,42 +5468,30 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
      object-fit: cover;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
-  .enchanting-moments-section .enchanting-video-area video {
+  .home1-video-banner-section .video-area video {
     min-height: 680px;
     height: 680px;
   }
 }
 @media (max-width: 1399px) {
-  .enchanting-moments-section .enchanting-video-area video {
+  .home1-video-banner-section .video-area video {
     min-height: 640px;
     height: 640px;
   }
 }
 @media (max-width: 1199px) {
-  .enchanting-moments-section .enchanting-video-area video {
+  .home1-video-banner-section .video-area video {
     min-height: 600px;
     height: 600px;
   }
 }
 @media (max-width: 767px) {
-  .enchanting-moments-section .enchanting-video-area video {
+  .home1-video-banner-section .video-area video {
     min-height: 580px;
     height: 580px;
   }
 }
-.enchanting-moments-section .title-area {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 70px 0 137px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-.enchanting-moments-section .bottom-content {
+.home1-video-banner-section .bottom-content {
   background-color: rgba(88, 87, 87, 0.3215686275);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
@@ -5529,11 +5502,11 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   z-index: 3;
 }
 @media (max-width: 576px) {
-  .enchanting-moments-section .bottom-content {
+  .home1-video-banner-section .bottom-content {
     padding: 10px;
   }
 }
-.enchanting-moments-section .bottom-content span {
+.home1-video-banner-section .bottom-content span {
   display: flex;
   justify-content: center;
   color: var(--dark-text-color);
@@ -5546,24 +5519,24 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   margin-bottom: 0;
 }
 @media (max-width: 991px) {
-  .enchanting-moments-section .bottom-content span {
+  .home1-video-banner-section .bottom-content span {
     font-size: 19px;
   }
 }
 @media (max-width: 991px) {
-  .enchanting-moments-section .bottom-content span {
+  .home1-video-banner-section .bottom-content span {
     font-size: 18px;
   }
 }
 @media (max-width: 576px) {
-  .enchanting-moments-section .bottom-content span {
+  .home1-video-banner-section .bottom-content span {
     font-size: 17px;
     line-height: 1.3;
     flex-wrap: wrap;
     row-gap: 15px;
   }
 }
-.enchanting-moments-section .bottom-content span a {
+.home1-video-banner-section .bottom-content span a {
   color: var(--white-color);
   background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
   background-size: 0px 1px;
@@ -5571,7 +5544,7 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   background-position: right 100%;
   transition: background-size 0.75s;
 }
-.enchanting-moments-section .bottom-content span a:hover {
+.home1-video-banner-section .bottom-content span a:hover {
   background-size: 100% 1px;
   background-position: 0% 100%;
 }
@@ -5957,9 +5930,13 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 .footer-section .footer-top .contact-wrapper .social-area .social-list .single-social a svg {
   fill: var(--white-color);
+}
+.footer-section .footer-top .contact-wrapper .social-area .social-list .single-social a:hover {
+  background-color: var(--primary-color1);
 }
 .footer-section .footer-top .location-and-payment {
   padding-top: 80px;
@@ -6030,11 +6007,7 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  background: linear-gradient(to bottom, var(--footer-text) 0%, var(--footer-text) 98%);
-  background-size: 0px 1px;
-  background-repeat: no-repeat;
-  background-position: right 90%;
-  transition: background-size 0.75s;
+  transition: all 0.5s;
   margin-bottom: 20px;
 }
 @media (max-width: 1399px) {
@@ -6053,8 +6026,7 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
   }
 }
 .footer-section .footer-top .location-and-payment .title-and-location-area ul li .location:hover {
-  background-size: 100% 1px;
-  background-position: 0% 90%;
+  color: var(--primary-color1);
 }
 .footer-section .footer-top .location-and-payment .title-and-location-area ul li .content {
   line-height: 1;
@@ -8657,7 +8629,7 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
 }
 
 /*=====================================
-  94. Portfolio Carousal Page CSS
+  37. Modern Comfort Vibes CSS
 ========================================*/
 .modern-comfort-vibes-section {
   padding: 350px 0 110px;
