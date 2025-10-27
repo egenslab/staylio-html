@@ -1918,6 +1918,16 @@ blockquote {
           display: flex;
           align-items: center;
           gap: 7px;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 14px;
+            background-color: #D9D9D9;
+            left: -13%;
+          }
 
           svg {
             fill: var(--text-color);
@@ -1933,6 +1943,12 @@ blockquote {
 
             &:hover {
               color: var(--primary-color2);
+            }
+          }
+
+          &:first-child {
+            &::before {
+              content: unset;
             }
           }
         }
@@ -5924,7 +5940,7 @@ header.style-3 {
         li {
           i {
             color: #E4C40C;
-            font-size: 14px;
+            font-size: 12px;
           }
         }
       }
@@ -6333,6 +6349,16 @@ header.style-3 {
           }
         }
       }
+
+      &.two {
+        .date-and-event {
+          a {
+            &:hover {
+              color: var(--primary-color2);
+            }
+          }
+        }
+      }
     }
 
     &:hover {
@@ -6350,20 +6376,6 @@ header.style-3 {
     }
   }
 
-  &.two {
-    background-color: #F5F1ED;
-    padding: 70px 0;
-    position: relative;
-
-    @include lg-down-device() {
-      padding: 60px 0;
-    }
-
-    @include md-down-device() {
-      padding: 50px 0;
-    }
-  }
-
   .vector-img1 {
     position: absolute;
     right: 0;
@@ -6376,6 +6388,20 @@ header.style-3 {
 
     @include lg-down-device() {
       display: none;
+    }
+  }
+
+  &.two {
+    background-color: #F5F1ED;
+    padding: 70px 0;
+    position: relative;
+
+    @include lg-down-device() {
+      padding: 60px 0;
+    }
+
+    @include md-down-device() {
+      padding: 50px 0;
     }
   }
 }
@@ -6621,9 +6647,11 @@ header.style-3 {
               align-items: center;
               justify-content: center;
               transition: all 0.5s;
+
               svg {
                 fill: var(--white-color);
               }
+
               &:hover {
                 background-color: var(--primary-color1);
               }
@@ -6955,9 +6983,23 @@ header.style-3 {
 
       .contact-wrapper {
         .contact-area {
-          .icon {
-            background-color: #036066;
-            border: 1px solid #06565B;
+          .icon-and-contact {
+            .icon {
+              background-color: #036066;
+              border: 1px solid #06565B;
+            }
+
+            .contact {
+              ul {
+                li {
+                  a {
+                    &:hover {
+                      color: var(--primary-color2);
+                    }
+                  }
+                }
+              }
+            }
           }
         }
 
@@ -6986,6 +7028,26 @@ header.style-3 {
               .icon {
                 background-color: #036066;
                 border: 1px solid #06565B;
+              }
+
+              .location {
+                &:hover {
+                  color: var(--primary-color2);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-menu {
+      .footer-menu-wrap {
+        .footer-menu-list {
+          li {
+            a {
+              &:hover {
+                color: var(--primary-color2);
               }
             }
           }
@@ -7183,21 +7245,35 @@ header.style-3 {
       overflow: hidden;
       position: relative;
 
-      img {
-        object-fit: cover;
-        transition: all 0.5s;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(1.13deg, #000000 5.68%, rgba(109, 109, 109, 0) 44.54%);
       }
 
-      &::after {
-        position: absolute;
-        width: 200%;
-        height: 0%;
-        left: 50%;
-        top: 50%;
-        background-color: rgba(255, 255, 255, 0.3);
-        transform: translate(-50%, -50%) rotate(-45deg);
-        content: "";
-        z-index: 1;
+      .img-area {
+        object-fit: cover;
+        transition: all 0.5s;
+
+        img {
+          transition: all 0.5s;
+        }
+
+        &::after {
+          position: absolute;
+          width: 200%;
+          height: 0%;
+          left: 50%;
+          top: 50%;
+          background-color: rgba(255, 255, 255, 0.3);
+          transform: translate(-50%, -50%) rotate(-45deg);
+          content: "";
+          z-index: 1;
+        }
       }
 
       .price {
@@ -7253,15 +7329,18 @@ header.style-3 {
 
     &:hover {
       .room-and-suites-card-img {
-        img {
-          transform: scale(1.1);
+        .img-area {
+          img {
+            transform: scale(1.1);
+          }
+
+          &::after {
+            height: 250%;
+            transition: all 600ms linear;
+            background-color: transparent;
+          }
         }
 
-        &::after {
-          height: 250%;
-          transition: all 600ms linear;
-          background-color: transparent;
-        }
       }
     }
 
@@ -7687,17 +7766,19 @@ header.style-3 {
   .offer-card {
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 38.39%);
-    }
-
     .offer-card-img {
+      .offer-img {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 38.39%);
+        }
+      }
+
       img {
         min-height: 505px;
         object-fit: cover;
@@ -9412,9 +9493,11 @@ header.style-3 {
         font-weight: 500;
         font-size: 18px;
         line-height: 1;
+
         @include lg-down-device() {
           font-size: 17px;
         }
+
         @include md-down-device() {
           font-size: 16px;
         }
@@ -9428,9 +9511,11 @@ header.style-3 {
     @include xl-device() {
       margin-bottom: 75px;
     }
+
     @include xl-down-device() {
       margin-bottom: 50px;
     }
+
     @include md-down-device() {
       margin-bottom: 40px;
     }
@@ -9443,6 +9528,7 @@ header.style-3 {
 .modern-comfort-vibes-section {
   padding: 350px 0 110px;
   position: relative;
+
   @include xxl-device() {
     padding: 220px 0 70px;
   }
@@ -9466,6 +9552,7 @@ header.style-3 {
       font-size: 48px;
       line-height: 1.1;
       margin-bottom: 30px;
+
       @include xxl-device() {
         font-size: 44px;
       }
@@ -9539,6 +9626,7 @@ header.style-3 {
           visibility: visible;
         }
       }
+
       &:last-child {
         margin-bottom: 0;
       }
