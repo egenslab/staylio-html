@@ -82,10 +82,10 @@
     speed: 1500,
     spaceBetween: 24,
     loop: true,
-    autoplay: {
-      delay: 2500, // Autoplay duration in milliseconds
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".room-and-suites-slider-next",
       prevEl: ".room-and-suites-slider-prev",

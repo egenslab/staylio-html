@@ -926,7 +926,7 @@ body.tt-magic-cursor #magic-cursor {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  transition: all 0.6s;
+  transition: all 0.4s;
   display: inline-flex;
   align-items: center;
   line-height: 1;
@@ -939,7 +939,7 @@ body.tt-magic-cursor #magic-cursor {
   height: 0;
   border-radius: 36px;
   background-color: var(--title-color);
-  transition: all 0.6s;
+  transition: all 0.4s;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -985,7 +985,7 @@ body.tt-magic-cursor #magic-cursor {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  transition: all 0.6s;
+  transition: all 0.4s;
   display: inline-flex;
   align-items: center;
   line-height: 1;
@@ -998,7 +998,7 @@ body.tt-magic-cursor #magic-cursor {
   height: 0;
   border-radius: 36px;
   background-color: var(--title-color);
-  transition: all 0.6s;
+  transition: all 0.4s;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -1041,7 +1041,7 @@ body.tt-magic-cursor #magic-cursor {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  transition: all 0.6s;
+  transition: all 0.4s;
   display: inline-flex;
   align-items: center;
   line-height: 1;
@@ -1054,7 +1054,7 @@ body.tt-magic-cursor #magic-cursor {
   height: 0;
   border-radius: 36px;
   background-color: var(--title-color);
-  transition: all 0.6s;
+  transition: all 0.4s;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -1097,7 +1097,7 @@ body.tt-magic-cursor #magic-cursor {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  transition: all 0.6s;
+  transition: all 0.4s;
   display: inline-flex;
   align-items: center;
   line-height: 1;
@@ -1110,7 +1110,7 @@ body.tt-magic-cursor #magic-cursor {
   height: 0;
   border-radius: 36px;
   background-color: var(--title-color);
-  transition: all 0.6s;
+  transition: all 0.4s;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -4722,11 +4722,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   background-size: 100% 1px;
   background-position: 0% 90%;
 }
-.room-and-suites-section .room-and-suites-card:hover::after {
-  height: 250%;
-  transition: all 600ms linear;
-  background-color: transparent;
-}
 .room-and-suites-section .room-and-suites-card:hover .room-and-suites-content-wrap .room-and-suites-content {
   transform: translateY(0);
 }
@@ -4751,7 +4746,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 
 .room-and-suites-content {
-  transform: translateY(55px);
+  transform: translateY(80px);
   transition: transform 0.5s ease;
 }
 .room-and-suites-content h3 {
@@ -6428,6 +6423,12 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .footer-section .footer-top .contact-wrapper .social-area .social-list .single-social a:hover {
   background-color: var(--primary-color1);
 }
+.footer-section .footer-top .contact-wrapper.two .contact-area .icon-and-contact .contact ul li a:hover {
+  color: var(--primary-color3);
+}
+.footer-section .footer-top .contact-wrapper.two .social-area .social-list .single-social a:hover {
+  background-color: var(--primary-color3);
+}
 .footer-section .footer-top .location-and-payment {
   padding-top: 80px;
 }
@@ -6565,6 +6566,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   display: flex;
   justify-content: space-between;
 }
+.footer-section .footer-top .location-and-payment.two .title-and-location-area ul li .location:hover {
+  color: var(--primary-color3);
+}
 .footer-section .widget-title {
   margin-bottom: 40px;
 }
@@ -6694,6 +6698,12 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list:last-child::before {
   content: unset;
 }
+.footer-section .footer-menu.three .footer-menu-wrap .footer-menu-list .menu-list a:hover {
+  color: var(--primary-color4);
+}
+.footer-section .footer-menu.two .footer-menu-wrap .footer-menu-list .menu-list a:hover {
+  color: var(--primary-color3);
+}
 .footer-section .footer-bottom {
   padding: 20px 0;
   display: flex;
@@ -6752,12 +6762,22 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   background-color: var(--black-color);
   border: 1px solid var(--black-color);
 }
+.footer-section.two .footer-top .contact-wrapper.three .contact-area .icon-and-contact .contact ul li a:hover {
+  color: var(--primary-color4);
+}
+.footer-section.two .footer-top .contact-wrapper.three .social-area .social-list .single-social a:hover {
+  background-color: var(--primary-color4);
+  border: 1px solid var(--primary-color4);
+}
 .footer-section.two .footer-top .location-and-payment .title-and-location-area ul li .icon {
   background-color: #036066;
   border: 1px solid #06565B;
 }
 .footer-section.two .footer-top .location-and-payment .title-and-location-area ul li .location:hover {
   color: var(--primary-color2);
+}
+.footer-section.two .footer-top .location-and-payment.three .title-and-location-area ul li .location:hover {
+  color: var(--primary-color4);
 }
 .footer-section.two .footer-menu .footer-menu-wrap .footer-menu-list li a:hover {
   color: var(--primary-color2);
@@ -6934,15 +6954,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   display: block;
   overflow: hidden;
   position: relative;
-}
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(1.13deg, #000000 5.68%, rgba(109, 109, 109, 0) 44.54%);
 }
 .home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .img-area {
   -o-object-fit: cover;
@@ -7982,44 +7993,33 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 {
   margin-bottom: 0;
-}
-.feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 a {
   font-family: var(--font-marcellus);
   font-weight: 400;
   font-size: 30px;
   line-height: 45px;
   color: var(--white-color);
-  transition: 0.35s;
-  background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
-  background-size: 0px 1px;
-  background-repeat: no-repeat;
-  background-position: left 90%;
-  transition: background-size 0.75s;
+  transition: all 0.5s;
 }
 @media (max-width: 1399px) {
-  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 a {
+  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 {
     font-size: 28px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 a {
+  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 {
     font-size: 26px;
   }
 }
 @media (max-width: 1199px) {
-  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 a {
+  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 {
     font-size: 25px;
   }
 }
 @media (max-width: 991px) {
-  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 a {
+  .feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 {
     font-size: 23px;
     line-height: 40px;
   }
-}
-.feature-section .feature-banner-section .feature-list .feature-single-item .card-content .catgory-and-title h3 a:hover {
-  background-size: 100% 1px;
-  background-position: 0% 90%;
 }
 .feature-section .feature-banner-section .feature-list .feature-single-item .card-content p {
   margin-bottom: 0;
@@ -8062,6 +8062,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .feature-section .feature-banner-section .feature-list .feature-single-item:hover .card-content .catgory-and-title {
   transform: translateY(0);
+}
+.feature-section .feature-banner-section .feature-list .feature-single-item:hover .card-content .catgory-and-title h3 {
+  color: var(--primary-color3);
 }
 .feature-section .feature-banner-section .feature-list .feature-single-item:hover .card-content p {
   opacity: 1;
@@ -8481,6 +8484,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   max-height: 228px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 @media (max-width: 991px) {
   .gallary-section .gallary-img-wrap img {
@@ -9167,41 +9171,51 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   list-style: none;
 }
 .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+    margin-bottom: 15px;
+  }
+}
+.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-link {
+  margin-bottom: 0;
+  color: #B7B6B6;
+  transition: all 0.3s ease-in-out;
   font-family: var(--font-marcellus);
   font-weight: 400;
   font-size: 48px;
   line-height: 1.1;
-  margin-bottom: 30px;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
-  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-link {
     font-size: 44px;
   }
 }
 @media (max-width: 1399px) {
-  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-link {
     font-size: 40px;
   }
 }
 @media (max-width: 1199px) {
-  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-link {
     font-size: 37px;
-    margin-bottom: 20px;
   }
 }
 @media (max-width: 991px) {
-  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-link {
     font-size: 30px;
   }
 }
 @media (max-width: 576px) {
-  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item {
+  .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-link {
     font-size: 25px;
   }
-}
-.modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-link {
-  color: #B7B6B6;
-  transition: all 0.3s ease-in-out;
 }
 .modern-comfort-vibes-section .comfort-vibes-list .comfort-vibes-item .comfort-vibes-img {
   position: absolute;
