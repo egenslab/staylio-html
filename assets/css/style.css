@@ -1148,14 +1148,13 @@ body.tt-magic-cursor #magic-cursor {
 
 .nice-select {
   width: 100%;
-  background: #F0F0F0;
+  background: var(--white-color);
   color: var(--title-color);
   font-family: var(--font-dmSans);
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px 20px;
-  height: 60px;
-  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px 20px;
+  height: 55px;
   border: 1px solid #F0F0F0;
   transition: all 0.3s;
 }
@@ -1169,41 +1168,35 @@ body.tt-magic-cursor #magic-cursor {
   .nice-select {
     padding: 10px 15px;
     font-size: 15px;
-    height: 55px;
+    height: 50px;
     line-height: 55px;
   }
 }
 @media (max-width: 991px) {
   .nice-select {
-    height: 52px;
+    height: 47px;
     line-height: 52px;
   }
 }
 @media (max-width: 576px) {
   .nice-select {
     font-size: 15px;
-    border-radius: 5px;
   }
 }
 .nice-select span {
   font-family: var(--font-dmSans);
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 14px;
   color: var(--text-color);
 }
 .nice-select:focus {
-  border-color: var(--primary-color2);
+  border-color: var(--primary-color1);
   background-color: var(--white-color);
-}
-.nice-select.open {
-  border-radius: 10px 10px 0 0;
 }
 .nice-select.open::after {
   transform: rotate(-180deg);
 }
 .nice-select:after {
-  border-bottom: none;
-  border-right: none;
   content: "";
   display: block;
   height: 7px;
@@ -1220,7 +1213,6 @@ body.tt-magic-cursor #magic-cursor {
   width: 100%;
   background: var(--white-color);
   margin-top: 5px;
-  border-radius: 0 0 5px 5px;
 }
 .nice-select .list .option {
   color: var(--text-color);
@@ -4206,6 +4198,144 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   }
 }
 
+.job-form-modal .modal-dialog {
+  max-width: 872px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .job-form-modal .modal-dialog {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .job-form-modal .modal-dialog {
+    width: auto;
+  }
+}
+.job-form-modal .modal-dialog .modal-content {
+  margin-top: 50px;
+  border: none;
+  position: relative;
+  border-radius: unset;
+  background-color: #F5F6FC;
+}
+.job-form-modal .modal-dialog .modal-content .modal-close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F9F8;
+  border: 1px solid var(--border-color2);
+  transition: 0.5s;
+  z-index: 5;
+}
+.job-form-modal .modal-dialog .modal-content .modal-close i {
+  color: var(--title-color);
+  font-size: 14px;
+  transition: 0.5s;
+}
+.job-form-modal .modal-dialog .modal-content .modal-close i::before {
+  font-weight: 700 !important;
+}
+.job-form-modal .modal-dialog .modal-content .modal-close:hover {
+  background-color: #FF2E00;
+}
+.job-form-modal .modal-dialog .modal-content .modal-close:hover i {
+  color: var(--white-color);
+}
+@media (max-width: 991px) {
+  .job-form-modal .modal-dialog .modal-content .modal-close {
+    top: 15px;
+    right: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .job-form-modal .modal-dialog .modal-content .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+  }
+}
+.job-form-modal .modal-dialog .modal-content .modal-body {
+  padding: 60px;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body .mb-30 {
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body .mb-30 {
+    margin-bottom: 20px;
+  }
+}
+.job-form-modal .modal-dialog .modal-content .modal-body h3 {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .single-info .form-inner2 .form-check .form-check-input:checked {
+  background-color: var(--primary-color2);
+  border-color: var(--primary-color2);
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .single-info .form-inner input:focus {
+  border-color: var(--primary-color2);
+  background-color: var(--white-color);
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .form-check {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body form .form-check {
+    gap: 10px;
+  }
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 1px solid var(--borders-color);
+  margin-bottom: 2px;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input:focus {
+  box-shadow: unset;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input:checked {
+  background: red;
+  border-color: var(--primary-color1);
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input:checked + .form-check-label {
+  color: var(--title-color);
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input:checked + .form-check-label svg {
+  fill: var(--title-color);
+}
+.job-form-modal .modal-dialog .modal-content .modal-body .btn-area {
+  display: flex;
+  justify-content: center;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1 {
+  min-width: 344px;
+  justify-content: center;
+  padding: 20px 35px;
+}
+
 /*=====================================
   04. Home1 Banner Section CSS
 ========================================*/
@@ -6423,12 +6553,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .footer-section .footer-top .contact-wrapper .social-area .social-list .single-social a:hover {
   background-color: var(--primary-color1);
 }
-.footer-section .footer-top .contact-wrapper.two .contact-area .icon-and-contact .contact ul li a:hover {
-  color: var(--primary-color3);
-}
-.footer-section .footer-top .contact-wrapper.two .social-area .social-list .single-social a:hover {
-  background-color: var(--primary-color3);
-}
 .footer-section .footer-top .location-and-payment {
   padding-top: 80px;
 }
@@ -6566,9 +6690,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   display: flex;
   justify-content: space-between;
 }
-.footer-section .footer-top .location-and-payment.two .title-and-location-area ul li .location:hover {
-  color: var(--primary-color3);
-}
 .footer-section .widget-title {
   margin-bottom: 40px;
 }
@@ -6698,12 +6819,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list:last-child::before {
   content: unset;
 }
-.footer-section .footer-menu.three .footer-menu-wrap .footer-menu-list .menu-list a:hover {
-  color: var(--primary-color4);
-}
-.footer-section .footer-menu.two .footer-menu-wrap .footer-menu-list .menu-list a:hover {
-  color: var(--primary-color3);
-}
 .footer-section .footer-bottom {
   padding: 20px 0;
   display: flex;
@@ -6762,13 +6877,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   background-color: var(--black-color);
   border: 1px solid var(--black-color);
 }
-.footer-section.two .footer-top .contact-wrapper.three .contact-area .icon-and-contact .contact ul li a:hover {
-  color: var(--primary-color4);
-}
-.footer-section.two .footer-top .contact-wrapper.three .social-area .social-list .single-social a:hover {
-  background-color: var(--primary-color4);
-  border: 1px solid var(--primary-color4);
-}
 .footer-section.two .footer-top .location-and-payment .title-and-location-area ul li .icon {
   background-color: #036066;
   border: 1px solid #06565B;
@@ -6776,11 +6884,34 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .footer-section.two .footer-top .location-and-payment .title-and-location-area ul li .location:hover {
   color: var(--primary-color2);
 }
-.footer-section.two .footer-top .location-and-payment.three .title-and-location-area ul li .location:hover {
-  color: var(--primary-color4);
-}
 .footer-section.two .footer-menu .footer-menu-wrap .footer-menu-list li a:hover {
   color: var(--primary-color2);
+}
+.footer-section.hostel-hover-color .footer-top .contact-wrapper .contact-area .icon-and-contact .contact ul li a:hover {
+  color: var(--primary-color4);
+}
+.footer-section.hostel-hover-color .footer-top .contact-wrapper .social-area .social-list .single-social a:hover {
+  background-color: var(--primary-color4);
+  border: 1px solid var(--primary-color4);
+}
+.footer-section.hostel-hover-color .footer-top .location-and-payment .title-and-location-area ul li .location:hover {
+  color: var(--primary-color4);
+}
+.footer-section.hostel-hover-color .footer-menu .footer-menu-wrap .footer-menu-list .menu-list a:hover {
+  color: var(--primary-color4);
+}
+.footer-section.apartment-hover-color .footer-top .contact-wrapper .contact-area .icon-and-contact .contact ul li a:hover {
+  color: var(--primary-color3);
+}
+.footer-section.apartment-hover-color .footer-top .contact-wrapper .social-area .social-list .single-social a:hover {
+  background-color: var(--primary-color3);
+  border: 1px solid var(--primary-color3);
+}
+.footer-section.apartment-hover-color .footer-top .location-and-payment .title-and-location-area ul li .location:hover {
+  color: var(--primary-color3);
+}
+.footer-section.apartment-hover-color .footer-menu .footer-menu-wrap .footer-menu-list .menu-list a:hover {
+  color: var(--primary-color3);
 }
 
 /*=====================================

@@ -1333,14 +1333,13 @@ body.tt-magic-cursor #magic-cursor {
 
 .nice-select {
   width: 100%;
-  background: #F0F0F0;
+  background: var(--white-color);
   color: var(--title-color);
   font-family: var(--font-dmSans);
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px 20px;
-  height: 60px;
-  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px 20px;
+  height: 55px;
   border: 1px solid #F0F0F0;
   transition: all 0.3s;
 
@@ -1352,34 +1351,32 @@ body.tt-magic-cursor #magic-cursor {
   @include lg-device() {
     padding: 10px 15px;
     font-size: 15px;
-    height: 55px;
+    height: 50px;
     line-height: 55px;
   }
 
   @include lg-down-device() {
-    height: 52px;
+    height: 47px;
     line-height: 52px;
   }
 
   @include sm-down-device() {
     font-size: 15px;
-    border-radius: 5px;
   }
 
   span {
     font-family: var(--font-dmSans);
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
     color: var(--text-color);
   }
 
   &:focus {
-    border-color: var(--primary-color2);
+    border-color: var(--primary-color1);
     background-color: var(--white-color);
   }
 
   &.open {
-    border-radius: 10px 10px 0 0;
 
     &::after {
       transform: rotate(-180deg);
@@ -1387,8 +1384,6 @@ body.tt-magic-cursor #magic-cursor {
   }
 
   &:after {
-    border-bottom: none;
-    border-right: none;
     content: '';
     display: block;
     height: 7px;
@@ -1406,7 +1401,6 @@ body.tt-magic-cursor #magic-cursor {
     width: 100%;
     background: var(--white-color);
     margin-top: 5px;
-    border-radius: 0 0 5px 5px;
 
     .option {
       color: var(--text-color);
@@ -4952,6 +4946,175 @@ header.style-4 {
   }
 }
 
+// Modal Style
+.job-form-modal {
+  .modal-dialog {
+    max-width: 872px;
+    width: 100%;
+
+    @include lg-down-device() {
+      max-width: 720px;
+    }
+
+    @include sm-down-device() {
+      width: auto;
+    }
+
+    .modal-content {
+      margin-top: 50px;
+      border: none;
+      position: relative;
+      border-radius: unset;
+      background-color: #F5F6FC;
+
+      .modal-close {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F7F9F8;
+        border: 1px solid var(--border-color2);
+        transition: 0.5s;
+        z-index: 5;
+
+        i {
+          color: var(--title-color);
+          font-size: 14px;
+          transition: 0.5s;
+
+          &::before {
+            font-weight: 700 !important;
+          }
+        }
+
+        &:hover {
+          background-color: #FF2E00;
+
+          i {
+            color: var(--white-color);
+          }
+        }
+
+        @include lg-down-device() {
+          top: 15px;
+          right: 20px;
+        }
+
+        @include sm-down-device() {
+          top: 10px;
+          right: 10px;
+          width: 28px;
+          height: 28px;
+        }
+      }
+
+      .modal-body {
+        padding: 60px;
+
+        .mb-30 {
+          margin-bottom: 30px;
+
+          @include lg-down-device() {
+            margin-bottom: 20px;
+          }
+        }
+
+        h3 {
+          color: var(--title-color);
+          font-family: var(--font-dmSans);
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 1;
+          margin-bottom: 40px;
+        }
+
+        form {
+          .single-info {
+
+            .form-inner2 {
+              .form-check {
+                .form-check-input {
+                  &:checked {
+                    background-color: var(--primary-color2);
+                    border-color: var(--primary-color2);
+                  }
+                }
+              }
+            }
+
+            .form-inner {
+              input {
+                &:focus {
+                  border-color: var(--primary-color2);
+                  background-color: var(--white-color);
+                }
+              }
+            }
+          }
+
+          .form-check {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 0;
+
+            @include md-down-device() {
+              gap: 10px;
+            }
+
+            .form-check-input {
+              width: 18px;
+              height: 18px;
+              border-radius: 5px;
+              border: 1px solid var(--borders-color);
+              margin-bottom: 2px;
+
+              &:focus {
+                box-shadow: unset;
+              }
+
+              &:checked {
+                background: red;
+                border-color: var(--primary-color1);
+              }
+
+              &:checked+.form-check-label {
+                color: var(--title-color);
+
+                svg {
+                  fill: var(--title-color);
+                }
+              }
+            }
+          }
+        }
+
+        .btn-area {
+          display: flex;
+          justify-content: center;
+
+          .primary-btn1 {
+            min-width: 344px;
+            justify-content: center;
+            padding: 20px 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
 /*=====================================
   04. Home1 Banner Section CSS
 ========================================*/
@@ -7259,36 +7422,6 @@ header.style-4 {
           }
         }
       }
-
-      &.two {
-        .contact-area {
-          .icon-and-contact {
-            .contact {
-              ul {
-                li {
-                  a {
-                    &:hover {
-                      color: var(--primary-color3);
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .social-area {
-          .social-list {
-            .single-social {
-              a {
-                &:hover {
-                  background-color: var(--primary-color3);
-                }
-              }
-            }
-          }
-        }
-      }
     }
 
     .location-and-payment {
@@ -7431,20 +7564,6 @@ header.style-4 {
           justify-content: space-between;
         }
       }
-
-      &.two {
-        .title-and-location-area {
-          ul {
-            li {
-              .location {
-                &:hover {
-                  color: var(--primary-color3);
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
 
@@ -7574,33 +7693,6 @@ header.style-4 {
         }
       }
     }
-
-    &.three {
-      .footer-menu-wrap {
-        .footer-menu-list {
-          .menu-list {
-            a {
-              &:hover {
-                color: var(--primary-color4);
-              }
-            }
-          }
-        }
-      }
-    }
-    &.two {
-      .footer-menu-wrap {
-        .footer-menu-list {
-          .menu-list {
-            a {
-              &:hover {
-                color: var(--primary-color3);
-              }
-            }
-          }
-        }
-      }
-    }
   }
 
   .footer-bottom {
@@ -7690,37 +7782,6 @@ header.style-4 {
             }
           }
         }
-
-        &.three {
-          .contact-area {
-            .icon-and-contact {
-              .contact {
-                ul {
-                  li {
-                    a {
-                      &:hover {
-                        color: var(--primary-color4);
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-
-          .social-area {
-            .social-list {
-              .single-social {
-                a {
-                  &:hover {
-                    background-color: var(--primary-color4);
-                    border: 1px solid var(--primary-color4);
-                  }
-                }
-              }
-            }
-          }
-        }
       }
 
       .location-and-payment {
@@ -7740,15 +7801,64 @@ header.style-4 {
             }
           }
         }
+      }
+    }
 
-        &.three {
-          .title-and-location-area {
-            ul {
-              li {
-                .location {
-                  &:hover {
-                    color: var(--primary-color4);
+    .footer-menu {
+      .footer-menu-wrap {
+        .footer-menu-list {
+          li {
+            a {
+              &:hover {
+                color: var(--primary-color2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.hostel-hover-color {
+    .footer-top {
+      .contact-wrapper {
+        .contact-area {
+          .icon-and-contact {
+            .contact {
+              ul {
+                li {
+                  a {
+                    &:hover {
+                      color: var(--primary-color4);
+                    }
                   }
+                }
+              }
+            }
+          }
+        }
+
+        .social-area {
+          .social-list {
+            .single-social {
+              a {
+                &:hover {
+                  background-color: var(--primary-color4);
+                  border: 1px solid var(--primary-color4);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .location-and-payment {
+        .title-and-location-area {
+          ul {
+            li {
+              .location {
+                &:hover {
+                  color: var(--primary-color4);
                 }
               }
             }
@@ -7760,10 +7870,73 @@ header.style-4 {
     .footer-menu {
       .footer-menu-wrap {
         .footer-menu-list {
-          li {
+          .menu-list {
             a {
               &:hover {
-                color: var(--primary-color2);
+                color: var(--primary-color4);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.apartment-hover-color {
+    .footer-top {
+      .contact-wrapper {
+        .contact-area {
+          .icon-and-contact {
+            .contact {
+              ul {
+                li {
+                  a {
+                    &:hover {
+                      color: var(--primary-color3);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .social-area {
+          .social-list {
+            .single-social {
+              a {
+                &:hover {
+                  background-color: var(--primary-color3);
+                  border: 1px solid var(--primary-color3);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .location-and-payment {
+        .title-and-location-area {
+          ul {
+            li {
+              .location {
+                &:hover {
+                  color: var(--primary-color3);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-menu {
+      .footer-menu-wrap {
+        .footer-menu-list {
+          .menu-list {
+            a {
+              &:hover {
+                color: var(--primary-color3);
               }
             }
           }
