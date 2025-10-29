@@ -4199,7 +4199,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 
 .job-form-modal .modal-dialog {
-  max-width: 872px;
+  max-width: 838px;
   width: 100%;
 }
 @media (max-width: 991px) {
@@ -4218,6 +4218,11 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   position: relative;
   border-radius: unset;
   background-color: #F5F6FC;
+}
+@media (max-width: 1399px) {
+  .job-form-modal .modal-dialog .modal-content {
+    margin-top: 0;
+  }
 }
 .job-form-modal .modal-dialog .modal-content .modal-close {
   position: absolute;
@@ -4249,7 +4254,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   font-weight: 700 !important;
 }
 .job-form-modal .modal-dialog .modal-content .modal-close:hover {
-  background-color: #FF2E00;
+  background-color: var(--primary-color1);
 }
 .job-form-modal .modal-dialog .modal-content .modal-close:hover i {
   color: var(--white-color);
@@ -4271,6 +4276,26 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .job-form-modal .modal-dialog .modal-content .modal-body {
   padding: 60px;
 }
+@media (max-width: 1399px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body {
+    padding: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body {
+    padding: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body {
+    padding: 30px 20px;
+  }
+}
 .job-form-modal .modal-dialog .modal-content .modal-body .mb-30 {
   margin-bottom: 30px;
 }
@@ -4287,6 +4312,23 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   line-height: 1;
   margin-bottom: 40px;
 }
+@media (max-width: 991px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body h3 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body h3 {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body h3 {
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+}
 .job-form-modal .modal-dialog .modal-content .modal-body form .single-info .form-inner2 .form-check .form-check-input:checked {
   background-color: var(--primary-color2);
   border-color: var(--primary-color2);
@@ -4295,36 +4337,139 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-color: var(--primary-color2);
   background-color: var(--white-color);
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .form-check {
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area {
+  margin-bottom: 50px;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body form .check-area {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1399px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body form .check-area {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 991px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body form .check-area {
+    margin-bottom: 28px;
+  }
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area h6 {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 0;
 }
 @media (max-width: 767px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body form .form-check {
+  .job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check {
     gap: 10px;
   }
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input {
-  width: 18px;
-  height: 18px;
-  border-radius: 5px;
-  border: 1px solid var(--borders-color);
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--black-color);
   margin-bottom: 2px;
+  background-color: unset;
+  border-radius: unset;
+  cursor: pointer;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input:focus {
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:focus {
   box-shadow: unset;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input:checked {
-  background: red;
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked {
+  background: var(--primary-color1);
   border-color: var(--primary-color1);
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input:checked + .form-check-label {
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked + .form-check-label {
   color: var(--title-color);
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .form-check .form-check-input:checked + .form-check-label svg {
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked + .form-check-label svg {
   fill: var(--title-color);
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label span {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label strong {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .expand {
+  color: var(--text-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  padding-top: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--title-color);
+}
+.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 65px;
+}
+@media (max-width: 1199px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list {
+    margin-bottom: 35px;
+  }
+}
+.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price span {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price strong {
+  color: var(--title-color);
+  font-family: var(--font-dmSans);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+}
+.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price:last-child {
+  margin-bottom: 0;
+  padding-top: 15px;
+  border-top: 1px solid #D9D9D9;
 }
 .job-form-modal .modal-dialog .modal-content .modal-body .btn-area {
   display: flex;
@@ -4334,6 +4479,22 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   min-width: 344px;
   justify-content: center;
   padding: 20px 35px;
+}
+@media (max-width: 1399px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1 {
+    width: 290px;
+  }
+}
+@media (max-width: 991px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1 {
+    min-width: 260px;
+  }
+}
+@media (max-width: 576px) {
+  .job-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1 {
+    min-width: 200px;
+    padding: 17px 30px;
+  }
 }
 
 /*=====================================

@@ -4949,7 +4949,7 @@ header.style-4 {
 // Modal Style
 .job-form-modal {
   .modal-dialog {
-    max-width: 872px;
+    max-width: 838px;
     width: 100%;
 
     @include lg-down-device() {
@@ -4966,6 +4966,10 @@ header.style-4 {
       position: relative;
       border-radius: unset;
       background-color: #F5F6FC;
+
+      @include xxl-down-device() {
+        margin-top: 0;
+      }
 
       .modal-close {
         position: absolute;
@@ -4999,7 +5003,7 @@ header.style-4 {
         }
 
         &:hover {
-          background-color: #FF2E00;
+          background-color: var(--primary-color1);
 
           i {
             color: var(--white-color);
@@ -5022,6 +5026,22 @@ header.style-4 {
       .modal-body {
         padding: 60px;
 
+        @include xxl-down-device() {
+          padding: 50px;
+        }
+
+        @include lg-down-device() {
+          padding: 40px;
+        }
+
+        @include md-down-device() {
+          padding: 40px 30px;
+        }
+
+        @include sm-down-device() {
+          padding: 30px 20px;
+        }
+
         .mb-30 {
           margin-bottom: 30px;
 
@@ -5037,6 +5057,20 @@ header.style-4 {
           font-size: 30px;
           line-height: 1;
           margin-bottom: 40px;
+
+          @include lg-down-device() {
+            margin-bottom: 30px;
+          }
+
+          @include md-down-device() {
+            margin-bottom: 25px;
+            font-size: 25px;
+          }
+
+          @include sm-down-device() {
+            margin-bottom: 20px;
+            font-size: 23px;
+          }
         }
 
         form {
@@ -5063,39 +5097,147 @@ header.style-4 {
             }
           }
 
-          .form-check {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 0;
+          .check-area {
+            margin-bottom: 50px;
 
-            @include md-down-device() {
-              gap: 10px;
+            @include xxl-device() {
+              margin-bottom: 40px;
             }
 
-            .form-check-input {
-              width: 18px;
-              height: 18px;
-              border-radius: 5px;
-              border: 1px solid var(--borders-color);
-              margin-bottom: 2px;
+            @include xxl-down-device() {
+              margin-bottom: 35px;
+            }
 
-              &:focus {
-                box-shadow: unset;
+            @include lg-down-device() {
+              margin-bottom: 28px;
+            }
+
+            h6 {
+              color: var(--title-color);
+              font-family: var(--font-dmSans);
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 1;
+              margin-bottom: 20px;
+            }
+
+            .form-check {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              margin-bottom: 0;
+
+              @include md-down-device() {
+                gap: 10px;
               }
 
-              &:checked {
-                background: red;
-                border-color: var(--primary-color1);
-              }
+              .form-check-input {
+                width: 12px;
+                height: 12px;
+                border: 1px solid var(--black-color);
+                margin-bottom: 2px;
+                background-color: unset;
+                border-radius: unset;
+                cursor: pointer;
 
-              &:checked+.form-check-label {
-                color: var(--title-color);
+                &:focus {
+                  box-shadow: unset;
+                }
 
-                svg {
-                  fill: var(--title-color);
+                &:checked {
+                  background: var(--primary-color1);
+                  border-color: var(--primary-color1);
+                }
+
+                &:checked+.form-check-label {
+                  color: var(--title-color);
+
+                  svg {
+                    fill: var(--title-color);
+                  }
                 }
               }
+
+              .form-check-label {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+
+                span {
+                  color: var(--title-color);
+                  font-family: var(--font-dmSans);
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 1;
+                  display: block;
+                }
+
+                strong {
+                  color: var(--title-color);
+                  font-family: var(--font-dmSans);
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 1;
+
+                }
+              }
+            }
+
+            .expand {
+              color: var(--text-color);
+              font-family: var(--font-dmSans);
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1;
+              display: inline-block;
+              padding-top: 20px;
+              cursor: pointer;
+              border-bottom: 1px solid var(--title-color);
+            }
+          }
+        }
+
+        .total-pricing-list {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          margin-bottom: 65px;
+          @include xl-down-device() {
+            margin-bottom: 50px;
+          }
+          @include md-down-device() {
+            margin-bottom: 35px;
+          }
+
+          .single-price {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            span {
+              color: var(--title-color);
+              font-family: var(--font-dmSans);
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 1;
+              display: block;
+            }
+
+            strong {
+              color: var(--title-color);
+              font-family: var(--font-dmSans);
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 1;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+              padding-top: 15px;
+              border-top: 1px solid #D9D9D9;
             }
           }
         }
@@ -5108,6 +5250,16 @@ header.style-4 {
             min-width: 344px;
             justify-content: center;
             padding: 20px 35px;
+            @include xxl-down-device() {
+              width: 290px;
+            }
+            @include lg-down-device() {
+              min-width: 260px;
+            }
+            @include sm-down-device() {
+              min-width: 200px;
+              padding: 17px 30px;
+            }
           }
         }
       }
