@@ -17,6 +17,8 @@
     <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
     <!-- Swiper slider CSS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
     <!-- Slick slider CSS -->
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
@@ -45,6 +47,136 @@
                 d="M0.556131 11.4439L11.8139 0.186067L13.9214 2.29352L13.9422 20.6852L9.70638 20.7061L9.76793 8.22168L3.6064 14.4941L0.556131 11.4439Z" />
             <path d="M23.1276 11.4999L16.0288 4.40105L15.9991 10.4203L20.1031 14.5243L23.1276 11.4999Z" />
         </svg>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade book-now-form-modal resort-hover-color" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                <div class="modal-body">
+                    <h3>Your Reservation</h3>
+                    <form>
+                        <div class="single-info mb-25">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-inner">
+                                        <label>Check-in Date</label>
+                                        <select>
+                                            <option>02/10/25</option>
+                                            <option>Dhaka, Bangladesh</option>
+                                            <option>India, Delhi</option>
+                                            <option>Canberra, Australia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-inner">
+                                        <label>Check-out Date</label>
+                                        <select>
+                                            <option>02/10/25</option>
+                                            <option>Dhaka, Bangladesh</option>
+                                            <option>India, Delhi</option>
+                                            <option>Canberra, Australia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-inner">
+                                        <label>Number of Adults & Children</label>
+                                        <select>
+                                            <option>02 Adults. 01 Children</option>
+                                            <option>Dhaka, Bangladesh</option>
+                                            <option>India, Delhi</option>
+                                            <option>Canberra, Australia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-inner">
+                                        <label>Room Type</label>
+                                        <select>
+                                            <option>Family Suite</option>
+                                            <option>Dhaka, Bangladesh</option>
+                                            <option>India, Delhi</option>
+                                            <option>Canberra, Australia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-area">
+                            <h6>Extra Option</h6>
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check1" checked>
+                                        <label class="form-check-label" for="check1">
+                                            <span>Airport Pick-up Service</span>
+                                            <strong>$15.00</strong>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check2">
+                                        <label class="form-check-label" for="check2">
+                                            <span>Extra Family Photoshoot</span>
+                                            <strong>$30.00</strong>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check3">
+                                        <label class="form-check-label" for="check3">
+                                            <span>Airport Drop-off Service</span>
+                                            <strong>$10.00</strong>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check4">
+                                        <label class="form-check-label" for="check4">
+                                            <span>Extra Bed</span>
+                                            <strong>$20.00</strong>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="expand">More Option</span>
+                        </div>
+                        <ul class="total-pricing-list">
+                            <li class="single-price">
+                                <span>$199.00 X 1 day</span>
+                                <span>$199.00</span>
+                            </li>
+                            <li class="single-price">
+                                <span>Airport Pick-up Service</span>
+                                <span>$15.00</span>
+                            </li>
+                            <li class="single-price">
+                                <strong>Total</strong>
+                                <strong>$214.00</strong>
+                            </li>
+                        </ul>
+                        <div class="btn-area">
+                            <button class="primary-btn2 btn-hover" type="submit">
+                                Submit Now
+                                <span></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- header Section Start-->
@@ -225,14 +357,16 @@
                             </ul>
                         </li>
                     </ul>
-                    <a class="primary-btn2 two d-xl-none" href="#">
+                    <a class="primary-btn2 two d-xl-none" href="#" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         Book Now
                     </a>
                 </div>
             </div>
             <div class="nav-right">
                 <div class="contact-area">
-                    <a class="primary-btn2 btn-hover two d-xl-flex d-none" href="#">
+                    <a class="primary-btn2 btn-hover two d-xl-flex d-none" href="#" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         Book Now
                         <span></span>
                     </a>
@@ -397,7 +531,7 @@
                                     <div class="room-and-suites-card-img">
                                         <a class="img-area" href="room-side-bar.html">
                                             <img src="assets/img/home2/room-suites-card-img1.jpg" alt="">
-                                            </a>
+                                        </a>
                                         <div class="price">
                                             <span>From</span>
                                             <h3>$199.00</h3>
@@ -1837,6 +1971,8 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <!-- Wow JS -->
     <script src="assets/js/wow.min.js"></script>
+    <!-- Nice Select -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
     <!-- Gsap  JS -->
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>

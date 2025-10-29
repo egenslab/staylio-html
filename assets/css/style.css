@@ -4198,21 +4198,26 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   }
 }
 
-.job-form-modal .modal-dialog {
+.book-now-form-modal .modal-dialog {
   max-width: 838px;
   width: 100%;
 }
-@media (max-width: 991px) {
-  .job-form-modal .modal-dialog {
-    max-width: 720px;
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .book-now-form-modal .modal-dialog {
+    max-width: 780px;
+  }
+}
+@media (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog {
+    max-width: 650px;
   }
 }
 @media (max-width: 576px) {
-  .job-form-modal .modal-dialog {
+  .book-now-form-modal .modal-dialog {
     width: auto;
   }
 }
-.job-form-modal .modal-dialog .modal-content {
+.book-now-form-modal .modal-dialog .modal-content {
   margin-top: 50px;
   border: none;
   position: relative;
@@ -4220,11 +4225,11 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   background-color: #F5F6FC;
 }
 @media (max-width: 1399px) {
-  .job-form-modal .modal-dialog .modal-content {
+  .book-now-form-modal .modal-dialog .modal-content {
     margin-top: 0;
   }
 }
-.job-form-modal .modal-dialog .modal-content .modal-close {
+.book-now-form-modal .modal-dialog .modal-content .modal-close {
   position: absolute;
   top: 50px;
   right: 50px;
@@ -4245,66 +4250,66 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   transition: 0.5s;
   z-index: 5;
 }
-.job-form-modal .modal-dialog .modal-content .modal-close i {
+.book-now-form-modal .modal-dialog .modal-content .modal-close i {
   color: var(--title-color);
   font-size: 14px;
   transition: 0.5s;
 }
-.job-form-modal .modal-dialog .modal-content .modal-close i::before {
+.book-now-form-modal .modal-dialog .modal-content .modal-close i::before {
   font-weight: 700 !important;
 }
-.job-form-modal .modal-dialog .modal-content .modal-close:hover {
+.book-now-form-modal .modal-dialog .modal-content .modal-close:hover {
   background-color: var(--primary-color1);
 }
-.job-form-modal .modal-dialog .modal-content .modal-close:hover i {
+.book-now-form-modal .modal-dialog .modal-content .modal-close:hover i {
   color: var(--white-color);
 }
 @media (max-width: 991px) {
-  .job-form-modal .modal-dialog .modal-content .modal-close {
+  .book-now-form-modal .modal-dialog .modal-content .modal-close {
     top: 15px;
     right: 20px;
   }
 }
 @media (max-width: 576px) {
-  .job-form-modal .modal-dialog .modal-content .modal-close {
+  .book-now-form-modal .modal-dialog .modal-content .modal-close {
     top: 10px;
     right: 10px;
     width: 28px;
     height: 28px;
   }
 }
-.job-form-modal .modal-dialog .modal-content .modal-body {
+.book-now-form-modal .modal-dialog .modal-content .modal-body {
   padding: 60px;
 }
 @media (max-width: 1399px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body {
     padding: 50px;
   }
 }
-@media (max-width: 991px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body {
-    padding: 40px;
+@media (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body {
+    padding: 40px 35px;
   }
 }
 @media (max-width: 767px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body {
     padding: 40px 30px;
   }
 }
 @media (max-width: 576px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body {
     padding: 30px 20px;
   }
 }
-.job-form-modal .modal-dialog .modal-content .modal-body .mb-30 {
+.book-now-form-modal .modal-dialog .modal-content .modal-body .mb-30 {
   margin-bottom: 30px;
 }
 @media (max-width: 991px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body .mb-30 {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .mb-30 {
     margin-bottom: 20px;
   }
 }
-.job-form-modal .modal-dialog .modal-content .modal-body h3 {
+.book-now-form-modal .modal-dialog .modal-content .modal-body h3 {
   color: var(--title-color);
   font-family: var(--font-dmSans);
   font-weight: 500;
@@ -4313,49 +4318,49 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   margin-bottom: 40px;
 }
 @media (max-width: 991px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body h3 {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body h3 {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body h3 {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body h3 {
     margin-bottom: 25px;
     font-size: 25px;
   }
 }
 @media (max-width: 576px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body h3 {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body h3 {
     margin-bottom: 20px;
     font-size: 23px;
   }
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .single-info .form-inner2 .form-check .form-check-input:checked {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .form-inner2 .form-check .form-check-input:checked {
   background-color: var(--primary-color2);
   border-color: var(--primary-color2);
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .single-info .form-inner input:focus {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .form-inner input:focus {
   border-color: var(--primary-color2);
   background-color: var(--white-color);
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area {
   margin-bottom: 50px;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body form .check-area {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area {
     margin-bottom: 40px;
   }
 }
 @media (max-width: 1399px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body form .check-area {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area {
     margin-bottom: 35px;
   }
 }
 @media (max-width: 991px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body form .check-area {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area {
     margin-bottom: 28px;
   }
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area h6 {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area h6 {
   color: var(--title-color);
   font-family: var(--font-dmSans);
   font-weight: 500;
@@ -4363,18 +4368,18 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   line-height: 1;
   margin-bottom: 20px;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 0;
 }
 @media (max-width: 767px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check {
     gap: 10px;
   }
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input {
   width: 12px;
   height: 12px;
   border: 1px solid var(--black-color);
@@ -4383,20 +4388,20 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-radius: unset;
   cursor: pointer;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:focus {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:focus {
   box-shadow: unset;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked {
   background: var(--primary-color1);
   border-color: var(--primary-color1);
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked + .form-check-label {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked + .form-check-label {
   color: var(--title-color);
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked + .form-check-label svg {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked + .form-check-label svg {
   fill: var(--title-color);
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -4404,7 +4409,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   gap: 10px;
   cursor: pointer;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label span {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label span {
   color: var(--title-color);
   font-family: var(--font-dmSans);
   font-weight: 400;
@@ -4412,14 +4417,14 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   line-height: 1;
   display: block;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label strong {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label strong {
   color: var(--title-color);
   font-family: var(--font-dmSans);
   font-weight: 400;
   font-size: 15px;
   line-height: 1;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body form .check-area .expand {
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .expand {
   color: var(--text-color);
   font-family: var(--font-dmSans);
   font-weight: 400;
@@ -4430,28 +4435,28 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   cursor: pointer;
   border-bottom: 1px solid var(--title-color);
 }
-.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list {
+.book-now-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list {
   margin: 0;
   padding: 0;
   list-style: none;
   margin-bottom: 65px;
 }
 @media (max-width: 1199px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list {
     margin-bottom: 50px;
   }
 }
 @media (max-width: 767px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list {
     margin-bottom: 35px;
   }
 }
-.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price {
+.book-now-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price span {
+.book-now-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price span {
   color: var(--title-color);
   font-family: var(--font-dmSans);
   font-weight: 400;
@@ -4459,42 +4464,84 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   line-height: 1;
   display: block;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price strong {
+.book-now-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price strong {
   color: var(--title-color);
   font-family: var(--font-dmSans);
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price:last-child {
+.book-now-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price:last-child {
   margin-bottom: 0;
   padding-top: 15px;
   border-top: 1px solid #D9D9D9;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body .btn-area {
+.book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area {
   display: flex;
   justify-content: center;
 }
-.job-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1 {
+.book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1,
+.book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn2,
+.book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn3,
+.book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn4 {
   min-width: 344px;
   justify-content: center;
   padding: 20px 35px;
 }
 @media (max-width: 1399px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1 {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn2,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn3,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn4 {
     width: 290px;
   }
 }
 @media (max-width: 991px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1 {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn2,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn3,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn4 {
     min-width: 260px;
   }
 }
 @media (max-width: 576px) {
-  .job-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1 {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn1,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn2,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn3,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body .btn-area .primary-btn4 {
     min-width: 200px;
     padding: 17px 30px;
   }
+}
+.book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked {
+  background-color: var(--primary-color2);
+  border-color: var(--primary-color2);
+}
+.book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-body form .single-info .form-inner .nice-select:focus {
+  border: 1px solid var(--primary-color2);
+}
+.book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-close:hover {
+  background-color: var(--primary-color2);
+}
+.book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked {
+  background-color: var(--primary-color3);
+  border-color: var(--primary-color3);
+}
+.book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .single-info .form-inner .nice-select:focus {
+  border: 1px solid var(--primary-color3);
+}
+.book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-close:hover {
+  background-color: var(--primary-color3);
+}
+.book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked {
+  background-color: var(--primary-color4);
+  border-color: var(--primary-color4);
+}
+.book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-body form .single-info .form-inner .nice-select:focus {
+  border: 1px solid var(--primary-color4);
+}
+.book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-close:hover {
+  background-color: var(--primary-color4);
 }
 
 /*=====================================

@@ -4947,13 +4947,17 @@ header.style-4 {
 }
 
 // Modal Style
-.job-form-modal {
+.book-now-form-modal {
   .modal-dialog {
     max-width: 838px;
     width: 100%;
 
-    @include lg-down-device() {
-      max-width: 720px;
+    @include xl-device() {
+      max-width: 780px;
+    }
+
+    @include xl-down-device() {
+      max-width: 650px;
     }
 
     @include sm-down-device() {
@@ -5030,8 +5034,8 @@ header.style-4 {
           padding: 50px;
         }
 
-        @include lg-down-device() {
-          padding: 40px;
+        @include xl-down-device() {
+          padding: 40px 35px;
         }
 
         @include md-down-device() {
@@ -5205,9 +5209,11 @@ header.style-4 {
           padding: 0;
           list-style: none;
           margin-bottom: 65px;
+
           @include xl-down-device() {
             margin-bottom: 50px;
           }
+
           @include md-down-device() {
             margin-bottom: 35px;
           }
@@ -5246,20 +5252,129 @@ header.style-4 {
           display: flex;
           justify-content: center;
 
-          .primary-btn1 {
+          .primary-btn1,
+          .primary-btn2,
+          .primary-btn3,
+          .primary-btn4 {
             min-width: 344px;
             justify-content: center;
             padding: 20px 35px;
+
             @include xxl-down-device() {
               width: 290px;
             }
+
             @include lg-down-device() {
               min-width: 260px;
             }
+
             @include sm-down-device() {
               min-width: 200px;
               padding: 17px 30px;
             }
+          }
+        }
+      }
+    }
+  }
+
+  &.resort-hover-color {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          form {
+            .check-area {
+              .form-check {
+                .form-check-input {
+                  &:checked {
+                    background-color: var(--primary-color2);
+                    border-color: var(--primary-color2);
+                  }
+                }
+              }
+            }
+            .single-info {
+              .form-inner {
+                .nice-select {
+                  &:focus {
+                    border: 1px solid var(--primary-color2);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .modal-close {
+          &:hover {
+            background-color: var(--primary-color2);
+          }
+        }
+      }
+    }
+  }
+  &.apartment-hover-color {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          form {
+            .check-area {
+              .form-check {
+                .form-check-input {
+                  &:checked {
+                    background-color: var(--primary-color3);
+                    border-color: var(--primary-color3);
+                  }
+                }
+              }
+            }
+            .single-info {
+              .form-inner {
+                .nice-select {
+                  &:focus {
+                    border: 1px solid var(--primary-color3);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .modal-close {
+          &:hover {
+            background-color: var(--primary-color3);
+          }
+        }
+      }
+    }
+  }
+  &.hostel-hover-color {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          form {
+            .check-area {
+              .form-check {
+                .form-check-input {
+                  &:checked {
+                    background-color: var(--primary-color4);
+                    border-color: var(--primary-color4);
+                  }
+                }
+              }
+            }
+            .single-info {
+              .form-inner {
+                .nice-select {
+                  &:focus {
+                    border: 1px solid var(--primary-color4);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .modal-close {
+          &:hover {
+            background-color: var(--primary-color4);
           }
         }
       }
