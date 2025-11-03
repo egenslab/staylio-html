@@ -7386,137 +7386,6 @@ header.style-4 {
 .home1-blog-section {
   position: relative;
 
-  .blog-card {
-    .blog-img {
-      display: block;
-      overflow: hidden;
-      position: relative;
-
-      img {
-        object-fit: cover;
-        transition: all 0.5s;
-      }
-
-      &::after {
-        position: absolute;
-        width: 200%;
-        height: 0%;
-        left: 50%;
-        top: 50%;
-        background-color: rgba(255, 255, 255, 0.3);
-        transform: translate(-50%, -50%) rotate(-45deg);
-        content: "";
-        z-index: 1;
-      }
-    }
-
-    .blog-card-content {
-      padding-top: 30px;
-
-      @include xxl-down-device() {
-        padding-top: 20px;
-      }
-
-      .date-and-event {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: 15px;
-
-        a {
-          color: var(--text-color);
-          font-family: var(--font-dmSans);
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 1;
-          transition: all 0.5s;
-
-          @include lg-device() {
-            font-size: 17px;
-          }
-
-          @include sm-down-device() {
-            font-size: 16px;
-          }
-
-          &:hover {
-            color: var(--primary-color1);
-          }
-        }
-
-        svg {
-          fill: var(--text-color);
-        }
-      }
-
-      h4 {
-        margin-bottom: 0;
-        line-height: 1;
-
-        a {
-          color: var(--title-color);
-          font-family: var(--font-marcellus);
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 38px;
-          background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
-          background-size: 0px 1px;
-          background-repeat: no-repeat;
-          background-position: right 90%;
-          transition: background-size 0.75s;
-
-          @include xl-device() {
-            font-size: 21px;
-          }
-
-          @include lg-device() {
-            font-size: 20px;
-            line-height: 34px;
-          }
-
-          @include lg-down-device() {
-            font-size: 22px;
-            line-height: 34px;
-          }
-
-          @include sm-down-device() {
-            font-size: 20px;
-            line-height: 30px;
-          }
-
-          &:hover {
-            background-size: 100% 1px;
-            background-position: 0% 90%;
-          }
-        }
-      }
-
-      &.two {
-        .date-and-event {
-          a {
-            &:hover {
-              color: var(--primary-color2);
-            }
-          }
-        }
-      }
-    }
-
-    &:hover {
-      .blog-img {
-        img {
-          transform: scale(1.1);
-        }
-
-        &::after {
-          height: 250%;
-          transition: all 600ms linear;
-          background-color: transparent;
-        }
-      }
-    }
-  }
-
   .vector-img1 {
     position: absolute;
     right: 0;
@@ -7543,6 +7412,137 @@ header.style-4 {
 
     @include md-down-device() {
       padding: 50px 0;
+    }
+  }
+}
+
+.blog-card {
+  .blog-img {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      object-fit: cover;
+      transition: all 0.5s;
+    }
+
+    &::after {
+      position: absolute;
+      width: 200%;
+      height: 0%;
+      left: 50%;
+      top: 50%;
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%) rotate(-45deg);
+      content: "";
+      z-index: 1;
+    }
+  }
+
+  .blog-card-content {
+    padding-top: 30px;
+
+    @include xxl-down-device() {
+      padding-top: 20px;
+    }
+
+    .date-and-event {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+
+      a {
+        color: var(--text-color);
+        font-family: var(--font-dmSans);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1;
+        transition: all 0.5s;
+
+        @include lg-device() {
+          font-size: 17px;
+        }
+
+        @include sm-down-device() {
+          font-size: 16px;
+        }
+
+        &:hover {
+          color: var(--primary-color1);
+        }
+      }
+
+      svg {
+        fill: var(--text-color);
+      }
+    }
+
+    h4 {
+      margin-bottom: 0;
+      line-height: 1;
+
+      a {
+        color: var(--title-color);
+        font-family: var(--font-marcellus);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 38px;
+        background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
+        background-size: 0px 1px;
+        background-repeat: no-repeat;
+        background-position: right 90%;
+        transition: background-size 0.75s;
+
+        @include xl-device() {
+          font-size: 21px;
+        }
+
+        @include lg-device() {
+          font-size: 20px;
+          line-height: 34px;
+        }
+
+        @include lg-down-device() {
+          font-size: 22px;
+          line-height: 34px;
+        }
+
+        @include sm-down-device() {
+          font-size: 20px;
+          line-height: 30px;
+        }
+
+        &:hover {
+          background-size: 100% 1px;
+          background-position: 0% 90%;
+        }
+      }
+    }
+
+    &.two {
+      .date-and-event {
+        a {
+          &:hover {
+            color: var(--primary-color2);
+          }
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .blog-img {
+      img {
+        transform: scale(1.1);
+      }
+
+      &::after {
+        height: 250%;
+        transition: all 600ms linear;
+        background-color: transparent;
+      }
     }
   }
 }
@@ -11767,6 +11767,385 @@ header.style-4 {
 
       @include lg-down-device() {
         display: none;
+      }
+    }
+  }
+}
+
+/*=====================================
+  44. Why Host With Us Section CSS
+========================================*/
+.why-host-with-us {
+  .host-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include xl-down-device() {
+      justify-content: center;
+      gap: 30px;
+    }
+
+    @include sm-down-device() {
+      flex-direction: column;
+      row-gap: 25px;
+    }
+
+    li {
+      position: relative;
+      transition: 0.5s;
+      color: var(--title-color);
+      font-family: var(--font-dmSans);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1;
+      display: block;
+      border: 1px solid #C3DDF8;
+      padding: 10px 14px;
+      transition: all 0.5s;
+
+      @include xl-down-device() {
+        font-size: 19px;
+      }
+
+      @include lg-down-device() {
+        font-size: 18px;
+        padding: 8px 10px;
+      }
+
+      @include md-down-device() {
+        font-size: 16px;
+        padding: 8px 10px;
+      }
+
+      @include sm-down-device() {
+        font-size: 17px;
+      }
+
+      &:hover {
+        border-color: var(--primary-color2);
+      }
+
+      .hover-img {
+        rotate: -25deg;
+        position: absolute;
+        max-width: 230px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+
+        @include lg-down-device() {
+          display: none;
+        }
+
+        img {
+          z-index: 1;
+        }
+
+        .img1 {
+          opacity: 0;
+          visibility: hidden;
+          transform: scale(0.4);
+          transition: 0.5s;
+          width: 160px;
+
+          @include xxl-down-device() {
+            width: 135px;
+          }
+
+          @include xl-down-device() {
+            width: 110px;
+          }
+        }
+      }
+
+      &:hover {
+
+        .hover-img {
+          opacity: 1;
+          visibility: visible;
+
+          .img1 {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=====================================
+  45. Blog Sidebar Page Section CSS
+========================================*/
+.blog-sidebar-section-page {
+  .siderbar-area {
+    .stanadard-search {
+      max-width: 424px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background-color: var(--white-color);
+      padding-left: 25px;
+      border: 1px solid var(--border-color3);
+
+      @include xl-down-device() {
+        max-width: 350px;
+      }
+
+      @include lg-down-device() {
+        padding: 6px 9px 6px 15px;
+        max-width: unset;
+      }
+
+      @include sm-down-device() {
+        padding: 7px 7px 7px 16px;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--title-color);
+        font-family: var(--font-dmSans);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+
+        @include sm-down-device() {
+          font-size: 15px;
+        }
+
+        &::placeholder {
+          color: #9B9B9B;
+          font-weight: 400;
+        }
+      }
+
+      button {
+        min-width: 52px;
+        max-width: 52px;
+        height: 52px;
+        background-color: var(--primary-color1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+
+        @include sm-down-device() {
+          min-width: 37px;
+          max-width: 37px;
+          height: 37px;
+        }
+
+        svg {
+          fill: var(--white-color);
+
+          @include sm-down-device() {
+            width: 16px;
+          }
+        }
+
+        &:hover {
+          background-color: var(--primary-color1);
+        }
+      }
+    }
+
+    .single-widget {
+      padding: 40px 30px;
+      border: 1px solid var(--border-color3);
+
+      @include xl-device() {
+        padding: 35px 20px;
+      }
+
+      @include lg-device() {
+        padding: 25px 15px;
+        border-radius: 15px;
+      }
+
+      @include sm-down-device() {
+        padding: 25px 20px;
+      }
+
+      .widget-title {
+        font-family: var(--font-dmsans);
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 27px;
+        line-height: 1;
+        color: var(--title-color);
+      }
+
+      .category-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          line-height: 1;
+          margin-bottom: 23px;
+          transition: 0.3s;
+
+          @include md-down-device() {
+            margin-bottom: 15px;
+          }
+
+          @include sm-down-device() {
+            margin-bottom: 23px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a {
+            color: var(--text-color);
+            font-family: var(--font-dmSans);
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1;
+            transition: 0.5s;
+          }
+
+          &:hover {
+            a {
+              color: var(--primary-color1);
+            }
+          }
+        }
+      }
+
+      .recent-post-widget {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .recent-post-img {
+          border-radius: 5px;
+
+          img {
+            min-width: 65px;
+            max-width: 65px;
+            height: 92px;
+          }
+        }
+
+        .recent-post-content {
+          line-height: 1;
+
+          >a {
+            color: var(--text-color);
+            font-family: var(--font-suse);
+            font-size: 14px;
+            font-weight: 500;
+
+            display: block;
+            margin-bottom: 8px;
+            transition: 0.5s;
+
+            @include sm-down-device() {
+              margin-bottom: 5px;
+            }
+
+            &:hover {
+              color: var(--primary-color1);
+            }
+          }
+
+          h6 {
+            margin-bottom: 0;
+
+            a {
+              color: var(--title-color);
+              font-family: var(--font-dmsans);
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 28px;
+              transition: 0.5s;
+              background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
+              background-size: 0px 1px;
+              background-repeat: no-repeat;
+              background-position: right 90%;
+              transition: background-size 0.75s;
+
+              @include xl-device() {
+                font-size: 16px;
+              }
+
+              @include lg-device() {
+                font-size: 15px;
+                line-height: 22px;
+              }
+
+              @include sm-down-device() {
+                font-size: 16px;
+              }
+
+              &:hover {
+                background-size: 100% 1px;
+                background-position: 0% 90%;
+              }
+            }
+          }
+        }
+      }
+
+      .tag-list {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        row-gap: 20px;
+
+        @include lg-device() {
+          gap: 11px;
+        }
+
+        li {
+          a {
+            color: var(--title-color);
+            font-family: var(--font-bricolageGrotesque);
+            font-size: 18px;
+            font-weight: 500;
+            display: block;
+            line-height: 1;
+            transition: 0.5s;
+
+            @include xl-down-device() {
+              font-size: 17px;
+            }
+
+            @include sm-down-device() {
+              font-size: 16px;
+            }
+          }
+
+
+          &:hover {
+            a {
+              color: var(--primary-color1);
+            }
+          }
+        }
       }
     }
   }
