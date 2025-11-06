@@ -1419,17 +1419,16 @@ body.tt-magic-cursor #magic-cursor {
   font-weight: 500;
 }
 .form-inner input {
+  background-color: unset;
   width: 100%;
-  background: #F0F0F0;
   color: var(--title-color);
   font-family: var(--font-dmSans);
   font-size: 16px;
   font-weight: 500;
-  padding: 10px 20px;
-  height: 60px;
-  border-radius: 10px;
-  border: 1px solid #F0F0F0;
+  height: 37px;
+  border-bottom: 1px solid #D9D9D9;
   transition: all 0.3s;
+  padding-bottom: 20px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .form-inner input {
@@ -1451,16 +1450,15 @@ body.tt-magic-cursor #magic-cursor {
   }
 }
 .form-inner input::-moz-placeholder {
-  color: var(--dark-text-color);
+  color: var(--title-color);
   font-weight: 500;
 }
 .form-inner input::placeholder {
-  color: var(--dark-text-color);
+  color: var(--title-color);
   font-weight: 500;
 }
 .form-inner input:focus {
   border-color: var(--primary-color1);
-  background-color: var(--white-color);
 }
 .form-inner textarea {
   width: 100%;
@@ -11139,17 +11137,125 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   color: var(--primary-color1);
 }
 
+.product-view-modal .modal-dialog {
+  max-width: 1096px;
+  width: 100%;
+  animation: zoom-In-effect 1s;
+}
+@keyframes zoom-In-effect {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.product-view-modal .modal-dialog .modal-content {
+  border-radius: unset;
+}
+.product-view-modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  position: relative;
+}
+.product-view-modal .modal-dialog .modal-content .modal-body .reserve-table {
+  background-color: #F3F2F0;
+  padding: 20px;
+}
+.product-view-modal .modal-dialog .modal-content .modal-body .reserve-table .form-wrapper {
+  background-color: var(--white-color);
+  padding: 26px 60px;
+}
+.product-view-modal .modal-dialog .modal-content .modal-body .reserve-table .form-wrapper h3 {
+  color: var(--title-color);
+  margin-bottom: 30px;
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1;
+}
+.product-view-modal .modal-dialog .modal-content .modal-body .reserve-table .form-wrapper .nice-select {
+  background-color: unset;
+  padding: 0 0 20px 0;
+  height: 37px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.product-view-modal .modal-dialog .modal-content .modal-body .close-btn {
+  position: absolute;
+  top: 41px;
+  right: 45px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #9B9B9B;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  z-index: 1;
+}
+.product-view-modal .modal-dialog .modal-content .modal-body .close-btn::before, .product-view-modal .modal-dialog .modal-content .modal-body .close-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  left: calc(50% - 7px);
+  display: block;
+  height: 1px;
+  width: 15px;
+  background-color: var(--gray-dark, #000);
+  transition: all 0.3s ease-out;
+}
+.product-view-modal .modal-dialog .modal-content .modal-body .close-btn::after {
+  transform: translateY(-50%) rotate(-135deg);
+}
+.product-view-modal .modal-dialog .modal-content .modal-body .close-btn:hover::before, .product-view-modal .modal-dialog .modal-content .modal-body .close-btn:hover::after {
+  transform: rotate(0deg);
+}
+
 /*=====================================
   48. Resturent Menu Section CSS
 ========================================*/
 .resturent-menu-section {
   padding: 0 13.5%;
 }
+@media (max-width: 1799px) {
+  .resturent-menu-section {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 1399px) {
+  .resturent-menu-section {
+    padding: 0 3%;
+  }
+}
+@media (max-width: 1199px) {
+  .resturent-menu-section {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 576px) {
+  .resturent-menu-section {
+    padding: 0;
+  }
+}
 .resturent-menu-section .menu-wrapper {
   background-image: url(../img/innerpages/resturent-menu-bg-img.png), linear-gradient(180deg, #FAF1E6 0%, #FAF1E6 100%);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 80px;
+}
+@media (max-width: 1399px) {
+  .resturent-menu-section .menu-wrapper {
+    padding: 60px 50px;
+  }
+}
+@media (max-width: 1199px) {
+  .resturent-menu-section .menu-wrapper {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .resturent-menu-section .menu-wrapper {
+    padding: 35px 20px;
+  }
 }
 .resturent-menu-section .menu-wrapper .menu-items h3 {
   margin-bottom: 50px;
@@ -11161,19 +11267,36 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   text-align: center;
   text-decoration: underline;
 }
+@media (max-width: 1199px) {
+  .resturent-menu-section .menu-wrapper .menu-items h3 {
+    font-size: 27px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .resturent-menu-section .menu-wrapper .menu-items h3 {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+}
 .resturent-menu-section .menu-wrapper .menu-items .menu-list {
   padding: 0;
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 60px;
   row-gap: 35px;
 }
 @media (max-width: 1199px) {
   .resturent-menu-section .menu-wrapper .menu-items .menu-list {
-    display: flex;
-    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price {
@@ -11188,6 +11311,17 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   gap: 14px;
   margin-bottom: 15px;
 }
+@media (max-width: 767px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity {
+    gap: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
 .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity h4,
 .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity span {
   color: var(--title-color);
@@ -11197,12 +11331,45 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   line-height: 1;
   margin-bottom: 0;
 }
+@media (max-width: 1199px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity h4,
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity span {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity h4,
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity span {
+    font-size: 21px;
+  }
+}
+@media (max-width: 576px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity h4,
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity span {
+    font-size: 18px;
+  }
+}
 .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price strong {
   color: var(--title-color);
   font-family: var(--font-marcellus);
   font-weight: 400;
   font-size: 25px;
   line-height: 1;
+}
+@media (max-width: 1199px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price strong {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price strong {
+    font-size: 21px;
+  }
+}
+@media (max-width: 576px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price strong {
+    font-size: 18px;
+  }
 }
 .resturent-menu-section .menu-wrapper .menu-items .menu-list p {
   margin-bottom: 0;
@@ -11211,6 +11378,16 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+@media (max-width: 767px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list p {
+    font-size: 14px;
+  }
 }
 
 /*=====================================
