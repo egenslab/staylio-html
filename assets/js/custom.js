@@ -370,6 +370,44 @@
       },
     },
   });
+  var swiper = new Swiper(".dining-testimonial-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".home4-testimonial-card-slider-next",
+      prevEl: ".home4-testimonial-card-slider-prev",
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      386: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  });
   //wow js
   jQuery(window).on("load", function () {
     new WOW().init();

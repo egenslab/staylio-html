@@ -2059,11 +2059,11 @@ header.style-1 {
   }
 
   @include xl-device() {
-    padding: 15px 20px;
+    padding: 5px 20px;
   }
 
   @include xl-down-device() {
-    padding: 15px 5px;
+    padding: 10px 5px;
   }
 
   &.sticky {
@@ -12132,11 +12132,13 @@ header.style-4 {
     .blog-img {
       img {
         object-fit: cover;
+
         @include md-down-device() {
           min-height: 300px;
         }
       }
     }
+
     .blog-card-content {
       h2 {
         a {
@@ -12156,14 +12158,17 @@ header.style-4 {
             font-size: 35px;
             line-height: 45px;
           }
+
           @include xl-down-device() {
             font-size: 30px;
             line-height: 40px;
           }
+
           @include md-down-device() {
             font-size: 25px;
             line-height: 35px;
           }
+
           @include sm-down-device() {
             font-size: 22px;
             line-height: 30px;
@@ -12173,6 +12178,390 @@ header.style-4 {
             background-size: 100% 1px;
             background-position: 0% 90%;
           }
+        }
+      }
+    }
+  }
+}
+
+/*=====================================
+  47. Dining And Cuisine Page Card Section CSS
+========================================*/
+.dining-and-cuisine-page-card {
+  .dining-and-cuisine-page-card-content {
+    max-width: 614px;
+    width: 100%;
+
+    @include lg-down-device() {
+      max-width: unset;
+    }
+
+    >h3 {
+      color: var(--title-color);
+      margin-bottom: 20px;
+      font-family: var(--font-marcellus);
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 1;
+
+      @include xxl-device() {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+
+      @include xl-device() {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      @include lg-device() {
+        font-size: 27px;
+        margin-bottom: 15px;
+      }
+
+      @include md-down-device() {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      @include sm-down-device() {
+        font-size: 25px;
+        line-height: 1.4;
+      }
+    }
+
+    p {
+      color: var(--text-color);
+      margin-bottom: 20px;
+      font-family: var(--font-dmSans);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+
+      @include xl-device() {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 15px;
+      }
+
+      @include lg-device() {
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      @include md-down-device() {
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      @include sm-down-device() {
+        font-size: 15px;
+        line-height: 26px;
+      }
+    }
+
+    .opening-and-closing-time {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+
+        @include lg-device() {
+          margin-bottom: 15px;
+        }
+
+        @include md-down-device() {
+          margin-bottom: 15px;
+        }
+
+        @include sm-down-device() {
+          gap: 10px;
+        }
+
+        span {
+          display: block;
+          font-family: var(--font-dmSans);
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1;
+          color: var(--text-color);
+
+          @include xl-device() {
+            font-size: 17px;
+          }
+
+          @include lg-device() {
+            font-size: 17px;
+          }
+
+          @include md-down-device() {
+            font-size: 16px;
+          }
+        }
+
+        a {
+          display: inline-block;
+          font-family: var(--font-dmSans);
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1;
+          color: var(--text-color);
+          background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
+          background-size: 0px 1px;
+          background-repeat: no-repeat;
+          background-position: right 100%;
+          transition: background-size 0.75s;
+
+          @include xl-device() {
+            font-size: 17px;
+          }
+
+          @include lg-device() {
+            font-size: 17px;
+          }
+
+          @include md-down-device() {
+            font-size: 16px;
+          }
+
+          &:hover {
+            background-size: 100% 1px;
+            background-position: 0% 100%;
+          }
+        }
+
+        svg {
+          fill: var(--title-color);
+
+          @include sm-down-device() {
+            width: 15px;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .primary-btn1 {
+      margin-top: 40px;
+      padding: 18px 36px;
+
+      @include lg-device() {
+        margin-top: 30px;
+      }
+
+      @include md-down-device() {
+        margin-top: 30px;
+        padding: 16px 30px;
+      }
+    }
+
+    h6 {
+      color: var(--title-color);
+      margin-bottom: 0;
+      font-family: var(--font-dmSans);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.4;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border-color3);
+
+      @include xl-device() {
+        font-size: 18px;
+        line-height: 1.4;
+        padding-bottom: 20px;
+      }
+
+      @include lg-device() {
+        font-size: 17px;
+        line-height: 1.4;
+        padding-bottom: 15px;
+      }
+
+      @include md-down-device() {
+        font-size: 17px;
+        line-height: 1.4;
+        padding-bottom: 15px;
+      }
+    }
+
+    .how-to-order {
+      padding-top: 30px;
+
+      @include xxl-down-device() {
+        padding-top: 20px;
+      }
+
+      h3 {
+        color: var(--title-color);
+        margin-bottom: 23px;
+        font-family: var(--font-dmSans);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1;
+
+        @include xl-device() {
+          font-size: 18px;
+          margin-bottom: 18px;
+        }
+
+        @include md-down-device() {
+          margin-bottom: 17px;
+          font-size: 18px;
+        }
+      }
+
+      ul {
+        margin: 0;
+
+        li {
+          color: var(--text-color);
+          font-family: var(--font-dmSans);
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 1;
+          margin-bottom: 18px;
+
+          @include xl-device() {
+            font-size: 16px;
+            margin-bottom: 14px;
+          }
+
+          @include lg-device() {
+            font-size: 16px;
+            margin-bottom: 12px;
+          }
+
+          @include md-down-device() {
+            font-size: 16px;
+            margin-bottom: 13px;
+          }
+
+          @include sm-down-device() {
+            font-size: 15px;
+            line-height: 1.4;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a {
+            color: var(--text-color);
+            transition: all 0.5s;
+
+            &:hover {
+              color: var(--primary-color1);
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+/*=====================================
+  48. Resturent Menu Section CSS
+========================================*/
+.resturent-menu-section {
+  padding: 0 13.5%;
+
+  .menu-wrapper {
+    background-image: url(../img/innerpages/resturent-menu-bg-img.png), linear-gradient(180deg, #FAF1E6 0%, #FAF1E6 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+
+    .menu-items {
+      h3 {
+        margin-bottom: 50px;
+        color: var(--title-color);
+        font-family: var(--font-marcellus);
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1;
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      .menu-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 60px;
+        row-gap: 35px;
+
+        @include xl-down-device() {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .single-menu-item {
+          .menu-title-and-price {
+            display: flex;
+            justify-content: space-between;
+            line-height: 1;
+            align-items: baseline;
+
+            .title-and-quantity {
+              line-height: 1;
+              display: flex;
+              gap: 14px;
+              margin-bottom: 15px;
+
+              h4,
+              span {
+                color: var(--title-color);
+                font-family: var(--font-marcellus);
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 1;
+                margin-bottom: 0;
+              }
+            }
+
+            strong {
+              color: var(--title-color);
+              font-family: var(--font-marcellus);
+              font-weight: 400;
+              font-size: 25px;
+              line-height: 1;
+            }
+          }
+        }
+
+        p {
+          margin-bottom: 0;
+          color: var(--text-color);
+          font-family: var(--font-dmSans);
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+/*=====================================
+  49. Dining Testimonial Section CSS
+========================================*/
+.dining-testimonial-section {
+  .slider-btn-grp {
+    .slider-btn {
+      &:hover {
+        svg {
+          stroke: var(--white-color);
         }
       }
     }

@@ -1803,12 +1803,12 @@ header.style-1 {
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   header.style-1 {
-    padding: 15px 20px;
+    padding: 5px 20px;
   }
 }
 @media (max-width: 1199px) {
   header.style-1 {
-    padding: 15px 5px;
+    padding: 10px 5px;
   }
 }
 header.style-1.sticky {
@@ -10842,4 +10842,380 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .blog-standard-section-page .blog-card .blog-card-content h2 a:hover {
   background-size: 100% 1px;
   background-position: 0% 90%;
+}
+
+/*=====================================
+  47. Dining And Cuisine Page Card Section CSS
+========================================*/
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content {
+  max-width: 614px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content {
+    max-width: unset;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content > h3 {
+  color: var(--title-color);
+  margin-bottom: 20px;
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content > h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content > h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content > h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content > h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content > h3 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content p {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li {
+    gap: 10px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li span {
+  display: block;
+  font-family: var(--font-dmSans);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--text-color);
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li span {
+    font-size: 17px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li span {
+    font-size: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li span {
+    font-size: 16px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li a {
+  display: inline-block;
+  font-family: var(--font-dmSans);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--text-color);
+  background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
+  background-position: right 100%;
+  transition: background-size 0.75s;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li a {
+    font-size: 17px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li a {
+    font-size: 16px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li a:hover {
+  background-size: 100% 1px;
+  background-position: 0% 100%;
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li svg {
+  fill: var(--title-color);
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li svg {
+    width: 15px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li:last-child {
+  margin-bottom: 0;
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .primary-btn1 {
+  margin-top: 40px;
+  padding: 18px 36px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .primary-btn1 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .primary-btn1 {
+    margin-top: 30px;
+    padding: 16px 30px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content h6 {
+  color: var(--title-color);
+  margin-bottom: 0;
+  font-family: var(--font-dmSans);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-color3);
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content h6 {
+    font-size: 18px;
+    line-height: 1.4;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content h6 {
+    font-size: 17px;
+    line-height: 1.4;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content h6 {
+    font-size: 17px;
+    line-height: 1.4;
+    padding-bottom: 15px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order {
+  padding-top: 30px;
+}
+@media (max-width: 1399px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order {
+    padding-top: 20px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order h3 {
+  color: var(--title-color);
+  margin-bottom: 23px;
+  font-family: var(--font-dmSans);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order h3 {
+    margin-bottom: 17px;
+    font-size: 18px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul {
+  margin: 0;
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul li {
+  color: var(--text-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul li {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul li {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul li {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul li {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul li:last-child {
+  margin-bottom: 0;
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul li a {
+  color: var(--text-color);
+  transition: all 0.5s;
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul li a:hover {
+  color: var(--primary-color1);
+}
+
+/*=====================================
+  48. Resturent Menu Section CSS
+========================================*/
+.resturent-menu-section {
+  padding: 0 13.5%;
+}
+.resturent-menu-section .menu-wrapper {
+  background-image: url(../img/innerpages/resturent-menu-bg-img.png), linear-gradient(180deg, #FAF1E6 0%, #FAF1E6 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px;
+}
+.resturent-menu-section .menu-wrapper .menu-items h3 {
+  margin-bottom: 50px;
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: underline;
+}
+.resturent-menu-section .menu-wrapper .menu-items .menu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 60px;
+  row-gap: 35px;
+}
+@media (max-width: 1199px) {
+  .resturent-menu-section .menu-wrapper .menu-items .menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1;
+  align-items: baseline;
+}
+.resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity {
+  line-height: 1;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 15px;
+}
+.resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity h4,
+.resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price .title-and-quantity span {
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.resturent-menu-section .menu-wrapper .menu-items .menu-list .single-menu-item .menu-title-and-price strong {
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1;
+}
+.resturent-menu-section .menu-wrapper .menu-items .menu-list p {
+  margin-bottom: 0;
+  color: var(--text-color);
+  font-family: var(--font-dmSans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*=====================================
+  49. Dining Testimonial Section CSS
+========================================*/
+.dining-testimonial-section .slider-btn-grp .slider-btn:hover svg {
+  stroke: var(--white-color);
 }/*# sourceMappingURL=style.css.map */
