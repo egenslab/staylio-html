@@ -1625,10 +1625,11 @@ body.tt-magic-cursor #magic-cursor {
     border-bottom: 1px solid #D9D9D9;
     transition: all 0.3s;
     padding-bottom: 20px;
+
     @include lg-device() {
-      padding: 10px 15px;
+      padding-bottom: 17px;
       font-size: 15px;
-      height: 55px;
+      height: 34px;
     }
 
     @include lg-down-device() {
@@ -9330,6 +9331,23 @@ header.style-4 {
       display: none;
     }
   }
+
+  &.two {
+    background-color: #EDF0F5;
+    margin: 0 0 120px 0;
+
+    @include lg-device() {
+      margin-bottom: 100px;
+    }
+
+    @include lg-down-device() {
+      margin-bottom: 90px;
+    }
+
+    @include md-down-device() {
+      margin-bottom: 70px;
+    }
+  }
 }
 
 .divider {
@@ -9705,6 +9723,30 @@ header.style-4 {
             p {
               opacity: 1;
               transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.two {
+    background-color: unset;
+
+    .section-title {
+      padding: unset;
+    }
+
+    .feature-banner-section {
+      .feature-list {
+        .feature-single-item {
+          &:hover {
+            .card-content {
+              .catgory-and-title {
+                h3 {
+                  color: var(--primary-color1);
+                }
+              }
             }
           }
         }
@@ -10225,6 +10267,44 @@ header.style-4 {
 
     @include lg-down-device() {
       padding-top: 0;
+    }
+  }
+
+  &.two {
+    h6 {
+      display: flex;
+      justify-content: center;
+      color: var(--text-color);
+      margin-bottom: 0;
+      font-family: var(--font-dmSans);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      @include lg-down-device() {
+        font-size: 18px;
+      }
+
+      @include sm-down-device() {
+        font-size: 16px;
+        flex-wrap: wrap;
+      }
+
+      a {
+        display: inline-block;
+        font-weight: 600;
+        color: var(--primary-color1);
+        text-decoration: underline;
+      }
+
+      .call {
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+      }
     }
   }
 }
@@ -11424,101 +11504,119 @@ header.style-4 {
     padding: 50px 0;
   }
 
-  .faq-wrap {
-    .accordion {
-      .accordion-item {
-        border: none;
-        margin-bottom: 15px;
+}
+
+.faq-wrap {
+  .accordion {
+    .accordion-item {
+      border: none;
+      margin-bottom: 15px;
+      background-color: transparent;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .accordion-header {
         background-color: transparent;
 
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        .accordion-header {
+        .accordion-button {
+          color: var(--title-color);
+          font-family: var(--font-dmSans);
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 1.4;
+          text-align: left;
+          padding: 13px 30px;
           background-color: transparent;
+          border: unset;
 
-          .accordion-button {
-            color: var(--title-color);
-            font-family: var(--font-dmSans);
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 1.4;
-            text-align: left;
-            padding: 13px 30px;
+          @include xl-device() {
+            font-size: 19px;
+          }
+
+          @include lg-down-device() {
+            font-size: 18px;
+          }
+
+          @include md-down-device() {
+            font-size: 17px;
+            padding: 11px 20px;
+          }
+
+          @include sm-down-device() {
+            padding: 10px 10px 15px 15px;
+            font-size: 16px;
+            line-height: 1.5;
+          }
+
+          &::after {
             background-color: transparent;
-            border: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color1);
+            content: "\f64d";
+            font-family: bootstrap-icons;
+            background-image: none;
+            font-weight: 600;
+            font-size: 14px;
+            right: 30px;
+            transition: 0.5s;
+          }
 
-            @include xl-device() {
-              font-size: 19px;
-            }
-
-            @include lg-down-device() {
-              font-size: 18px;
-            }
-
-            @include md-down-device() {
-              font-size: 17px;
-              padding: 11px 20px;
-            }
-
-            @include sm-down-device() {
-              padding: 10px 10px 15px 15px;
-              font-size: 16px;
-              line-height: 1.5;
-            }
+          &:not(.collapsed) {
+            // border: transparent;
+            box-shadow: none;
 
             &::after {
-              background-color: transparent;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              font-family: bootstrap-icons !important;
+              content: "\f2ea";
               color: var(--primary-color1);
-              content: "\f64d";
-              font-family: bootstrap-icons;
-              background-image: none;
-              font-weight: 600;
-              font-size: 14px;
-              right: 30px;
-              transition: 0.5s;
+              border: none;
             }
+          }
 
-            &:not(.collapsed) {
-              // border: transparent;
-              box-shadow: none;
+          &:focus {
+            // border: unset;
+            box-shadow: none;
+          }
+        }
+      }
 
-              &::after {
-                font-family: bootstrap-icons !important;
-                content: "\f2ea";
-                color: var(--primary-color1);
-                border: none;
-              }
-            }
+      .accordion-body {
+        padding: 0px 30px 20px 30px;
+        font-family: var(--font-dmsans);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+        color: var(--text-color);
 
-            &:focus {
-              // border: unset;
-              box-shadow: none;
-            }
+        @include md-down-device() {
+          padding: 0px 20px 20px 20px;
+        }
+
+        @include sm-down-device() {
+          padding: 0px 15px 15px 15px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &.two {
+    .accordion {
+      .accordion-item {
+        .accordion-header {
+          .accordion-button {
+            padding: 5px 0 16px 0;
+            border-bottom: 1px solid var(--border-color3);
           }
         }
 
         .accordion-body {
-          padding: 0px 30px 20px 30px;
-          font-family: var(--font-dmsans);
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 1.5;
-          text-align: left;
-          color: var(--text-color);
-
-          @include md-down-device() {
-            padding: 0px 20px 20px 20px;
-          }
-
-          @include sm-down-device() {
-            padding: 0px 15px 15px 15px;
-            font-size: 16px;
-          }
+          padding: 20px 0;
         }
       }
     }
@@ -12484,15 +12582,27 @@ header.style-4 {
 
     .modal-content {
       border-radius: unset;
+
       .modal-body {
         padding: 0;
         position: relative;
+
         .reserve-table {
           background-color: #F3F2F0;
           padding: 20px;
+
+          @include sm-down-device() {
+            padding: 15px;
+          }
+
           .form-wrapper {
             background-color: var(--white-color);
             padding: 26px 60px;
+
+            @include sm-down-device() {
+              padding: 26px 20px;
+            }
+
             h3 {
               color: var(--title-color);
               margin-bottom: 30px;
@@ -12500,15 +12610,40 @@ header.style-4 {
               font-weight: 400;
               font-size: 34px;
               line-height: 1;
+
+              @include sm-down-device() {
+                font-size: 25px;
+              }
             }
+
             .nice-select {
               background-color: unset;
               padding: 0 0 20px 0;
               height: 37px;
               border-bottom: 1px solid #D9D9D9;
+              border-radius: unset;
+              border-right: unset;
+              border-left: unset;
+              border-top: unset;
+              margin-bottom: 40px;
+
+              &::after {
+                right: 0;
+              }
+
+              span {
+                color: var(--title-color);
+                font-weight: 500;
+                font-size: 16px;
+              }
+            }
+
+            .primary-btn1 {
+              padding: 15px 22px;
             }
           }
         }
+
         .close-btn {
           position: absolute;
           top: 41px;
@@ -12730,6 +12865,213 @@ header.style-4 {
         svg {
           stroke: var(--white-color);
         }
+      }
+    }
+  }
+}
+
+/*=====================================
+  50. FAQ Page CSS
+========================================*/
+.faq-page {
+  .nav-links-and-contact-area {
+    @include lg-down-device() {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include md-down-device() {
+      display: unset;
+    }
+
+    .nav-links-wrapper {
+      margin-bottom: 50px;
+
+      @include lg-down-device() {
+        margin-bottom: 0;
+      }
+
+      @include md-down-device() {
+        margin-bottom: 40px;
+      }
+
+      .nav-pills {
+        display: unset;
+
+        .nav-item {
+          margin-bottom: 30px;
+
+          @include lg-down-device() {
+            margin-bottom: 25px;
+          }
+
+          @include md-down-device() {
+            margin-bottom: 20px;
+          }
+
+          @include sm-device() {
+            &:last-child {
+              .nav-link::before {
+                content: unset;
+              }
+            }
+          }
+
+          @include sm-down-device() {
+            &:last-child {
+              .nav-link::before {
+                content: unset;
+              }
+            }
+          }
+
+          .nav-link {
+            color: var(--text-color);
+            font-family: var(--font-dmSans);
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 1;
+            position: relative;
+            padding: 0;
+
+            @include lg-device() {
+              font-size: 20px;
+            }
+
+            @include lg-down-device() {
+              font-size: 19px;
+            }
+
+            @include md-down-device() {
+              font-size: 18px;
+            }
+
+            &.active {
+              background-color: unset;
+              color: var(--primary-color1);
+            }
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .contact-area {
+      max-width: 365px;
+      width: 100%;
+
+      @include md-down-device() {
+        max-width: unset;
+      }
+
+      .contact-img-area {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(1.13deg, #000000 5.68%, rgba(109, 109, 109, 0) 44.54%);
+        }
+
+        .contact-title {
+          position: absolute;
+          left: 30px;
+          bottom: 30px;
+          z-index: 1;
+
+          @include sm-down-device() {
+            left: 20px;
+          }
+
+          h4 {
+            color: var(--white-color);
+            margin-bottom: 15px;
+            font-family: var(--font-marcellus);
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 36px;
+
+            @include lg-device() {
+              font-size: 23px;
+            }
+
+            @include sm-down-device() {
+              font-size: 20px;
+            }
+          }
+
+          .primary-btn1 {
+            padding: 14px 17px;
+            font-size: 14px;
+
+            span {
+              background-color: var(--white-color);
+            }
+
+            &:hover {
+              color: var(--title-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=====================================
+  51. Our Vision Section CSS
+========================================*/
+.our-vision {
+  .vision-img-wrapper {
+    position: relative;
+    max-width: 441px;
+    width: 100%;
+
+    @include lg-down-device() {
+      max-width: unset;
+    }
+
+    .vision-img2 {
+      position: absolute;
+      bottom: 0;
+      right: -26%;
+      max-width: 245px;
+      width: 100%;
+
+      @include xxl-down-device() {
+        display: none;
+      }
+    }
+  }
+
+  .vision-content-wrapper {
+    max-width: 671px;
+    width: 100%;
+
+    .section-title {
+      h2 {
+        @include sm-down-device() {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .signature-img {
+      display: flex;
+      margin-left: auto;
+      @include md-down-device() {
+        width: 140px;
+      }
+      @include sm-down-device() {
+        width: 120px;
       }
     }
   }
