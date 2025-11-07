@@ -6592,6 +6592,101 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   background-color: transparent;
 }
 
+.innerpage-pagination-area .paginations {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border: 1px solid rgba(var(--black-color-opc), 0.3);
+  border-left: unset;
+  border-right: unset;
+}
+@media (max-width: 767px) {
+  .innerpage-pagination-area .paginations {
+    gap: 17px;
+  }
+}
+.innerpage-pagination-area .paginations .page-item {
+  position: relative;
+}
+.innerpage-pagination-area .paginations .page-item::before {
+  content: "";
+  width: 8px;
+  height: 1.5px;
+  position: absolute;
+  background-color: var(--text-color);
+  right: -15px;
+  top: 50%;
+}
+.innerpage-pagination-area .paginations .page-item a {
+  color: rgba(var(--title-color-opc), 0.5);
+  font-family: var(--font-dmSans);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  width: 31px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+@media (max-width: 576px) {
+  .innerpage-pagination-area .paginations .page-item a {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+  }
+}
+.innerpage-pagination-area .paginations .page-item a:hover {
+  background-color: var(--primary-color1);
+  border-color: var(--primary-color1);
+  color: var(--white-color);
+}
+.innerpage-pagination-area .paginations .page-item.active a {
+  background-color: var(--primary-color1);
+  border-color: var(--primary-color1);
+  color: var(--white-color);
+}
+.innerpage-pagination-area .paginations .page-item.paginations-button::before {
+  content: unset;
+}
+.innerpage-pagination-area .paginations .page-item.paginations-button a {
+  width: unset;
+  height: unset;
+  border: unset;
+  background-color: unset;
+  padding: 20px 31px;
+  border-right: 1px solid rgba(var(--black-color-opc), 0.3);
+}
+@media (max-width: 767px) {
+  .innerpage-pagination-area .paginations .page-item.paginations-button a {
+    padding: 16px 19px;
+  }
+}
+.innerpage-pagination-area .paginations .page-item.paginations-button a svg {
+  fill: rgba(var(--title-color-opc), 0.5);
+  transition: 0.5s;
+}
+@media (max-width: 767px) {
+  .innerpage-pagination-area .paginations .page-item.paginations-button a svg {
+    width: 20px;
+  }
+}
+.innerpage-pagination-area .paginations .page-item.paginations-button a:hover svg {
+  fill: var(--primary-color1);
+}
+.innerpage-pagination-area .paginations .page-item.paginations-button a:last-child {
+  border-left: 1px solid rgba(var(--black-color-opc), 0.3);
+}
+.innerpage-pagination-area .paginations .page-item:nth-child(4)::before {
+  content: unset;
+}
+
 /*=====================================
   13. Footer Section CSS
 ========================================*/

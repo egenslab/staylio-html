@@ -7545,6 +7545,116 @@ header.style-4 {
   }
 }
 
+.innerpage-pagination-area {
+  .paginations {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: 1px solid rgba(var(--black-color-opc), 0.3);
+    border-left: unset;
+    border-right: unset;
+
+    @include md-down-device() {
+      gap: 17px;
+    }
+
+    .page-item {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 8px;
+        height: 1.5px;
+        position: absolute;
+        background-color: var(--text-color);
+        right: -15px;
+        top: 50%;
+      }
+
+      a {
+        color: rgba(var(--title-color-opc), 0.5);
+        font-family: var(--font-dmSans);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+        width: 31px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+
+        @include sm-down-device() {
+          width: 28px;
+          height: 28px;
+          font-size: 15px;
+        }
+
+        &:hover {
+          background-color: var(--primary-color1);
+          border-color: var(--primary-color1);
+          color: var(--white-color);
+        }
+      }
+
+      &.active {
+        a {
+          background-color: var(--primary-color1);
+          border-color: var(--primary-color1);
+          color: var(--white-color);
+        }
+      }
+
+      &.paginations-button {
+        &::before {
+          content: unset;
+        }
+
+        a {
+          width: unset;
+          height: unset;
+          border: unset;
+          background-color: unset;
+          padding: 20px 31px;
+          border-right: 1px solid rgba(var(--black-color-opc), 0.3);
+
+          @include md-down-device() {
+            padding: 16px 19px;
+          }
+
+          svg {
+            fill: rgba(var(--title-color-opc), 0.5);
+            transition: 0.5s;
+            @include md-down-device() {
+              width: 20px;
+            }
+          }
+
+          &:hover {
+            svg {
+              fill: var(--primary-color1);
+            }
+          }
+
+          &:last-child {
+            border-left: 1px solid rgba(var(--black-color-opc), 0.3);
+          }
+        }
+
+      }
+
+      &:nth-child(4)::before {
+        content: unset;
+      }
+    }
+  }
+}
+
 /*=====================================
   13. Footer Section CSS
 ========================================*/
@@ -13067,9 +13177,11 @@ header.style-4 {
     .signature-img {
       display: flex;
       margin-left: auto;
+
       @include md-down-device() {
         width: 140px;
       }
+
       @include sm-down-device() {
         width: 120px;
       }
