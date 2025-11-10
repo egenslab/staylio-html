@@ -11,7 +11,7 @@
 }
 
 :root {
-  --font-dmSans: "DM Sans", sans-serif;
+  --font-dmsans: "DM Sans", sans-serif;
   --font-marcellus: "Marcellus", sans-serif;
   --font-dancing: "Dancing Script", sans-serif;
   // Colors ---------------
@@ -179,7 +179,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   color: var(--title-color);
   font-size: 16px;
   font-weight: 400;
@@ -369,7 +369,7 @@ a {
 }
 
 p {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -1020,7 +1020,7 @@ body.tt-magic-cursor #magic-cursor {
     line-height: 1;
 
     span {
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 600;
       font-size: 16px;
       color: var(--title-color);
@@ -1028,7 +1028,7 @@ body.tt-magic-cursor #magic-cursor {
     }
 
     p {
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 600;
       font-size: 14px;
       color: var(--text-color);
@@ -1084,7 +1084,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .primary-btn1 {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 600;
   padding: 18px 20px;
@@ -1153,7 +1153,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .primary-btn2 {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 600;
   padding: 18px 20px;
@@ -1218,7 +1218,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .primary-btn3 {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 600;
   padding: 18px 20px;
@@ -1283,7 +1283,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .primary-btn4 {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 600;
   padding: 18px 20px;
@@ -1355,7 +1355,7 @@ body.tt-magic-cursor #magic-cursor {
   width: 100%;
   background: var(--white-color);
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   font-weight: 400;
   padding: 7px 20px;
@@ -1385,7 +1385,7 @@ body.tt-magic-cursor #magic-cursor {
   }
 
   span {
-    font-family: var(--font-dmSans);
+    font-family: var(--font-dmsans);
     font-weight: 400;
     font-size: 14px;
     color: var(--text-color);
@@ -1412,7 +1412,7 @@ body.tt-magic-cursor #magic-cursor {
 
     .option {
       color: var(--text-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-size: 16px;
       font-weight: 500;
       border-bottom: 1px solid var(--borders-color);
@@ -1489,7 +1489,7 @@ body.tt-magic-cursor #magic-cursor {
 
   p {
     color: var(--text-color);
-    font-family: var(--font-dmSans);
+    font-family: var(--font-dmsans);
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -1601,7 +1601,7 @@ body.tt-magic-cursor #magic-cursor {
   line-height: 1;
 
   label {
-    font-family: var(--font-dmSans);
+    font-family: var(--font-dmsans);
     font-weight: 600;
     font-size: 16px;
     display: block;
@@ -1618,7 +1618,7 @@ body.tt-magic-cursor #magic-cursor {
     background-color: unset;
     width: 100%;
     color: var(--title-color);
-    font-family: var(--font-dmSans);
+    font-family: var(--font-dmsans);
     font-size: 16px;
     font-weight: 500;
     height: 37px;
@@ -1656,7 +1656,7 @@ body.tt-magic-cursor #magic-cursor {
     width: 100%;
     background: #F0F0F0;
     color: var(--title-color);
-    font-family: var(--font-dmSans);
+    font-family: var(--font-dmsans);
     font-size: 16px;
     font-weight: 500;
     border-radius: 10px;
@@ -1710,7 +1710,7 @@ body.tt-magic-cursor #magic-cursor {
     .form-check-label {
       cursor: pointer;
       color: var(--text-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-size: 16px;
       font-weight: 500;
       line-height: 1.2;
@@ -1794,7 +1794,7 @@ body.tt-magic-cursor #magic-cursor {
 
           a {
             color: var(--text-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 500;
             font-size: 14px;
             line-height: 1;
@@ -1965,7 +1965,7 @@ body.tt-magic-cursor #magic-cursor {
 
     span {
       color: var(--title-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-size: 14px;
       font-weight: 500;
       line-height: 1;
@@ -2019,7 +2019,7 @@ body.tt-magic-cursor #magic-cursor {
     li {
       a {
         color: var(--title-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 600;
         text-transform: capitalize;
         font-size: 12px;
@@ -2163,7 +2163,7 @@ header.style-1 {
         }
 
         span {
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 14px;
           line-height: 1;
@@ -2177,7 +2177,7 @@ header.style-1 {
           line-height: 1;
 
           a {
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
@@ -2299,7 +2299,7 @@ header.style-1 {
           padding: 5px 20px;
           line-height: 1;
           position: relative;
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 600;
           font-size: 16px;
           transition: all .5s ease-out 0s;
@@ -2394,7 +2394,7 @@ header.style-1 {
               padding: 12px 20px;
               color: var(--title-color);
               font-weight: 500;
-              font-family: var(--font-dmSans);
+              font-family: var(--font-dmsans);
               font-size: 14px;
               line-height: 1.2;
               -webkit-transition: all .4s ease-out 0s;
@@ -3069,7 +3069,7 @@ header.style-2 {
           padding: 5px 20px;
           line-height: 1;
           position: relative;
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 600;
           font-size: 16px;
           transition: all .5s ease-out 0s;
@@ -3164,7 +3164,7 @@ header.style-2 {
               padding: 12px 20px;
               color: var(--title-color);
               font-weight: 500;
-              font-family: var(--font-dmSans);
+              font-family: var(--font-dmsans);
               font-size: 14px;
               line-height: 1.2;
               -webkit-transition: all .4s ease-out 0s;
@@ -3693,7 +3693,7 @@ header.style-3 {
         }
 
         span {
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 14px;
           line-height: 1;
@@ -3707,7 +3707,7 @@ header.style-3 {
           line-height: 1;
 
           a {
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
@@ -3830,7 +3830,7 @@ header.style-3 {
           padding: 5px 20px;
           line-height: 1;
           position: relative;
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 600;
           font-size: 16px;
           transition: all .5s ease-out 0s;
@@ -3925,7 +3925,7 @@ header.style-3 {
               padding: 12px 20px;
               color: var(--title-color);
               font-weight: 500;
-              font-family: var(--font-dmSans);
+              font-family: var(--font-dmsans);
               font-size: 14px;
               line-height: 1.2;
               -webkit-transition: all .4s ease-out 0s;
@@ -4423,7 +4423,7 @@ header.style-4 {
         }
 
         span {
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 14px;
           line-height: 1;
@@ -4437,7 +4437,7 @@ header.style-4 {
           line-height: 1;
 
           a {
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
@@ -4560,7 +4560,7 @@ header.style-4 {
           padding: 5px 20px;
           line-height: 1;
           position: relative;
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 600;
           font-size: 16px;
           transition: all .5s ease-out 0s;
@@ -4655,7 +4655,7 @@ header.style-4 {
               padding: 12px 20px;
               color: var(--title-color);
               font-weight: 500;
-              font-family: var(--font-dmSans);
+              font-family: var(--font-dmsans);
               font-size: 14px;
               line-height: 1.2;
               -webkit-transition: all .4s ease-out 0s;
@@ -5137,7 +5137,7 @@ header.style-4 {
 
         h3 {
           color: var(--title-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 30px;
           line-height: 1;
@@ -5199,7 +5199,7 @@ header.style-4 {
 
             h6 {
               color: var(--title-color);
-              font-family: var(--font-dmSans);
+              font-family: var(--font-dmsans);
               font-weight: 500;
               font-size: 18px;
               line-height: 1;
@@ -5253,7 +5253,7 @@ header.style-4 {
 
                 span {
                   color: var(--title-color);
-                  font-family: var(--font-dmSans);
+                  font-family: var(--font-dmsans);
                   font-weight: 400;
                   font-size: 16px;
                   line-height: 1;
@@ -5262,7 +5262,7 @@ header.style-4 {
 
                 strong {
                   color: var(--title-color);
-                  font-family: var(--font-dmSans);
+                  font-family: var(--font-dmsans);
                   font-weight: 400;
                   font-size: 15px;
                   line-height: 1;
@@ -5273,7 +5273,7 @@ header.style-4 {
 
             .expand {
               color: var(--text-color);
-              font-family: var(--font-dmSans);
+              font-family: var(--font-dmsans);
               font-weight: 400;
               font-size: 14px;
               line-height: 1;
@@ -5306,7 +5306,7 @@ header.style-4 {
 
             span {
               color: var(--title-color);
-              font-family: var(--font-dmSans);
+              font-family: var(--font-dmsans);
               font-weight: 400;
               font-size: 16px;
               line-height: 1;
@@ -5315,7 +5315,7 @@ header.style-4 {
 
             strong {
               color: var(--title-color);
-              font-family: var(--font-dmSans);
+              font-family: var(--font-dmsans);
               font-weight: 600;
               font-size: 18px;
               line-height: 1;
@@ -5715,7 +5715,7 @@ header.style-4 {
 
         span {
           color: var(--white-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 400;
           font-size: 22px;
           line-height: 1;
@@ -5869,7 +5869,7 @@ header.style-4 {
           h3,
           strong {
             color: var(--title-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-size: 40px;
             font-weight: 500;
             line-height: 1;
@@ -5883,7 +5883,7 @@ header.style-4 {
 
         span {
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-size: 16px;
           font-weight: 500;
           line-height: 1;
@@ -6008,7 +6008,7 @@ header.style-4 {
 
         a {
           color: var(--white-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 16px;
           line-height: 1;
@@ -6102,7 +6102,7 @@ header.style-4 {
 
     span {
       color: var(--white-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 500;
       font-size: 16px;
       line-height: 1;
@@ -6274,7 +6274,7 @@ header.style-4 {
 
       p {
         color: var(--text-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 400;
         font-size: 15px;
         line-height: 24px;
@@ -6448,7 +6448,7 @@ header.style-4 {
     .dining-and-cuisine-content {
       p {
         color: var(--text-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 400;
         font-size: 20px;
         line-height: 34px;
@@ -6566,7 +6566,7 @@ header.style-4 {
                 position: absolute;
                 left: 50%;
                 color: var(--title-color);
-                font-family: var(--font-dmSans);
+                font-family: var(--font-dmsans);
                 font-size: 14px;
                 font-weight: 600;
                 transform-origin: 0 60px;
@@ -6698,7 +6698,7 @@ header.style-4 {
         }
 
         >h2 {
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 900;
           font-size: 60px;
           -webkit-text-fill-color: transparent;
@@ -6765,7 +6765,7 @@ header.style-4 {
 
           span {
             color: var(--text-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 400;
             font-size: 18px;
             line-height: 1;
@@ -6940,7 +6940,7 @@ header.style-4 {
 .testimonial-card {
   >h5 {
     color: var(--primary-color1);
-    font-family: var(--font-dmSans);
+    font-family: var(--font-dmsans);
     font-weight: 500;
     font-size: 26px;
     line-height: 1;
@@ -6958,7 +6958,7 @@ header.style-4 {
 
   p {
     color: var(--title-color);
-    font-family: var(--font-dmSans);
+    font-family: var(--font-dmsans);
     font-weight: 500;
     font-size: 22px;
     line-height: 34px;
@@ -7016,7 +7016,7 @@ header.style-4 {
       .author-content {
         h5 {
           color: var(--title-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 600;
           font-size: 20px;
           line-height: 1;
@@ -7029,7 +7029,7 @@ header.style-4 {
 
         span {
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 400;
           font-size: 18px;
           line-height: 1;
@@ -7085,7 +7085,7 @@ header.style-4 {
 
     h6 {
       color: var(--primary-color2);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 600;
       font-size: 20px;
       line-height: 1.3;
@@ -7102,7 +7102,7 @@ header.style-4 {
 
     p {
       color: var(--title-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 500;
       font-size: 18px;
       line-height: 30px;
@@ -7136,7 +7136,7 @@ header.style-4 {
         .author-content {
           h6 {
             color: var(--title-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 600;
             font-size: 18px;
             line-height: 1;
@@ -7235,7 +7235,7 @@ header.style-4 {
         .author-content {
           h6 {
             color: var(--title-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 600;
             font-size: 18px;
             line-height: 1;
@@ -7338,7 +7338,7 @@ header.style-4 {
       display: flex;
       justify-content: center;
       color: var(--dark-text-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 500;
       font-size: 20px;
       line-height: 1;
@@ -7453,7 +7453,7 @@ header.style-4 {
 
       a {
         color: var(--text-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 400;
         font-size: 18px;
         line-height: 1;
@@ -7578,7 +7578,7 @@ header.style-4 {
 
       a {
         color: var(--text-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-size: 18px;
         font-weight: 400;
         line-height: 1;
@@ -7740,7 +7740,7 @@ header.style-4 {
 
         input {
           color: var(--white-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-size: 14px;
           font-weight: 300;
           line-height: 1;
@@ -7833,7 +7833,7 @@ header.style-4 {
 
                 a {
                   color: var(--footer-text);
-                  font-family: var(--font-dmSans);
+                  font-family: var(--font-dmsans);
                   font-weight: 400;
                   font-size: 18px;
                   line-height: 1;
@@ -8011,7 +8011,7 @@ header.style-4 {
 
               .get-direction {
                 color: var(--white-color);
-                font-family: var(--font-dmSans);
+                font-family: var(--font-dmsans);
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 1;
@@ -8136,7 +8136,7 @@ header.style-4 {
 
           a {
             color: var(--white-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 400;
             font-size: 16px;
             line-height: 1;
@@ -8198,7 +8198,7 @@ header.style-4 {
 
     p {
       color: #D3D3D3;
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 600;
       font-size: 15px;
       line-height: 1;
@@ -8589,7 +8589,7 @@ header.style-4 {
 
         .nav-link {
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 16px;
           line-height: 1;
@@ -8619,142 +8619,6 @@ header.style-4 {
       }
     }
 
-  }
-
-  .room-suite-card {
-    position: relative;
-
-    .room-and-suites-card-img {
-      display: block;
-      overflow: hidden;
-      position: relative;
-
-      .img-area {
-        object-fit: cover;
-        transition: all 0.5s;
-
-        img {
-          transition: all 0.5s;
-        }
-
-        &::after {
-          position: absolute;
-          width: 200%;
-          height: 0%;
-          left: 50%;
-          top: 50%;
-          background-color: rgba(255, 255, 255, 0.3);
-          transform: translate(-50%, -50%) rotate(-45deg);
-          content: "";
-          z-index: 1;
-        }
-      }
-
-      .price {
-        position: absolute;
-        left: 0;
-        top: 25px;
-        display: flex;
-        gap: 10px;
-        background-color: rgba(var(--white-color-opc), 0.8);
-        backdrop-filter: blur(30px);
-        padding: 9px;
-        z-index: 2;
-
-        span,
-        h3 {
-          color: var(--title-color);
-          display: block;
-          font-family: var(--font-marcellus);
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 1;
-          margin-bottom: 0;
-
-          @include xl-device() {
-            font-size: 18px;
-          }
-
-          @include xl-down-device() {
-            font-size: 17px;
-          }
-        }
-
-        h6 {
-          color: var(--white-color);
-          font-family: var(--font-marcellus);
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 1;
-          margin-bottom: 0;
-          display: flex;
-          align-items: end;
-
-          @include md-down-device() {
-            font-size: 14px;
-          }
-        }
-
-        &.two {
-          gap: 5px;
-        }
-      }
-    }
-
-    &:hover {
-      .room-and-suites-card-img {
-        .img-area {
-          img {
-            transform: scale(1.1);
-          }
-
-          &::after {
-            height: 250%;
-            transition: all 600ms linear;
-            background-color: transparent;
-          }
-        }
-
-      }
-    }
-
-    &.two {
-      .room-and-suites-card-img {
-        .price {
-          top: unset;
-          left: 0;
-          bottom: 0;
-          background-color: #282828;
-          backdrop-filter: blur(30px);
-
-          span,
-          h3 {
-            color: var(--white-color);
-          }
-        }
-      }
-    }
-
-    &.three {
-      .room-and-suites-card-img {
-        .price {
-          background-color: #282828;
-
-          span,
-          h3 {
-            color: var(--white-color);
-          }
-        }
-      }
-    }
-
-    &.four {
-      margin-top: -50px;
-
-      @include lg-down-device() {
-        margin-top: 0;
-      }
-    }
   }
 
   &.two {
@@ -8818,7 +8682,7 @@ header.style-4 {
 
         .nav-link {
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 18px;
           line-height: 1;
@@ -8869,6 +8733,142 @@ header.style-4 {
           }
         }
       }
+    }
+  }
+}
+
+.room-suite-card {
+  position: relative;
+
+  .room-and-suites-card-img {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    .img-area {
+      object-fit: cover;
+      transition: all 0.5s;
+
+      img {
+        transition: all 0.5s;
+      }
+
+      &::after {
+        position: absolute;
+        width: 200%;
+        height: 0%;
+        left: 50%;
+        top: 50%;
+        background-color: rgba(255, 255, 255, 0.3);
+        transform: translate(-50%, -50%) rotate(-45deg);
+        content: "";
+        z-index: 1;
+      }
+    }
+
+    .price {
+      position: absolute;
+      left: 0;
+      top: 25px;
+      display: flex;
+      gap: 10px;
+      background-color: rgba(var(--white-color-opc), 0.8);
+      backdrop-filter: blur(30px);
+      padding: 9px;
+      z-index: 2;
+
+      span,
+      h3 {
+        color: var(--title-color);
+        display: block;
+        font-family: var(--font-marcellus);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 0;
+
+        @include xl-device() {
+          font-size: 18px;
+        }
+
+        @include xl-down-device() {
+          font-size: 17px;
+        }
+      }
+
+      h6 {
+        color: var(--white-color);
+        font-family: var(--font-marcellus);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1;
+        margin-bottom: 0;
+        display: flex;
+        align-items: end;
+
+        @include md-down-device() {
+          font-size: 14px;
+        }
+      }
+
+      &.two {
+        gap: 5px;
+      }
+    }
+  }
+
+  &:hover {
+    .room-and-suites-card-img {
+      .img-area {
+        img {
+          transform: scale(1.1);
+        }
+
+        &::after {
+          height: 250%;
+          transition: all 600ms linear;
+          background-color: transparent;
+        }
+      }
+
+    }
+  }
+
+  &.two {
+    .room-and-suites-card-img {
+      .price {
+        top: unset;
+        left: 0;
+        bottom: 0;
+        background-color: #282828;
+        backdrop-filter: blur(30px);
+
+        span,
+        h3 {
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+
+  &.three {
+    .room-and-suites-card-img {
+      .price {
+        background-color: #282828;
+
+        span,
+        h3 {
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+
+  &.four {
+    margin-top: -50px;
+
+    @include lg-down-device() {
+      margin-top: 0;
     }
   }
 }
@@ -8976,7 +8976,7 @@ header.style-4 {
 
       span {
         color: var(--title-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-size: 16px;
         font-weight: 400;
         line-height: 1;
@@ -9094,7 +9094,7 @@ header.style-4 {
 
         span {
           color: var(--title-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-size: 20px;
           font-weight: 400;
           line-height: 1;
@@ -9305,7 +9305,7 @@ header.style-4 {
 
         a {
           color: var(--white-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 600;
           font-size: 14px;
           line-height: 1;
@@ -9628,7 +9628,7 @@ header.style-4 {
       h2,
       span {
         color: var(--title-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-size: 40px;
         font-weight: 500;
         line-height: 1;
@@ -9646,7 +9646,7 @@ header.style-4 {
 
     span {
       color: var(--title-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-size: 16px;
       font-weight: 500;
       line-height: 1;
@@ -9882,7 +9882,7 @@ header.style-4 {
 
           p {
             margin-bottom: 0;
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-size: 18px;
             font-weight: 400;
             line-height: 1;
@@ -10059,7 +10059,7 @@ header.style-4 {
 
     p {
       color: var(--title-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 400;
       font-size: 18px;
       line-height: 30px;
@@ -10095,7 +10095,7 @@ header.style-4 {
 
       .single-list {
         color: var(--title-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 400;
         font-size: 18px;
         line-height: 1;
@@ -10235,7 +10235,7 @@ header.style-4 {
     //         position: absolute;
     //         left: 50%;
     //         color: var(--title-color);
-    //         font-family: var(--font-dmSans);
+    //         font-family: var(--font-dmsans);
     //         font-size: 14px;
     //         font-weight: 600;
     //         transform-origin: 0 60px;
@@ -10345,7 +10345,7 @@ header.style-4 {
             font-weight: 500;
             font-size: 13px;
             color: var(--title-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             transform-origin: bottom center;
             transform: rotate(var(--char-rotate));
 
@@ -10441,7 +10441,7 @@ header.style-4 {
 
         p {
           color: var(--white-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 400;
           font-size: 16px;
           line-height: 24px;
@@ -10482,7 +10482,7 @@ header.style-4 {
       justify-content: center;
       color: var(--text-color);
       margin-bottom: 0;
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 500;
       font-size: 20px;
       line-height: 1;
@@ -10861,7 +10861,7 @@ header.style-4 {
 
         .single-list {
           color: var(--white-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 400;
           font-size: 18px;
           line-height: 1;
@@ -11033,7 +11033,7 @@ header.style-4 {
 
         .view-details {
           color: var(--white-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 600;
           font-size: 14px;
           line-height: 1;
@@ -11241,7 +11241,7 @@ header.style-4 {
 
       .single-list {
         color: var(--title-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 500;
         font-size: 18px;
         line-height: 1;
@@ -11499,7 +11499,7 @@ header.style-4 {
         display: flex;
         align-items: center;
         gap: 10px;
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 500;
         font-size: 14px;
         line-height: 1;
@@ -11546,7 +11546,7 @@ header.style-4 {
 
       .nav-link {
         color: var(--text-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 500;
         font-size: 16px;
         line-height: 1;
@@ -11697,7 +11697,7 @@ header.style-4 {
       p {
         color: var(--text-color);
         margin-bottom: 35px;
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
@@ -11741,7 +11741,7 @@ header.style-4 {
 
         .single-event {
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 18px;
           line-height: 1;
@@ -11802,7 +11802,7 @@ header.style-4 {
 
         .accordion-button {
           color: var(--title-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-size: 20px;
           font-weight: 500;
           line-height: 1.4;
@@ -11999,7 +11999,7 @@ header.style-4 {
           h5 {
             color: var(--title-color);
             margin-bottom: 0;
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 400;
             font-size: 22px;
             line-height: 1;
@@ -12031,7 +12031,7 @@ header.style-4 {
 
               a {
                 color: var(--text-color);
-                font-family: var(--font-dmSans);
+                font-family: var(--font-dmsans);
                 font-weight: 400;
                 font-size: 17px;
                 line-height: 1;
@@ -12082,7 +12082,7 @@ header.style-4 {
         p {
           color: var(--text-color);
           display: block;
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 400;
           font-size: 18px;
           line-height: 1.3;
@@ -12175,7 +12175,7 @@ header.style-4 {
       position: relative;
       transition: 0.5s;
       color: var(--title-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-size: 20px;
       font-weight: 400;
       line-height: 1;
@@ -12280,7 +12280,7 @@ header.style-4 {
       outline: none;
       background-color: transparent;
       color: var(--title-color);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 400;
       font-size: 16px;
       line-height: 1;
@@ -12342,7 +12342,7 @@ header.style-4 {
     }
 
     .widget-title {
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 500;
       font-size: 24px;
       margin-bottom: 27px;
@@ -12374,7 +12374,7 @@ header.style-4 {
 
         a {
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-size: 16px;
           font-weight: 500;
           line-height: 1;
@@ -12407,7 +12407,7 @@ header.style-4 {
 
         >a {
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-size: 14px;
           font-weight: 400;
           display: block;
@@ -12428,7 +12428,7 @@ header.style-4 {
 
           a {
             color: var(--title-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
@@ -12480,7 +12480,7 @@ header.style-4 {
           background-color: #F2F6FF;
           padding: 8px 16px;
           color: var(--title-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-size: 14px;
           font-weight: 400;
           display: block;
@@ -12608,7 +12608,7 @@ header.style-4 {
     p {
       color: var(--text-color);
       margin-bottom: 20px;
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 400;
       font-size: 18px;
       line-height: 30px;
@@ -12660,7 +12660,7 @@ header.style-4 {
 
         span {
           display: block;
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 20px;
           line-height: 1;
@@ -12681,7 +12681,7 @@ header.style-4 {
 
         a {
           display: inline-block;
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 500;
           font-size: 20px;
           line-height: 1;
@@ -12741,7 +12741,7 @@ header.style-4 {
     h6 {
       color: var(--title-color);
       margin-bottom: 0;
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 500;
       font-size: 20px;
       line-height: 1.4;
@@ -12777,7 +12777,7 @@ header.style-4 {
       h3 {
         color: var(--title-color);
         margin-bottom: 23px;
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 500;
         font-size: 20px;
         line-height: 1;
@@ -12798,7 +12798,7 @@ header.style-4 {
 
         li {
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 400;
           font-size: 18px;
           line-height: 1;
@@ -13117,7 +13117,7 @@ header.style-4 {
         p {
           margin-bottom: 0;
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 400;
           font-size: 16px;
           line-height: 24px;
@@ -13208,7 +13208,7 @@ header.style-4 {
 
           .nav-link {
             color: var(--text-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 400;
             font-size: 22px;
             line-height: 1;
@@ -13421,7 +13421,7 @@ header.style-4 {
 
     .price {
       color: var(--primary-color1);
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 500;
       font-size: 28px;
       line-height: 1;
@@ -13438,7 +13438,7 @@ header.style-4 {
       span {
         position: relative;
         color: var(--title-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 500;
         font-size: 16px;
         line-height: 1;
@@ -13490,7 +13490,7 @@ header.style-4 {
     p {
       color: var(--text-color);
       margin-bottom: 0;
-      font-family: var(--font-dmSans);
+      font-family: var(--font-dmsans);
       font-weight: 400;
       font-size: 18px;
       line-height: 30px;
@@ -13522,7 +13522,7 @@ header.style-4 {
 
         span {
           color: var(--text-color);
-          font-family: var(--font-dmSans);
+          font-family: var(--font-dmsans);
           font-weight: 400;
           font-size: 18px;
           line-height: 1;
@@ -13557,7 +13557,7 @@ header.style-4 {
         gap: 16px;
         align-items: center;
         color: var(--title-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 500;
         font-size: 18px;
         line-height: 1;
@@ -13577,101 +13577,103 @@ header.style-4 {
     line-height: 1;
     margin-bottom: 35px;
   }
-  .room-details-sidebar{
+
+  .room-details-sidebar {
     .sidebar-wrapper {
       background-color: #F5F6FC;
       max-width: 424px;
       width: 100%;
       padding: 50px 40px;
+
       .mb-30 {
         margin-bottom: 30px;
-  
+
         @include lg-down-device() {
           margin-bottom: 20px;
         }
       }
-  
+
       h3 {
         color: var(--title-color);
-        font-family: var(--font-dmSans);
+        font-family: var(--font-dmsans);
         font-weight: 500;
         font-size: 30px;
         line-height: 1;
         margin-bottom: 40px;
-  
+
         @include lg-down-device() {
           margin-bottom: 30px;
         }
-  
+
         @include md-down-device() {
           margin-bottom: 25px;
           font-size: 25px;
         }
-  
+
         @include sm-down-device() {
           margin-bottom: 20px;
           font-size: 23px;
         }
       }
-  
+
       form {
         .single-info {
-  
+
           .form-inner2 {
             .form-check {
               .form-check-input {
                 &:checked {
-                  background-color: var(--primary-color2);
-                  border-color: var(--primary-color2);
+                  background-color: var(--primary-color1);
+                  border-color: var(--primary-color1);
                 }
               }
             }
           }
-  
+
           .form-inner {
             input {
               &:focus {
-                border-color: var(--primary-color2);
+                border-color: var(--primary-color1);
                 background-color: var(--white-color);
               }
             }
           }
         }
-  
+
         .check-area {
           margin-bottom: 50px;
-  
+
           @include xxl-device() {
             margin-bottom: 40px;
           }
-  
+
           @include xxl-down-device() {
             margin-bottom: 35px;
           }
-  
+
           @include lg-down-device() {
             margin-bottom: 28px;
           }
-  
+
           h6 {
             color: var(--title-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 500;
             font-size: 18px;
             line-height: 1;
             margin-bottom: 20px;
           }
-  
+
           .form-check {
             display: flex;
             align-items: center;
             gap: 15px;
             margin-bottom: 0;
-  
+
             @include md-down-device() {
               gap: 10px;
             }
-  
+
             .form-check-input {
               width: 12px;
               height: 12px;
@@ -13680,25 +13682,25 @@ header.style-4 {
               background-color: unset;
               border-radius: unset;
               cursor: pointer;
-  
+
               &:focus {
                 box-shadow: unset;
               }
-  
+
               &:checked {
                 background: var(--primary-color1);
                 border-color: var(--primary-color1);
               }
-  
+
               &:checked+.form-check-label {
                 color: var(--title-color);
-  
+
                 svg {
                   fill: var(--title-color);
                 }
               }
             }
-  
+
             .form-check-label {
               width: 100%;
               display: flex;
@@ -13706,30 +13708,30 @@ header.style-4 {
               align-items: center;
               gap: 10px;
               cursor: pointer;
-  
+
               span {
                 color: var(--title-color);
-                font-family: var(--font-dmSans);
+                font-family: var(--font-dmsans);
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 1;
                 display: block;
               }
-  
+
               strong {
                 color: var(--title-color);
-                font-family: var(--font-dmSans);
+                font-family: var(--font-dmsans);
                 font-weight: 400;
                 font-size: 15px;
                 line-height: 1;
-  
+
               }
             }
           }
-  
+
           .expand {
             color: var(--text-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 400;
             font-size: 14px;
             line-height: 1;
@@ -13740,43 +13742,43 @@ header.style-4 {
           }
         }
       }
-  
+
       .total-pricing-list {
         margin: 0;
         padding: 0;
         list-style: none;
         margin-bottom: 65px;
-  
+
         @include xl-down-device() {
           margin-bottom: 50px;
         }
-  
+
         @include md-down-device() {
           margin-bottom: 35px;
         }
-  
+
         .single-price {
           display: flex;
           justify-content: space-between;
           margin-bottom: 20px;
-  
+
           span {
             color: var(--title-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 400;
             font-size: 16px;
             line-height: 1;
             display: block;
           }
-  
+
           strong {
             color: var(--title-color);
-            font-family: var(--font-dmSans);
+            font-family: var(--font-dmsans);
             font-weight: 600;
             font-size: 18px;
             line-height: 1;
           }
-  
+
           &:last-child {
             margin-bottom: 0;
             padding-top: 15px;
@@ -13784,32 +13786,158 @@ header.style-4 {
           }
         }
       }
-  
+
       .btn-area {
         display: flex;
         justify-content: center;
-  
-        .primary-btn1,
-        .primary-btn2,
-        .primary-btn3,
-        .primary-btn4 {
+
+        .primary-btn1 {
           min-width: 344px;
           justify-content: center;
           padding: 20px 35px;
-  
+
           @include xxl-down-device() {
             width: 290px;
           }
-  
+
           @include lg-down-device() {
             min-width: 260px;
           }
-  
+
           @include sm-down-device() {
             min-width: 200px;
             padding: 17px 30px;
           }
         }
+      }
+    }
+  }
+  .comment-area {
+    margin-bottom: 40px;
+
+    >.single-comment-area {
+      margin-bottom: 24px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+      >.single-comment-area {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .single-comment-area {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    @include sm-down-device() {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .author-img {
+      img {
+        max-width: 50px;
+        min-width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+
+    .comment-content {
+      padding-bottom: 25px;
+      .author-name-deg {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+
+        h6 {
+          line-height: 1;
+          margin-bottom: 0;
+          color: var(--title-color);
+          font-family: var(--font-dmsans);
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        span {
+          color: var(--text-color);
+          font-family: var(--font-dmsans);
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1;
+        }
+      }
+
+      .star-list{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        li {
+          color: #DDA701;
+          font-size: 13px;
+        }
+      }
+
+      p {
+        color: var(--text-color);
+        font-family: var(--font-dmsans);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 12px;
+      }
+
+      .replay-btn {
+        color: var(--text-color);
+        font-family: var(--font-jost);
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        line-height: 1;
+        cursor: pointer;
+        transition: 0.35s;
+
+        svg {
+          transition: 0.35s;
+          fill: var(--text-color);
+        }
+
+        &:hover {
+          color: var(--primary-color1);
+
+          svg {
+            fill: var(--primary-color1);
+          }
+        }
+      }
+    }
+  }
+
+  .comment-replay {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 70px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 24px 0;
+
+    >li {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }

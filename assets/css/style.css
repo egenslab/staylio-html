@@ -9,7 +9,7 @@
 }
 
 :root {
-  --font-dmSans: "DM Sans", sans-serif;
+  --font-dmsans: "DM Sans", sans-serif;
   --font-marcellus: "Marcellus", sans-serif;
   --font-dancing: "Dancing Script", sans-serif;
   --white-color: #fff;
@@ -46,7 +46,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   color: var(--title-color);
   font-size: 16px;
   font-weight: 400;
@@ -194,7 +194,7 @@ a {
 }
 
 p {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -887,14 +887,14 @@ body.tt-magic-cursor #magic-cursor {
   line-height: 1;
 }
 .btn-area .btn-content span {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 16px;
   color: var(--title-color);
   line-height: 1;
 }
 .btn-area .btn-content p {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 14px;
   color: var(--text-color);
@@ -941,7 +941,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 .primary-btn1 {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 600;
   padding: 18px 20px;
@@ -1000,7 +1000,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .primary-btn2 {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 600;
   padding: 18px 20px;
@@ -1056,7 +1056,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .primary-btn3 {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 600;
   padding: 18px 20px;
@@ -1112,7 +1112,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .primary-btn4 {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 600;
   padding: 18px 20px;
@@ -1174,7 +1174,7 @@ body.tt-magic-cursor #magic-cursor {
   width: 100%;
   background: var(--white-color);
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   font-weight: 400;
   padding: 7px 20px;
@@ -1208,7 +1208,7 @@ body.tt-magic-cursor #magic-cursor {
   }
 }
 .nice-select span {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 14px;
   color: var(--text-color);
@@ -1232,7 +1232,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 .nice-select .list .option {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 500;
   border-bottom: 1px solid var(--borders-color);
@@ -1307,7 +1307,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 .section-title p {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -1407,7 +1407,7 @@ body.tt-magic-cursor #magic-cursor {
   line-height: 1;
 }
 .form-inner label {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 16px;
   display: block;
@@ -1422,7 +1422,7 @@ body.tt-magic-cursor #magic-cursor {
   background-color: unset;
   width: 100%;
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 500;
   height: 37px;
@@ -1464,7 +1464,7 @@ body.tt-magic-cursor #magic-cursor {
   width: 100%;
   background: #F0F0F0;
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 500;
   border-radius: 10px;
@@ -1515,7 +1515,7 @@ body.tt-magic-cursor #magic-cursor {
 .form-inner2 .form-check .form-check-label {
   cursor: pointer;
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
@@ -1588,7 +1588,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 .topbar-area .topbar-wrap .topbar-contact-area .topbar-contact-list .topbar-single-list a {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
@@ -1718,7 +1718,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 .language-area .language-btn span {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
@@ -1765,7 +1765,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 .language-area .language-list li a {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   text-transform: capitalize;
   font-size: 12px;
@@ -1905,7 +1905,7 @@ header.style-1 .nav-right .hotline-area .content::after {
   transform: translateY(-50%);
 }
 header.style-1 .nav-right .hotline-area .content span {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
@@ -1918,7 +1918,7 @@ header.style-1 .nav-right .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-1 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -2021,7 +2021,7 @@ header.style-1 .main-menu > ul > li > a {
   padding: 5px 20px;
   line-height: 1;
   position: relative;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 16px;
   transition: all 0.5s ease-out 0s;
@@ -2112,7 +2112,7 @@ header.style-1 .main-menu > ul > li ul.sub-menu > li > a {
   padding: 12px 20px;
   color: var(--title-color);
   font-weight: 500;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   line-height: 1.2;
   transition: all 0.4s ease-out 0s;
@@ -2636,7 +2636,7 @@ header.style-2 .main-menu > ul > li > a {
   padding: 5px 20px;
   line-height: 1;
   position: relative;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 16px;
   transition: all 0.5s ease-out 0s;
@@ -2727,7 +2727,7 @@ header.style-2 .main-menu > ul > li ul.sub-menu > li > a {
   padding: 12px 20px;
   color: var(--title-color);
   font-weight: 500;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   line-height: 1.2;
   transition: all 0.4s ease-out 0s;
@@ -3152,7 +3152,7 @@ header.style-3 .nav-right .hotline-area .content::after {
   transform: translateY(-50%);
 }
 header.style-3 .nav-right .hotline-area .content span {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
@@ -3165,7 +3165,7 @@ header.style-3 .nav-right .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-3 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -3267,7 +3267,7 @@ header.style-3 .main-menu > ul > li > a {
   padding: 5px 20px;
   line-height: 1;
   position: relative;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 16px;
   transition: all 0.5s ease-out 0s;
@@ -3358,7 +3358,7 @@ header.style-3 .main-menu > ul > li ul.sub-menu > li > a {
   padding: 12px 20px;
   color: var(--title-color);
   font-weight: 500;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   line-height: 1.2;
   transition: all 0.4s ease-out 0s;
@@ -3766,7 +3766,7 @@ header.style-4 .nav-right .hotline-area .content::after {
   transform: translateY(-50%);
 }
 header.style-4 .nav-right .hotline-area .content span {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
@@ -3779,7 +3779,7 @@ header.style-4 .nav-right .hotline-area .content h6 {
   line-height: 1;
 }
 header.style-4 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -3881,7 +3881,7 @@ header.style-4 .main-menu > ul > li > a {
   padding: 5px 20px;
   line-height: 1;
   position: relative;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 16px;
   transition: all 0.5s ease-out 0s;
@@ -3972,7 +3972,7 @@ header.style-4 .main-menu > ul > li ul.sub-menu > li > a {
   padding: 12px 20px;
   color: var(--title-color);
   font-weight: 500;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   line-height: 1.2;
   transition: all 0.4s ease-out 0s;
@@ -4366,7 +4366,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body h3 {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 30px;
   line-height: 1;
@@ -4417,7 +4417,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area h6 {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -4466,7 +4466,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label span {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -4474,14 +4474,14 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-label strong {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 15px;
   line-height: 1;
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area .expand {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
@@ -4513,7 +4513,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price span {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -4521,7 +4521,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body .total-pricing-list .single-price strong {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
@@ -4828,7 +4828,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home1-banner-section .banner-content-wrap .banner-content .span-tag span {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 22px;
   line-height: 1;
@@ -4980,7 +4980,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .home1-about-section .countdown-wrap .countdown-list .single-countdown .number h3,
 .home1-about-section .countdown-wrap .countdown-list .single-countdown .number strong {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 40px;
   font-weight: 500;
   line-height: 1;
@@ -4994,7 +4994,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home1-about-section .countdown-wrap .countdown-list .single-countdown span {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
@@ -5112,7 +5112,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-and-suites-section .room-and-suites-card .room-and-suites-content-wrap .hover-content a {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
@@ -5188,7 +5188,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-and-suites-content .guests-and-hotel-room span {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
@@ -5356,7 +5356,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home1-signature-experience .research-card .experience-content p {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -5523,7 +5523,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content p {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 20px;
   line-height: 34px;
@@ -5644,7 +5644,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   position: absolute;
   left: 50%;
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   font-weight: 600;
   transform-origin: 0 60px;
@@ -5775,7 +5775,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   }
 }
 .home1-event-section .single-event .event-content-and-title .event-info > h2 {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 900;
   font-size: 60px;
   -webkit-text-fill-color: transparent;
@@ -5845,7 +5845,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home1-event-section .single-event .event-content-and-title .event-info .event-content span {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -6006,7 +6006,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 
 .testimonial-card > h5 {
   color: var(--primary-color1);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 26px;
   line-height: 1;
@@ -6025,7 +6025,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card p {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 22px;
   line-height: 34px;
@@ -6087,7 +6087,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card .author-and-rating .author-info .author-content h5 {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 20px;
   line-height: 1;
@@ -6100,7 +6100,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card .author-and-rating .author-info .author-content span {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -6151,7 +6151,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card.two h6 {
   color: var(--primary-color2);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.3;
@@ -6169,7 +6169,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card.two p {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
@@ -6204,7 +6204,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card.two .author-and-rating .author-info .author-content h6 {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
@@ -6298,7 +6298,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card.three .author-and-rating .author-info .author-content h6 {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
@@ -6401,7 +6401,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   display: flex;
   justify-content: center;
   color: var(--dark-text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
@@ -6515,7 +6515,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .blog-card .blog-card-content .date-and-event a {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -6624,7 +6624,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .innerpage-pagination-area .paginations .page-item a {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
@@ -6771,7 +6771,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .footer-section .footer-top .newsletter-area .newsletter-form input {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   font-weight: 300;
   line-height: 1;
@@ -6866,7 +6866,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .footer-section .footer-top .contact-wrapper .contact-area .icon-and-contact .contact ul li a {
   color: var(--footer-text);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -7034,7 +7034,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .footer-section .footer-top .location-and-payment .title-and-location-area ul li .content .get-direction {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
@@ -7156,7 +7156,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .footer-section .footer-menu .footer-menu-wrap .footer-menu-list .menu-list a {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -7212,7 +7212,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .footer-section .footer-bottom p {
   color: #D3D3D3;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 15px;
   line-height: 1;
@@ -7441,7 +7441,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home2-room-and-suites-section .section-title-and-nav-pills .nav-pills .nav-item .nav-link {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
@@ -7462,120 +7462,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home2-room-and-suites-section .section-title-and-nav-pills .nav-pills .nav-item:first-child .nav-link::before {
   content: unset;
-}
-.home2-room-and-suites-section .room-suite-card {
-  position: relative;
-}
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img {
-  display: block;
-  overflow: hidden;
-  position: relative;
-}
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .img-area {
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: all 0.5s;
-}
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .img-area img {
-  transition: all 0.5s;
-}
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .img-area::after {
-  position: absolute;
-  width: 200%;
-  height: 0%;
-  left: 50%;
-  top: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  content: "";
-  z-index: 1;
-}
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price {
-  position: absolute;
-  left: 0;
-  top: 25px;
-  display: flex;
-  gap: 10px;
-  background-color: rgba(var(--white-color-opc), 0.8);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-  padding: 9px;
-  z-index: 2;
-}
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price span,
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price h3 {
-  color: var(--title-color);
-  display: block;
-  font-family: var(--font-marcellus);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1;
-  margin-bottom: 0;
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price span,
-  .home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price h3 {
-    font-size: 18px;
-  }
-}
-@media (max-width: 1199px) {
-  .home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price span,
-  .home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price h3 {
-    font-size: 17px;
-  }
-}
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price h6 {
-  color: var(--white-color);
-  font-family: var(--font-marcellus);
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1;
-  margin-bottom: 0;
-  display: flex;
-  align-items: end;
-}
-@media (max-width: 767px) {
-  .home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price h6 {
-    font-size: 14px;
-  }
-}
-.home2-room-and-suites-section .room-suite-card .room-and-suites-card-img .price.two {
-  gap: 5px;
-}
-.home2-room-and-suites-section .room-suite-card:hover .room-and-suites-card-img .img-area img {
-  transform: scale(1.1);
-}
-.home2-room-and-suites-section .room-suite-card:hover .room-and-suites-card-img .img-area::after {
-  height: 250%;
-  transition: all 600ms linear;
-  background-color: transparent;
-}
-.home2-room-and-suites-section .room-suite-card.two .room-and-suites-card-img .price {
-  top: unset;
-  left: 0;
-  bottom: 0;
-  background-color: #282828;
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-}
-.home2-room-and-suites-section .room-suite-card.two .room-and-suites-card-img .price span,
-.home2-room-and-suites-section .room-suite-card.two .room-and-suites-card-img .price h3 {
-  color: var(--white-color);
-}
-.home2-room-and-suites-section .room-suite-card.three .room-and-suites-card-img .price {
-  background-color: #282828;
-}
-.home2-room-and-suites-section .room-suite-card.three .room-and-suites-card-img .price span,
-.home2-room-and-suites-section .room-suite-card.three .room-and-suites-card-img .price h3 {
-  color: var(--white-color);
-}
-.home2-room-and-suites-section .room-suite-card.four {
-  margin-top: -50px;
-}
-@media (max-width: 991px) {
-  .home2-room-and-suites-section .room-suite-card.four {
-    margin-top: 0;
-  }
 }
 .home2-room-and-suites-section.two .section-title-and-nav-pills .nav-pills .nav-item .nav-link.active {
   color: var(--primary-color3);
@@ -7606,7 +7492,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home2-room-and-suites-section.room-top-filter .nav-pills .nav-item .nav-link {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -7652,6 +7538,121 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home2-room-and-suites-section.room-top-filter .nav-pills .nav-item:first-child .nav-link::before {
   content: unset;
+}
+
+.room-suite-card {
+  position: relative;
+}
+.room-suite-card .room-and-suites-card-img {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.room-suite-card .room-and-suites-card-img .img-area {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s;
+}
+.room-suite-card .room-and-suites-card-img .img-area img {
+  transition: all 0.5s;
+}
+.room-suite-card .room-and-suites-card-img .img-area::after {
+  position: absolute;
+  width: 200%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  content: "";
+  z-index: 1;
+}
+.room-suite-card .room-and-suites-card-img .price {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  display: flex;
+  gap: 10px;
+  background-color: rgba(var(--white-color-opc), 0.8);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 9px;
+  z-index: 2;
+}
+.room-suite-card .room-and-suites-card-img .price span,
+.room-suite-card .room-and-suites-card-img .price h3 {
+  color: var(--title-color);
+  display: block;
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .room-suite-card .room-and-suites-card-img .price span,
+  .room-suite-card .room-and-suites-card-img .price h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .room-suite-card .room-and-suites-card-img .price span,
+  .room-suite-card .room-and-suites-card-img .price h3 {
+    font-size: 17px;
+  }
+}
+.room-suite-card .room-and-suites-card-img .price h6 {
+  color: var(--white-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 0;
+  display: flex;
+  align-items: end;
+}
+@media (max-width: 767px) {
+  .room-suite-card .room-and-suites-card-img .price h6 {
+    font-size: 14px;
+  }
+}
+.room-suite-card .room-and-suites-card-img .price.two {
+  gap: 5px;
+}
+.room-suite-card:hover .room-and-suites-card-img .img-area img {
+  transform: scale(1.1);
+}
+.room-suite-card:hover .room-and-suites-card-img .img-area::after {
+  height: 250%;
+  transition: all 600ms linear;
+  background-color: transparent;
+}
+.room-suite-card.two .room-and-suites-card-img .price {
+  top: unset;
+  left: 0;
+  bottom: 0;
+  background-color: #282828;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+.room-suite-card.two .room-and-suites-card-img .price span,
+.room-suite-card.two .room-and-suites-card-img .price h3 {
+  color: var(--white-color);
+}
+.room-suite-card.three .room-and-suites-card-img .price {
+  background-color: #282828;
+}
+.room-suite-card.three .room-and-suites-card-img .price span,
+.room-suite-card.three .room-and-suites-card-img .price h3 {
+  color: var(--white-color);
+}
+.room-suite-card.four {
+  margin-top: -50px;
+}
+@media (max-width: 991px) {
+  .room-suite-card.four {
+    margin-top: 0;
+  }
 }
 
 /*=====================================
@@ -7758,7 +7759,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home2-comfort-and-signature-moment .comfort-signature-card .info-content span {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -7883,7 +7884,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .explore-endulge-section .explore-list li a span {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
@@ -8095,7 +8096,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home2-offer-section .offer-card .offer-card-img .offer-card-content a {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
@@ -8400,7 +8401,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .single-counter .content .number h2,
 .single-counter .content .number span {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 40px;
   font-weight: 500;
   line-height: 1;
@@ -8420,7 +8421,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .single-counter .content span {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
@@ -8654,7 +8655,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .feature-section .feature-banner-section .feature-list .feature-single-item .card-content p {
   margin-bottom: 0;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
@@ -8817,7 +8818,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home3-banner-section .banner-content p {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -8857,7 +8858,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home3-banner-section .banner-content .facilites-list .single-list {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -9040,7 +9041,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   font-weight: 500;
   font-size: 13px;
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   transform-origin: bottom center;
   transform: rotate(var(--char-rotate));
 }
@@ -9132,7 +9133,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home3-service-section .service-card .service-content-wrap .hover-content p {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -9163,7 +9164,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   justify-content: center;
   color: var(--text-color);
   margin-bottom: 0;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
@@ -9546,7 +9547,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home4-banner-section .banner-content-wrap .banner-content .facilites-list .single-list {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -9709,7 +9710,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home4-offer-section .offer-card .offer-card-img .offer-card-content .view-details {
   color: var(--white-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
@@ -9901,7 +9902,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .why-stay-with-us .why-stay-with-us-content .why-stay-with-us-list .single-list {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -10157,7 +10158,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
@@ -10191,7 +10192,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .gallery-section-page .nav-pills .nav-item .nav-link {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
@@ -10336,7 +10337,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .event-page .event-page-card .event-card-content p {
   color: var(--text-color);
   margin-bottom: 35px;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -10385,7 +10386,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .event-page .event-page-card .event-card-content .event-card-list .single-event {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -10440,7 +10441,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .faq-wrap .accordion .accordion-item .accordion-header .accordion-button {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.4;
@@ -10629,7 +10630,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .event-contact-section .contact-wrapper .contact-area .contact-list-area .single-contact h5 {
   color: var(--title-color);
   margin-bottom: 0;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 22px;
   line-height: 1;
@@ -10663,7 +10664,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .event-contact-section .contact-wrapper .contact-area .contact-list-area .single-contact ul li a {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 17px;
   line-height: 1;
@@ -10710,7 +10711,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .event-contact-section .contact-wrapper .contact-area .notice-area p {
   color: var(--text-color);
   display: block;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
@@ -10806,7 +10807,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   position: relative;
   transition: 0.5s;
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
@@ -10906,7 +10907,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   outline: none;
   background-color: transparent;
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -10972,7 +10973,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   }
 }
 .siderbar-area .single-widget .widget-title {
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 24px;
   margin-bottom: 27px;
@@ -11004,7 +11005,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .siderbar-area .single-widget .category-list li a {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
@@ -11027,7 +11028,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .siderbar-area .single-widget .recent-post-widget .recent-post-content > a {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   font-weight: 400;
   display: block;
@@ -11047,7 +11048,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .siderbar-area .single-widget .recent-post-widget .recent-post-content h6 a {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -11097,7 +11098,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   background-color: #F2F6FF;
   padding: 8px 16px;
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-size: 14px;
   font-weight: 400;
   display: block;
@@ -11215,7 +11216,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content p {
   color: var(--text-color);
   margin-bottom: 20px;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -11273,7 +11274,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li span {
   display: block;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
@@ -11296,7 +11297,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li a {
   display: inline-block;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
@@ -11355,7 +11356,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content h6 {
   color: var(--title-color);
   margin-bottom: 0;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -11394,7 +11395,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order h3 {
   color: var(--title-color);
   margin-bottom: 23px;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
@@ -11416,7 +11417,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .how-to-order ul li {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -11725,7 +11726,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .resturent-menu-section .menu-wrapper .menu-items .menu-list p {
   margin-bottom: 0;
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -11804,7 +11805,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .faq-page .nav-links-and-contact-area .nav-links-wrapper .nav-pills .nav-item .nav-link {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 22px;
   line-height: 1;
@@ -12004,7 +12005,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-details-area .price-and-title-area .price {
   color: var(--primary-color1);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
@@ -12020,7 +12021,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .room-details-area .price-and-title-area .guests-and-hotel-room span {
   position: relative;
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
@@ -12064,7 +12065,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .room-details-area .description p {
   color: var(--text-color);
   margin-bottom: 0;
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -12088,7 +12089,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-details-area .feature-wrap ul li span {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -12116,7 +12117,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   gap: 16px;
   align-items: center;
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -12148,7 +12149,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper h3 {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 30px;
   line-height: 1;
@@ -12172,11 +12173,11 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   }
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper form .single-info .form-inner2 .form-check .form-check-input:checked {
-  background-color: var(--primary-color2);
-  border-color: var(--primary-color2);
+  background-color: var(--primary-color1);
+  border-color: var(--primary-color1);
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper form .single-info .form-inner input:focus {
-  border-color: var(--primary-color2);
+  border-color: var(--primary-color1);
   background-color: var(--white-color);
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper form .check-area {
@@ -12199,7 +12200,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper form .check-area h6 {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -12248,7 +12249,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper form .check-area .form-check .form-check-label span {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -12256,14 +12257,14 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper form .check-area .form-check .form-check-label strong {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 15px;
   line-height: 1;
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper form .check-area .expand {
   color: var(--text-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
@@ -12295,7 +12296,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper .total-pricing-list .single-price span {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -12303,7 +12304,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-details-area .room-details-sidebar .sidebar-wrapper .total-pricing-list .single-price strong {
   color: var(--title-color);
-  font-family: var(--font-dmSans);
+  font-family: var(--font-dmsans);
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
@@ -12317,36 +12318,135 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   display: flex;
   justify-content: center;
 }
-.room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn1,
-.room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn2,
-.room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn3,
-.room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn4 {
+.room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn1 {
   min-width: 344px;
   justify-content: center;
   padding: 20px 35px;
 }
 @media (max-width: 1399px) {
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn1,
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn2,
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn3,
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn4 {
+  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn1 {
     width: 290px;
   }
 }
 @media (max-width: 991px) {
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn1,
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn2,
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn3,
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn4 {
+  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn1 {
     min-width: 260px;
   }
 }
 @media (max-width: 576px) {
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn1,
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn2,
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn3,
-  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn4 {
+  .room-details-area .room-details-sidebar .sidebar-wrapper .btn-area .primary-btn1 {
     min-width: 200px;
     padding: 17px 30px;
   }
+}
+.room-details-area .comment-area {
+  margin-bottom: 40px;
+}
+.room-details-area .comment-area > .single-comment-area {
+  margin-bottom: 24px;
+}
+.room-details-area .comment-area:last-child {
+  margin-bottom: 0;
+}
+.room-details-area .comment-area:last-child > .single-comment-area {
+  margin-bottom: 0;
+}
+.room-details-area .single-comment-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .room-details-area .single-comment-area {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.room-details-area .single-comment-area .author-img img {
+  max-width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.room-details-area .single-comment-area .comment-content {
+  padding-bottom: 25px;
+}
+.room-details-area .single-comment-area .comment-content .author-name-deg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.room-details-area .single-comment-area .comment-content .author-name-deg h6 {
+  line-height: 1;
+  margin-bottom: 0;
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-size: 18px;
+  font-weight: 500;
+}
+.room-details-area .single-comment-area .comment-content .author-name-deg span {
+  color: var(--text-color);
+  font-family: var(--font-dmsans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+}
+.room-details-area .single-comment-area .comment-content .star-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.room-details-area .single-comment-area .comment-content .star-list li {
+  color: #DDA701;
+  font-size: 13px;
+}
+.room-details-area .single-comment-area .comment-content p {
+  color: var(--text-color);
+  font-family: var(--font-dmsans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+.room-details-area .single-comment-area .comment-content .replay-btn {
+  color: var(--text-color);
+  font-family: var(--font-jost);
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.room-details-area .single-comment-area .comment-content .replay-btn svg {
+  transition: 0.35s;
+  fill: var(--text-color);
+}
+.room-details-area .single-comment-area .comment-content .replay-btn:hover {
+  color: var(--primary-color1);
+}
+.room-details-area .single-comment-area .comment-content .replay-btn:hover svg {
+  fill: var(--primary-color1);
+}
+.room-details-area .comment-replay {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 70px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 24px 0;
+}
+.room-details-area .comment-replay > li {
+  margin-bottom: 30px;
+}
+.room-details-area .comment-replay > li:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
