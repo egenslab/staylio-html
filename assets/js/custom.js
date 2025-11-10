@@ -33,15 +33,8 @@
   });
 
   jQuery(".dropdown-icon").on("click", function () {
-    jQuery(this)
-      .toggleClass("active")
-      .next("ul, .mega-menu")
-      .slideToggle();
-    jQuery(this)
-      .parent()
-      .siblings()
-      .children("ul, .mega-menu")
-      .slideUp();
+    jQuery(this).toggleClass("active").next("ul, .mega-menu").slideToggle();
+    jQuery(this).parent().siblings().children("ul, .mega-menu").slideUp();
     jQuery(this).parent().siblings().children(".active").removeClass("active");
   });
   jQuery(".dropdown-icon2").on("click", function () {
@@ -50,10 +43,9 @@
     jQuery(this).parent().siblings().children(".active").removeClass("active");
   });
 
-
   // sticky header
-  window.addEventListener('scroll', function () {
-    const header = document.querySelector('header.header-area');
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header.header-area");
     if (header) {
       header.classList.toggle("sticky", window.scrollY > 0);
     }
@@ -114,51 +106,53 @@
       },
     },
   });
-  document.querySelectorAll(".room-and-suites-card-slider").forEach((slider, index) => {
-    // Add unique pagination class
-    $(slider)
-      .next(".slider-pagi-wrap")
-      .children(".room-and-suites-card-pagi")
-      .addClass(`room-and-suites-card-pagi-${index}`);
-    setTimeout(() => {
-      new Swiper(slider, {
-        slidesPerView: 1,
-        speed: 1600,
-        spaceBetween: 30,
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
-        pagination: {
-          el: `.room-and-suites-card-pagi-${index}`,
-          clickable: true,
-        },
-        breakpoints: {
-          280: {
-            slidesPerView: 1,
+  document
+    .querySelectorAll(".room-and-suites-card-slider")
+    .forEach((slider, index) => {
+      // Add unique pagination class
+      $(slider)
+        .next(".slider-pagi-wrap")
+        .children(".room-and-suites-card-pagi")
+        .addClass(`room-and-suites-card-pagi-${index}`);
+      setTimeout(() => {
+        new Swiper(slider, {
+          slidesPerView: 1,
+          speed: 1600,
+          spaceBetween: 30,
+          // autoplay: {
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // },
+          pagination: {
+            el: `.room-and-suites-card-pagi-${index}`,
+            clickable: true,
           },
-          386: {
-            slidesPerView: 1,
+          breakpoints: {
+            280: {
+              slidesPerView: 1,
+            },
+            386: {
+              slidesPerView: 1,
+            },
+            576: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            992: {
+              slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+            1400: {
+              slidesPerView: 3,
+            },
           },
-          576: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          992: {
-            slidesPerView: 3,
-          },
-          1200: {
-            slidesPerView: 3,
-          },
-          1400: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    }, 0);
-  });
+        });
+      }, 0);
+    });
   // Home Banner Slider
   var swiper = new Swiper(".home2-banner-slider", {
     slidesPerView: 1,
@@ -408,6 +402,25 @@
       },
     },
   });
+  // Room Details Slider
+  var swiper = new Swiper(".room-details-banner-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    pagination: {
+      el: ".room-and-suites-card-pagi",
+      clickable: true,
+    },
+  });
   //wow js
   jQuery(window).on("load", function () {
     new WOW().init();
@@ -437,7 +450,6 @@
     if (!$(e.target).closest(".language-btn").length) {
       $(".language-list").removeClass("active");
     }
-
   });
 
   //Quantity Increment
@@ -884,16 +896,21 @@
   }
 
   // Fast Counter
-  $('.count').each(function () {
-    $(this).prop('Counter', 0).animate({
-      Counter: $(this).text()
-    }, {
-      duration: 4000,
-      easing: 'swing',
-      step: function (now) {
-        $(this).text(Math.ceil(now));
-      }
-    });
+  $(".count").each(function () {
+    $(this)
+      .prop("Counter", 0)
+      .animate(
+        {
+          Counter: $(this).text(),
+        },
+        {
+          duration: 4000,
+          easing: "swing",
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          },
+        }
+      );
   });
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -908,7 +925,6 @@
         .join("");
     }
   });
-
 
   document.addEventListener("DOMContentLoaded", function () {
     const text = document.querySelector(".circular-text .text");
@@ -1004,7 +1020,9 @@
     });
 
   //Project Info Flow
-  const infoflow1TextItem = document.querySelectorAll(".comfort-signature-card");
+  const infoflow1TextItem = document.querySelectorAll(
+    ".comfort-signature-card"
+  );
   function followImageCursor(event, infoflow1TextItem) {
     const contentBox = infoflow1TextItem.getBoundingClientRect();
     const dx = event.clientX - contentBox.x;
@@ -1036,25 +1054,23 @@
   });
 
   $(".comfort-vibes-link").each(function () {
-    $(this)
-      .on("mouseover", function () {
-        $(".comfort-vibes-item").removeClass("active");
-        $(this).parent().addClass("active");
-      })
+    $(this).on("mouseover", function () {
+      $(".comfort-vibes-item").removeClass("active");
+      $(this).parent().addClass("active");
+    });
   });
 
-	// Round Text Animation
-	const element = document.querySelectorAll(".badge__char");
-	const step = 360/element.length;
+  // Round Text Animation
+  const element = document.querySelectorAll(".badge__char");
+  const step = 360 / element.length;
 
-	element.forEach((elem, i) => {
-	elem.style.setProperty('--char-rotate', (i * step) + 'deg');
-	})
+  element.forEach((elem, i) => {
+    elem.style.setProperty("--char-rotate", i * step + "deg");
+  });
 
-	const foo = (360 / 7);
+  const foo = 360 / 7;
 
-	for (let i = 0; i <= 7; i++) {
-	console.log((i * foo) + 'deg');
-	}
-
+  for (let i = 0; i <= 7; i++) {
+    console.log(i * foo + "deg");
+  }
 })(jQuery);
