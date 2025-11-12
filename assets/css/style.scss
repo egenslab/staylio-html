@@ -14602,9 +14602,11 @@ header.style-4 {
     @include lg-down-device() {
       padding: 40px;
     }
+
     @include sm-down-device() {
       padding: 20px;
     }
+
     .contact-form {
       background-color: var(--white-color);
       padding: 80px 60px;
@@ -14620,9 +14622,11 @@ header.style-4 {
       @include md-down-device() {
         padding: 40px;
       }
+
       @include sm-down-device() {
         padding: 20px;
       }
+
       .primary-btn1 {
         min-width: 200px;
         justify-content: center;
@@ -14630,6 +14634,7 @@ header.style-4 {
         @include md-down-device() {
           min-width: 175px;
         }
+
         @include sm-down-device() {
           min-width: 160px;
         }
@@ -14662,6 +14667,138 @@ header.style-4 {
 
     @include sm-down-device() {
       min-height: 400px;
+    }
+  }
+}
+
+/*=====================================
+59. Activities & Attractions Section CSS
+========================================*/
+.activities-and-attractions {
+  .activities-and-attractions-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    .single-list-item {
+      display: flex;
+      gap: 106px;
+      padding: 45px 0;
+      border-top: 1px solid var(--border-color3);
+      border-bottom: 1px solid var(--border-color3);
+      position: relative;
+
+      @include xl-device() {
+        gap: 60px;
+        padding: 40px 0;
+      }
+
+      @include lg-down-device() {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      @include xl-down-device() {
+        gap: 40px;
+        padding: 35px 0;
+      }
+
+      .title-and-icon {
+        max-width: 299px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        svg {
+          fill: var(--title-color);
+          flex-shrink: 0;
+        }
+
+        h3 {
+          color: var(--title-color);
+          font-family: var(--font-marcellus);
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 40px;
+          margin-bottom: 0;
+
+          @include xxl-down-device() {
+            font-size: 27px;
+          }
+
+          @include xl-down-device() {
+            font-size: 25px;
+            line-height: 35px;
+          }
+        }
+      }
+
+      p {
+        color: var(--text-color);
+        margin-bottom: 0;
+        font-family: var(--font-dmsans);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+
+        @include lg-device() {
+          font-size: 16px;
+        }
+      }
+
+      .hover-img {
+        rotate: -25deg;
+        position: absolute;
+        max-width: 180px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+
+        @include lg-down-device() {
+          display: none;
+        }
+
+        img {
+          z-index: 1;
+        }
+
+        .img1 {
+          opacity: 0;
+          visibility: hidden;
+          transform: scale(0.4);
+          transition: 0.5s;
+          width: 160px;
+
+          @include xxl-down-device() {
+            width: 135px;
+          }
+
+          @include xl-down-device() {
+            width: 110px;
+          }
+        }
+      }
+
+      &:hover {
+
+        .hover-img {
+          opacity: 1;
+          visibility: visible;
+
+          .img1 {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+          }
+        }
+      }
     }
   }
 }

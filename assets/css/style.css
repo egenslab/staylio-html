@@ -13169,4 +13169,130 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   .contact-map-section iframe {
     min-height: 400px;
   }
+}
+
+/*=====================================
+59. Activities & Attractions Section CSS
+========================================*/
+.activities-and-attractions .activities-and-attractions-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item {
+  display: flex;
+  gap: 106px;
+  padding: 45px 0;
+  border-top: 1px solid var(--border-color3);
+  border-bottom: 1px solid var(--border-color3);
+  position: relative;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .activities-and-attractions .activities-and-attractions-list .single-list-item {
+    gap: 60px;
+    padding: 40px 0;
+  }
+}
+@media (max-width: 991px) {
+  .activities-and-attractions .activities-and-attractions-list .single-list-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .activities-and-attractions .activities-and-attractions-list .single-list-item {
+    gap: 40px;
+    padding: 35px 0;
+  }
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item .title-and-icon {
+  max-width: 299px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item .title-and-icon svg {
+  fill: var(--title-color);
+  flex-shrink: 0;
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item .title-and-icon h3 {
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+@media (max-width: 1399px) {
+  .activities-and-attractions .activities-and-attractions-list .single-list-item .title-and-icon h3 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 1199px) {
+  .activities-and-attractions .activities-and-attractions-list .single-list-item .title-and-icon h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item p {
+  color: var(--text-color);
+  margin-bottom: 0;
+  font-family: var(--font-dmsans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .activities-and-attractions .activities-and-attractions-list .single-list-item p {
+    font-size: 16px;
+  }
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item .hover-img {
+  rotate: -25deg;
+  position: absolute;
+  max-width: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 991px) {
+  .activities-and-attractions .activities-and-attractions-list .single-list-item .hover-img {
+    display: none;
+  }
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item .hover-img img {
+  z-index: 1;
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item .hover-img .img1 {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.4);
+  transition: 0.5s;
+  width: 160px;
+}
+@media (max-width: 1399px) {
+  .activities-and-attractions .activities-and-attractions-list .single-list-item .hover-img .img1 {
+    width: 135px;
+  }
+}
+@media (max-width: 1199px) {
+  .activities-and-attractions .activities-and-attractions-list .single-list-item .hover-img .img1 {
+    width: 110px;
+  }
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item:hover .hover-img {
+  opacity: 1;
+  visibility: visible;
+}
+.activities-and-attractions .activities-and-attractions-list .single-list-item:hover .hover-img .img1 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
 }/*# sourceMappingURL=style.css.map */
