@@ -1445,7 +1445,6 @@ body.tt-magic-cursor #magic-cursor {
 @media (max-width: 576px) {
   .form-inner input {
     font-size: 15px;
-    border-radius: 5px;
     height: 52px;
   }
 }
@@ -12990,5 +12989,184 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 @media (max-width: 991px) {
   .service-list-section .img-wrap img {
     max-width: unset;
+  }
+}
+
+/*=====================================
+  57. Contact Page Contact Area CSS
+========================================*/
+.contact-area .contact-area-wrapper {
+  background-color: #E9ECF9;
+  padding: 50px 60px;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .contact-area .contact-area-wrapper {
+    padding: 50px 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-area .contact-area-wrapper {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .contact-area .contact-area-wrapper {
+    padding: 40px 35px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-area .contact-area-wrapper {
+    padding: 35px 20px;
+  }
+}
+.contact-area .contact-area-wrapper .single-contact-wrap {
+  margin-bottom: 40px;
+}
+.contact-area .contact-area-wrapper .single-contact-wrap .title-and-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 21px;
+}
+.contact-area .contact-area-wrapper .single-contact-wrap .title-and-icon svg {
+  fill: var(--primary-color1);
+}
+.contact-area .contact-area-wrapper .single-contact-wrap .title-and-icon h3 {
+  color: var(--title-color);
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.contact-area .contact-area-wrapper .single-contact-wrap a {
+  color: var(--text-color);
+  font-family: var(--font-dmsans);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  background: linear-gradient(to bottom, var(--text-color) 0%, var(--text-color) 98%);
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
+  background-position: right 90%;
+  transition: background-size 0.75s;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-area .contact-area-wrapper .single-contact-wrap a {
+    font-size: 16px;
+  }
+}
+.contact-area .contact-area-wrapper .single-contact-wrap a:hover {
+  background-size: 100% 1px;
+  background-position: 0% 90%;
+}
+.contact-area .contact-area-wrapper .single-contact-wrap ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.contact-area .contact-area-wrapper .single-contact-wrap ul li {
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-area .contact-area-wrapper .single-contact-wrap ul li {
+    margin-bottom: 5px;
+  }
+}
+.contact-area .contact-area-wrapper .single-contact-wrap ul li:last-child {
+  margin-bottom: 0;
+}
+.contact-area .contact-area-wrapper .single-contact-wrap:first-child {
+  max-width: 300px;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .contact-area .contact-area-wrapper .single-contact-wrap:first-child {
+    max-width: unset;
+  }
+}
+.contact-area .contact-area-wrapper .single-contact-wrap:last-child {
+  margin-bottom: 0;
+}
+.contact-area .contact-form-wrapper {
+  background-color: #FFF8ED;
+  padding: 57px 40px;
+}
+@media (max-width: 991px) {
+  .contact-area .contact-form-wrapper {
+    padding: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-area .contact-form-wrapper {
+    padding: 20px;
+  }
+}
+.contact-area .contact-form-wrapper .contact-form {
+  background-color: var(--white-color);
+  padding: 80px 60px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-area .contact-form-wrapper .contact-form {
+    padding: 60px 50px;
+  }
+}
+@media (max-width: 991px) {
+  .contact-area .contact-form-wrapper .contact-form {
+    padding: 60px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-area .contact-form-wrapper .contact-form {
+    padding: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-area .contact-form-wrapper .contact-form {
+    padding: 20px;
+  }
+}
+.contact-area .contact-form-wrapper .contact-form .primary-btn1 {
+  min-width: 200px;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .contact-area .contact-form-wrapper .contact-form .primary-btn1 {
+    min-width: 175px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-area .contact-form-wrapper .contact-form .primary-btn1 {
+    min-width: 160px;
+  }
+}
+
+/*=====================================
+58. Contact Map Section CSS
+========================================*/
+.contact-map-section {
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+}
+.contact-map-section iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  filter: invert(1) hue-rotate(180deg) brightness(0.7) grayscale(1);
+}
+@media (max-width: 1399px) {
+  .contact-map-section iframe {
+    min-height: 550px;
+  }
+}
+@media (max-width: 991px) {
+  .contact-map-section iframe {
+    min-height: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-map-section iframe {
+    min-height: 400px;
   }
 }/*# sourceMappingURL=style.css.map */
