@@ -7527,6 +7527,45 @@ header.style-4 {
     @include md-down-device() {
       padding: 50px 0;
     }
+
+    .blog-card {
+      .blog-card-content {
+        .date-and-event {
+          a {
+            &:hover {
+              color: var(--primary-color3);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.resort-hover-color {
+    .blog-card {
+      .blog-card-content {
+        .date-and-event {
+          a {
+            &:hover {
+              color: var(--primary-color2);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.hostel-hover-color {
+    .blog-card {
+      .blog-card-content {
+        .date-and-event {
+          a {
+            &:hover {
+              color: var(--primary-color4);
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -7631,16 +7670,6 @@ header.style-4 {
         &:hover {
           background-size: 100% 1px;
           background-position: 0% 90%;
-        }
-      }
-    }
-
-    &.two {
-      .date-and-event {
-        a {
-          &:hover {
-            color: var(--primary-color2);
-          }
         }
       }
     }
@@ -9211,6 +9240,7 @@ header.style-4 {
       a {
         position: relative;
         transition: 0.5s;
+        border: 1px solid transparent;
 
         span {
           color: var(--title-color);
@@ -9239,10 +9269,6 @@ header.style-4 {
 
           @include sm-down-device() {
             font-size: 17px;
-          }
-
-          &:hover {
-            border-color: var(--primary-color2);
           }
         }
 
@@ -9285,6 +9311,7 @@ header.style-4 {
         }
 
         &:hover {
+          border: 1px solid var(--primary-color2);
 
           .hover-img {
             opacity: 1;
@@ -12446,7 +12473,7 @@ header.style-4 {
   }
 
   .single-widget {
-    padding: 40px 25px;
+    padding: 35px 25px;
     border: 1px solid var(--border-color3);
 
     @include xl-device() {

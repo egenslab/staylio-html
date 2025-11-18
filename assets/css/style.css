@@ -6599,6 +6599,15 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     padding: 50px 0;
   }
 }
+.home1-blog-section.two .blog-card .blog-card-content .date-and-event a:hover {
+  color: var(--primary-color3);
+}
+.home1-blog-section.resort-hover-color .blog-card .blog-card-content .date-and-event a:hover {
+  color: var(--primary-color2);
+}
+.home1-blog-section.hostel-hover-color .blog-card .blog-card-content .date-and-event a:hover {
+  color: var(--primary-color4);
+}
 
 .blog-card .blog-img {
   display: block;
@@ -6701,9 +6710,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .blog-card .blog-card-content h4 a:hover {
   background-size: 100% 1px;
   background-position: 0% 90%;
-}
-.blog-card .blog-card-content.two .date-and-event a:hover {
-  color: var(--primary-color2);
 }
 .blog-card:hover .blog-img img {
   transform: scale(1.1);
@@ -8008,6 +8014,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .explore-endulge-section .explore-list li a {
   position: relative;
   transition: 0.5s;
+  border: 1px solid transparent;
 }
 .explore-endulge-section .explore-list li a span {
   color: var(--title-color);
@@ -8041,9 +8048,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   .explore-endulge-section .explore-list li a span {
     font-size: 17px;
   }
-}
-.explore-endulge-section .explore-list li a span:hover {
-  border-color: var(--primary-color2);
 }
 .explore-endulge-section .explore-list li a .hover-img {
   rotate: -25deg;
@@ -8082,6 +8086,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   .explore-endulge-section .explore-list li a .hover-img .img1 {
     width: 110px;
   }
+}
+.explore-endulge-section .explore-list li a:hover {
+  border: 1px solid var(--primary-color2);
 }
 .explore-endulge-section .explore-list li a:hover .hover-img {
   opacity: 1;
@@ -11081,7 +11088,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   background-color: var(--primary-color1);
 }
 .siderbar-area .single-widget {
-  padding: 40px 25px;
+  padding: 35px 25px;
   border: 1px solid var(--border-color3);
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
