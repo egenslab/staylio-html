@@ -7554,6 +7554,7 @@ header.style-4 {
       }
     }
   }
+
   &.hostel-hover-color {
     .blog-card {
       .blog-card-content {
@@ -14934,75 +14935,107 @@ header.style-4 {
 60. Room Sidebar Start CSS
 ========================================*/
 .room-sidebar-wrapper {
-  .room-sidebar {
-    max-width: 374px;
-    width: 100%;
+  .package-sidebar-area {
+    .room-sidebar {
+      max-width: 374px;
+      width: 100%;
 
-    @include lg-down-device() {
-      max-width: unset;
-    }
-
-    .categories {
-      padding: 30px;
-      border: 1px solid var(--border-color3);
-
-      @include sm-down-device() {
-        @include sm-down-device() {
-          padding: 30px 15px;
-        }
+      @include lg-down-device() {
+        max-width: unset;
       }
 
-      .form-check {
-        margin-bottom: 10px;
+      .categories {
+        padding: 30px;
+        border: 1px solid var(--border-color3);
 
-        .form-check-label {
-          span {
-            color: var(--text-color);
+        @include sm-down-device() {
+          @include sm-down-device() {
+            padding: 30px 15px;
+          }
+        }
+
+        .form-check {
+          margin-bottom: 10px;
+
+          .form-check-label {
+            span {
+              color: var(--text-color);
+            }
           }
         }
       }
-    }
 
-    .check-availability {
-      background-color: #F9F9F9;
-      padding: 30px;
+      .check-availability {
+        background-color: #F9F9F9;
+        padding: 30px;
 
-      @include lg-device() {
-        padding: 20px;
-      }
+        @include lg-device() {
+          padding: 20px;
+        }
 
-      @include sm-down-device() {
-        padding: 30px 15px;
-      }
+        @include sm-down-device() {
+          padding: 30px 15px;
+        }
 
-      .form-inner {
-        label {
-          font-weight: 400;
+        .form-inner {
+          label {
+            font-weight: 400;
+          }
+        }
+
+        .primary-btn1 {
+          width: 100%;
+          justify-content: center;
         }
       }
 
-      .primary-btn1 {
-        width: 100%;
-        justify-content: center;
+      .title {
+        color: var(--title-color);
+        font-family: var(--font-dmsans);
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1;
+        text-decoration: underline;
+        margin-bottom: 30px;
+
+        @include lg-down-device() {
+          font-size: 23px;
+          margin-bottom: 25px;
+        }
+
+        @include sm-down-device() {
+          font-size: 20px;
+        }
       }
     }
 
-    .title {
-      color: var(--title-color);
-      font-family: var(--font-dmsans);
-      font-weight: 400;
-      font-size: 26px;
-      line-height: 1;
-      text-decoration: underline;
-      margin-bottom: 30px;
+    @include lg-down-device() {
+      max-width: 360px;
+      background-color: var(--white-color);
+      padding: 50px 15px;
+      position: fixed;
+      min-height: 100vh;
+      height: 100%;
+      left: 0;
+      z-index: 10001;
+      top: 0;
+      overflow-y: scroll;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
+      transition: all 0.6s ease 0s;
+      transform-origin: left;
+      transform: translateX(-100%);
 
-      @include lg-down-device() {
-        font-size: 23px;
-        margin-bottom: 25px;
+      &.slide {
+        transform: translate(0);
+      }
+
+      &::-webkit-scrollbar {
+        width: 0;
       }
 
       @include sm-down-device() {
-        font-size: 20px;
+        max-width: 300px;
       }
     }
   }
@@ -15013,12 +15046,6 @@ header.style-4 {
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
-
-    @include sm-down-device() {
-      gap: 20px;
-      flex-direction: column;
-      align-items: start;
-    }
 
     .left-content {
       h6 {
@@ -15082,6 +15109,44 @@ header.style-4 {
               stroke: var(--white-color);
             }
           }
+        }
+      }
+    }
+
+    .filter-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      line-height: 1;
+      cursor: pointer;
+
+      svg {
+        fill: var(--black-color);
+        transition: 0.5s;
+      }
+
+      span {
+        color: var(--title-color);
+        font-family: var(--font-dmsans);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        text-align: left;
+        transition: 0.5s;
+
+        @include sm-down-device() {
+          font-size: 13px;
+        }
+      }
+
+      &.active {
+        svg {
+          fill: var(--primary-color1);
+        }
+
+        span {
+          color: var(--primary-color1);
         }
       }
     }
@@ -15169,6 +15234,12 @@ header.style-4 {
 
           .guests-and-hotel-room {
             margin-bottom: 50px;
+
+            .two {
+              &::after {
+                content: unset;
+              }
+            }
           }
 
           .primary-btn1 {

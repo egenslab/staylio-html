@@ -1074,27 +1074,45 @@
     console.log(i * foo + "deg");
   }
 
-  	//list grid view
-	$(".grid-view li").on("click", function () {
-		// Get the class of the clicked li element
-		var clickedClass = $(this).attr("class");
-		// Extract the class name without "item-" prefix
-		var className = clickedClass.replace("item-", "");
-		// Add a new class to the target div and remove old classes
-		var targetDiv = $(".list-grid-product-wrap");
-		targetDiv.removeClass().addClass("list-grid-product-wrap " + className + "-wrapper");
-		// Remove the 'selected' class from siblings and add it to the clicked element
-		$(this).siblings().removeClass("active");
-		$(this).addClass("active");
-	});
-  // Filter sidebar
-  $(".filter").on("click", function (e) {
-    e.stopPropagation();
-    $(".filter-sidebar, .filter-top").toggleClass("slide");
+  //list grid view
+  $(".grid-view li").on("click", function () {
+    // Get the class of the clicked li element
+    var clickedClass = $(this).attr("class");
+    // Extract the class name without "item-" prefix
+    var className = clickedClass.replace("item-", "");
+    // Add a new class to the target div and remove old classes
+    var targetDiv = $(".list-grid-product-wrap");
+    targetDiv
+      .removeClass()
+      .addClass("list-grid-product-wrap " + className + "-wrapper");
+    // Remove the 'selected' class from siblings and add it to the clicked element
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
   });
+
+  // // Filter sidebar
+  // $(".filter").on("click", function (e) {
+  //   e.stopPropagation();
+  //   $(".filter-sidebar, .filter-top").toggleClass("slide");
+  // });
+  // $(document).on("click", function (e) {
+  //   if (!$(e.target).closest(".filter-sidebar, .filter-top, .filter").length) {
+  //     $(".filter-sidebar, .filter-top").removeClass("slide");
+  //   }
+  // });
+
+    // Filter sidebar
+  $(".filter-btn").on("click", function (e) {
+    e.stopPropagation();
+
+    $(".package-sidebar-area").toggleClass("slide");
+    $(this).toggleClass("active"); // Toggle active class on filter button
+  });
+
   $(document).on("click", function (e) {
-    if (!$(e.target).closest(".filter-sidebar, .filter-top, .filter").length) {
-      $(".filter-sidebar, .filter-top").removeClass("slide");
+    if (!$(e.target).closest(".package-sidebar-area, .filter-btn").length) {
+      $(".package-sidebar-area").removeClass("slide");
+      $(".filter-btn").removeClass("active"); // Remove active class when clicked outside
     }
   });
 

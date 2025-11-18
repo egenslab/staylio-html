@@ -13434,52 +13434,52 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 /*=====================================
 60. Room Sidebar Start CSS
 ========================================*/
-.room-sidebar-wrapper .room-sidebar {
+.room-sidebar-wrapper .package-sidebar-area .room-sidebar {
   max-width: 374px;
   width: 100%;
 }
 @media (max-width: 991px) {
-  .room-sidebar-wrapper .room-sidebar {
+  .room-sidebar-wrapper .package-sidebar-area .room-sidebar {
     max-width: unset;
   }
 }
-.room-sidebar-wrapper .room-sidebar .categories {
+.room-sidebar-wrapper .package-sidebar-area .room-sidebar .categories {
   padding: 30px;
   border: 1px solid var(--border-color3);
 }
 @media (max-width: 576px) and (max-width: 576px) {
-  .room-sidebar-wrapper .room-sidebar .categories {
+  .room-sidebar-wrapper .package-sidebar-area .room-sidebar .categories {
     padding: 30px 15px;
   }
 }
-.room-sidebar-wrapper .room-sidebar .categories .form-check {
+.room-sidebar-wrapper .package-sidebar-area .room-sidebar .categories .form-check {
   margin-bottom: 10px;
 }
-.room-sidebar-wrapper .room-sidebar .categories .form-check .form-check-label span {
+.room-sidebar-wrapper .package-sidebar-area .room-sidebar .categories .form-check .form-check-label span {
   color: var(--text-color);
 }
-.room-sidebar-wrapper .room-sidebar .check-availability {
+.room-sidebar-wrapper .package-sidebar-area .room-sidebar .check-availability {
   background-color: #F9F9F9;
   padding: 30px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .room-sidebar-wrapper .room-sidebar .check-availability {
+  .room-sidebar-wrapper .package-sidebar-area .room-sidebar .check-availability {
     padding: 20px;
   }
 }
 @media (max-width: 576px) {
-  .room-sidebar-wrapper .room-sidebar .check-availability {
+  .room-sidebar-wrapper .package-sidebar-area .room-sidebar .check-availability {
     padding: 30px 15px;
   }
 }
-.room-sidebar-wrapper .room-sidebar .check-availability .form-inner label {
+.room-sidebar-wrapper .package-sidebar-area .room-sidebar .check-availability .form-inner label {
   font-weight: 400;
 }
-.room-sidebar-wrapper .room-sidebar .check-availability .primary-btn1 {
+.room-sidebar-wrapper .package-sidebar-area .room-sidebar .check-availability .primary-btn1 {
   width: 100%;
   justify-content: center;
 }
-.room-sidebar-wrapper .room-sidebar .title {
+.room-sidebar-wrapper .package-sidebar-area .room-sidebar .title {
   color: var(--title-color);
   font-family: var(--font-dmsans);
   font-weight: 400;
@@ -13489,14 +13489,44 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   margin-bottom: 30px;
 }
 @media (max-width: 991px) {
-  .room-sidebar-wrapper .room-sidebar .title {
+  .room-sidebar-wrapper .package-sidebar-area .room-sidebar .title {
     font-size: 23px;
     margin-bottom: 25px;
   }
 }
 @media (max-width: 576px) {
-  .room-sidebar-wrapper .room-sidebar .title {
+  .room-sidebar-wrapper .package-sidebar-area .room-sidebar .title {
     font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .room-sidebar-wrapper .package-sidebar-area {
+    max-width: 360px;
+    background-color: var(--white-color);
+    padding: 50px 15px;
+    position: fixed;
+    min-height: 100vh;
+    height: 100%;
+    left: 0;
+    z-index: 10001;
+    top: 0;
+    overflow-y: scroll;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.6s ease 0s;
+    transform-origin: left;
+    transform: translateX(-100%);
+  }
+  .room-sidebar-wrapper .package-sidebar-area.slide {
+    transform: translate(0);
+  }
+  .room-sidebar-wrapper .package-sidebar-area::-webkit-scrollbar {
+    width: 0;
+  }
+}
+@media (max-width: 991px) and (max-width: 576px) {
+  .room-sidebar-wrapper .package-sidebar-area {
+    max-width: 300px;
   }
 }
 .room-sidebar-wrapper .product-card-top-area {
@@ -13505,13 +13535,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
-}
-@media (max-width: 576px) {
-  .room-sidebar-wrapper .product-card-top-area {
-    gap: 20px;
-    flex-direction: column;
-    align-items: start;
-  }
 }
 .room-sidebar-wrapper .product-card-top-area .left-content h6 {
   font-family: var(--font-dmsans);
@@ -13562,6 +13585,38 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-sidebar-wrapper .product-card-top-area .grid-view li.active svg path {
   stroke: var(--white-color);
+}
+.room-sidebar-wrapper .product-card-top-area .filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1;
+  cursor: pointer;
+}
+.room-sidebar-wrapper .product-card-top-area .filter-btn svg {
+  fill: var(--black-color);
+  transition: 0.5s;
+}
+.room-sidebar-wrapper .product-card-top-area .filter-btn span {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: left;
+  transition: 0.5s;
+}
+@media (max-width: 576px) {
+  .room-sidebar-wrapper .product-card-top-area .filter-btn span {
+    font-size: 13px;
+  }
+}
+.room-sidebar-wrapper .product-card-top-area .filter-btn.active svg {
+  fill: var(--primary-color1);
+}
+.room-sidebar-wrapper .product-card-top-area .filter-btn.active span {
+  color: var(--primary-color1);
 }
 .room-sidebar-wrapper .list-grid-product-wrap .room-suite-card .room-and-suites-content .guests-and-hotel-room {
   flex-wrap: wrap;
@@ -13633,6 +13688,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .room-sidebar-wrapper .list-grid-product-wrap.column-1-wrapper .room-suite-card .room-and-suites-content .guests-and-hotel-room {
   margin-bottom: 50px;
+}
+.room-sidebar-wrapper .list-grid-product-wrap.column-1-wrapper .room-suite-card .room-and-suites-content .guests-and-hotel-room .two::after {
+  content: unset;
 }
 .room-sidebar-wrapper .list-grid-product-wrap.column-1-wrapper .room-suite-card .room-and-suites-content .primary-btn1 {
   display: inline-block;
