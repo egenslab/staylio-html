@@ -1982,6 +1982,70 @@ body.tt-magic-cursor #magic-cursor {
   color: var(--white-color);
 }
 
+.hotline-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hotline-area .icon svg {
+  fill: var(--white-color);
+}
+.hotline-area .content {
+  position: relative;
+  line-height: 1;
+}
+.hotline-area .content::after {
+  content: "";
+  height: 25px;
+  width: 1px;
+  background-color: #74787B;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hotline-area .content span {
+  font-family: var(--font-dmsans);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--white-color);
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.hotline-area .content h6 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+.hotline-area .content h6 a {
+  font-family: var(--font-dmsans);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white-color);
+  transition: 0.5s;
+}
+.hotline-area .content h6 a:hover {
+  color: var(--primary-color1);
+}
+.hotline-area.two {
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .hotline-area.two {
+    margin-bottom: 20px;
+  }
+}
+.hotline-area.two .icon svg {
+  fill: var(--title-color);
+}
+.hotline-area.two .content span {
+  color: var(--title-color);
+}
+.hotline-area.two .content h6 a {
+  color: var(--title-color);
+}
+
 header.style-1 {
   position: fixed;
   top: 0;
@@ -2079,52 +2143,6 @@ header.style-1 .nav-right {
   header.style-1 .nav-right {
     gap: 15px;
   }
-}
-header.style-1 .nav-right .hotline-area {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-header.style-1 .nav-right .hotline-area .icon svg {
-  fill: var(--white-color);
-}
-header.style-1 .nav-right .hotline-area .content {
-  position: relative;
-  line-height: 1;
-}
-header.style-1 .nav-right .hotline-area .content::after {
-  content: "";
-  height: 25px;
-  width: 1px;
-  background-color: #74787B;
-  position: absolute;
-  left: -10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-header.style-1 .nav-right .hotline-area .content span {
-  font-family: var(--font-dmsans);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  color: var(--white-color);
-  margin-bottom: 5px;
-  display: inline-block;
-}
-header.style-1 .nav-right .hotline-area .content h6 {
-  margin-bottom: 0;
-  line-height: 1;
-}
-header.style-1 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-dmsans);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--white-color);
-  transition: 0.5s;
-}
-header.style-1 .nav-right .hotline-area .content h6 a:hover {
-  color: var(--primary-color1);
 }
 header.style-1 .nav-right .mobile-menu-btn {
   display: none;
@@ -3470,7 +3488,6 @@ header.style-3 .main-menu > ul > li > a {
   font-size: 16px;
   transition: all 0.5s ease-out 0s;
   position: relative;
-  border-radius: 100px;
 }
 @media (max-width: 1399px) {
   header.style-3 .main-menu > ul > li > a {
