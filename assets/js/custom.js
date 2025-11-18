@@ -1105,13 +1105,28 @@
   $(".filter-btn").on("click", function (e) {
     e.stopPropagation();
 
-    $(".package-sidebar-area").toggleClass("slide");
+    $(".room-sidebar-area").toggleClass("slide");
     $(this).toggleClass("active"); // Toggle active class on filter button
   });
 
   $(document).on("click", function (e) {
-    if (!$(e.target).closest(".package-sidebar-area, .filter-btn").length) {
-      $(".package-sidebar-area").removeClass("slide");
+    if (!$(e.target).closest(".room-sidebar-area, .filter-btn").length) {
+      $(".room-sidebar-area").removeClass("slide");
+      $(".filter-btn").removeClass("active"); // Remove active class when clicked outside
+    }
+  });
+
+
+  $(".filter-btn").on("click", function (e) {
+    e.stopPropagation();
+
+    $(".blog-sidebar-area").toggleClass("slide");
+    $(this).toggleClass("active"); // Toggle active class on filter button
+  });
+
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".blog-sidebar-area, .filter-btn").length) {
+      $(".blog-sidebar-area").removeClass("slide");
       $(".filter-btn").removeClass("active"); // Remove active class when clicked outside
     }
   });
