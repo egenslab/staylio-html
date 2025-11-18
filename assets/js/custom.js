@@ -441,14 +441,14 @@
   }
 
   // Language Btn
-  $(".language-btn").on("click", function (e) {
+  $(".language-btn, .currency-btn").on("click", function (e) {
     let parent = $(this).parent();
-    parent.find(".language-list").toggleClass("active");
+    parent.find(".language-list, .currency-list").toggleClass("active");
     e.stopPropagation();
   });
   $(document).on("click", function (e) {
-    if (!$(e.target).closest(".language-btn").length) {
-      $(".language-list").removeClass("active");
+    if (!$(e.target).closest(".language-btn, .currency-btn").length) {
+      $(".language-list, .currency-list").removeClass("active");
     }
   });
 
