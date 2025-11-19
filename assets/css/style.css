@@ -5489,7 +5489,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .room-and-suites-content .guests-and-hotel-room span {
   color: var(--white-color);
   font-family: var(--font-dmsans);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1;
   display: flex;
@@ -6428,7 +6428,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card .author-and-rating .rating .rating-area li i {
   color: #E4C40C;
-  font-size: 12px;
+  font-size: 9px;
 }
 .testimonial-card.two {
   background: var(--white-color);
@@ -6517,6 +6517,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card.two .author-and-rating .author-info .author-content span {
   font-size: 16px;
+}
+.testimonial-card.two .author-and-rating .rating {
+  line-height: 1;
 }
 .testimonial-card.two .author-and-rating .rating .rating-area {
   margin-bottom: 5px;

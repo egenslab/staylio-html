@@ -6433,7 +6433,7 @@ header.style-4 {
     span {
       color: var(--white-color);
       font-family: var(--font-dmsans);
-      font-weight: 500;
+      font-weight: 400;
       font-size: 16px;
       line-height: 1;
       display: flex;
@@ -7391,7 +7391,7 @@ header.style-4 {
         li {
           i {
             color: #E4C40C;
-            font-size: 12px;
+            font-size: 9px;
           }
         }
       }
@@ -7486,6 +7486,7 @@ header.style-4 {
       }
 
       .rating {
+        line-height: 1;
         .rating-area {
           margin-bottom: 5px;
         }
