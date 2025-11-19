@@ -1559,7 +1559,7 @@ body.tt-magic-cursor #magic-cursor {
     margin-bottom: 0;
 
     @include md-down-device() {
-      font-size: 17px;
+      font-size: 16px;
     }
 
     @include sm-down-device() {
@@ -2069,20 +2069,24 @@ body.tt-magic-cursor #magic-cursor {
   }
 }
 
-.header-book-now-wrap-area {
+.header-offer-topbar-wrap {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
 
-  .book-now-get-offer {
+  .offer-topbar {
     padding: 14px 0;
     background-color: rgba(var(--white-color-opc), 0.2);
     backdrop-filter: blur(30px);
-    transition: height 0.4s ease, padding 0.4s ease;
+    transition: transform 0.5s ease-in;
+    transform: translateY(0);
+    position: absolute;
+    width: 100%;
+    left: 0;
 
-    .get-offer-text-slider-wrap {
+    .offer-text-slider-wrap {
       position: relative;
       padding: 0 35px;
       max-width: 430px;
@@ -2130,6 +2134,56 @@ body.tt-magic-cursor #magic-cursor {
       .get-offer-text-slider {
         margin: 0;
       }
+    }
+
+    .offer-topbar-close-btn {
+      position: absolute;
+      right: 70px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      transition: 0.35s;
+
+      i {
+        font-size: 20px;
+        line-height: 1;
+        color: var(--white-color);
+        transition: 0.35s;
+      }
+
+      &:hover {
+
+        i {
+          color: var(--white-color);
+        }
+      }
+
+    }
+  }
+
+  header.style-1 {
+    transform: translateY(52px);
+  }
+
+  &.offer-topbar-close {
+    .offer-topbar {
+      transform: translateY(-100%);
+    }
+
+    header.style-1 {
+      transform: translateY(0);
+    }
+  }
+
+  &.sticky {
+    .offer-topbar {
+      transform: translateY(-100%);
+    }
+
+    header.style-1 {
+      transform: translateY(0);
+      background-color: var(--black-color);
+      box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
     }
   }
 }
@@ -2402,7 +2456,7 @@ header.style-1 {
   left: 0;
   width: 100%;
   z-index: 999;
-  transition: transform 0.3s ease, background-color 0.8s ease-out;
+  transition: transform 0.5s ease-in;
   background-color: transparent;
   padding: 0 70px;
 
@@ -2424,31 +2478,6 @@ header.style-1 {
     box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
     z-index: 999;
     position: fixed;
-    animation: smooth-header 0.65s linear;
-
-    @keyframes smooth-header {
-      0% {
-        transform: translateY(-30px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-
-    }
-
-    @keyframes smooth-header {
-      0% {
-        transform: translateY(-30px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-
-    }
-
-
   }
 
   .header-logo {
@@ -6048,6 +6077,10 @@ header.style-4 {
       @include xl-down-device() {
         min-width: unset;
       }
+
+      @include sm-down-device() {
+        font-size: 23px;
+      }
     }
 
     p {
@@ -6078,10 +6111,10 @@ header.style-4 {
   }
 
   .countdown-wrap {
-    margin-top: 60px;
+    margin-top: 70px;
 
     @include lg-down-device() {
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     @include sm-down-device() {
@@ -6162,6 +6195,14 @@ header.style-4 {
             font-weight: 500;
             line-height: 1;
             margin-bottom: 0;
+
+            @include xxl-down-device() {
+              font-size: 36px;
+            }
+
+            @include lg-down-device() {
+              font-size: 32px;
+            }
 
             @include sm-down-device() {
               font-size: 28px;
@@ -7131,18 +7172,11 @@ header.style-4 {
     }
 
     img {
-      @include xl-down-device() {
-        max-height: 700px;
+      object-fit: cover;
+
+      @include xl-device() {
+        max-width: 480px;
         width: 100%;
-        object-fit: cover;
-      }
-
-      @include lg-down-device() {
-        max-height: 650px;
-      }
-
-      @include md-down-device() {
-        max-height: unset;
       }
     }
   }
@@ -8892,8 +8926,12 @@ header.style-4 {
     align-items: end;
     justify-content: space-between;
 
-    @include sm-down-device() {
+    @include lg-down-device() {
       flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    @include sm-down-device() {
       justify-content: center;
       gap: 10px;
     }

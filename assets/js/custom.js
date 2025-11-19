@@ -45,7 +45,7 @@
 
   // sticky header
   window.addEventListener("scroll", function () {
-    const header = document.querySelector("header.header-area");
+    const header = document.querySelector(".header-area");
     if (header) {
       header.classList.toggle("sticky", window.scrollY > 0);
     }
@@ -1136,4 +1136,9 @@
       $(".filter-btn").removeClass("active"); // Remove active class when clicked outside
     }
   });
+
+  $(".offer-topbar-close-btn").on("click", function () {
+    $(".header-offer-topbar-wrap").addClass("offer-topbar-close");
+  });
+
 })(jQuery);
