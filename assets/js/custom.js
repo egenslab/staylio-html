@@ -33,8 +33,8 @@
   });
 
   jQuery(".dropdown-icon").on("click", function () {
-    jQuery(this).toggleClass("active").next("ul, .mega-menu").slideToggle();
-    jQuery(this).parent().siblings().children("ul, .mega-menu").slideUp();
+    jQuery(this).toggleClass("active").next("ul").slideToggle();
+    jQuery(this).parent().siblings().children("ul").slideUp();
     jQuery(this).parent().siblings().children(".active").removeClass("active");
   });
   jQuery(".dropdown-icon2").on("click", function () {
@@ -74,10 +74,10 @@
     speed: 1500,
     spaceBetween: 24,
     loop: true,
-    autoplay: {
-      delay: 2500, // Autoplay duration in milliseconds
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".room-and-suites-slider-next",
       prevEl: ".room-and-suites-slider-prev",
@@ -159,10 +159,10 @@
     speed: 1500,
     spaceBetween: 24,
     loop: true,
-    autoplay: {
-      delay: 2500, // Autoplay duration in milliseconds
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".room-and-suites-slider-next",
       prevEl: ".room-and-suites-slider-prev",
@@ -217,11 +217,11 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    autoplay: {
-      delay: 3000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   pauseOnMouseEnter: true,
+    //   disableOnInteraction: false,
+    // },
     effect: "fade",
     fadeEffect: {
       crossFade: true,
@@ -236,11 +236,11 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    autoplay: {
-      delay: 3000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   pauseOnMouseEnter: true,
+    //   disableOnInteraction: false,
+    // },
     effect: "fade",
     fadeEffect: {
       crossFade: true,
@@ -254,10 +254,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    autoplay: {
-      delay: 2500, // Autoplay duration in milliseconds
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".home2-testimonial-card-slider-next",
       prevEl: ".home2-testimonial-card-slider-prev",
@@ -292,10 +292,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    autoplay: {
-      delay: 2500, // Autoplay duration in milliseconds
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".home2-testimonial-card-slider-next",
       prevEl: ".home2-testimonial-card-slider-prev",
@@ -330,10 +330,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    autoplay: {
-      delay: 2500, // Autoplay duration in milliseconds
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".home4-testimonial-card-slider-next",
       prevEl: ".home4-testimonial-card-slider-prev",
@@ -368,10 +368,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    autoplay: {
-      delay: 2500, // Autoplay duration in milliseconds
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".home4-testimonial-card-slider-next",
       prevEl: ".home4-testimonial-card-slider-prev",
@@ -407,11 +407,11 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    autoplay: {
-      delay: 3000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   pauseOnMouseEnter: true,
+    //   disableOnInteraction: false,
+    // },
     effect: "fade",
     fadeEffect: {
       crossFade: true,
@@ -419,6 +419,24 @@
     pagination: {
       el: ".room-and-suites-card-pagi",
       clickable: true,
+    },
+  });
+  // Home2 Top Offer Text Slider
+  var swiper = new Swiper(".get-offer-text-slider", {
+    slidesPerView: 1,
+    speed: 1500,
+    spaceBetween: 24,
+    // autoplay: {
+    //   delay: 2500, // Autoplay duration in milliseconds
+    //   disableOnInteraction: false,
+    // },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      nextEl: ".get-offer-text-slider-next",
+      prevEl: ".get-offer-text-slider-prev",
     },
   });
   //wow js
@@ -1090,18 +1108,7 @@
     $(this).addClass("active");
   });
 
-  // // Filter sidebar
-  // $(".filter").on("click", function (e) {
-  //   e.stopPropagation();
-  //   $(".filter-sidebar, .filter-top").toggleClass("slide");
-  // });
-  // $(document).on("click", function (e) {
-  //   if (!$(e.target).closest(".filter-sidebar, .filter-top, .filter").length) {
-  //     $(".filter-sidebar, .filter-top").removeClass("slide");
-  //   }
-  // });
-
-    // Filter sidebar
+  // Filter sidebar
   $(".filter-btn").on("click", function (e) {
     e.stopPropagation();
 
@@ -1116,7 +1123,6 @@
     }
   });
 
-
   $(".filter-btn").on("click", function (e) {
     e.stopPropagation();
 
@@ -1130,5 +1136,4 @@
       $(".filter-btn").removeClass("active"); // Remove active class when clicked outside
     }
   });
-
 })(jQuery);
