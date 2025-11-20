@@ -9257,6 +9257,23 @@ header.style-4 {
       display: none;
     }
   }
+  .vector-img2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include seventeen-down-device() {
+      width: 100px;
+    }
+    @include xxl-down-device() {
+      width: 80px;
+    }
+    @include md-down-device(){
+      width: 60px;
+    }
+    @include sm-down-device() {
+      display: none;
+    }
+  }
 }
 
 /*=====================================
@@ -11862,7 +11879,7 @@ header.style-4 {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    gap: 35px;
     .nav-item {
       @include sm-device() {
         &:last-child {
@@ -11884,7 +11901,7 @@ header.style-4 {
         color: var(--text-color);
         font-family: var(--font-dmsans);
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1;
         position: relative;
 
@@ -11894,13 +11911,14 @@ header.style-4 {
           width: 1px;
           height: 10px;
           top: 39%;
-          left: 0;
+          left: -20px;
           background-color: #A6A6A6;
         }
 
         &.active {
           background-color: unset;
           color: var(--primary-color1);
+          font-weight: 700;
         }
       }
 

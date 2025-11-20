@@ -8011,6 +8011,31 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     display: none;
   }
 }
+.home2-testimonial-section .vector-img2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 1699px) {
+  .home2-testimonial-section .vector-img2 {
+    width: 100px;
+  }
+}
+@media (max-width: 1399px) {
+  .home2-testimonial-section .vector-img2 {
+    width: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .home2-testimonial-section .vector-img2 {
+    width: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .home2-testimonial-section .vector-img2 {
+    display: none;
+  }
+}
 
 /*=====================================
   17.Home2 Comfort And Signature Moments Section CSS
@@ -10487,6 +10512,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 35px;
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .gallery-section-page .nav-pills .nav-item:last-child .nav-link::before {
@@ -10502,7 +10528,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   color: var(--text-color);
   font-family: var(--font-dmsans);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
   position: relative;
 }
@@ -10512,12 +10538,13 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   width: 1px;
   height: 10px;
   top: 39%;
-  left: 0;
+  left: -20px;
   background-color: #A6A6A6;
 }
 .gallery-section-page .nav-pills .nav-item .nav-link.active {
   background-color: unset;
   color: var(--primary-color1);
+  font-weight: 700;
 }
 .gallery-section-page .nav-pills .nav-item:first-child .nav-link::before {
   content: unset;
