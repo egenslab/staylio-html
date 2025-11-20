@@ -2483,10 +2483,8 @@ header.style-1 {
   }
 
   .header-logo {
-    width: 120px;
-
     @include xxl-down-device() {
-      width: 105px;
+      width: 120px;
     }
   }
 
@@ -3240,10 +3238,8 @@ header.style-2 {
   }
 
   .header-logo {
-    min-width: 120px;
-
     @include xxl-down-device() {
-      max-width: 105px;
+      max-width: 120px;
     }
   }
 
@@ -3920,10 +3916,8 @@ header.style-3 {
   }
 
   .header-logo {
-    width: 120px;
-
     @include xxl-down-device() {
-      width: 105px;
+      width: 120px;
     }
   }
 
@@ -4658,10 +4652,9 @@ header.style-4 {
   }
 
   .header-logo {
-    width: 120px;
 
     @include xxl-down-device() {
-      width: 105px;
+      width: 120px;
     }
   }
 
@@ -14687,7 +14680,7 @@ header.style-4 {
   line-height: 1;
   width: 100%;
   height: 100%;
-
+  margin-bottom: -3px;
   iframe {
     width: 100%;
     height: 100%;

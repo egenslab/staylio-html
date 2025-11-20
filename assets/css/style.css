@@ -2188,12 +2188,9 @@ header.style-1.sticky {
   z-index: 999;
   position: fixed;
 }
-header.style-1 .header-logo {
-  width: 120px;
-}
 @media (max-width: 1399px) {
   header.style-1 .header-logo {
-    width: 105px;
+    width: 120px;
   }
 }
 header.style-1 .logo-and-menu-area {
@@ -2798,12 +2795,9 @@ header.style-2.sticky {
   z-index: 999;
   position: fixed;
 }
-header.style-2 .header-logo {
-  min-width: 120px;
-}
 @media (max-width: 1399px) {
   header.style-2 .header-logo {
-    max-width: 105px;
+    max-width: 120px;
   }
 }
 header.style-2 .nav-right {
@@ -3357,12 +3351,9 @@ header.style-3.sticky {
   box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
   z-index: 999;
 }
-header.style-3 .header-logo {
-  width: 120px;
-}
 @media (max-width: 1399px) {
   header.style-3 .header-logo {
-    width: 105px;
+    width: 120px;
   }
 }
 header.style-3 .logo-and-menu-area {
@@ -3981,12 +3972,9 @@ header.style-4.sticky {
   box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
   z-index: 999;
 }
-header.style-4 .header-logo {
-  width: 120px;
-}
 @media (max-width: 1399px) {
   header.style-4 .header-logo {
-    width: 105px;
+    width: 120px;
   }
 }
 header.style-4 .nav-right {
@@ -13189,6 +13177,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   line-height: 1;
   width: 100%;
   height: 100%;
+  margin-bottom: -3px;
 }
 .contact-map-section iframe {
   width: 100%;
