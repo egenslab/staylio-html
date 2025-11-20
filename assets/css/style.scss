@@ -2006,29 +2006,6 @@ body.tt-magic-cursor #magic-cursor {
       .topbar-right {
         gap: 42px;
 
-        .language-area {
-          .language-btn {
-            svg {
-              fill: var(--white-color);
-            }
-
-            span {
-              color: var(--white-color);
-            }
-          }
-
-          .language-list {
-            li {
-              a {
-                &:hover {
-                  color: var(--white-color);
-                  background-color: var(--primary-color4);
-                }
-              }
-            }
-          }
-        }
-
         .social-list {
           padding: 0;
           margin: 0;
@@ -2203,20 +2180,23 @@ body.tt-magic-cursor #magic-cursor {
     display: flex;
     align-items: center;
     gap: 5px;
+    line-height: 1;
     cursor: pointer;
 
-    svg {
-      fill: var(--title-color);
-      transition: 0.5s;
-    }
+    .icon-and-content {
+      svg {
+        fill: var(--title-color);
+        transition: 0.5s;
+      }
 
-    span {
-      color: var(--title-color);
-      font-family: var(--font-dmsans);
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1;
-      transition: 0.5s;
+      span {
+        color: var(--title-color);
+        font-family: var(--font-dmsans);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        transition: 0.5s;
+      }
     }
 
     i {
@@ -3242,21 +3222,7 @@ header.style-2 {
     background-color: var(--white-color);
     box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
     z-index: 999;
-    animation: smooth-header 0.65s linear;
     position: fixed;
-
-    @keyframes smooth-header {
-      0% {
-        transform: translateY(-30px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-
-    }
-
-
   }
 
   .header-logo {
@@ -3865,6 +3831,17 @@ header.style-2 {
         width: 100%;
         justify-content: center;
       }
+
+      .language-area {
+        padding: 14px 15px;
+        border-radius: 5px;
+        border: 1px solid rgba(var(--black-color-opc), 0.1);
+        margin-bottom: 20px;
+
+        .language-btn {
+          justify-content: space-between;
+        }
+      }
     }
 
     .contact-area {
@@ -3925,20 +3902,6 @@ header.style-3 {
     background-color: var(--white-color);
     box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
     z-index: 999;
-    animation: smooth-header 0.65s linear;
-
-    @keyframes smooth-header {
-      0% {
-        transform: translateY(-30px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-
-    }
-
-
   }
 
   .header-logo {
@@ -4655,20 +4618,6 @@ header.style-4 {
     background-color: var(--white-color);
     box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
     z-index: 999;
-    animation: smooth-header 0.65s linear;
-
-    @keyframes smooth-header {
-      0% {
-        transform: translateY(-30px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-
-    }
-
-
   }
 
   .header-logo {
@@ -9334,6 +9283,11 @@ header.style-4 {
 
   .slider-btn-grp {
     .slider-btn {
+      svg {
+        stroke: var(--text-color);
+        fill: none;
+      }
+
       &:hover {
         background-color: var(--primary-color2);
 
@@ -9543,7 +9497,7 @@ header.style-4 {
           }
 
           @include sm-down-device() {
-            font-size: 17px;
+            font-size: 16px;
           }
         }
 
@@ -9746,6 +9700,12 @@ header.style-4 {
         }
 
         &.three {
+          @include lg-down-device() {
+            max-width: unset;
+            left: 0;
+
+          }
+
           h5 {
             margin-bottom: 0;
             text-align: center;
@@ -9792,6 +9752,10 @@ header.style-4 {
         left: 30px;
         bottom: 67px;
 
+        @include sm-down-device() {
+          max-width: 250px;
+        }
+
         h6 {
           color: var(--white-color);
           font-family: var(--font-marcellus);
@@ -9829,6 +9793,25 @@ header.style-4 {
     &.four {
       &::before {
         background: linear-gradient(359.17deg, #000000 1.87%, rgba(59, 59, 59, 0) 36.63%);
+      }
+
+      .offer-card-img {
+        .offer-img {
+          img {
+            object-fit: cover;
+
+            @include lg-down-device() {
+              max-height: 450px;
+              min-height: 450px;
+              width: 100%;
+            }
+
+            @include sm-down-device() {
+              max-height: 400px;
+              min-height: 400px;
+            }
+          }
+        }
       }
     }
   }
@@ -15945,6 +15928,11 @@ header.style-4 {
         gap: 22px;
       }
 
+      @include sm-down-device() {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+      }
+
       li {
         color: var(--title-color);
         font-family: var(--font-dmsans);
@@ -15956,6 +15944,10 @@ header.style-4 {
 
         @include lg-device() {
           font-size: 16px;
+        }
+
+        @include sm-down-device() {
+          font-size: 15px;
         }
       }
     }
