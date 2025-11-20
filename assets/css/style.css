@@ -14293,4 +14293,55 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .blog-sidebar-area .siderbar-area .single-widget .tag-list li:hover a {
   background-color: var(--primary-color1);
   color: var(--white-color);
+}
+
+/*=====================================
+64. Welcome Section Page CSS
+========================================*/
+.welcome-section .section-title-and-list {
+  padding-left: 36px;
+}
+@media (max-width: 1399px) {
+  .welcome-section .section-title-and-list {
+    padding-left: 0;
+  }
+}
+.welcome-section .section-title-and-list .section-title h2 {
+  min-width: 621px;
+}
+@media (max-width: 991px) {
+  .welcome-section .section-title-and-list .section-title h2 {
+    min-width: unset;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .welcome-section .section-title-and-list .section-title p {
+    font-size: 16px;
+  }
+}
+.welcome-section .section-title-and-list ul {
+  padding-left: 15px;
+  margin: 0;
+  gap: 34px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .welcome-section .section-title-and-list ul {
+    gap: 22px;
+  }
+}
+.welcome-section .section-title-and-list ul li {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  max-width: 219px;
+  width: 100%;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .welcome-section .section-title-and-list ul li {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
