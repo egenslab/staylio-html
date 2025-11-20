@@ -2273,10 +2273,28 @@ body.tt-magic-cursor #magic-cursor {
         display: flex;
         align-items: center;
         gap: 10px;
+        border-bottom: 1px solid var(--border-color3);
 
         &:hover {
-          color: var(--white-color);
-          background-color: var(--primary-color2);
+          color: var(--primary-color2);
+        }
+      }
+
+      &:last-child {
+        a {
+          border-bottom: unset;
+        }
+      }
+    }
+  }
+
+  &.language-btn-hover-color {
+    .language-list {
+      li {
+        a {
+          &:hover {
+            color: var(--primary-color4);
+          }
         }
       }
     }
@@ -6797,9 +6815,11 @@ header.style-4 {
             right: 0;
             bottom: 40px;
           }
+
           .circular-text-wrapper {
             background-color: unset;
             border: unset;
+
             .circular-text-item {
               color: var(--title-color);
               font-weight: 700;
@@ -9257,19 +9277,24 @@ header.style-4 {
       display: none;
     }
   }
+
   .vector-img2 {
     position: absolute;
     left: 0;
     bottom: 0;
+
     @include seventeen-down-device() {
       width: 100px;
     }
+
     @include xxl-down-device() {
       width: 80px;
     }
-    @include md-down-device(){
+
+    @include md-down-device() {
       width: 60px;
     }
+
     @include sm-down-device() {
       display: none;
     }
@@ -11880,6 +11905,7 @@ header.style-4 {
     align-items: center;
     justify-content: center;
     gap: 35px;
+
     .nav-item {
       @include sm-device() {
         &:last-child {
@@ -12679,6 +12705,19 @@ header.style-4 {
   47. Dining And Cuisine Page Card Section CSS
 ========================================*/
 .dining-and-cuisine-page-card {
+  .bottom-section {
+    padding-top: 50px;
+    border-top: 1px solid var(--border-color3);
+
+    @include xl-down-device() {
+      padding-top: 30px;
+    }
+
+    @include md-down-device() {
+      padding-top: 20px;
+    }
+  }
+
   .dining-and-cuisine-page-card-content {
     max-width: 614px;
     width: 100%;
@@ -12836,6 +12875,29 @@ header.style-4 {
 
         &:last-child {
           margin-bottom: 0;
+          padding-top: 50px;
+          position: relative;
+
+          @include lg-device() {
+            padding-top: 40px;
+          }
+
+          @include md-down-device() {
+            padding-top: 35px;
+          }
+
+          @include sm-down-device() {
+            padding-top: 30px;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 235px;
+            height: 1px;
+            background-color: var(--border-color3);
+            top: 23%;
+          }
         }
       }
     }
@@ -13346,6 +13408,7 @@ header.style-4 {
             &.active {
               background-color: unset;
               color: var(--primary-color1);
+              font-weight: 600;
             }
           }
 
@@ -14699,6 +14762,7 @@ header.style-4 {
   width: 100%;
   height: 100%;
   margin-bottom: -3px;
+
   iframe {
     width: 100%;
     height: 100%;

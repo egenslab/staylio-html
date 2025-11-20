@@ -2010,10 +2010,16 @@ body.tt-magic-cursor #magic-cursor {
   display: flex;
   align-items: center;
   gap: 10px;
+  border-bottom: 1px solid var(--border-color3);
 }
 .language-area .language-list li a:hover {
-  color: var(--white-color);
-  background-color: var(--primary-color2);
+  color: var(--primary-color2);
+}
+.language-area .language-list li:last-child a {
+  border-bottom: unset;
+}
+.language-area.language-btn-hover-color .language-list li a:hover {
+  color: var(--primary-color4);
 }
 
 .currency-area {
@@ -11281,6 +11287,20 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 /*=====================================
   47. Dining And Cuisine Page Card Section CSS
 ========================================*/
+.dining-and-cuisine-page-card .bottom-section {
+  padding-top: 50px;
+  border-top: 1px solid var(--border-color3);
+}
+@media (max-width: 1199px) {
+  .dining-and-cuisine-page-card .bottom-section {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .bottom-section {
+    padding-top: 20px;
+  }
+}
 .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content {
   max-width: 614px;
   width: 100%;
@@ -11452,6 +11472,31 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li:last-child {
   margin-bottom: 0;
+  padding-top: 50px;
+  position: relative;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li:last-child {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li:last-child {
+    padding-top: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li:last-child {
+    padding-top: 30px;
+  }
+}
+.dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .opening-and-closing-time li:last-child::before {
+  content: "";
+  position: absolute;
+  width: 235px;
+  height: 1px;
+  background-color: var(--border-color3);
+  top: 23%;
 }
 .dining-and-cuisine-page-card .dining-and-cuisine-page-card-content .primary-btn1 {
   margin-top: 40px;
@@ -11945,6 +11990,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .faq-page .nav-links-and-contact-area .nav-links-wrapper .nav-pills .nav-item .nav-link.active {
   background-color: unset;
   color: var(--primary-color1);
+  font-weight: 600;
 }
 .faq-page .nav-links-and-contact-area .nav-links-wrapper .nav-pills .nav-item:last-child {
   margin-bottom: 0;
