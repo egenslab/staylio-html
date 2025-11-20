@@ -1141,4 +1141,18 @@
     $(".header-offer-topbar-wrap").addClass("offer-topbar-close");
   });
 
+  // Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+  // Select all circular text items
+  const circularTexts = document.querySelectorAll(".circular-text-item");
+
+  if (circularTexts.length) {
+    circularTexts.forEach(item => {
+      // Initialize CircleType for each item
+      new CircleType(item).forceHeight(true).forceWidth(true);
+    });
+  }
+});
+
+
 })(jQuery);

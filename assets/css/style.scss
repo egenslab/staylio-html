@@ -6795,7 +6795,7 @@ header.style-4 {
           }
         }
 
-        .circle-position {
+        .circle {
           position: absolute;
           right: 50px;
           bottom: 70px;
@@ -6804,55 +6804,12 @@ header.style-4 {
             right: 0;
             bottom: 40px;
           }
-
-          .circular-text {
-            position: relative;
-            min-width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--white-color);
-
-            @include md-down-device() {
-              display: none;
-            }
-
-            .center-icon {
-              width: 65px;
-              height: 65px;
-              border-radius: 50%;
-              background-color: #6A6B6B;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              z-index: 1;
-
-              svg {
-                fill: var(--white-color);
-              }
-            }
-
-            .text {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              animation: textRotation 8s linear infinite;
-
-              span {
-                position: absolute;
-                left: 50%;
-                color: var(--title-color);
-                font-family: var(--font-manrope);
-                font-size: 13px;
-                font-weight: 700;
-                transform-origin: 0 60px;
-              }
+          .circular-text-wrapper {
+            background-color: unset;
+            border: unset;
+            .circular-text-item {
+              color: var(--title-color);
+              font-weight: 700;
             }
           }
         }
@@ -10667,94 +10624,66 @@ header.style-4 {
         top: 50%;
       }
 
-      .video-area {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        background: red;
-        position: relative;
-
-        .badge {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 106px;
-          height: 106px;
-          border-radius: 100%;
-          position: absolute;
-          left: 50%;
-          z-index: 1;
-          background-color: var(--dark-white-color);
-          top: 50%;
-          transform: translate(-50%, -50%);
-          // animation: identifier 20s linear infinite;
-
-          @include seventeen-down-device() {
-            left: 52%;
-          }
-
-          @include xxl-device() {
-            left: 48%;
-          }
-
-          @include xxl-down-device() {
-            left: 48%;
-          }
-
-          @include xl-down-device() {
-            width: 110px;
-            height: 110px;
-            left: 49%;
-          }
-
-          @include lg-down-device() {
-            display: none;
-          }
-
-          .play {
-            margin: 0;
-            border-radius: 50%;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .play-icon {
-              text-align: center;
-
-              i {
-                font-size: 45px;
-                color: rgba(var(--title-color-opc), 0.5);
-              }
-            }
-          }
-
-          .badge__char {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: calc(50% - 10px / 2);
-            height: calc(106px / 2);
-            width: 10px;
-            background-repeat: round;
-            text-align: center;
-            text-transform: uppercase;
-            line-height: 1;
-            font-weight: 500;
-            font-size: 13px;
-            color: var(--title-color);
-            font-family: var(--font-dmsans);
-            transform-origin: bottom center;
-            transform: rotate(var(--char-rotate));
-
-            @include xl-down-device() {
-              height: calc(106px / 2);
-            }
-          }
-        }
-      }
     }
 
+  }
+}
+
+.circular-text-wrapper {
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color3);
+  padding: 5px;
+  width: min-content;
+
+  @include md-down-device() {
+    padding: 3px;
+  }
+
+  @include sm-down-device() {
+    padding: 0;
+  }
+
+  .circular-text-item {
+    font-family: var(--font-dmsans);
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: var(--text-color);
+    border-radius: inherit;
+
+    @include md-down-device() {
+      font-size: 13px;
+    }
+
+    div {
+      animation: spin 15s linear infinite;
+    }
+  }
+
+  .circular-text-icon {
+    border-radius: inherit;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    svg {
+      fill: var(--black-color);
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
 

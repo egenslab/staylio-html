@@ -5866,63 +5866,24 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .item-list li:hover {
   color: var(--primary-color1);
 }
-.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle-position {
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle {
   position: absolute;
   right: 50px;
   bottom: 70px;
 }
 @media (max-width: 576px) {
-  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle-position {
+  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle {
     right: 0;
     bottom: 40px;
   }
 }
-.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle-position .circular-text {
-  position: relative;
-  min-width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--white-color);
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle .circular-text-wrapper {
+  background-color: unset;
+  border: unset;
 }
-@media (max-width: 767px) {
-  .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle-position .circular-text {
-    display: none;
-  }
-}
-.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle-position .circular-text .center-icon {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background-color: #6A6B6B;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle-position .circular-text .center-icon svg {
-  fill: var(--white-color);
-}
-.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle-position .circular-text .text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: textRotation 8s linear infinite;
-}
-.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle-position .circular-text .text span {
-  position: absolute;
-  left: 50%;
+.home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .dining-and-cuisine-content .list-and-book-now .circle .circular-text-wrapper .circular-text-item {
   color: var(--title-color);
-  font-family: var(--font-manrope);
-  font-size: 13px;
   font-weight: 700;
-  transform-origin: 0 60px;
 }
 .home1-dining-and-cuisine-section .dining-and-cuisine-wrapper .item-img-list {
   padding: 0;
@@ -9334,93 +9295,63 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     top: 50%;
   }
 }
-.home3-banner-section .banner-img .circle .video-area {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: red;
+
+.circular-text-wrapper {
   position: relative;
-}
-.home3-banner-section .banner-img .circle .video-area .badge {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 106px;
-  height: 106px;
-  border-radius: 100%;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color3);
+  padding: 5px;
+  width: -moz-min-content;
+  width: min-content;
+}
+@media (max-width: 767px) {
+  .circular-text-wrapper {
+    padding: 3px;
+  }
+}
+@media (max-width: 576px) {
+  .circular-text-wrapper {
+    padding: 0;
+  }
+}
+.circular-text-wrapper .circular-text-item {
+  font-family: var(--font-dmsans);
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: var(--text-color);
+  border-radius: inherit;
+}
+@media (max-width: 767px) {
+  .circular-text-wrapper .circular-text-item {
+    font-size: 13px;
+  }
+}
+.circular-text-wrapper .circular-text-item div {
+  animation: spin 15s linear infinite;
+}
+.circular-text-wrapper .circular-text-icon {
+  border-radius: inherit;
+  z-index: 9;
   position: absolute;
-  left: 50%;
-  z-index: 1;
-  background-color: var(--dark-white-color);
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
-@media (max-width: 1699px) {
-  .home3-banner-section .banner-img .circle .video-area .badge {
-    left: 52%;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1599px) {
-  .home3-banner-section .banner-img .circle .video-area .badge {
-    left: 48%;
-  }
-}
-@media (max-width: 1399px) {
-  .home3-banner-section .banner-img .circle .video-area .badge {
-    left: 48%;
-  }
-}
-@media (max-width: 1199px) {
-  .home3-banner-section .banner-img .circle .video-area .badge {
-    width: 110px;
-    height: 110px;
-    left: 49%;
-  }
-}
-@media (max-width: 991px) {
-  .home3-banner-section .banner-img .circle .video-area .badge {
-    display: none;
-  }
-}
-.home3-banner-section .banner-img .circle .video-area .badge .play {
-  margin: 0;
-  border-radius: 50%;
-  transition: all 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home3-banner-section .banner-img .circle .video-area .badge .play .play-icon {
-  text-align: center;
-}
-.home3-banner-section .banner-img .circle .video-area .badge .play .play-icon i {
-  font-size: 45px;
-  color: rgba(var(--title-color-opc), 0.5);
-}
-.home3-banner-section .banner-img .circle .video-area .badge .badge__char {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: calc(50% - 5px);
-  height: 53px;
-  width: 10px;
-  background-repeat: round;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1;
-  font-weight: 500;
-  font-size: 13px;
-  color: var(--title-color);
-  font-family: var(--font-dmsans);
-  transform-origin: bottom center;
-  transform: rotate(var(--char-rotate));
-}
-@media (max-width: 1199px) {
-  .home3-banner-section .banner-img .circle .video-area .badge .badge__char {
-    height: 53px;
-  }
+.circular-text-wrapper .circular-text-icon svg {
+  fill: var(--black-color);
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*=====================================
   32. Home3 Service Section CSS
 ========================================*/
