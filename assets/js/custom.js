@@ -1142,17 +1142,31 @@
   });
 
   // Wait until the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-  // Select all circular text items
-  const circularTexts = document.querySelectorAll(".circular-text-item");
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all circular text items
+    const circularTexts = document.querySelectorAll(".circular-text-item");
 
-  if (circularTexts.length) {
-    circularTexts.forEach(item => {
-      // Initialize CircleType for each item
-      new CircleType(item).forceHeight(true).forceWidth(true);
-    });
-  }
-});
+    if (circularTexts.length) {
+      circularTexts.forEach((item) => {
+        // Initialize CircleType for each item
+        new CircleType(item).forceHeight(true).forceWidth(true);
+      });
+    }
+  });
 
+  //Home1 Event Card
+  let panels = gsap.utils.toArray(".panel");
 
+  panels.forEach((panel, i) => {
+    if (i !== panels.length - 1) {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top 70px",
+        end: "bottom top",
+        scrub: true,
+        pin: true,
+        pinSpacing: false,
+      });
+    }
+  });
 })(jQuery);

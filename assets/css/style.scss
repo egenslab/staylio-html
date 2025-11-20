@@ -6883,7 +6883,8 @@ header.style-4 {
 
   .single-event {
     background-color: #FFF6EC;
-
+    position: relative;
+    z-index: 5;
     .event-content-and-title {
       padding: 70px 0 70px 300px;
       display: flex;
