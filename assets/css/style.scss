@@ -2006,6 +2006,20 @@ body.tt-magic-cursor #magic-cursor {
       .topbar-right {
         gap: 42px;
 
+        .language-area {
+          .language-btn {
+            .icon-and-content {
+              svg {
+                fill: var(--white-color);
+              }
+
+              span {
+                color: var(--white-color);
+              }
+            }
+          }
+        }
+
         .social-list {
           padding: 0;
           margin: 0;
@@ -3878,7 +3892,7 @@ header.style-3 {
   z-index: 999;
   transition: all 0.8s ease-out 0s;
   background-color: transparent;
-  padding: 0 190px;
+  padding: 10px 190px;
 
   @include eighteen-down-device() {
     padding: 0 100px;
@@ -4088,7 +4102,7 @@ header.style-3 {
       >li {
         display: inline-block;
         position: relative;
-        padding: 28px 0;
+        padding: 26px 17px;
 
         @include xxl-down-device() {
           padding: 28px 2px;
@@ -4116,7 +4130,6 @@ header.style-3 {
           color: var(--title-color);
           display: block;
           letter-spacing: 0.4px;
-          padding: 5px 20px;
           line-height: 1;
           position: relative;
           font-family: var(--font-dmsans);
@@ -4124,6 +4137,21 @@ header.style-3 {
           font-size: 16px;
           transition: all .5s ease-out 0s;
           position: relative;
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -4px;
+            left: 0px;
+            top: unset;
+            right: unset;
+            width: 100%;
+            border-bottom: 2px solid var(--primary-color3);
+            transform-origin: right center;
+            transform: scale(0, 1);
+            transition: transform 0.5s;
+          }
 
           @include xxl-down-device() {
             font-size: 15px;
@@ -4166,7 +4194,7 @@ header.style-3 {
           position: absolute;
           left: 0;
           right: 0;
-          top: 80px;
+          top: 68px;
           margin: 0;
           display: none;
           min-width: 250px;
@@ -4361,8 +4389,10 @@ header.style-3 {
           >a {
             color: var(--primary-color3);
 
-            i {
-              color: var(--primary-color3);
+            &::after {
+              transform-origin: left center;
+              transform: scale(1, 1);
+              height: 2px;
             }
           }
 
@@ -4375,8 +4405,11 @@ header.style-3 {
           >a {
             color: var(--primary-color3);
 
-            i {
-              color: var(--primary-color3);
+            &::after {
+              content: "";
+              transform-origin: left center;
+              transform: scale(1, 1);
+              height: 2px;
             }
           }
 
@@ -4485,6 +4518,10 @@ header.style-3 {
             border: unset;
             background-color: transparent;
             color: var(--title-color);
+
+            &::after {
+              display: none;
+            }
 
             i {
               display: none;
@@ -4669,62 +4706,6 @@ header.style-4 {
 
     @include sm-down-device() {
       gap: 15px;
-    }
-
-    .hotline-area {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-
-      .icon {
-        svg {
-          fill: var(--title-color);
-        }
-      }
-
-      .content {
-        position: relative;
-        line-height: 1;
-
-        &::after {
-          content: '';
-          height: 25px;
-          width: 1px;
-          background-color: #74787B;
-          position: absolute;
-          left: -10px;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-
-        span {
-          font-family: var(--font-dmsans);
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 1;
-          color: var(--title-color);
-          margin-bottom: 5px;
-          display: inline-block;
-        }
-
-        h6 {
-          margin-bottom: 0;
-          line-height: 1;
-
-          a {
-            font-family: var(--font-dmsans);
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 20px;
-            color: var(--title-color);
-            transition: 0.5s;
-
-            &:hover {
-              color: var(--primary-color3);
-            }
-          }
-        }
-      }
     }
 
     .mobile-menu-btn {
@@ -7468,6 +7449,12 @@ header.style-4 {
 
         .rating-area {
           margin-bottom: 5px;
+
+          li {
+            i {
+              font-size: 9px;
+            }
+          }
         }
       }
     }

@@ -1788,6 +1788,12 @@ body.tt-magic-cursor #magic-cursor {
 .topbar-area.two .topbar-wrap .topbar-right {
   gap: 42px;
 }
+.topbar-area.two .topbar-wrap .topbar-right .language-area .language-btn .icon-and-content svg {
+  fill: var(--white-color);
+}
+.topbar-area.two .topbar-wrap .topbar-right .language-area .language-btn .icon-and-content span {
+  color: var(--white-color);
+}
 .topbar-area.two .topbar-wrap .topbar-right .social-list {
   padding: 0;
   margin: 0;
@@ -3320,7 +3326,7 @@ header.style-3 {
   z-index: 999;
   transition: all 0.8s ease-out 0s;
   background-color: transparent;
-  padding: 0 190px;
+  padding: 10px 190px;
 }
 @media (max-width: 1799px) {
   header.style-3 {
@@ -3515,7 +3521,7 @@ header.style-3 .main-menu > ul {
 header.style-3 .main-menu > ul > li {
   display: inline-block;
   position: relative;
-  padding: 28px 0;
+  padding: 26px 17px;
 }
 @media (max-width: 1399px) {
   header.style-3 .main-menu > ul > li {
@@ -3542,7 +3548,6 @@ header.style-3 .main-menu > ul > li > a {
   color: var(--title-color);
   display: block;
   letter-spacing: 0.4px;
-  padding: 5px 20px;
   line-height: 1;
   position: relative;
   font-family: var(--font-dmsans);
@@ -3550,6 +3555,20 @@ header.style-3 .main-menu > ul > li > a {
   font-size: 16px;
   transition: all 0.5s ease-out 0s;
   position: relative;
+}
+header.style-3 .main-menu > ul > li > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  top: unset;
+  right: unset;
+  width: 100%;
+  border-bottom: 2px solid var(--primary-color3);
+  transform-origin: right center;
+  transform: scale(0, 1);
+  transition: transform 0.5s;
 }
 @media (max-width: 1399px) {
   header.style-3 .main-menu > ul > li > a {
@@ -3588,7 +3607,7 @@ header.style-3 .main-menu > ul > li ul.sub-menu {
   position: absolute;
   left: 0;
   right: 0;
-  top: 80px;
+  top: 68px;
   margin: 0;
   display: none;
   min-width: 250px;
@@ -3743,8 +3762,10 @@ header.style-3 .main-menu > ul > li:hover .dropdown-icon2 {
 header.style-3 .main-menu > ul > li.active > a {
   color: var(--primary-color3);
 }
-header.style-3 .main-menu > ul > li.active > a i {
-  color: var(--primary-color3);
+header.style-3 .main-menu > ul > li.active > a::after {
+  transform-origin: left center;
+  transform: scale(1, 1);
+  height: 2px;
 }
 header.style-3 .main-menu > ul > li.active > i {
   color: var(--primary-color3);
@@ -3752,8 +3773,11 @@ header.style-3 .main-menu > ul > li.active > i {
 header.style-3 .main-menu > ul > li:hover > a {
   color: var(--primary-color3);
 }
-header.style-3 .main-menu > ul > li:hover > a i {
-  color: var(--primary-color3);
+header.style-3 .main-menu > ul > li:hover > a::after {
+  content: "";
+  transform-origin: left center;
+  transform: scale(1, 1);
+  height: 2px;
 }
 header.style-3 .main-menu > ul > li:hover > i {
   color: var(--primary-color3);
@@ -3839,6 +3863,9 @@ header.style-3 .mobile-logo-area .menu-close-btn:hover i {
     border: unset;
     background-color: transparent;
     color: var(--title-color);
+  }
+  header.style-3 .main-menu > ul > li > a::after {
+    display: none;
   }
   header.style-3 .main-menu > ul > li > a i {
     display: none;
@@ -4010,52 +4037,6 @@ header.style-4 .nav-right {
   header.style-4 .nav-right {
     gap: 15px;
   }
-}
-header.style-4 .nav-right .hotline-area {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-header.style-4 .nav-right .hotline-area .icon svg {
-  fill: var(--title-color);
-}
-header.style-4 .nav-right .hotline-area .content {
-  position: relative;
-  line-height: 1;
-}
-header.style-4 .nav-right .hotline-area .content::after {
-  content: "";
-  height: 25px;
-  width: 1px;
-  background-color: #74787B;
-  position: absolute;
-  left: -10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-header.style-4 .nav-right .hotline-area .content span {
-  font-family: var(--font-dmsans);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  color: var(--title-color);
-  margin-bottom: 5px;
-  display: inline-block;
-}
-header.style-4 .nav-right .hotline-area .content h6 {
-  margin-bottom: 0;
-  line-height: 1;
-}
-header.style-4 .nav-right .hotline-area .content h6 a {
-  font-family: var(--font-dmsans);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--title-color);
-  transition: 0.5s;
-}
-header.style-4 .nav-right .hotline-area .content h6 a:hover {
-  color: var(--primary-color3);
 }
 header.style-4 .nav-right .mobile-menu-btn {
   display: none;
@@ -6530,6 +6511,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .testimonial-card.two .author-and-rating .rating .rating-area {
   margin-bottom: 5px;
+}
+.testimonial-card.two .author-and-rating .rating .rating-area li i {
+  font-size: 9px;
 }
 .testimonial-card.two.three {
   padding: 40px 30px;
