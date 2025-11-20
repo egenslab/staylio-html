@@ -3893,17 +3893,18 @@ header.style-3 {
   transition: all 0.8s ease-out 0s;
   background-color: transparent;
   padding: 10px 190px;
+  backdrop-filter: blur(4px);
 
   @include eighteen-down-device() {
-    padding: 0 100px;
+    padding: 10px 100px;
   }
 
   @include xxl-device() {
-    padding: 0 80px;
+    padding: 10px 80px;
   }
 
   @include xl-device() {
-    padding: 0 30px;
+    padding: 10px 30px;
   }
 
   @include xl-down-device() {
@@ -3929,14 +3930,14 @@ header.style-3 {
   .logo-and-menu-area {
     display: flex;
     align-items: center;
-    gap: 96px;
+    gap: 70px;
 
     @include eighteen-down-device() {
-      gap: 80px;
+      gap: 60px;
     }
 
     @include seventeen-down-device() {
-      gap: 60px;
+      gap: 50px;
     }
 
     @include xxl-device() {
@@ -3951,7 +3952,7 @@ header.style-3 {
   .nav-right {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 24px;
 
     @include xxl-device() {
       gap: 35px;
@@ -4102,10 +4103,10 @@ header.style-3 {
       >li {
         display: inline-block;
         position: relative;
-        padding: 26px 17px;
+        padding: 26px 22px;
 
         @include xxl-down-device() {
-          padding: 28px 2px;
+          padding: 20px 12px;
         }
 
         &.position-inherit {
@@ -4155,7 +4156,6 @@ header.style-3 {
 
           @include xxl-down-device() {
             font-size: 15px;
-            padding: 4px 15px;
           }
 
           i {
@@ -4631,18 +4631,18 @@ header.style-4 {
   z-index: 999;
   transition: all 0.8s ease-out 0s;
   background-color: transparent;
-  padding: 0 190px;
+  padding: 10px 190px;
 
   @include eighteen-down-device() {
-    padding: 0 100px;
+    padding: 10px 100px;
   }
 
   @include xxl-device() {
-    padding: 0 80px;
+    padding: 10px 80px;
   }
 
   @include xl-device() {
-    padding: 0 30px;
+    padding: 10px 30px;
   }
 
   @include xl-down-device() {
@@ -4662,28 +4662,6 @@ header.style-4 {
 
     @include xxl-down-device() {
       width: 105px;
-    }
-  }
-
-  .logo-and-menu-area {
-    display: flex;
-    align-items: center;
-    gap: 96px;
-
-    @include eighteen-down-device() {
-      gap: 80px;
-    }
-
-    @include seventeen-down-device() {
-      gap: 60px;
-    }
-
-    @include xxl-device() {
-      gap: 40px;
-    }
-
-    @include xxl-down-device() {
-      gap: 20px;
     }
   }
 
@@ -4785,10 +4763,10 @@ header.style-4 {
       >li {
         display: inline-block;
         position: relative;
-        padding: 28px 0;
+        padding: 26px 22px;
 
         @include xxl-down-device() {
-          padding: 28px 2px;
+          padding: 20px 17px;
         }
 
         &.position-inherit {
@@ -4813,7 +4791,6 @@ header.style-4 {
           color: var(--title-color);
           display: block;
           letter-spacing: 0.4px;
-          padding: 5px 20px;
           line-height: 1;
           position: relative;
           font-family: var(--font-dmsans);
@@ -4825,13 +4802,21 @@ header.style-4 {
 
           @include xxl-down-device() {
             font-size: 15px;
-            padding: 4px 15px;
           }
 
-          i {
-            font-size: 11px;
-            color: var(--title-color);
-            transition: all .55s ease-in-out;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -4px;
+            left: 0px;
+            top: unset;
+            right: unset;
+            width: 100%;
+            border-bottom: 2px solid var(--primary-color4);
+            transform-origin: right center;
+            transform: scale(0, 1);
+            transition: transform 0.5s;
           }
         }
 
@@ -4864,7 +4849,7 @@ header.style-4 {
           position: absolute;
           left: 0;
           right: 0;
-          top: 82px;
+          top: 67px;
           margin: 0;
           display: none;
           min-width: 250px;
@@ -5059,8 +5044,10 @@ header.style-4 {
           >a {
             color: var(--primary-color4);
 
-            i {
-              color: var(--primary-color4);
+            &::after {
+              transform-origin: left center;
+              transform: scale(1, 1);
+              height: 2px;
             }
           }
 
@@ -5073,8 +5060,11 @@ header.style-4 {
           >a {
             color: var(--primary-color4);
 
-            i {
-              color: var(--primary-color4);
+            &::after {
+              content: "";
+              transform-origin: left center;
+              transform: scale(1, 1);
+              height: 2px;
             }
           }
 
@@ -5183,6 +5173,10 @@ header.style-4 {
             background-color: transparent;
             color: var(--title-color);
 
+            &::after {
+              display: none;
+            }
+
             i {
               display: none;
             }
@@ -5275,10 +5269,20 @@ header.style-4 {
 
     }
 
-    .primary-btn3,
     .primary-btn4 {
       justify-content: center;
       width: 100%;
+    }
+
+    .language-area {
+      padding: 14px 15px;
+      border-radius: 5px;
+      border: 1px solid rgba(var(--black-color-opc), 0.1);
+      margin-bottom: 20px;
+
+      .language-btn {
+        justify-content: space-between;
+      }
     }
   }
 }
@@ -10955,6 +10959,10 @@ header.style-4 {
 
 .mb-24 {
   margin-bottom: 24px;
+
+  @include xl-down-device() {
+    margin-bottom: 17px;
+  }
 }
 
 .mb-20 {
@@ -11796,10 +11804,10 @@ header.style-4 {
 .home4-testimonial-section {
   .testimonial-img-wrapper {
     img {
-      min-width: 571px;
+      min-width: 566px;
 
       @include xl-device() {
-        min-width: 550px;
+        min-width: 546px;
       }
 
       @include xl-down-device() {
@@ -11818,12 +11826,22 @@ header.style-4 {
 
     @include xl-down-device() {
       padding-left: unset;
+      margin-bottom: 15px;
     }
   }
 
   .slider-btn-grp {
     justify-content: end;
     margin-bottom: 26px;
+
+    @include xl-down-device() {
+      justify-content: start;
+      margin-bottom: 45px;
+    }
+
+    @include sm-down-device() {
+      margin-bottom: 35px;
+    }
 
     .slider-btn {
       &:hover {

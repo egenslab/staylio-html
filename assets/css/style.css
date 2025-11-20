@@ -3327,20 +3327,22 @@ header.style-3 {
   transition: all 0.8s ease-out 0s;
   background-color: transparent;
   padding: 10px 190px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 @media (max-width: 1799px) {
   header.style-3 {
-    padding: 0 100px;
+    padding: 10px 100px;
   }
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   header.style-3 {
-    padding: 0 80px;
+    padding: 10px 80px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   header.style-3 {
-    padding: 0 30px;
+    padding: 10px 30px;
   }
 }
 @media (max-width: 1199px) {
@@ -3366,16 +3368,16 @@ header.style-3 .header-logo {
 header.style-3 .logo-and-menu-area {
   display: flex;
   align-items: center;
-  gap: 96px;
+  gap: 70px;
 }
 @media (max-width: 1799px) {
   header.style-3 .logo-and-menu-area {
-    gap: 80px;
+    gap: 60px;
   }
 }
 @media (max-width: 1699px) {
   header.style-3 .logo-and-menu-area {
-    gap: 60px;
+    gap: 50px;
   }
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
@@ -3391,7 +3393,7 @@ header.style-3 .logo-and-menu-area {
 header.style-3 .nav-right {
   display: flex;
   align-items: center;
-  gap: 45px;
+  gap: 24px;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   header.style-3 .nav-right {
@@ -3521,11 +3523,11 @@ header.style-3 .main-menu > ul {
 header.style-3 .main-menu > ul > li {
   display: inline-block;
   position: relative;
-  padding: 26px 17px;
+  padding: 26px 22px;
 }
 @media (max-width: 1399px) {
   header.style-3 .main-menu > ul > li {
-    padding: 28px 2px;
+    padding: 20px 12px;
   }
 }
 header.style-3 .main-menu > ul > li.position-inherit {
@@ -3573,7 +3575,6 @@ header.style-3 .main-menu > ul > li > a::after {
 @media (max-width: 1399px) {
   header.style-3 .main-menu > ul > li > a {
     font-size: 15px;
-    padding: 4px 15px;
   }
 }
 header.style-3 .main-menu > ul > li > a i {
@@ -3951,21 +3952,21 @@ header.style-4 {
   z-index: 999;
   transition: all 0.8s ease-out 0s;
   background-color: transparent;
-  padding: 0 190px;
+  padding: 10px 190px;
 }
 @media (max-width: 1799px) {
   header.style-4 {
-    padding: 0 100px;
+    padding: 10px 100px;
   }
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   header.style-4 {
-    padding: 0 80px;
+    padding: 10px 80px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   header.style-4 {
-    padding: 0 30px;
+    padding: 10px 30px;
   }
 }
 @media (max-width: 1199px) {
@@ -3986,31 +3987,6 @@ header.style-4 .header-logo {
 @media (max-width: 1399px) {
   header.style-4 .header-logo {
     width: 105px;
-  }
-}
-header.style-4 .logo-and-menu-area {
-  display: flex;
-  align-items: center;
-  gap: 96px;
-}
-@media (max-width: 1799px) {
-  header.style-4 .logo-and-menu-area {
-    gap: 80px;
-  }
-}
-@media (max-width: 1699px) {
-  header.style-4 .logo-and-menu-area {
-    gap: 60px;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1599px) {
-  header.style-4 .logo-and-menu-area {
-    gap: 40px;
-  }
-}
-@media (max-width: 1399px) {
-  header.style-4 .logo-and-menu-area {
-    gap: 20px;
   }
 }
 header.style-4 .nav-right {
@@ -4100,11 +4076,11 @@ header.style-4 .main-menu > ul {
 header.style-4 .main-menu > ul > li {
   display: inline-block;
   position: relative;
-  padding: 28px 0;
+  padding: 26px 22px;
 }
 @media (max-width: 1399px) {
   header.style-4 .main-menu > ul > li {
-    padding: 28px 2px;
+    padding: 20px 17px;
   }
 }
 header.style-4 .main-menu > ul > li.position-inherit {
@@ -4127,7 +4103,6 @@ header.style-4 .main-menu > ul > li > a {
   color: var(--title-color);
   display: block;
   letter-spacing: 0.4px;
-  padding: 5px 20px;
   line-height: 1;
   position: relative;
   font-family: var(--font-dmsans);
@@ -4140,13 +4115,21 @@ header.style-4 .main-menu > ul > li > a {
 @media (max-width: 1399px) {
   header.style-4 .main-menu > ul > li > a {
     font-size: 15px;
-    padding: 4px 15px;
   }
 }
-header.style-4 .main-menu > ul > li > a i {
-  font-size: 11px;
-  color: var(--title-color);
-  transition: all 0.55s ease-in-out;
+header.style-4 .main-menu > ul > li > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  top: unset;
+  right: unset;
+  width: 100%;
+  border-bottom: 2px solid var(--primary-color4);
+  transform-origin: right center;
+  transform: scale(0, 1);
+  transition: transform 0.5s;
 }
 header.style-4 .main-menu > ul > li .dropdown-icon {
   font-size: 20px;
@@ -4174,7 +4157,7 @@ header.style-4 .main-menu > ul > li ul.sub-menu {
   position: absolute;
   left: 0;
   right: 0;
-  top: 82px;
+  top: 67px;
   margin: 0;
   display: none;
   min-width: 250px;
@@ -4329,8 +4312,10 @@ header.style-4 .main-menu > ul > li:hover .dropdown-icon2 {
 header.style-4 .main-menu > ul > li.active > a {
   color: var(--primary-color4);
 }
-header.style-4 .main-menu > ul > li.active > a i {
-  color: var(--primary-color4);
+header.style-4 .main-menu > ul > li.active > a::after {
+  transform-origin: left center;
+  transform: scale(1, 1);
+  height: 2px;
 }
 header.style-4 .main-menu > ul > li.active > i {
   color: var(--primary-color4);
@@ -4338,8 +4323,11 @@ header.style-4 .main-menu > ul > li.active > i {
 header.style-4 .main-menu > ul > li:hover > a {
   color: var(--primary-color4);
 }
-header.style-4 .main-menu > ul > li:hover > a i {
-  color: var(--primary-color4);
+header.style-4 .main-menu > ul > li:hover > a::after {
+  content: "";
+  transform-origin: left center;
+  transform: scale(1, 1);
+  height: 2px;
 }
 header.style-4 .main-menu > ul > li:hover > i {
   color: var(--primary-color4);
@@ -4426,6 +4414,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     background-color: transparent;
     color: var(--title-color);
   }
+  header.style-4 .main-menu > ul > li > a::after {
+    display: none;
+  }
   header.style-4 .main-menu > ul > li > a i {
     display: none;
   }
@@ -4495,10 +4486,18 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     align-items: center;
     gap: 20px;
   }
-  header.style-4 .primary-btn3,
   header.style-4 .primary-btn4 {
     justify-content: center;
     width: 100%;
+  }
+  header.style-4 .language-area {
+    padding: 14px 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(var(--black-color-opc), 0.1);
+    margin-bottom: 20px;
+  }
+  header.style-4 .language-area .language-btn {
+    justify-content: space-between;
   }
 }
 
@@ -9607,6 +9606,11 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .mb-24 {
   margin-bottom: 24px;
 }
+@media (max-width: 1199px) {
+  .mb-24 {
+    margin-bottom: 17px;
+  }
+}
 
 .mb-20 {
   margin-bottom: 20px;
@@ -10432,11 +10436,11 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   38. Home4 Testimonial Section CSS
 ========================================*/
 .home4-testimonial-section .testimonial-img-wrapper img {
-  min-width: 571px;
+  min-width: 566px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .home4-testimonial-section .testimonial-img-wrapper img {
-    min-width: 550px;
+    min-width: 546px;
   }
 }
 @media (max-width: 1199px) {
@@ -10456,11 +10460,23 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 @media (max-width: 1199px) {
   .home4-testimonial-section .section-title {
     padding-left: unset;
+    margin-bottom: 15px;
   }
 }
 .home4-testimonial-section .slider-btn-grp {
   justify-content: end;
   margin-bottom: 26px;
+}
+@media (max-width: 1199px) {
+  .home4-testimonial-section .slider-btn-grp {
+    justify-content: start;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 576px) {
+  .home4-testimonial-section .slider-btn-grp {
+    margin-bottom: 35px;
+  }
 }
 .home4-testimonial-section .slider-btn-grp .slider-btn:hover {
   background-color: var(--title-color);
