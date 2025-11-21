@@ -51,31 +51,29 @@
     }
   });
 
-const header = document.querySelector(".home1-header");
-const eventSection = document.querySelector(".home1-event-section");
+  const header = document.querySelector(".home1-header");
+  const eventSection = document.querySelector(".home1-event-section");
 
-window.addEventListener("scroll", function () {
-  const scrollY = window.scrollY;
+  window.addEventListener("scroll", function () {
+    const scrollY = window.scrollY;
 
-  // Default sticky behavior: scrollY > 0 → sticky ON, top → sticky OFF
-  if (scrollY > 0) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-
-  // Extra logic: Remove sticky inside event section
-  if (eventSection) {
-    const rect = eventSection.getBoundingClientRect();
-
-    // When event section is visible in viewport → remove sticky
-    if (rect.top <= 0 && rect.bottom >= 0) {
+    // Default sticky behavior: scrollY > 0 → sticky ON, top → sticky OFF
+    if (scrollY > 0) {
+      header.classList.add("sticky");
+    } else {
       header.classList.remove("sticky");
     }
-  }
-});
 
+    // Extra logic: Remove sticky inside event section
+    if (eventSection) {
+      const rect = eventSection.getBoundingClientRect();
 
+      // When event section is visible in viewport → remove sticky
+      if (rect.top <= 0 && rect.bottom >= 0) {
+        header.classList.remove("sticky");
+      }
+    }
+  });
 
   // FancyBox Js
   $('[data-fancybox="gallery-01"]').fancybox({
@@ -1182,7 +1180,417 @@ window.addEventListener("scroll", function () {
     }
   });
 
+  // Quantity Increment Room
+  $(".room-quantity__plus").on("click", function (e) {
+    e.preventDefault();
+    var input = $(this).siblings(".quantity__input");
+    var value = parseInt(input.val(), 10);
 
+    value++;
+    $("#room-qty").text(value.toString());
+    input.val(value.toString());
+  });
 
+  $(document).ready(function () {
+    $(".filter-item-list .single-item").on("click", function () {
+      var $clickedItem = $(this);
+      var index = $clickedItem.index();
 
+      // Add 'active' class to clicked item and remove from others
+      $clickedItem.addClass("active").siblings().removeClass("active");
+
+      // Show corresponding .filter-input by index
+      $(".filter-input-wrap .filter-input")
+        .removeClass("show")
+        .eq(index)
+        .addClass("show");
+    });
+  });
+
+  // Contact DropDown Btn
+  $(".contact-dropdown-btn").on("click", function (e) {
+    let parent = $(this).parent();
+    parent.find(".contact-list").toggleClass("active");
+    e.stopPropagation();
+  });
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".contact-dropdown-btn").length) {
+      $(".contact-list").removeClass("active");
+    }
+  });
+
+  // Handle click on the input item
+  $(".custom-select-dropdown").on("click", function () {
+    $(".custom-select-wrap").toggleClass("active");
+  });
+
+  $(".single-search-box").each(function () {
+    var $box = $(this);
+    var $dropdown = $box.find(".custom-select-dropdown");
+    var $input = $dropdown.find("input");
+    var $wrap = $box.find(".custom-select-wrap");
+    var $searchInput = $wrap.find(".custom-select-search-area input");
+
+    // Toggle dropdown on click
+    $dropdown.on("click", function (e) {
+      e.stopPropagation();
+      $(".custom-select-wrap").removeClass("active"); // Close others
+      $wrap.toggleClass("active");
+    });
+
+    // Handle option click
+    $wrap.find(".option-list-destination li").on("click", function () {
+      var country = $(this).find(".destination h6").text();
+      var destination = $(this).find(".destination span").text();
+      const countryDestinationHtml = `<div class="destination"><h6>${country}</h6> <span>${destination}</span></div>`;
+      $box.find(".input-field-value").empty().html(countryDestinationHtml); // ✅ FIXED
+      $input.val(country + destination);
+      $wrap.removeClass("active");
+    });
+
+    $wrap.find(".option-list li").on("click", function () {
+      var value = $(this).find("h6").text();
+      $input.val(value);
+      $wrap.removeClass("active");
+    });
+
+    // Search filter
+    $searchInput.on("input", function () {
+      var searchText = $(this).val().toLowerCase();
+      $wrap
+        .find(".option-list-destination li, .option-list li")
+        .each(function () {
+          var destinationText = $(this)
+            .find(".destination h6, h6")
+            .text()
+            .toLowerCase();
+          $(this).toggle(destinationText.includes(searchText));
+        });
+    });
+
+    // Close dropdown on click outside
+    $(document).on("click", function (event) {
+      if (!$(event.target).closest($box).length) {
+        $wrap.removeClass("active");
+      }
+    });
+  });
+
+  // calender
+  $(function () {
+    const today = moment();
+    const checkOutDefault = moment().add(2, "days");
+
+    // ----------- General Calendar: inOut (Per Dropdown) ------------
+    $('input[name="inOut"]').each(function () {
+      const $input = $(this);
+      const $display = $input
+        .closest(".custom-select-dropdown")
+        .find(".selected-date");
+
+      $input.daterangepicker(
+        {
+          singleDatePicker: true,
+          startDate: today,
+          minYear: 2025,
+          maxYear: 2026,
+          locale: {
+            format: "DD-MMM-YYYY",
+          },
+        },
+        function (start) {
+          const formattedDayMonth = start.format("D MMMM");
+          const formattedDayYear = start.format("dddd YYYY");
+          const formattedDate = `<div class="selected-date"><h6>${formattedDayMonth}</h6><span>${formattedDayYear}</span></div>`;
+          $display.html(formattedDate);
+        }
+      );
+
+      // Initialize default
+      $display.html(
+        `<div class="selected-date"><h6>${today.format(
+          "D MMMM"
+        )}</h6><span>${today.format("dddd YYYY")}</span></div>`
+      );
+    });
+
+    // ----------- Hotel Check-In (Scoped) ------------
+    $("input.hotel-checkin").each(function () {
+      const $input = $(this);
+      const $display = $input
+        .closest(".custom-select-dropdown, .hotel-box, .date-box")
+        .find(".hotel-selected-date-checkin");
+      const $display2 = jQuery(document).find(".hotel-selected-date-checkout");
+
+      $input.daterangepicker(
+        {
+          opens: "center",
+          startDate: today,
+          endDate: checkOutDefault,
+          minYear: 2025,
+          maxYear: 2026,
+          locale: {
+            format: "DD-MMM",
+          },
+        },
+        function (start, end) {
+          const formatted = start.format("D MMMM");
+          $display.html(`<h6>${formatted}</h6><span>Check-In</span>`);
+
+          const formattedCheckOut = end.format("D MMMM");
+          $display2.html(`<h6>${formattedCheckOut}</h6><span>Check-Out</span>`);
+        }
+      );
+
+      // Default display before selection
+      $display.html(`<h6>${today.format("D MMMM")}</h6><span>Check-In</span>`);
+      $display2.html(
+        `<h6>${checkOutDefault.format("D MMMM")}</h6><span>Check-Out</span>`
+      );
+    });
+
+    // ----------- Hotel Check-Out (Scoped) ------------
+    //  const checkOutDefault = moment().add(2, "days");
+
+    //  $("input.hotel-checkout").each(function () {
+    //    const $input = $(this);
+    //    const $display = $input
+    //      .closest(".custom-select-dropdown, .hotel-box, .date-box")
+    //      .find(".hotel-selected-date-checkout");
+
+    //    $input.daterangepicker(
+    //      {
+    //        singleDatePicker: true,
+    //        opens: "left",
+    //        startDate: checkOutDefault,
+    //        minYear: 2023,
+    //        maxYear: 2025,
+    //        locale: {
+    //          format: "DD-MMM",
+    //        },
+    //      },
+    //      function (start) {
+    //        const formatted = start.format("D MMMM");
+    //        $display.html(
+    //          `<div class="hotel-selected-date-checkout"><h6>${formatted}</h6><span>Check-Out</span></div>`
+    //        );
+    //      }
+    //    );
+
+    //    $display.html(
+    //      `<div class="hotel-selected-date-checkout"><h6>${checkOutDefault.format(
+    //        "D MMMM"
+    //      )}</h6><span>Check-Out</span></div>`
+    //    );
+    //  });
+  });
+
+  //Quantity Increment Guest
+  function updateGuestSummary() {
+    let totalAdults = 0;
+    let totalChildren = 0;
+
+    $('input[name="adult_quantity"]').each(function () {
+      totalAdults += parseInt($(this).val(), 10) || 0;
+    });
+
+    $('input[name="child_quantity"]').each(function () {
+      totalChildren += parseInt($(this).val(), 10) || 0;
+    });
+
+    $("#adult-qty").text(totalAdults);
+    $("#child-qty").text(totalChildren);
+  }
+
+  function updateRoomTitles() {
+    $(".room-list .single-room").each(function (index) {
+      $(this)
+        .find(".room-title h6")
+        .text(`Room-${index + 1}`);
+    });
+  }
+
+  function updateRoomSummary() {
+    const roomCount = $(".room-list .single-room").length;
+    $(".custom-select-dropdown span strong").text(roomCount);
+
+    if (roomCount <= 1) {
+      $(".room-delete-btn").hide();
+    } else {
+      $(".room-delete-btn").show();
+    }
+  }
+
+  function createNewRoom() {
+    const $lastRoom = $(".room-list .single-room").last();
+    const $newRoom = $lastRoom.clone();
+
+    // Reset values
+    $newRoom.find('input[name="adult_quantity"]').val(1);
+    $newRoom.find('input[name="child_quantity"]').val(0);
+    $newRoom.find(".guest-count").hide();
+    $newRoom.removeClass("active-room");
+
+    return $newRoom;
+  }
+
+  // Add new room
+  const maxRooms = 5;
+
+  $(".add-btn").on("click", function () {
+    const roomCount = $(".room-list .single-room").length;
+
+    if (roomCount >= maxRooms) {
+      $(this).prop("disabled", true).addClass("disabled");
+      return;
+    }
+
+    const $newRoom = createNewRoom();
+
+    // Remove active state from others and hide
+    $(".room-list .single-room")
+      .removeClass("active-room")
+      .find(".guest-count")
+      .slideUp(0);
+
+    // Append the new room
+    $(".room-list").append($newRoom);
+
+    // Show the new one
+    $newRoom.addClass("active-room").find(".guest-count").slideDown(200);
+
+    updateRoomTitles();
+    updateRoomSummary();
+    updateGuestSummary();
+
+    // Disable button if max reached
+    if ($(".room-list .single-room").length >= maxRooms) {
+      $(this).prop("disabled", true).addClass("disabled");
+    }
+  });
+
+  // Event delegation for plus/minus buttons
+  $(document).on(
+    "click",
+    ".guest-quantity__plus, .guest-quantity__minus",
+    function (e) {
+      e.preventDefault();
+
+      const $btn = $(this);
+      const $input = $btn.siblings(".quantity__input");
+      const type = $btn.data("type");
+      let value = parseInt($input.val(), 10) || 0;
+
+      if ($btn.hasClass("guest-quantity__minus")) {
+        if (
+          (type === "adult" && value > 1) ||
+          (type === "child" && value > 0)
+        ) {
+          $input.val(value - 1);
+        }
+      } else {
+        $input.val(value + 1);
+      }
+
+      updateGuestSummary();
+    }
+  );
+
+  // Delete room
+  $(document).on("click", ".room-delete-btn", function (e) {
+    e.stopPropagation();
+
+    $(this).closest(".single-room").remove();
+
+    updateRoomTitles();
+    updateRoomSummary();
+    updateGuestSummary();
+
+    const $rooms = $(".room-list .single-room");
+
+    if ($rooms.length > 0) {
+      $rooms.removeClass("active-room").find(".guest-count").slideUp(0);
+      $rooms.last().addClass("active-room").find(".guest-count").slideDown(200);
+    }
+
+    // Re-enable add button if room count is below max
+    if ($rooms.length < maxRooms) {
+      $(".add-btn").prop("disabled", false).removeClass("disabled");
+    }
+  });
+
+  // Accordion toggle
+  $(document).on("click", ".room-title", function () {
+    const $thisRoom = $(this).closest(".single-room");
+
+    if ($thisRoom.hasClass("active-room")) return;
+
+    $(".single-room")
+      .not($thisRoom)
+      .removeClass("active-room")
+      .find(".guest-count")
+      .slideUp(200);
+    $thisRoom.addClass("active-room").find(".guest-count").slideDown(200);
+  });
+
+  //Progress Bar
+  document.querySelectorAll(".rating-progress-bar-wrap").forEach((wrap) => {
+    const bar = wrap.querySelector(".rating-progress-bar-per");
+    const percentDisplay = wrap.querySelector(".data-per");
+    const target = parseFloat(bar.getAttribute("data-per")); // e.g., 90
+    const duration = 1000; // in milliseconds
+
+    let startTime = null;
+
+    function animate(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+      const progress = Math.min(elapsed / duration, 1); // Ensure it doesn't go over 1
+
+      const current = Math.floor(target * progress);
+      bar.style.width = current + "%";
+      percentDisplay.textContent = current + "%";
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    }
+
+    requestAnimationFrame(animate);
+  });
+
+  // star-rating
+  $(".rating-container .star-icon").each(function () {
+    let self = $(this);
+
+    self.on("mouseenter", function () {
+      $(this).prevAll().addBack().addClass("hovered");
+    });
+
+    self.on("mouseleave", function () {
+      $(".star-icon").removeClass("hovered");
+    });
+
+    self.on("click", function () {
+      const rating = $(this).prevAll().length + 1;
+      const parent = $(this).parent();
+      parent.attr("data-rating", rating);
+
+      parent.find(".star-icon").removeClass("selected");
+      parent.find(".star-icon").each(function (index) {
+        if (index < rating) {
+          $(this).addClass("selected");
+        }
+      });
+    });
+
+    // On load or if data-rating already exists
+    const parent = self.parent();
+    const initRating = parseInt(parent.attr("data-rating")) || 0;
+    parent.find(".star-icon").each(function (index) {
+      if (index < initRating) {
+        $(this).addClass("selected");
+      }
+    });
+  });
 })(jQuery);
