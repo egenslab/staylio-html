@@ -1825,7 +1825,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 
 .header-offer-topbar-wrap {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -1924,6 +1924,9 @@ body.tt-magic-cursor #magic-cursor {
 }
 .header-offer-topbar-wrap.offer-topbar-close header.style-1 {
   transform: translateY(0);
+}
+.header-offer-topbar-wrap.sticky {
+  position: fixed;
 }
 .header-offer-topbar-wrap.sticky .offer-topbar {
   transform: translateY(-100%);
@@ -10418,11 +10421,17 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .home4-testimonial-section .slider-btn-grp {
   justify-content: end;
   margin-bottom: 26px;
+  gap: 15px;
 }
 @media (max-width: 1199px) {
   .home4-testimonial-section .slider-btn-grp {
     justify-content: start;
     margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .home4-testimonial-section .slider-btn-grp {
+    gap: 15px;
   }
 }
 @media (max-width: 576px) {

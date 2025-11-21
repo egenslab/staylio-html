@@ -2061,7 +2061,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 
 .header-offer-topbar-wrap {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -2175,6 +2175,7 @@ body.tt-magic-cursor #magic-cursor {
   }
 
   &.sticky {
+    position: fixed;
     .offer-topbar {
       transform: translateY(-100%);
     }
@@ -6885,6 +6886,7 @@ header.style-4 {
     background-color: #FFF6EC;
     position: relative;
     z-index: 5;
+
     .event-content-and-title {
       padding: 70px 0 70px 300px;
       display: flex;
@@ -11798,10 +11800,15 @@ header.style-4 {
   .slider-btn-grp {
     justify-content: end;
     margin-bottom: 26px;
+    gap: 15px;
 
     @include xl-down-device() {
       justify-content: start;
       margin-bottom: 45px;
+    }
+
+    @include md-down-device() {
+      gap: 15px;
     }
 
     @include sm-down-device() {

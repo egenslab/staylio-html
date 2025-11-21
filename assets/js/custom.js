@@ -51,6 +51,32 @@
     }
   });
 
+const header = document.querySelector(".home1-header");
+const eventSection = document.querySelector(".home1-event-section");
+
+window.addEventListener("scroll", function () {
+  const scrollY = window.scrollY;
+
+  // Default sticky behavior: scrollY > 0 → sticky ON, top → sticky OFF
+  if (scrollY > 0) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+
+  // Extra logic: Remove sticky inside event section
+  if (eventSection) {
+    const rect = eventSection.getBoundingClientRect();
+
+    // When event section is visible in viewport → remove sticky
+    if (rect.top <= 0 && rect.bottom >= 0) {
+      header.classList.remove("sticky");
+    }
+  }
+});
+
+
+
   // FancyBox Js
   $('[data-fancybox="gallery-01"]').fancybox({
     buttons: ["close"],
@@ -1078,20 +1104,6 @@
     });
   });
 
-  // Round Text Animation
-  const element = document.querySelectorAll(".badge__char");
-  const step = 360 / element.length;
-
-  element.forEach((elem, i) => {
-    elem.style.setProperty("--char-rotate", i * step + "deg");
-  });
-
-  const foo = 360 / 7;
-
-  for (let i = 0; i <= 7; i++) {
-    console.log(i * foo + "deg");
-  }
-
   //list grid view
   $(".grid-view li").on("click", function () {
     // Get the class of the clicked li element
@@ -1161,7 +1173,7 @@
     if (i !== panels.length - 1) {
       ScrollTrigger.create({
         trigger: panel,
-        start: "top 70px",
+        start: "top top",
         end: "bottom top",
         scrub: true,
         pin: true,
@@ -1169,4 +1181,8 @@
       });
     }
   });
+
+
+
+
 })(jQuery);
