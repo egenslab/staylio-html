@@ -3225,6 +3225,14 @@ header.style-1 {
       }
     }
   }
+
+  &.three {
+    .main-menu {
+      @include xl-down-device() {
+        min-height: 100vh;
+      }
+    }
+  }
 }
 
 header.style-2 {
@@ -4635,6 +4643,14 @@ header.style-3 {
       width: 100%;
     }
   }
+
+  &.two {
+    .main-menu {
+      @include xl-down-device() {
+        min-height: 100vh;
+      }
+    }
+  }
 }
 
 header.style-4 {
@@ -5298,6 +5314,7 @@ header.style-4 {
       }
     }
   }
+
 }
 
 // Modal Style
@@ -6868,23 +6885,26 @@ header.style-4 {
   transition: transform 0.5s ease;
 
   h3 {
-    color: var(--white-color);
     margin-bottom: 15px;
-    font-family: var(--font-marcellus);
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1;
 
-    @include xl-device() {
-      font-size: 26px;
-    }
+    a {
+      color: var(--white-color);
+      font-family: var(--font-marcellus);
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1;
 
-    @include lg-device() {
-      font-size: 22px;
-    }
+      @include xl-device() {
+        font-size: 26px;
+      }
 
-    @include lg-down-device() {
-      font-size: 24px;
+      @include lg-device() {
+        font-size: 22px;
+      }
+
+      @include lg-down-device() {
+        font-size: 24px;
+      }
     }
   }
 
@@ -14402,7 +14422,6 @@ header.style-4 {
     .rating-wrapper {
       padding: 40px 30px;
       border: 1px solid var(--borders-color);
-      border-radius: 10px;
       display: flex;
       justify-content: space-between;
       gap: 10px;
@@ -14529,7 +14548,7 @@ header.style-4 {
 
           >span {
             color: var(--text-color);
-            font-family: var(--font-poppins);
+            font-family: var(--font-dmsans);
             font-weight: 500;
             font-size: 16px;
             line-height: 1;
@@ -14593,7 +14612,7 @@ header.style-4 {
 
             .data-per {
               color: var(--text-color);
-              font-family: var(--font-poppins);
+              font-family: var(--font-dmsans);
               font-weight: 500;
               font-size: 16px;
               line-height: 1;
@@ -14665,7 +14684,7 @@ header.style-4 {
                 line-height: 1;
                 margin-bottom: 0;
                 color: var(--title-color);
-                font-family: var(--font-poppins);
+                font-family: var(--font-dmsans);
                 font-size: 18px;
                 font-weight: 600;
 
@@ -14698,7 +14717,7 @@ header.style-4 {
 
             .replay-btn {
               color: var(--text-color);
-              font-family: var(--font-poppins);
+              font-family: var(--font-dmsans);
               font-size: 16px;
               font-weight: 600;
               display: inline-flex;
@@ -14757,7 +14776,7 @@ header.style-4 {
 
                 span {
                   color: var(--title-color);
-                  font-family: var(--font-poppins);
+                  font-family: var(--font-dmsans);
                   font-weight: 600;
                   font-size: 14px;
                   line-height: 1;
@@ -14815,6 +14834,7 @@ header.style-4 {
     .modal-content {
       padding: 55px 60px;
       position: relative;
+      border-radius: unset;
 
       @include lg-down-device() {
         padding: 55px 40px;
@@ -14966,6 +14986,7 @@ header.style-4 {
             textarea {
               padding: 20px 0 10px 20px;
               border-radius: unset;
+
               &::placeholder {
                 font-family: var(--font-dmsans);
                 font-size: 16px;
