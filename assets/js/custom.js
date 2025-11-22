@@ -1224,7 +1224,7 @@
     $(".custom-select-wrap").toggleClass("active");
   });
 
-  $(".single-search-box").each(function () {
+  $(".single-search-box, .single-field").each(function () {
     var $box = $(this);
     var $dropdown = $box.find(".custom-select-dropdown");
     var $input = $dropdown.find("input");
@@ -1279,7 +1279,8 @@
   // calender
   $(function () {
     const today = moment();
-    const checkOutDefault = moment().add(2, "days");
+    const checkOutDefault = moment().add(3, "days");
+    const tomorrow = moment().add(1, "days");
 
     // ----------- General Calendar: inOut (Per Dropdown) ------------
     $('input[name="inOut"]').each(function () {
@@ -1313,6 +1314,25 @@
         )}</h6><span>${today.format("dddd YYYY")}</span></div>`
       );
     });
+    $('input[name="inOut2"]').each(function () {
+      const $input = $(this);
+
+      $input.daterangepicker(
+        {
+          singleDatePicker: true,
+          showDropdowns: true,
+          startDate: "01-Jan-2005",
+          minYear: 1980,
+          maxYear: 2020,
+          locale: {
+            format: "DD-MMM-YYYY",
+          },
+        },
+        function (start) {
+          var years = moment().diff(start, "years");
+        }
+      );
+    });
 
     // ----------- Hotel Check-In (Scoped) ------------
     $("input.hotel-checkin").each(function () {
@@ -1341,7 +1361,7 @@
           $display2.html(`<h6>${formattedCheckOut}</h6><span>Check-Out</span>`);
         }
       );
-
+      $("#hotel-details-calendar").toggleClass("active");
       // Default display before selection
       $display.html(`<h6>${today.format("D MMMM")}</h6><span>Check-In</span>`);
       $display2.html(
@@ -1349,40 +1369,45 @@
       );
     });
 
-    // ----------- Hotel Check-Out (Scoped) ------------
-    //  const checkOutDefault = moment().add(2, "days");
+    // hotel details checkout
 
-    //  $("input.hotel-checkout").each(function () {
-    //    const $input = $(this);
-    //    const $display = $input
-    //      .closest(".custom-select-dropdown, .hotel-box, .date-box")
-    //      .find(".hotel-selected-date-checkout");
+    $(".hotel-selected-date-checkin").html(
+      `<h6>${tomorrow.format("D MMMM")}</h6><span>Check-In</span>`
+    );
+    $(".hotel-selected-date-checkout").html(
+      `<h6>${checkOutDefault.format("D MMMM")}</h6><span>Check-Out</span>`
+    );
+    $(
+      ".hotel-details-wrapper .booking-area .date-field, .hotel-details-wrapper .booking-area .date-field .custom-select-dropdown"
+    ).click(function () {
+      $("#hotel-details-calendar").toggleClass("active");
+    });
 
-    //    $input.daterangepicker(
-    //      {
-    //        singleDatePicker: true,
-    //        opens: "left",
-    //        startDate: checkOutDefault,
-    //        minYear: 2023,
-    //        maxYear: 2025,
-    //        locale: {
-    //          format: "DD-MMM",
-    //        },
-    //      },
-    //      function (start) {
-    //        const formatted = start.format("D MMMM");
-    //        $display.html(
-    //          `<div class="hotel-selected-date-checkout"><h6>${formatted}</h6><span>Check-Out</span></div>`
-    //        );
-    //      }
-    //    );
+    $("body").on("click", "#hotel-calendar-check", function (e) {
+      e.preventDefault();
+      $("#hotel-details-calendar").removeClass("active");
+    });
 
-    //    $display.html(
-    //      `<div class="hotel-selected-date-checkout"><h6>${checkOutDefault.format(
-    //        "D MMMM"
-    //      )}</h6><span>Check-Out</span></div>`
-    //    );
-    //  });
+    $("body").on("click", "#tour-calendar-check", function (e) {
+      e.preventDefault();
+      $("#tour-booking-calendar").removeClass("active");
+    });
+    
+
+    // Tour details
+    $(".booking-modal .selected-date").html(
+      `<h6>${moment(today).format("D MMMM")}</h6><span>Booking Date</span>`
+    );
+    $(
+      ".booking-modal .modal-content .date-field,.booking-modal .modal-content .date-field .custom-select-dropdown,.booking-modal .selected-date"
+    ).click(function () {
+      $("#tour-booking-calendar").toggleClass("active");
+    });
+    $(document).click(function (e) {
+      if (!$(e.target).closest("#tour-booking-calendar, .date-field, .custom-select-dropdown, .selected-date").length) {
+        $("#tour-booking-calendar").removeClass("active");
+      }
+    });
   });
 
   //Quantity Increment Guest
@@ -1517,6 +1542,43 @@
     if ($rooms.length < maxRooms) {
       $(".add-btn").prop("disabled", false).removeClass("disabled");
     }
+  });
+
+  // Accordion toggle
+  $(document).on("click", ".room-title", function () {
+    const $thisRoom = $(this).closest(".single-room");
+
+    if ($thisRoom.hasClass("active-room")) return;
+
+    $(".single-room")
+      .not($thisRoom)
+      .removeClass("active-room")
+      .find(".guest-count")
+      .slideUp(200);
+    $thisRoom.addClass("active-room").find(".guest-count").slideDown(200);
+  });
+
+  // Initial setup
+  $(document).ready(function () {
+    $(".room-list .single-room").first().find(".guest-count").show();
+    $(".room-list .single-room").first().addClass("active-room");
+    updateRoomSummary();
+  });
+
+  $(document).ready(function () {
+    $(".filter-item-list .single-item").on("click", function () {
+      var $clickedItem = $(this);
+      var index = $clickedItem.index();
+
+      // Add 'active' class to clicked item and remove from others
+      $clickedItem.addClass("active").siblings().removeClass("active");
+
+      // Show corresponding .filter-input by index
+      $(".filter-input-wrap .filter-input")
+        .removeClass("show")
+        .eq(index)
+        .addClass("show");
+    });
   });
 
   // Accordion toggle
