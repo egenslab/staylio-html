@@ -1653,6 +1653,63 @@ body.tt-magic-cursor #magic-cursor {
   background-color: var(--primary-color1);
 }
 
+.daterangepicker td.start-date.end-date {
+  border-radius: 50%;
+}
+
+.daterangepicker .drp-calendar {
+  min-width: 270px;
+}
+.daterangepicker .calendar-table th {
+  padding: 4px;
+  color: #aaa;
+}
+.daterangepicker .calendar-table th.month {
+  font-family: var(--font-dmsans);
+  color: var(--title-color);
+  font-size: 14px;
+}
+.daterangepicker .calendar-table td {
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 13px;
+  font-family: var(--font-poppins);
+}
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: var(--primary-color1);
+}
+.daterangepicker .monthselect {
+  outline: none;
+}
+.daterangepicker td.in-range {
+  background-color: rgba(var(--primary-color1-opc), 0.1);
+}
+.daterangepicker td.active {
+  background-color: var(--primary-color1);
+}
+.daterangepicker button {
+  outline: none;
+}
+.daterangepicker .btn-primary {
+  background-color: var(--primary-color1);
+  border-color: var(--primary-color1);
+}
+.daterangepicker.single td.active,
+.daterangepicker.single td.active:hover {
+  background-color: var(--primary-color1);
+}
+.daterangepicker.single .monthselect {
+  outline: none;
+}
+.daterangepicker.single button {
+  outline: none;
+}
+.daterangepicker.single .btn-primary {
+  background-color: var(--primary-color1);
+  border-color: var(--primary-color1);
+}
+
 /*=====================================
   03. Header CSS
 ========================================*/
