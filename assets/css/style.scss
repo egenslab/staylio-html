@@ -7487,7 +7487,7 @@ header.style-4 {
 
     .filter-input-wrap {
       background-color: unset;
-
+      backdrop-filter: unset;
       .filter-input {
         .single-search-box {
           &.room-field {

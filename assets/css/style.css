@@ -6457,6 +6457,8 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .filter-wrapper.three .filter-input-wrap {
   background-color: unset;
+  -webkit-backdrop-filter: unset;
+          backdrop-filter: unset;
 }
 .filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a {
   border-color: var(--primary-color3);
