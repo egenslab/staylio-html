@@ -6042,13 +6042,13 @@ header.style-4 {
   z-index: 9;
   padding: 0 200px;
 
-  @include xxl-device() {
+  @include seventeen-down-device() {
     padding: 0 100px;
   }
 
   @include xxl-down-device() {
     padding: 0 50px;
-    margin-top: -120px;
+    margin-top: -112px;
   }
 
   @include xl-down-device() {
@@ -6065,7 +6065,7 @@ header.style-4 {
     backdrop-filter: blur(400px);
 
     @include xxl-down-device() {
-      padding: 30px;
+      padding: 30px 20px;
     }
 
     @include md-down-device() {
@@ -6108,18 +6108,12 @@ header.style-4 {
         gap: 10px;
         position: relative;
 
-        @include xl-device() {
-          padding: 8px 15px;
-        }
-
         @include lg-device() {
-          padding: 8px 12px;
           gap: 6px;
         }
 
         @include sm-down-device() {
           min-height: 52px;
-          padding: 8px 18px;
         }
 
         >svg {
@@ -6172,16 +6166,20 @@ header.style-4 {
           }
 
           >span {
-            font-size: 14px;
-            font-family: var(--font-roboto);
+            font-size: 16px;
+            font-family: var(--font-dmsans);
             color: var(--white-color);
             font-weight: 400;
             margin-bottom: 0;
             line-height: 1.4;
             display: block;
 
+            @include lg-device() {
+              font-size: 14px;
+            }
+
             @include sm-down-device() {
-              font-size: 11px;
+              font-size: 15px;
             }
           }
 
@@ -6197,12 +6195,16 @@ header.style-4 {
               margin-bottom: 0;
 
               @include lg-device() {
+                font-size: 14px;
+              }
+
+              @include sm-down-device() {
                 font-size: 15px;
               }
             }
 
             span {
-              font-size: 14px;
+              font-size: 16px;
               font-family: var(--font-roboto);
               color: var(--white-color);
               font-weight: 400;
@@ -6210,8 +6212,12 @@ header.style-4 {
               line-height: 1.4;
               display: block;
 
+              @include lg-device() {
+                font-size: 14px;
+              }
+
               @include sm-down-device() {
-                font-size: 11px;
+                font-size: 15px;
               }
             }
           }
@@ -6450,6 +6456,10 @@ header.style-4 {
               margin-bottom: 0;
 
               @include lg-device() {
+                font-size: 14px;
+              }
+
+              @include sm-down-device() {
                 font-size: 15px;
               }
             }
@@ -6463,22 +6473,27 @@ header.style-4 {
               line-height: 1.4;
               display: block;
 
-              strong {
-                font-weight: 400;
+              @include lg-device() {
+                font-size: 14px;
               }
 
               @include sm-down-device() {
-                font-size: 11px;
+                font-size: 15px;
               }
             }
           }
 
           .custom-select-wrap {
             min-width: 320px;
-            left: unset;
             right: 0;
             max-height: unset;
             padding: 25px 20px;
+            @include md-down-device() {
+              left: 0;
+            }
+            @include sm-down-device() {
+              left: 140px;
+            }
 
             .title-area {
               line-height: 1;
@@ -6561,6 +6576,10 @@ header.style-4 {
                         font-size: 16px;
                         font-weight: 400;
                         margin-bottom: 5px;
+
+                        @include xl-down-device() {
+                          font-size: 15px;
+                        }
                       }
 
                       span {
@@ -6569,6 +6588,10 @@ header.style-4 {
                         font-size: 14px;
                         font-weight: 400;
                         margin-bottom: 0;
+
+                        @include xl-down-device() {
+                          font-size: 15px;
+                        }
                       }
                     }
 
@@ -6634,10 +6657,47 @@ header.style-4 {
             }
           }
         }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          right: 0;
+          line-height: 1;
+          width: 1px;
+          height: 50px;
+          background-color: #D9D9D978;
+          right: -50%;
+
+          @include seventeen-down-device() {
+            right: -41%;
+          }
+
+          @include xxl-device() {
+            right: -30px;
+          }
+
+          @include xl-device() {
+            right: 0;
+          }
+
+          @include xl-down-device() {
+            display: none;
+          }
+        }
+
+        &:nth-child(4) {
+          &::before {
+            content: unset;
+          }
+        }
+
       }
 
       .primary-btn1 {
         padding: 18px 22px;
+        justify-content: center;
 
         svg {
           min-width: 18px;
@@ -6647,21 +6707,6 @@ header.style-4 {
           }
         }
       }
-
-      // &.two {
-      //   grid-template-columns: 20.5% 19% 19% 20% 13%;
-      //   display: grid;
-
-      //   @include lg-down-device() {
-      //     grid-template-columns: repeat(2, 1fr);
-      //     grid-auto-rows: auto;
-
-      //     .primary-btn1 {
-      //       grid-column: span 2;
-      //       justify-content: center;
-      //     }
-      //   }
-      // }
     }
 
     >p {
@@ -6687,6 +6732,65 @@ header.style-4 {
         &:hover {
           background-size: 100% 1px;
           background-position: left 100%;
+        }
+      }
+    }
+  }
+
+  &.two {
+    margin-top: unset;
+    padding: 0 50px;
+
+    @include xxl-down-device() {
+      padding: 0 20px;
+    }
+
+    @include lg-down-device() {
+      padding: 0 10px;
+    }
+
+    .filter-input-wrap {
+      background-color: #F3F9FF;
+      backdrop-filter: blur(20px);
+
+      .filter-input {
+        .single-search-box {
+          &.room-field {
+            .custom-select-dropdown {
+              h6 {
+                color: var(--title-color);
+              }
+
+              input {
+                color: var(--title-color);
+              }
+            }
+          }
+
+          .custom-select-dropdown {
+            input {
+              color: var(--title-color);
+            }
+
+            .hotel-selected-date-checkin,
+            .hotel-selected-date-checkout {
+              h6 {
+                color: var(--title-color);
+              }
+
+              span {
+                color: var(--fill-text);
+              }
+            }
+
+            >span {
+              color: var(--fill-text);
+            }
+          }
+
+          svg {
+            fill: var(--title-color);
+          }
         }
       }
     }
@@ -10349,6 +10453,7 @@ header.style-4 {
 
         h5 {
           margin-bottom: 10px;
+
           a {
             color: var(--white-color);
             font-family: var(--font-marcellus);
@@ -10356,25 +10461,26 @@ header.style-4 {
             font-size: 26px;
             line-height: 40px;
             background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
-          background-size: 0px 1px;
-          background-repeat: no-repeat;
-          background-position: right 100%;
-          transition: background-size 0.75s;
+            background-size: 0px 1px;
+            background-repeat: no-repeat;
+            background-position: right 100%;
+            transition: background-size 0.75s;
 
-          @include xxl-down-device() {
-            font-size: 23px;
-            line-height: 35px;
-          }
-          
-          @include lg-device() {
-            font-size: 20px;
-            margin-bottom: 5px;
-            line-height: 30px;
-          }
-          &:hover {
-            background-size: 100% 1px;
-            background-position: 0% 100%;
-          }
+            @include xxl-down-device() {
+              font-size: 23px;
+              line-height: 35px;
+            }
+
+            @include lg-device() {
+              font-size: 20px;
+              margin-bottom: 5px;
+              line-height: 30px;
+            }
+
+            &:hover {
+              background-size: 100% 1px;
+              background-position: 0% 100%;
+            }
           }
         }
 
@@ -12811,7 +12917,7 @@ header.style-4 {
 
       p {
         color: var(--text-color);
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         font-family: var(--font-dmsans);
         font-weight: 400;
         font-size: 18px;
@@ -12833,7 +12939,7 @@ header.style-4 {
         @include sm-down-device() {
           font-size: 15px;
           line-height: 25px;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
         }
       }
 

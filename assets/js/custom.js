@@ -98,10 +98,10 @@
     speed: 1500,
     spaceBetween: 24,
     loop: true,
-    // autoplay: {
-    //   delay: 2500, // Autoplay duration in milliseconds
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".room-and-suites-slider-next",
       prevEl: ".room-and-suites-slider-prev",
@@ -143,10 +143,10 @@
           slidesPerView: 1,
           speed: 1600,
           spaceBetween: 30,
-          // autoplay: {
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
           pagination: {
             el: `.room-and-suites-card-pagi-${index}`,
             clickable: true,
@@ -183,10 +183,10 @@
     speed: 1500,
     spaceBetween: 24,
     loop: true,
-    // autoplay: {
-    //   delay: 2500, // Autoplay duration in milliseconds
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".room-and-suites-slider-next",
       prevEl: ".room-and-suites-slider-prev",
@@ -241,11 +241,11 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 3000,
-    //   pauseOnMouseEnter: true,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     effect: "fade",
     fadeEffect: {
       crossFade: true,
@@ -260,11 +260,11 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 3000,
-    //   pauseOnMouseEnter: true,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     effect: "fade",
     fadeEffect: {
       crossFade: true,
@@ -278,10 +278,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 2500, // Autoplay duration in milliseconds
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".home2-testimonial-card-slider-next",
       prevEl: ".home2-testimonial-card-slider-prev",
@@ -316,10 +316,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 2500, // Autoplay duration in milliseconds
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".home2-testimonial-card-slider-next",
       prevEl: ".home2-testimonial-card-slider-prev",
@@ -354,10 +354,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 2500, // Autoplay duration in milliseconds
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".home4-testimonial-card-slider-next",
       prevEl: ".home4-testimonial-card-slider-prev",
@@ -392,10 +392,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 2500, // Autoplay duration in milliseconds
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".home4-testimonial-card-slider-next",
       prevEl: ".home4-testimonial-card-slider-prev",
@@ -431,11 +431,11 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 3000,
-    //   pauseOnMouseEnter: true,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     effect: "fade",
     fadeEffect: {
       crossFade: true,
@@ -450,10 +450,10 @@
     slidesPerView: 1,
     speed: 1500,
     spaceBetween: 24,
-    // autoplay: {
-    //   delay: 2500, // Autoplay duration in milliseconds
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500, // Autoplay duration in milliseconds
+      disableOnInteraction: false,
+    },
     effect: "fade",
     fadeEffect: {
       crossFade: true,
