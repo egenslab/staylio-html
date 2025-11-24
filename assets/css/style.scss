@@ -1323,6 +1323,10 @@ body.tt-magic-cursor #magic-cursor {
     span {
       background-color: var(--primary-color3);
     }
+
+    &:hover {
+      color: var(--white-color);
+    }
   }
 
   &.black-bg {
@@ -6488,9 +6492,11 @@ header.style-4 {
             right: 0;
             max-height: unset;
             padding: 25px 20px;
+
             @include md-down-device() {
               left: 0;
             }
+
             @include sm-down-device() {
               left: 140px;
             }
@@ -6640,7 +6646,9 @@ header.style-4 {
               }
             }
 
-            .primary-btn1 {
+            .primary-btn1,
+            .primary-btn2,
+            .primary-btn3 {
               width: 100%;
               justify-content: center;
 
@@ -6765,6 +6773,35 @@ header.style-4 {
                 color: var(--title-color);
               }
             }
+
+            .custom-select-wrap {
+              .room-list {
+                .single-room {
+                  .guest-count {
+                    .single-item {
+                      .quantity-counter {
+                        a {
+                          border-color: var(--primary-color2);
+
+                          i {
+                            color: var(--primary-color2);
+                            transition: all 0.5s;
+                          }
+
+                          &:hover {
+                            background-color: var(--primary-color2);
+
+                            i {
+                              color: var(--white-color);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
 
           .custom-select-dropdown {
@@ -6790,6 +6827,51 @@ header.style-4 {
 
           svg {
             fill: var(--title-color);
+          }
+        }
+      }
+    }
+  }
+
+  &.three {
+    margin-top: unset;
+    background-color: var(--title-color);
+
+    .filter-input-wrap {
+      background-color: unset;
+
+      .filter-input {
+        .single-search-box {
+          &.room-field {
+
+            .custom-select-wrap {
+              .room-list {
+                .single-room {
+                  .guest-count {
+                    .single-item {
+                      .quantity-counter {
+                        a {
+                          border-color: var(--primary-color3);
+
+                          i {
+                            color: var(--primary-color3);
+                            transition: all 0.5s;
+                          }
+
+                          &:hover {
+                            background-color: var(--primary-color3);
+
+                            i {
+                              color: var(--white-color);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }

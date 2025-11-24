@@ -1168,6 +1168,9 @@ body.tt-magic-cursor #magic-cursor {
 .primary-btn3.white-bg span {
   background-color: var(--primary-color3);
 }
+.primary-btn3.white-bg:hover {
+  color: var(--white-color);
+}
 .primary-btn3.black-bg {
   background-color: var(--black-color);
   color: var(--white-color);
@@ -5699,14 +5702,20 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count.room-count .single-item {
   padding: 14px 20px;
 }
-.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn1 {
+.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn1,
+.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn2,
+.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn3 {
   width: 100%;
   justify-content: center;
 }
-.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn1 svg {
+.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn1 svg,
+.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn2 svg,
+.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn3 svg {
   min-width: unset;
 }
-.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn1.add-btn.disabled {
+.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn1.add-btn.disabled,
+.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn2.add-btn.disabled,
+.filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .primary-btn3.add-btn.disabled {
   pointer-events: none;
   opacity: 0.5;
 }
@@ -5806,6 +5815,19 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .filter-wrapper.two .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-dropdown input {
   color: var(--title-color);
 }
+.filter-wrapper.two .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a {
+  border-color: var(--primary-color2);
+}
+.filter-wrapper.two .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a i {
+  color: var(--primary-color2);
+  transition: all 0.5s;
+}
+.filter-wrapper.two .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover {
+  background-color: var(--primary-color2);
+}
+.filter-wrapper.two .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover i {
+  color: var(--white-color);
+}
 .filter-wrapper.two .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown input {
   color: var(--title-color);
 }
@@ -5822,6 +5844,26 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .filter-wrapper.two .filter-input-wrap .filter-input .single-search-box svg {
   fill: var(--title-color);
+}
+.filter-wrapper.three {
+  margin-top: unset;
+  background-color: var(--title-color);
+}
+.filter-wrapper.three .filter-input-wrap {
+  background-color: unset;
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a {
+  border-color: var(--primary-color3);
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a i {
+  color: var(--primary-color3);
+  transition: all 0.5s;
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover {
+  background-color: var(--primary-color3);
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover i {
+  color: var(--white-color);
 }
 
 /*=====================================
