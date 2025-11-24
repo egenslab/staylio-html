@@ -4712,6 +4712,355 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-color: var(--primary-color2);
   background-color: var(--white-color);
 }
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  background: var(--white-color);
+  padding: 7px 20px;
+  height: 55px;
+  border: 1px solid #F0F0F0;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box {
+    padding: 8px 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box {
+    min-height: 52px;
+    padding: 8px 18px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box:after {
+  content: "";
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 8px;
+  width: 8px;
+  border-bottom: 1px solid var(--primary-color1);
+  border-right: 1px solid var(--primary-color1);
+  right: 28px;
+  margin-top: -5px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown {
+  line-height: 1;
+  width: 100%;
+  cursor: pointer;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown input {
+  background-color: transparent;
+  color: var(--text-color);
+  font-family: var(--font-dmsans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  width: 100%;
+  border-bottom: unset;
+  padding-bottom: unset;
+  height: unset;
+  cursor: pointer;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown input {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown input {
+    font-size: 15px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown h6 {
+  color: var(--white-color);
+  font-family: var(--font-dmsans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  width: 100%;
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown h6 {
+    min-width: 150px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown h6 {
+    min-width: unset;
+    font-size: 14px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown > span {
+  font-size: 18px;
+  font-family: var(--font-dmsans);
+  color: var(--dark-text-color);
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.4;
+  display: block;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown > span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown > span {
+    font-size: 15px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date h6,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
+  font-size: 16px;
+  font-family: var(--font-dmsans);
+  color: var(--white-color);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date h6,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date h6,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
+    font-size: 15px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date span,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
+  font-size: 18px;
+  font-family: var(--font-dmsans);
+  color: var(--dark-text-color);
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1;
+  display: block;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date span,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date span,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
+    font-size: 15px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin .daterangepicker {
+  left: 0;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout .daterangepicker {
+  right: 0 !important;
+  left: unset;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown.destination-dropdown input {
+  display: none;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap {
+  padding: 10px 0;
+  background-color: var(--white-color);
+  width: 100%;
+  max-height: 285px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1019607843);
+  display: none;
+  transform: scaleY(0);
+  transform-origin: top;
+  min-width: 320px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap::-webkit-scrollbar {
+  width: 5px;
+  /* width of the entire scrollbar */
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap::-webkit-scrollbar-track {
+  background: #f5f4f4;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  /* color of the scroll thumb */
+  border-radius: 100px;
+  /* creates padding around scroll thumb */
+}
+@media (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap {
+    min-width: 280px;
+    top: 56px;
+  }
+}
+@media (max-width: 991px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap {
+    top: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap {
+    left: 50%;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 0 10px;
+  line-height: 1;
+  margin-bottom: 12px;
+  position: relative;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li:last-child,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li:last-child {
+  margin-bottom: 0;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li .destination h6,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li .destination h6 {
+  font-size: 14px;
+  font-family: var(--font-dmsans);
+  color: var(--title-color);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li .destination h6,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li .destination h6 {
+    font-size: 13px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li .destination span,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li .destination span {
+  font-size: 12px;
+  font-family: var(--font-dmsans);
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li .destination span,
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li .destination span {
+    font-size: 11px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li .tour span,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li .tour span {
+  color: var(--white-color);
+  font-weight: 400;
+  font-family: var(--font-dmsans);
+  font-size: 11px;
+  line-height: 1;
+  text-align: center;
+  background-color: var(--primary-color1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li::before,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li::before {
+  content: "";
+  height: 100%;
+  width: 3px;
+  background-color: var(--title-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li.single-item,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li.single-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #f5f4f4;
+  margin-bottom: 0;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li.single-item:last-child,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li.single-item:last-child {
+  border-bottom: none;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li.single-item h6,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li.single-item h6 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-dmsans);
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li:hover,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li:hover {
+  background: rgba(211, 211, 211, 0.231372549);
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list li:hover::before,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination li:hover::before {
+  opacity: 1;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list.visa-list li,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap .option-list-destination.visa-list li {
+  padding: 12px 10px;
+  border-bottom: 1px solid #f5f4f4;
+  margin-bottom: 0;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap.active {
+  display: block;
+  transform: scaleY(1);
+  animation: fade-down 0.3s linear;
+}
+@keyframes fade-down2 {
+  0% {
+    opacity: 0;
+    transform: scaleY(0) translateX(-50%);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1) translateX(-50%);
+    visibility: visible;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-wrap.active {
+    transform: scaleY(1) translateX(-50%);
+    animation: fade-down2 0.3s linear;
+  }
+}
 .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field {
   display: flex;
   align-items: center;
@@ -4898,342 +5247,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 @media (max-width: 576px) {
   .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap.active {
-    transform: scaleY(1) translateX(-50%);
-    animation: fade-down2 0.3s linear;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  width: 100%;
-  background: var(--white-color);
-  padding: 7px 20px;
-  height: 55px;
-  border: 1px solid #F0F0F0;
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box {
-    padding: 8px 15px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box {
-    padding: 8px 12px;
-    gap: 6px;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box {
-    min-height: 52px;
-    padding: 8px 18px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown {
-  line-height: 1;
-  width: 100%;
-  cursor: pointer;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown input {
-  background-color: transparent;
-  color: var(--white-color);
-  font-family: var(--font-dmsans);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
-  width: 100%;
-  margin-bottom: 6px;
-  border-bottom: unset;
-  padding-bottom: unset;
-  height: unset;
-  cursor: pointer;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown input {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown input {
-    font-size: 15px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown h6 {
-  color: var(--white-color);
-  font-family: var(--font-dmsans);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.3px;
-  width: 100%;
-  margin-bottom: 0;
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown h6 {
-    min-width: 150px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown h6 {
-    min-width: unset;
-    font-size: 14px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown > span {
-  font-size: 18px;
-  font-family: var(--font-dmsans);
-  color: var(--dark-text-color);
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 1.4;
-  display: block;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown > span {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown > span {
-    font-size: 15px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .selected-date h6,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkin h6,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
-  font-size: 16px;
-  font-family: var(--font-dmsans);
-  color: var(--white-color);
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .selected-date h6,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkin h6,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .selected-date h6,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkin h6,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
-    font-size: 15px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .selected-date span,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkin span,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkout span {
-  font-size: 18px;
-  font-family: var(--font-dmsans);
-  color: var(--dark-text-color);
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 1;
-  display: block;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .selected-date span,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkin span,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkout span {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .selected-date span,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkin span,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkout span {
-    font-size: 15px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkin .daterangepicker {
-  left: 0;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown .hotel-selected-date-checkout .daterangepicker {
-  right: 0 !important;
-  left: unset;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-dropdown.destination-dropdown input {
-  display: none;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap {
-  padding: 10px 0;
-  background-color: var(--white-color);
-  width: 100%;
-  max-height: 285px;
-  overflow-y: scroll;
-  position: absolute;
-  top: 65px;
-  left: 0;
-  z-index: 9;
-  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1019607843);
-  display: none;
-  transform: scaleY(0);
-  transform-origin: top;
-  min-width: 320px;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap::-webkit-scrollbar {
-  width: 5px;
-  /* width of the entire scrollbar */
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap::-webkit-scrollbar-track {
-  background: #f5f4f4;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap::-webkit-scrollbar-thumb {
-  background-color: #ddd;
-  /* color of the scroll thumb */
-  border-radius: 100px;
-  /* creates padding around scroll thumb */
-}
-@media (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap {
-    min-width: 280px;
-    top: 56px;
-  }
-}
-@media (max-width: 991px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap {
-    top: 60px;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap {
-    left: 50%;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: 0.5s;
-  cursor: pointer;
-  padding: 0 10px;
-  line-height: 1;
-  margin-bottom: 12px;
-  position: relative;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li:last-child,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li:last-child {
-  margin-bottom: 0;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li .destination h6,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li .destination h6 {
-  font-size: 14px;
-  font-family: var(--font-dmsans);
-  color: var(--title-color);
-  font-weight: 500;
-  line-height: 1.4;
-  margin-bottom: 0;
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li .destination h6,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li .destination h6 {
-    font-size: 13px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li .destination span,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li .destination span {
-  font-size: 12px;
-  font-family: var(--font-dmsans);
-  color: var(--text-color);
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 1.4;
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li .destination span,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li .destination span {
-    font-size: 11px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li .tour span,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li .tour span {
-  color: var(--white-color);
-  font-weight: 400;
-  font-family: var(--font-dmsans);
-  font-size: 11px;
-  line-height: 1;
-  text-align: center;
-  background-color: var(--primary-color1);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li::before,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li::before {
-  content: "";
-  height: 100%;
-  width: 3px;
-  background-color: var(--title-color);
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: 0.5s;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li.single-item,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li.single-item {
-  padding: 10px 15px;
-  border-bottom: 1px solid #f5f4f4;
-  margin-bottom: 0;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li.single-item:last-child,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li.single-item:last-child {
-  border-bottom: none;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li.single-item h6,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li.single-item h6 {
-  font-size: 14px;
-  font-weight: 500;
-  font-family: var(--font-dmsans);
-  color: var(--text-color);
-  margin-bottom: 0;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li:hover,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li:hover {
-  background: rgba(211, 211, 211, 0.231372549);
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list li:hover::before,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination li:hover::before {
-  opacity: 1;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list.visa-list li,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap .option-list-destination.visa-list li {
-  padding: 12px 10px;
-  border-bottom: 1px solid #f5f4f4;
-  margin-bottom: 0;
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap.active {
-  display: block;
-  transform: scaleY(1);
-  animation: fade-down 0.3s linear;
-}
-@keyframes fade-down2 {
-  0% {
-    opacity: 0;
-    transform: scaleY(0) translateX(-50%);
-    visibility: hidden;
-  }
-  100% {
-    opacity: 1;
-    transform: scaleY(1) translateX(-50%);
-    visibility: visible;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .categories-box .custom-select-wrap.active {
     transform: scaleY(1) translateX(-50%);
     animation: fade-down2 0.3s linear;
   }
@@ -5754,7 +5767,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     grid-auto-rows: auto;
     gap: 20px;
   }
-  .filter-wrapper .filter-input-wrap .filter-input .primary-btn1 {
+  .filter-wrapper .filter-input-wrap .filter-input .primary-btn1,
+  .filter-wrapper .filter-input-wrap .filter-input .primary-btn2,
+  .filter-wrapper .filter-input-wrap .filter-input .primary-btn3 {
     grid-column: span 2;
     justify-content: center;
   }
@@ -5774,7 +5789,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .filter-wrapper .filter-input-wrap .filter-input .single-search-box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 18px;
   position: relative;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -6431,6 +6446,10 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .filter-wrapper.two .filter-input-wrap .filter-input .single-search-box svg {
   fill: var(--title-color);
+}
+.filter-wrapper.two .filter-input-wrap .filter-input .single-search-box::before {
+  height: 34px;
+  background-color: #D9D9D9;
 }
 .filter-wrapper.three {
   margin-top: unset;
