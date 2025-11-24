@@ -90,12 +90,6 @@
                                     <div class="form-inner">
                                         <label>Number of Adults & Children</label>
                                         <div class="single-field">
-                                            <svg width="18" height="18" viewBox="0 0 18 18"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M9.00003 1.52136C4.02939 1.52136 0 5.55075 0 10.5214C0 12.6873 0.765549 14.6746 2.04035 16.2275C2.23702 14.6528 3.80989 13.3209 6.01543 12.6901C6.82119 13.4409 7.86199 13.8964 8.99997 13.8964C10.1112 13.8964 11.1316 13.4638 11.9292 12.7445C14.1538 13.4304 15.6928 14.8401 15.7434 16.4787C17.1465 14.8914 18 12.8067 18 10.5214C18 5.55075 13.9706 1.52136 9.00003 1.52136ZM9.00003 12.8306C8.42549 12.8306 7.88412 12.6727 7.40341 12.3993C6.24498 11.7401 5.44736 10.3912 5.44736 8.83383C5.44736 6.63003 7.04103 4.83703 9.00003 4.83703C10.9592 4.83703 12.5527 6.63003 12.5527 8.83383C12.5527 10.4151 11.7301 11.7807 10.5429 12.4284C10.0751 12.6835 9.55325 12.8306 9.00003 12.8306Z">
-                                                </path>
-                                            </svg>
                                             <div class="custom-select-dropdown">
                                                 <h6><span id="adult-qty">1</span> Adults, <span id="child-qty">0</span>
                                                     Child
@@ -113,11 +107,13 @@
                                                             <span>16 years+</span>
                                                         </div>
                                                         <div class="quantity-counter">
-                                                            <a href="#" data-type="adult" class="guest-quantity__minus"><i
+                                                            <a href="#" data-type="adult"
+                                                                class="guest-quantity__minus"><i
                                                                     class="bi bi-dash"></i></a>
-                                                            <input name="adult_quantity" type="text" class="quantity__input"
-                                                                value="1">
-                                                            <a href="#" data-type="adult" class="guest-quantity__plus"><i
+                                                            <input name="adult_quantity" type="text"
+                                                                class="quantity__input" value="1">
+                                                            <a href="#" data-type="adult"
+                                                                class="guest-quantity__plus"><i
                                                                     class="bi bi-plus"></i></a>
                                                         </div>
                                                     </li>
@@ -127,11 +123,13 @@
                                                             <span>0-16 years</span>
                                                         </div>
                                                         <div class="quantity-counter">
-                                                            <a href="#" data-type="child" class="guest-quantity__minus"><i
+                                                            <a href="#" data-type="child"
+                                                                class="guest-quantity__minus"><i
                                                                     class="bi bi-dash"></i></a>
-                                                            <input name="child_quantity" type="text" class="quantity__input"
-                                                                value="0">
-                                                            <a href="#" data-type="child" class="guest-quantity__plus"><i
+                                                            <input name="child_quantity" type="text"
+                                                                class="quantity__input" value="0">
+                                                            <a href="#" data-type="child"
+                                                                class="guest-quantity__plus"><i
                                                                     class="bi bi-plus"></i></a>
                                                         </div>
                                                     </li>
@@ -143,12 +141,40 @@
                                 <div class="col-md-6">
                                     <div class="form-inner">
                                         <label>Room Type</label>
-                                        <select>
-                                            <option>Family Suite</option>
-                                            <option>Dhaka, Bangladesh</option>
-                                            <option>India, Delhi</option>
-                                            <option>Canberra, Australia</option>
-                                        </select>
+                                        <div class="categories-box">
+                                            <svg width="20" height="20" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.3023 4.186H9.99992C9.81489 4.186 9.63743 4.1125 9.50659 3.98166C9.37575 3.85082 9.30225 3.67336 9.30225 3.48833C9.30225 3.30329 9.37575 3.12583 9.50659 2.99499C9.63743 2.86415 9.81489 2.79065 9.99992 2.79065H19.3023C19.4873 2.79065 19.6648 2.86415 19.7956 2.99499C19.9265 3.12583 20 3.30329 20 3.48833C20 3.67336 19.9265 3.85082 19.7956 3.98166C19.6648 4.1125 19.4873 4.186 19.3023 4.186ZM17.4418 7.90695H9.99992C9.81489 7.90695 9.63743 7.83344 9.50659 7.7026C9.37575 7.57176 9.30225 7.39431 9.30225 7.20927C9.30225 7.02424 9.37575 6.84678 9.50659 6.71594C9.63743 6.5851 9.81489 6.5116 9.99992 6.5116H17.4418C17.6269 6.5116 17.8043 6.5851 17.9351 6.71594C18.066 6.84678 18.1395 7.02424 18.1395 7.20927C18.1395 7.39431 18.066 7.57176 17.9351 7.7026C17.8043 7.83344 17.6269 7.90695 17.4418 7.90695ZM19.3023 13.4884H9.99992C9.81489 13.4884 9.63743 13.4149 9.50659 13.284C9.37575 13.1532 9.30225 12.9757 9.30225 12.7907C9.30225 12.6057 9.37575 12.4282 9.50659 12.2974C9.63743 12.1665 9.81489 12.093 9.99992 12.093H19.3023C19.4873 12.093 19.6648 12.1665 19.7956 12.2974C19.9265 12.4282 20 12.6057 20 12.7907C20 12.9757 19.9265 13.1532 19.7956 13.284C19.6648 13.4149 19.4873 13.4884 19.3023 13.4884ZM17.4418 17.2093H9.99992C9.81489 17.2093 9.63743 17.1358 9.50659 17.005C9.37575 16.8741 9.30225 16.6967 9.30225 16.5116C9.30225 16.3266 9.37575 16.1491 9.50659 16.0183C9.63743 15.8875 9.81489 15.814 9.99992 15.814H17.4418C17.6269 15.814 17.8043 15.8875 17.9351 16.0183C18.066 16.1491 18.1395 16.3266 18.1395 16.5116C18.1395 16.6967 18.066 16.8741 17.9351 17.005C17.8043 17.1358 17.6269 17.2093 17.4418 17.2093Z" />
+                                                <path
+                                                    d="M3.48839 8.83719C5.41497 8.83719 6.97677 7.27538 6.97677 5.3488C6.97677 3.42222 5.41497 1.86041 3.48839 1.86041C1.5618 1.86041 0 3.42222 0 5.3488C0 7.27538 1.5618 8.83719 3.48839 8.83719Z" />
+                                                <path
+                                                    d="M3.48839 18.1396C5.41497 18.1396 6.97677 16.5778 6.97677 14.6512C6.97677 12.7246 5.41497 11.1628 3.48839 11.1628C1.5618 11.1628 0 12.7246 0 14.6512C0 16.5778 1.5618 18.1396 3.48839 18.1396Z" />
+                                            </svg>
+                                            <div class="custom-select-dropdown">
+                                                <input type="text" readonly value="The Royal Retreat">
+                                                <span>Room Category</span>
+                                            </div>
+                                            <div class="custom-select-wrap">
+                                                <ul class="option-list">
+                                                    <li class="single-item">
+                                                        <h6>Sapphire Deluxe Room</h6>
+                                                    </li>
+                                                    <li class="single-item">
+                                                        <h6>Ruby Comfort Room</h6>
+                                                    </li>
+                                                    <li class="single-item">
+                                                        <h6>Ivory Comfort Room</h6>
+                                                    </li>
+                                                    <li class="single-item">
+                                                        <h6>The Royal Retreat</h6>
+                                                    </li>
+                                                    <li class="single-item">
+                                                        <h6>Golden Horizon Suite</h6>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

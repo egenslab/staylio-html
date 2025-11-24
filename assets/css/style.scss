@@ -5580,9 +5580,19 @@ header.style-4 {
                 padding: 8px 18px;
               }
 
-              >svg {
-                fill: var(--text-color);
-                min-width: 18px;
+              &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                pointer-events: none;
+                top: 50%;
+                transform: rotate(45deg);
+                height: 8px;
+                width: 8px;
+                border-bottom: 1px solid var(--primary-color1);
+                border-right: 1px solid var(--primary-color1);
+                right: 28px;
+                margin-top: -5px;
               }
 
               .custom-select-dropdown {
@@ -5618,7 +5628,7 @@ header.style-4 {
                 background-color: var(--white-color);
                 width: 100%;
                 position: absolute;
-                top: 70px;
+                top: 60px;
                 left: 0;
                 z-index: 9;
                 box-shadow: 0px 4px 40px 0px #0000001A;
@@ -5644,7 +5654,7 @@ header.style-4 {
 
                   h6 {
                     color: var(--title-color);
-                    font-family: var(--font-poppins);
+                    font-family: var(--font-dmsans);
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 1;
@@ -5652,7 +5662,7 @@ header.style-4 {
 
                   span {
                     color: var(--text-color);
-                    font-family: var(--font-roboto);
+                    font-family: var(--font-dmsans);
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 1.4;
@@ -5666,7 +5676,6 @@ header.style-4 {
                   list-style: none;
                   padding: 25px 15px;
                   border: 1px solid var(--borders-color);
-                  border-radius: 10px;
 
                   .single-item {
                     display: flex;
@@ -5682,7 +5691,7 @@ header.style-4 {
                     .title {
                       h6 {
                         color: var(--title-color);
-                        font-family: var(--font-poppins);
+                        font-family: var(--font-dmsans);
                         font-size: 16px;
                         font-weight: 400;
                         margin-bottom: 5px;
@@ -5690,7 +5699,7 @@ header.style-4 {
 
                       span {
                         color: var(--text-color);
-                        font-family: var(--font-roboto);
+                        font-family: var(--font-dmsans);
                         font-size: 14px;
                         font-weight: 400;
                         margin-bottom: 0;
@@ -5726,7 +5735,7 @@ header.style-4 {
                         text-align: center;
                         line-height: 1;
                         color: var(--title-color);
-                        font-family: var(--font-roboto);
+                        font-family: var(--font-dmsans);
                         font-size: 14px;
                         font-weight: 500;
                         border-bottom: unset;
@@ -5741,6 +5750,345 @@ header.style-4 {
                   display: block;
                   transform: scaleY(1);
                   animation: fade-down .3s linear;
+
+                  @include sm-down-device() {
+                    transform: scaleY(1) translateX(-50%);
+                    animation: fade-down2 .3s linear;
+                  }
+                }
+              }
+            }
+
+            .categories-box {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              position: relative;
+              width: 100%;
+              background: var(--white-color);
+              padding: 7px 20px;
+              height: 55px;
+              border: 1px solid #F0F0F0;
+
+              @include xl-device() {
+                padding: 8px 15px;
+              }
+
+              @include lg-device() {
+                padding: 8px 12px;
+                gap: 6px;
+              }
+
+              @include sm-down-device() {
+                min-height: 52px;
+                padding: 8px 18px;
+              }
+
+              .custom-select-dropdown {
+                line-height: 1;
+                width: 100%;
+                cursor: pointer;
+
+                input {
+                  background-color: transparent;
+                  color: var(--white-color);
+                  font-family: var(--font-dmsans);
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 1;
+                  width: 100%;
+                  margin-bottom: 6px;
+                  border-bottom: unset;
+                  padding-bottom: unset;
+                  height: unset;
+                  cursor: pointer;
+
+                  @include lg-device() {
+                    font-size: 14px;
+                  }
+
+                  @include sm-down-device() {
+                    font-size: 15px;
+                  }
+                }
+
+                h6 {
+                  color: var(--white-color);
+                  font-family: var(--font-dmsans);
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 1;
+                  letter-spacing: 0.3px;
+                  width: 100%;
+                  margin-bottom: 0;
+
+                  @include xl-device() {
+                    min-width: 150px;
+                  }
+
+                  @include lg-device() {
+                    min-width: unset;
+                    font-size: 14px;
+                  }
+                }
+
+                >span {
+                  font-size: 18px;
+                  font-family: var(--font-dmsans);
+                  color: var(--dark-text-color);
+                  font-weight: 400;
+                  margin-bottom: 0;
+                  line-height: 1.4;
+                  display: block;
+
+                  @include lg-device() {
+                    font-size: 14px;
+                  }
+
+                  @include sm-down-device() {
+                    font-size: 15px;
+                  }
+                }
+
+                .selected-date,
+                .hotel-selected-date-checkin,
+                .hotel-selected-date-checkout {
+                  h6 {
+                    font-size: 16px;
+                    font-family: var(--font-dmsans);
+                    color: var(--white-color);
+                    font-weight: 500;
+                    line-height: 1;
+                    margin-bottom: 10px;
+
+                    @include lg-device() {
+                      font-size: 14px;
+                    }
+
+                    @include sm-down-device() {
+                      font-size: 15px;
+                    }
+                  }
+
+                  span {
+                    font-size: 18px;
+                    font-family: var(--font-dmsans);
+                    color: var(--dark-text-color);
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    line-height: 1;
+                    display: block;
+
+                    @include lg-device() {
+                      font-size: 14px;
+                    }
+
+                    @include sm-down-device() {
+                      font-size: 15px;
+                    }
+                  }
+                }
+
+                .hotel-selected-date-checkin {
+                  .daterangepicker {
+                    left: 0;
+                  }
+                }
+
+                .hotel-selected-date-checkout {
+                  .daterangepicker {
+                    right: 0 !important;
+                    left: unset;
+                  }
+                }
+
+                &.destination-dropdown {
+                  input {
+                    display: none;
+                  }
+                }
+
+              }
+
+              .custom-select-wrap {
+                padding: 10px 0;
+                background-color: var(--white-color);
+                width: 100%;
+                max-height: 285px;
+                overflow-y: scroll;
+                position: absolute;
+                top: 65px;
+                left: 0;
+                z-index: 9;
+                box-shadow: 0px 4px 40px 0px #0000001A;
+                display: none;
+                transform: scaleY(0);
+                transform-origin: top;
+                min-width: 320px;
+
+                &::-webkit-scrollbar {
+                  width: 5px;
+                  /* width of the entire scrollbar */
+                }
+
+                &::-webkit-scrollbar-track {
+                  background: #f5f4f4;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                  background-color: #ddd;
+                  /* color of the scroll thumb */
+                  border-radius: 100px;
+                  /* creates padding around scroll thumb */
+                }
+
+                @include xl-down-device() {
+                  min-width: 280px;
+                  top: 56px;
+                }
+
+                @include lg-down-device() {
+                  top: 60px;
+                }
+
+                @include sm-down-device() {
+                  left: 50%;
+                }
+
+                .option-list,
+                .option-list-destination {
+                  padding: 0;
+                  margin: 0;
+                  list-style: none;
+
+                  li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    padding: 0 10px;
+                    line-height: 1;
+                    margin-bottom: 12px;
+
+                    &:last-child {
+                      margin-bottom: 0;
+                    }
+
+                    .destination {
+                      h6 {
+                        font-size: 14px;
+                        font-family: var(--font-dmsans);
+                        color: var(--title-color);
+                        font-weight: 500;
+                        line-height: 1.4;
+                        margin-bottom: 0;
+
+                        @include sm-down-device() {
+                          font-size: 13px;
+                        }
+                      }
+
+                      span {
+                        font-size: 12px;
+                        font-family: var(--font-dmsans);
+                        color: var(--text-color);
+                        font-weight: 400;
+                        margin-bottom: 0;
+                        line-height: 1.4;
+
+                        @include sm-down-device() {
+                          font-size: 11px;
+                        }
+                      }
+                    }
+
+                    .tour {
+                      span {
+                        color: var(--white-color);
+                        font-weight: 400;
+                        font-family: var(--font-dmsans);
+                        font-size: 11px;
+                        line-height: 1;
+                        text-align: center;
+                        background-color: var(--primary-color1);
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                      }
+                    }
+
+                    position: relative;
+
+                    &::before {
+                      content: '';
+                      height: 100%;
+                      width: 3px;
+                      background-color: var(--title-color);
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      opacity: 0;
+                      transition: 0.5s;
+                    }
+
+                    &.single-item {
+                      padding: 10px 15px;
+                      border-bottom: 1px solid #f5f4f4;
+                      margin-bottom: 0;
+
+                      &:last-child {
+                        border-bottom: none;
+                      }
+
+                      h6 {
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-family: var(--font-dmsans);
+                        color: var(--text-color);
+                        margin-bottom: 0;
+                      }
+                    }
+
+                    &:hover {
+                      background: #d3d3d33b;
+
+                      &::before {
+                        opacity: 1;
+                      }
+                    }
+                  }
+
+                  &.visa-list {
+                    li {
+                      padding: 12px 10px;
+                      border-bottom: 1px solid #f5f4f4;
+                      margin-bottom: 0;
+                    }
+                  }
+                }
+
+                &.active {
+                  display: block;
+                  transform: scaleY(1);
+                  animation: fade-down .3s linear;
+
+                  @keyframes fade-down2 {
+                    0% {
+                      opacity: 0;
+                      transform: scaleY(0) translateX(-50%);
+                      visibility: hidden;
+                    }
+
+                    100% {
+                      opacity: 1;
+                      transform: scaleY(1) translateX(-50%);
+                      visibility: visible;
+                    }
+                  }
 
                   @include sm-down-device() {
                     transform: scaleY(1) translateX(-50%);
@@ -6413,6 +6761,7 @@ header.style-4 {
             font-size: 16px;
             line-height: 1;
             width: 100%;
+            margin-bottom: 6px;
             cursor: pointer;
 
             @include lg-device() {
@@ -6445,9 +6794,9 @@ header.style-4 {
           }
 
           >span {
-            font-size: 16px;
+            font-size: 18px;
             font-family: var(--font-dmsans);
-            color: var(--white-color);
+            color: var(--dark-text-color);
             font-weight: 400;
             margin-bottom: 0;
             line-height: 1.4;
@@ -6470,8 +6819,8 @@ header.style-4 {
               font-family: var(--font-dmsans);
               color: var(--white-color);
               font-weight: 500;
-              line-height: 1.4;
-              margin-bottom: 0;
+              line-height: 1;
+              margin-bottom: 10px;
 
               @include lg-device() {
                 font-size: 14px;
@@ -6483,12 +6832,12 @@ header.style-4 {
             }
 
             span {
-              font-size: 16px;
-              font-family: var(--font-roboto);
-              color: var(--white-color);
+              font-size: 18px;
+              font-family: var(--font-dmsans);
+              color: var(--dark-text-color);
               font-weight: 400;
               margin-bottom: 0;
-              line-height: 1.4;
+              line-height: 1;
               display: block;
 
               @include lg-device() {
@@ -6603,7 +6952,7 @@ header.style-4 {
 
                 span {
                   font-size: 12px;
-                  font-family: var(--font-roboto);
+                  font-family: var(--font-dmsans);
                   color: var(--text-color);
                   font-weight: 400;
                   margin-bottom: 0;
@@ -6732,7 +7081,7 @@ header.style-4 {
               color: var(--white-color);
               font-weight: 500;
               line-height: 1.4;
-              margin-bottom: 0;
+              margin-bottom: 5px;
 
               @include lg-device() {
                 font-size: 14px;
@@ -6744,13 +7093,17 @@ header.style-4 {
             }
 
             >span {
-              font-size: 16px;
+              font-size: 18px;
               font-family: var(--font-dmsans);
-              color: var(--white-color);
+              color: var(--dark-text-color);
               font-weight: 400;
               margin-bottom: 0;
               line-height: 1.4;
               display: block;
+
+              strong {
+                font-weight: 500;
+              }
 
               @include lg-device() {
                 font-size: 14px;
@@ -6865,7 +7218,7 @@ header.style-4 {
 
                       span {
                         color: var(--text-color);
-                        font-family: var(--font-roboto);
+                        font-family: var(--font-dmsans);
                         font-size: 14px;
                         font-weight: 400;
                         margin-bottom: 0;
@@ -6905,7 +7258,7 @@ header.style-4 {
                         text-align: center;
                         line-height: 1;
                         color: var(--title-color);
-                        font-family: var(--font-roboto);
+                        font-family: var(--font-dmsans);
                         font-size: 14px;
                         font-weight: 500;
                       }
@@ -15335,7 +15688,7 @@ header.style-4 {
 
               span {
                 color: var(--text-color);
-                font-family: var(--font-roboto);
+                font-family: var(--font-dmsans);
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 1;
@@ -17103,7 +17456,7 @@ header.style-4 {
 
   span {
     color: var(--title-color);
-    font-family: var(--font-roboto);
+    font-family: var(--font-dancing);
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
