@@ -4712,6 +4712,187 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-color: var(--primary-color2);
   background-color: var(--white-color);
 }
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  background: var(--white-color);
+  padding: 7px 20px;
+  height: 55px;
+  border: 1px solid #F0F0F0;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field {
+    padding: 8px 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field {
+    min-height: 52px;
+    padding: 8px 18px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field > svg {
+  fill: var(--text-color);
+  min-width: 18px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-dropdown {
+  position: relative;
+  line-height: 1;
+  width: 100%;
+  cursor: pointer;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-dropdown input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-dropdown h6 {
+  font-size: 14px;
+  font-family: var(--font-dmsans);
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-dropdown h6 {
+    font-size: 15px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap {
+  padding: 10px 0;
+  background-color: var(--white-color);
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1019607843);
+  display: none;
+  transform: scaleY(0);
+  transform-origin: top;
+  min-width: 320px;
+  left: unset;
+  right: 0;
+  padding: 25px 20px;
+}
+@media (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap {
+    min-width: 280px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap {
+    left: 50%;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .title-area {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .title-area h6 {
+  color: var(--title-color);
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .title-area span {
+  color: var(--text-color);
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 25px 15px;
+  border: 1px solid var(--borders-color);
+  border-radius: 10px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item:last-child {
+  margin-bottom: 0;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .title h6 {
+  color: var(--title-color);
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .title span {
+  color: var(--text-color);
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter {
+  display: flex;
+  align-items: center;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a {
+  height: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  font-size: 17px;
+  color: var(--primary-color1);
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color1);
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter input {
+  width: 40px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 1;
+  color: var(--title-color);
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: unset;
+  padding-bottom: unset;
+  height: unset;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap.active {
+  display: block;
+  transform: scaleY(1);
+  animation: fade-down 0.3s linear;
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap.active {
+    transform: scaleY(1) translateX(-50%);
+    animation: fade-down2 0.3s linear;
+  }
+}
 .book-now-form-modal .modal-dialog .modal-content .modal-body form .check-area {
   margin-bottom: 50px;
 }
