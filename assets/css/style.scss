@@ -2163,8 +2163,8 @@ body.tt-magic-cursor #magic-cursor {
 
     .offer-text-slider-wrap {
       position: relative;
-      padding: 0 35px;
-      max-width: 430px;
+      padding: 0 30px;
+      max-width: 416px;
       width: 100%;
       margin: 0 auto;
 
@@ -2693,7 +2693,7 @@ header.style-1 {
     }
   }
 
-  .primary-btn1 {
+  .bg-color-btn {
     padding: 15px 37px;
     background-color: #DA954C80;
     border: 1px solid rgba(var(--white-color-opc), 0.3);
@@ -3269,8 +3269,7 @@ header.style-1 {
     }
 
     .primary-btn1 {
-      backdrop-filter: unset;
-      background-color: var(--primary-color1);
+      padding: 16px 39px;
     }
 
     .nav-right {
@@ -6702,8 +6701,7 @@ header.style-4 {
 
   .filter-input-wrap {
     padding: 35px 50px;
-    background-color: rgba(var(--white-color-opc), 0.2);
-    backdrop-filter: blur(400px);
+    background-color: #645B59;
 
     @include xxl-down-device() {
       padding: 30px 20px;
@@ -7472,6 +7470,7 @@ header.style-4 {
           svg {
             fill: var(--title-color);
           }
+
           &::before {
             height: 34px;
             background-color: #D9D9D9;
@@ -7488,6 +7487,7 @@ header.style-4 {
     .filter-input-wrap {
       background-color: unset;
       backdrop-filter: unset;
+
       .filter-input {
         .single-search-box {
           &.room-field {
@@ -9532,7 +9532,7 @@ header.style-4 {
 
       .section-title {
         p {
-          color: var(--footer-text);
+          color: #D3D3D3;
 
           @include lg-device() {
             font-size: 16px;
@@ -9707,7 +9707,7 @@ header.style-4 {
       }
 
       .social-area {
-        padding: 20px 0 0 92px;
+        padding: 30px 0 0 92px;
 
         @include xxl-down-device() {
           padding: 20px 0 0 70px;
@@ -9878,7 +9878,7 @@ header.style-4 {
       .payment-getway {
         h5 {
           color: var(--white-color);
-          margin-bottom: 30px;
+          margin-bottom: 22px;
           font-family: var(--font-marcellus);
           font-weight: 400;
           font-size: 24px;
