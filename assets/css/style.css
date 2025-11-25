@@ -5794,6 +5794,11 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     padding: 30px 20px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .filter-wrapper .filter-input-wrap {
+    padding: 30px;
+  }
+}
 @media (max-width: 767px) {
   .filter-wrapper .filter-input-wrap {
     padding: 30px 20px;
@@ -5821,7 +5826,8 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 @media (max-width: 576px) {
   .filter-wrapper .filter-input-wrap .filter-input {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
   }
   .filter-wrapper .filter-input-wrap .filter-input .primary-btn1 {
     width: 100%;
@@ -5844,6 +5850,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 @media (max-width: 576px) {
   .filter-wrapper .filter-input-wrap .filter-input .single-search-box {
     min-height: 52px;
+    width: 100%;
   }
 }
 .filter-wrapper .filter-input-wrap .filter-input .single-search-box > svg {
@@ -6220,7 +6227,8 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 @media (max-width: 576px) {
   .filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap {
-    left: 140px;
+    left: 50%;
+    right: unset;
   }
 }
 .filter-wrapper .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .title-area {
@@ -6403,6 +6411,16 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .filter-wrapper .filter-input-wrap .filter-input .primary-btn1 {
   padding: 18px 22px;
   justify-content: center;
+}
+@media (max-width: 991px) {
+  .filter-wrapper .filter-input-wrap .filter-input .primary-btn1 {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .filter-wrapper .filter-input-wrap .filter-input .primary-btn1 {
+    margin-top: 10px;
+  }
 }
 .filter-wrapper .filter-input-wrap .filter-input .primary-btn1 svg {
   min-width: 18px;
@@ -16142,4 +16160,27 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   .welcome-section .section-title-and-list ul li {
     font-size: 15px;
   }
+}
+
+/*=====================================
+65. Error Page CSS
+========================================*/
+.error-page {
+  height: 100vh;
+  background: linear-gradient(107.28deg, rgba(191, 154, 114, 0.39) 0%, rgba(255, 211, 164, 0.17) 68.12%);
+  padding: 100px 0;
+}
+.error-page .error-wrapper {
+  padding: 0 70px 0 30px;
+}
+.error-page .error-wrapper .error-content-area {
+  text-align: center;
+}
+.error-page .error-wrapper .error-content-area h2 {
+  line-height: 1;
+}
+.error-page .error-wrapper .error-content-area .primary-btn1 {
+  max-width: 363px;
+  width: 100%;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

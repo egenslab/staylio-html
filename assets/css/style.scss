@@ -6800,6 +6800,10 @@ header.style-4 {
       padding: 30px 20px;
     }
 
+    @include md-device() {
+      padding: 30px;
+    }
+
     @include md-down-device() {
       padding: 30px 20px;
     }
@@ -6825,7 +6829,8 @@ header.style-4 {
 
       @include sm-down-device() {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: start;
 
         .primary-btn1 {
           width: 100%;
@@ -6848,6 +6853,7 @@ header.style-4 {
 
         @include sm-down-device() {
           min-height: 52px;
+          width: 100%;
         }
 
         >svg {
@@ -7233,7 +7239,8 @@ header.style-4 {
             }
 
             @include sm-down-device() {
-              left: 140px;
+              left: 50%;
+              right: unset;
             }
 
             .title-area {
@@ -7441,7 +7448,12 @@ header.style-4 {
       .primary-btn1 {
         padding: 18px 22px;
         justify-content: center;
-
+        @include lg-down-device(){
+          margin-top: 15px;
+        }
+        @include md-down-device(){
+          margin-top: 10px;
+        }
         svg {
           min-width: 18px;
 
@@ -17920,6 +17932,29 @@ header.style-4 {
         @include sm-down-device() {
           font-size: 15px;
         }
+      }
+    }
+  }
+}
+
+/*=====================================
+65. Error Page CSS
+========================================*/
+.error-page {
+  height: 100vh;
+  background: linear-gradient(107.28deg, rgba(191, 154, 114, 0.39) 0%, rgba(255, 211, 164, 0.17) 68.12%);
+  padding: 100px 0;
+  .error-wrapper {
+    padding: 0 70px 0 30px;
+    .error-content-area {
+      text-align: center;
+      h2 {
+        line-height: 1;
+      }
+      .primary-btn1 {
+        max-width: 363px;
+        width: 100%;
+        justify-content: center;
       }
     }
   }
