@@ -51,13 +51,14 @@
     }
   });
 
-  const header = document.querySelector(".home1-header");
-  const eventSection = document.querySelector(".home1-event-section");
+const header = document.querySelector(".home1-header");
+const eventSection = document.querySelector(".home1-event-section");
 
+if (header) {
   window.addEventListener("scroll", function () {
     const scrollY = window.scrollY;
 
-    // Default sticky behavior: scrollY > 0 → sticky ON, top → sticky OFF
+    // Default sticky behavior
     if (scrollY > 0) {
       header.classList.add("sticky");
     } else {
@@ -68,12 +69,13 @@
     if (eventSection) {
       const rect = eventSection.getBoundingClientRect();
 
-      // When event section is visible in viewport → remove sticky
       if (rect.top <= 0 && rect.bottom >= 0) {
         header.classList.remove("sticky");
       }
     }
   });
+}
+
 
   // FancyBox Js
   $('[data-fancybox="gallery-01"]').fancybox({

@@ -6318,6 +6318,37 @@ header.style-4 {
                   }
                 }
               }
+
+              .single-field {
+                .custom-select-wrap {
+                  .guest-count {
+                    .single-item {
+                      .quantity-counter {
+                        a {
+                          border-color: var(--primary-color2);
+
+                          i {
+                            color: var(--primary-color2);
+                            transition: all 0.4s;
+                          }
+
+                          &:hover {
+                            background-color: var(--primary-color2);
+
+                            i {
+                              color: var(--white-color);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &::after {
+                  border-color: var(--primary-color2);
+                }
+              }
             }
           }
         }
@@ -6360,6 +6391,37 @@ header.style-4 {
                   }
                 }
               }
+
+              .single-field {
+                .custom-select-wrap {
+                  .guest-count {
+                    .single-item {
+                      .quantity-counter {
+                        a {
+                          border-color: var(--primary-color3);
+
+                          i {
+                            color: var(--primary-color2);
+                            transition: all 0.4s;
+                          }
+
+                          &:hover {
+                            background-color: var(--primary-color3);
+
+                            i {
+                              color: var(--white-color);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &::after {
+                  border-color: var(--primary-color3);
+                }
+              }
             }
           }
         }
@@ -6400,6 +6462,37 @@ header.style-4 {
                     border-bottom: 1px solid var(--primary-color4);
                     border-right: 1px solid var(--primary-color4);
                   }
+                }
+              }
+
+              .single-field {
+                .custom-select-wrap {
+                  .guest-count {
+                    .single-item {
+                      .quantity-counter {
+                        a {
+                          border-color: var(--primary-color4);
+
+                          i {
+                            color: var(--primary-color4);
+                            transition: all 0.4s;
+                          }
+
+                          &:hover {
+                            background-color: var(--primary-color4);
+
+                            i {
+                              color: var(--white-color);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &::after {
+                  border-color: var(--primary-color4);
                 }
               }
             }

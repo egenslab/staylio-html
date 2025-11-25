@@ -5431,6 +5431,22 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-bottom: 1px solid var(--primary-color2);
   border-right: 1px solid var(--primary-color2);
 }
+.book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a {
+  border-color: var(--primary-color2);
+}
+.book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a i {
+  color: var(--primary-color2);
+  transition: all 0.4s;
+}
+.book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a:hover {
+  background-color: var(--primary-color2);
+}
+.book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a:hover i {
+  color: var(--white-color);
+}
+.book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field::after {
+  border-color: var(--primary-color2);
+}
 .book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-close:hover {
   background-color: var(--primary-color2);
 }
@@ -5445,6 +5461,22 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-bottom: 1px solid var(--primary-color3);
   border-right: 1px solid var(--primary-color3);
 }
+.book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a {
+  border-color: var(--primary-color3);
+}
+.book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a i {
+  color: var(--primary-color2);
+  transition: all 0.4s;
+}
+.book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a:hover {
+  background-color: var(--primary-color3);
+}
+.book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a:hover i {
+  color: var(--white-color);
+}
+.book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field::after {
+  border-color: var(--primary-color3);
+}
 .book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-close:hover {
   background-color: var(--primary-color3);
 }
@@ -5458,6 +5490,22 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-body form .single-info .form-inner .nice-select:after {
   border-bottom: 1px solid var(--primary-color4);
   border-right: 1px solid var(--primary-color4);
+}
+.book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a {
+  border-color: var(--primary-color4);
+}
+.book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a i {
+  color: var(--primary-color4);
+  transition: all 0.4s;
+}
+.book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a:hover {
+  background-color: var(--primary-color4);
+}
+.book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a:hover i {
+  color: var(--white-color);
+}
+.book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field::after {
+  border-color: var(--primary-color4);
 }
 .book-now-form-modal.hostel-hover-color .modal-dialog .modal-content .modal-close:hover {
   background-color: var(--primary-color4);
