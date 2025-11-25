@@ -1413,20 +1413,22 @@ if (header) {
   });
 
   //Quantity Increment Guest
-  function updateGuestSummary() {
+  function updateGuestSummary($root) {
+  // Adult + Child counters
     let totalAdults = 0;
     let totalChildren = 0;
 
-    $('input[name="adult_quantity"]').each(function () {
+    $root.find('input[name="adult_quantity"]').each(function () {
       totalAdults += parseInt($(this).val(), 10) || 0;
     });
 
-    $('input[name="child_quantity"]').each(function () {
+    $root.find('input[name="child_quantity"]').each(function () {
       totalChildren += parseInt($(this).val(), 10) || 0;
     });
 
-    $("#adult-qty").text(totalAdults);
-    $("#child-qty").text(totalChildren);
+    // Update only the spans inside this block
+    $root.find(".adult-qty").text(totalAdults);
+    $root.find(".child-qty").text(totalChildren);
   }
 
   function updateRoomTitles() {
@@ -1497,31 +1499,48 @@ if (header) {
   });
 
   // Event delegation for plus/minus buttons
-  $(document).on(
-    "click",
-    ".guest-quantity__plus, .guest-quantity__minus",
-    function (e) {
-      e.preventDefault();
+  $(document).on("click", ".guest-quantity__plus, .guest-quantity__minus", function (e) {
+  e.preventDefault();
 
-      const $btn = $(this);
-      const $input = $btn.siblings(".quantity__input");
-      const type = $btn.data("type");
-      let value = parseInt($input.val(), 10) || 0;
+  const $btn = $(this);
 
-      if ($btn.hasClass("guest-quantity__minus")) {
-        if (
-          (type === "adult" && value > 1) ||
-          (type === "child" && value > 0)
-        ) {
-          $input.val(value - 1);
-        }
-      } else {
-        $input.val(value + 1);
-      }
+  // Determine nearest parent container for this guest counter
+  let $root;
 
-      updateGuestSummary();
-    }
-  );
+  if ($btn.closest(".single-field").length) {
+    $root = $btn.closest(".single-field");
+  } else if ($btn.closest(".room-field").length) {
+    $root = $btn.closest(".room-field");
+  } else {
+    $root = $btn.closest(".single-search-box"); // fallback
+  }
+
+  const $input = $btn.siblings(".quantity__input");
+  const type = $btn.data("type");
+  let value = parseInt($input.val(), 10) || 0;
+
+  // Minus
+  if ($btn.hasClass("guest-quantity__minus")) {
+    if (type === "adult" && value > 1) value--;
+    if (type === "child" && value > 0) value--;
+  } 
+  // Plus
+  else {
+    value++;
+  }
+
+  $input.val(value);
+
+  // Update summary for this block only
+  updateGuestSummary($root);
+});
+
+// Optional: Initialize all summaries on page load
+$(document).ready(function () {
+  $(".single-field, .room-field").each(function () {
+    updateGuestSummary($(this));
+  });
+});
 
   // Delete room
   $(document).on("click", ".room-delete-btn", function (e) {
