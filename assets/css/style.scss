@@ -13048,41 +13048,43 @@ header.style-4 {
         }
 
         h3 {
-          color: var(--white-color);
-          font-family: var(--font-marcellus);
-          font-weight: 400;
-          font-size: 30px;
-          line-height: 40px;
           margin-bottom: 10px;
-
-          @include xxl-down-device() {
-            font-size: 23px;
-            line-height: 35px;
-          }
-
-          @include lg-device() {
-            font-size: 20px;
-            margin-bottom: 5px;
-            line-height: 30px;
-          }
-
-          @include md-down-device() {
-            font-size: 20px;
-          }
-
-          span {
-            position: relative;
-            display: inline-block;
-
-            &::before {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 50%;
-              transform: translateX(-50%);
-              width: 100%;
-              background: url(../img/home4/vector/offer-vector-img.png) no-repeat center center;
-              height: 7px;
+          a {
+            color: var(--white-color);
+            font-family: var(--font-marcellus);
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+  
+            @include xxl-down-device() {
+              font-size: 23px;
+              line-height: 35px;
+            }
+  
+            @include lg-device() {
+              font-size: 20px;
+              margin-bottom: 5px;
+              line-height: 30px;
+            }
+  
+            @include md-down-device() {
+              font-size: 20px;
+            }
+  
+            span {
+              position: relative;
+              display: inline-block;
+  
+              &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                background: url(../img/home4/vector/offer-vector-img.png) no-repeat center center;
+                height: 7px;
+              }
             }
           }
         }
@@ -13142,20 +13144,22 @@ header.style-4 {
           }
 
           h6 {
-            color: var(--white-color);
-            font-family: var(--font-marcellus);
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 30px;
             margin-bottom: 10px;
-
-            @include xl-down-device() {
-              font-size: 18px;
-              line-height: 27px;
-            }
-
-            span {
-              border-bottom: 1px solid var(--white-color);
+            a {
+              color: var(--white-color);
+              font-family: var(--font-marcellus);
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 30px;
+  
+              @include xl-down-device() {
+                font-size: 18px;
+                line-height: 27px;
+              }
+  
+              span {
+                border-bottom: 1px solid var(--white-color);
+              }
             }
           }
 
