@@ -1468,6 +1468,9 @@ body.tt-magic-cursor #magic-cursor {
     border-right: 1px solid var(--primary-color1);
     right: 28px;
     margin-top: -5px;
+    @include xl-down-device(){
+      margin-top: -15px;
+    }
   }
 
   .list {
@@ -7874,14 +7877,6 @@ header.style-4 {
   background-color: #FFF6E5;
   padding: 70px 0;
 
-  @include xl-down-device() {
-    padding: 60px 0;
-  }
-
-  @include lg-down-device() {
-    padding: 50px 0;
-  }
-
   .room-and-suites-card {
     position: relative;
 
@@ -8580,31 +8575,31 @@ header.style-4 {
       height: 100%;
 
       @include eighteen-down-device() {
-        padding: 60px 0 60px 200px;
+        padding: 70px 0 70px 200px;
       }
 
       @include xxl-device() {
-        padding: 50px 0 50px 70px;
+        padding: 70px 0 70px 70px;
       }
 
       @include xxl-down-device() {
-        padding: 50px 0 50px 60px;
+        padding: 70px 0 70px 60px;
       }
 
       @include lg-device() {
-        padding: 40px 0 40px 30px;
+        padding: 70px 0 70px 30px;
       }
 
       @include lg-down-device() {
-        padding: 70px 0 60px 30px;
+        padding: 70px 0 70px 30px;
       }
 
       @include md-down-device() {
-        padding: 70px 0 40px 20px;
+        padding: 70px 0 70px 20px;
       }
 
       @include sm-down-device() {
-        padding: 40px 0 40px 10px;
+        padding: 70px 0 70px 10px;
       }
 
       .section-title {
@@ -9387,14 +9382,6 @@ header.style-4 {
     background-color: #F5F1ED;
     padding: 70px 0;
     position: relative;
-
-    @include lg-down-device() {
-      padding: 60px 0;
-    }
-
-    @include md-down-device() {
-      padding: 50px 0;
-    }
 
     .blog-card {
       .blog-card-content {
@@ -10961,12 +10948,10 @@ header.style-4 {
 
   @include lg-down-device() {
     margin: 0 20px 80px 20px;
-    padding: 60px 0;
   }
 
   @include md-down-device() {
     margin: 0 20px 60px 20px;
-    padding: 50px 0;
   }
 
   @include sm-down-device() {
@@ -11119,12 +11104,10 @@ header.style-4 {
 
   @include lg-down-device() {
     margin: 0 20px 80px 20px;
-    padding: 60px 0;
   }
 
   @include md-down-device() {
     margin: 0 20px 60px 20px;
-    padding: 50px 0;
   }
 
   .section-title {
@@ -11608,12 +11591,10 @@ header.style-4 {
 
   @include lg-down-device() {
     margin: 0 20px 80px 20px;
-    padding: 60px 0;
   }
 
   @include md-down-device() {
     margin: 0 20px 60px 20px;
-    padding: 50px 0;
   }
 
   @include sm-down-device() {
@@ -11864,14 +11845,6 @@ header.style-4 {
 
   .section-title {
     padding: 70px 0;
-
-    @include xl-down-device() {
-      padding: 60px 0;
-    }
-
-    @include lg-down-device() {
-      padding: 40px 0;
-    }
   }
 
   .feature-banner-section {
@@ -12170,11 +12143,11 @@ header.style-4 {
 
     @include lg-down-device() {
       max-width: unset;
-      padding: 60px 0 60px 20px;
+      padding: 70px 0 70px 20px;
     }
 
     @include sm-down-device() {
-      padding: 40px 0 40px 10px;
+      padding: 70px 0 70px 10px;
     }
 
     span {
@@ -12676,14 +12649,6 @@ header.style-4 {
   &.two {
     background-color: #EEEDF5;
     padding: 70px 0;
-
-    @include lg-down-device() {
-      padding: 60px 0;
-    }
-
-    @include md-down-device() {
-      padding: 50px 0;
-    }
 
     .gallary-img-wrap {
 
@@ -13717,15 +13682,10 @@ header.style-4 {
     align-items: center;
     justify-content: center;
     gap: 35px;
-
+    @include sm-down-device(){
+      gap: 20px;
+    }
     .nav-item {
-      @include sm-device() {
-        &:last-child {
-          .nav-link::before {
-            content: unset;
-          }
-        }
-      }
 
       @include sm-down-device() {
         &:last-child {
@@ -13742,15 +13702,22 @@ header.style-4 {
         font-size: 18px;
         line-height: 1;
         position: relative;
-
+        @include md-down-device() {
+          padding: 0;
+          font-size: 16px;
+        }
         &::before {
           content: "";
           position: absolute;
           width: 1px;
           height: 10px;
-          top: 39%;
-          left: -20px;
+          top: 50%;
+          left: -16px;
+          transform:translateY(-50%);
           background-color: #A6A6A6;
+          @include sm-down-device(){
+            left: -11px;
+          }
         }
 
         &.active {
@@ -13967,14 +13934,6 @@ header.style-4 {
 .faq-section {
   background-color: #E9ECF9;
   padding: 70px 0;
-
-  @include lg-down-device() {
-    padding: 60px 0;
-  }
-
-  @include md-down-device() {
-    padding: 50px 0;
-  }
 
 }
 
@@ -14834,7 +14793,7 @@ header.style-4 {
 }
 
 // Product view modal 
-.product-view-modal {
+.reserve-table-view-modal {
   .modal-dialog {
     max-width: 1096px;
     width: 100%;
@@ -14992,7 +14951,9 @@ header.style-4 {
     @include xl-down-device() {
       padding: 40px 30px;
     }
-
+    @include lg-down-device(){
+      background-position: center;
+    }
     @include md-down-device() {
       padding: 35px 20px;
     }
@@ -17289,6 +17250,13 @@ header.style-4 {
   57. Contact Page Contact Area CSS
 ========================================*/
 .contact-area {
+  .section-title {
+    h2 {
+      @include sm-device() {
+        font-size: 29px;
+      }
+    }
+  }
   .contact-area-wrapper {
     background-color: #E9ECF9;
     padding: 50px 60px;
@@ -17511,9 +17479,6 @@ header.style-4 {
 
         @include lg-down-device() {
           gap: 15px;
-        }
-
-        @include md-down-device() {
           max-width: unset;
         }
 
