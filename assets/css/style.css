@@ -6510,6 +6510,14 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   background-color: unset;
   -webkit-backdrop-filter: unset;
           backdrop-filter: unset;
+  padding: 30px 0;
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box {
+  background-color: rgba(51, 51, 51, 0.9411764706);
+  border: 1px solid rgba(179, 162, 133, 0.0784313725);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 9px 15px;
 }
 .filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a {
   border-color: var(--primary-color3);
@@ -6523,6 +6531,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover i {
   color: var(--white-color);
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box::before {
+  content: unset;
 }
 
 /*=====================================
@@ -9223,9 +9234,11 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 .home2-room-and-suites-section.two .section-title-and-nav-pills .nav-pills .nav-item .nav-link.active {
   color: var(--primary-color3);
+  font-weight: 700;
 }
 .home2-room-and-suites-section.three .section-title-and-nav-pills .nav-pills .nav-item .nav-link.active {
   color: var(--primary-color4);
+  font-weight: 700;
 }
 .home2-room-and-suites-section.room-top-filter .nav-pills {
   justify-content: center;
