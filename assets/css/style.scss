@@ -760,9 +760,8 @@ p {
 
 .mb-45 {
   margin-bottom: 45px;
-
-  @include sm-down-device() {
-    margin-bottom: 35px;
+  @include md-down-device(){
+    margin-bottom: 30px;
   }
 }
 
@@ -7586,8 +7585,9 @@ header.style-4 {
   &.three {
     margin-top: unset;
     background-color: var(--title-color);
+    padding: 0 120px;
 
-    @include xl-device() {
+    @include nineteen-down-device() {
       padding: 0 10px;
     }
 
@@ -7595,8 +7595,21 @@ header.style-4 {
       background-color: unset;
       backdrop-filter: unset;
       padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include xxl-device() {
+        display: block;
+      }
 
       .filter-input {
+        gap: 50px;
+
+        @include xxl-device() {
+          margin-bottom: 35px;
+        }
+
         .primary-btn3 {
           z-index: -1;
         }
@@ -7605,28 +7618,52 @@ header.style-4 {
           background-color: #333333F0;
           border: 1px solid #B3A28514;
           backdrop-filter: blur(10px);
-          padding: 9px 15px;
+          min-width: 280px;
 
-          &.room-field {
-            .custom-select-wrap {
-              .room-list {
-                .single-room {
-                  .guest-count {
-                    .single-item {
-                      .quantity-counter {
-                        a {
-                          border-color: var(--primary-color3);
+          .icon {
+            padding: 19px 20px;
+            border-right: 1px solid #B3A28514;
 
-                          i {
-                            color: var(--primary-color3);
-                            transition: all 0.5s;
-                          }
+            svg {
+              fill: var(--white-color);
+            }
+          }
 
-                          &:hover {
-                            background-color: var(--primary-color3);
+          .custom-select-dropdown {
+
+            .selected-date,
+            .hotel-selected-date-checkin,
+            .hotel-selected-date-checkout {
+              h6 {
+                margin-bottom: 8px;
+              }
+
+              span {
+                font-size: 15px;
+              }
+            }
+
+            &.room-field {
+              .custom-select-wrap {
+                .room-list {
+                  .single-room {
+                    .guest-count {
+                      .single-item {
+                        .quantity-counter {
+                          a {
+                            border-color: var(--primary-color3);
 
                             i {
-                              color: var(--white-color);
+                              color: var(--primary-color3);
+                              transition: all 0.5s;
+                            }
+
+                            &:hover {
+                              background-color: var(--primary-color3);
+
+                              i {
+                                color: var(--white-color);
+                              }
                             }
                           }
                         }
@@ -7636,10 +7673,22 @@ header.style-4 {
                 }
               }
             }
+
+            h6 {
+              margin-bottom: 3px;
+            }
+
+            >span {
+              font-size: 15px;
+            }
+
+            input {
+              margin-bottom: 3px;
+            }
           }
 
           &::before {
-            content: unset;
+            display: none;
           }
         }
       }
@@ -11664,6 +11713,22 @@ header.style-4 {
     @include md-down-device() {
       margin-bottom: 70px;
     }
+
+    .mb-95 {
+      margin-bottom: 95px;
+
+      @include xl-down-device() {
+        margin-bottom: 70px;
+      }
+
+      @include lg-down-device() {
+        margin-bottom: 50px;
+      }
+
+      @include sm-down-device() {
+        margin-bottom: 40px;
+      }
+    }
   }
 }
 
@@ -15273,6 +15338,10 @@ header.style-4 {
     .signature-img {
       display: flex;
       margin-left: auto;
+
+      @include lg-device() {
+        width: 110px;
+      }
 
       @include md-down-device() {
         width: 140px;
@@ -19138,6 +19207,31 @@ header.style-4 {
           font-size: 15px;
         }
       }
+    }
+  }
+
+  .img-2 {
+    margin-bottom: -30px;
+
+    img {
+      object-fit: cover;
+
+      @include lg-down-device() {
+        max-height: 500px;
+        width: 100%;
+      }
+    }
+
+    @include xxl-down-device() {
+      margin-bottom: -20px;
+    }
+
+    @include xl-down-device() {
+      margin-bottom: 0;
+    }
+
+    @include lg-down-device() {
+      width: 100%;
     }
   }
 }

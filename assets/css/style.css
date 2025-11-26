@@ -645,9 +645,9 @@ p {
 .mb-45 {
   margin-bottom: 45px;
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .mb-45 {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -6505,8 +6505,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .filter-wrapper.three {
   margin-top: unset;
   background-color: var(--title-color);
+  padding: 0 120px;
 }
-@media (min-width: 1200px) and (max-width: 1399px) {
+@media (max-width: 1899px) {
   .filter-wrapper.three {
     padding: 0 10px;
   }
@@ -6516,6 +6517,22 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   -webkit-backdrop-filter: unset;
           backdrop-filter: unset;
   padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .filter-wrapper.three .filter-input-wrap {
+    display: block;
+  }
+}
+.filter-wrapper.three .filter-input-wrap .filter-input {
+  gap: 50px;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .filter-wrapper.three .filter-input-wrap .filter-input {
+    margin-bottom: 35px;
+  }
 }
 .filter-wrapper.three .filter-input-wrap .filter-input .primary-btn3 {
   z-index: -1;
@@ -6525,23 +6542,49 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border: 1px solid rgba(179, 162, 133, 0.0784313725);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  padding: 9px 15px;
+  min-width: 280px;
 }
-.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a {
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .icon {
+  padding: 19px 20px;
+  border-right: 1px solid rgba(179, 162, 133, 0.0784313725);
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .icon svg {
+  fill: var(--white-color);
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown .selected-date h6,
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
+  margin-bottom: 8px;
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown .selected-date span,
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
+  font-size: 15px;
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a {
   border-color: var(--primary-color3);
 }
-.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a i {
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a i {
   color: var(--primary-color3);
   transition: all 0.5s;
 }
-.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover {
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover {
   background-color: var(--primary-color3);
 }
-.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover i {
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover i {
   color: var(--white-color);
 }
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown h6 {
+  margin-bottom: 3px;
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown > span {
+  font-size: 15px;
+}
+.filter-wrapper.three .filter-input-wrap .filter-input .single-search-box .custom-select-dropdown input {
+  margin-bottom: 3px;
+}
 .filter-wrapper.three .filter-input-wrap .filter-input .single-search-box::before {
-  content: unset;
+  display: none;
 }
 
 /*=====================================
@@ -10216,6 +10259,24 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     margin-bottom: 70px;
   }
 }
+.home2-about-section.two .mb-95 {
+  margin-bottom: 95px;
+}
+@media (max-width: 1199px) {
+  .home2-about-section.two .mb-95 {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 991px) {
+  .home2-about-section.two .mb-95 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .home2-about-section.two .mb-95 {
+    margin-bottom: 40px;
+  }
+}
 
 .divider {
   position: relative;
@@ -13650,6 +13711,11 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .our-vision .vision-content-wrapper .signature-img {
   display: flex;
   margin-left: auto;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-vision .vision-content-wrapper .signature-img {
+    width: 110px;
+  }
 }
 @media (max-width: 767px) {
   .our-vision .vision-content-wrapper .signature-img {
@@ -17321,6 +17387,34 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 @media (max-width: 576px) {
   .welcome-section .section-title-and-list ul li {
     font-size: 15px;
+  }
+}
+.welcome-section .img-2 {
+  margin-bottom: -30px;
+}
+.welcome-section .img-2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 991px) {
+  .welcome-section .img-2 img {
+    max-height: 500px;
+    width: 100%;
+  }
+}
+@media (max-width: 1399px) {
+  .welcome-section .img-2 {
+    margin-bottom: -20px;
+  }
+}
+@media (max-width: 1199px) {
+  .welcome-section .img-2 {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .welcome-section .img-2 {
+    width: 100%;
   }
 }
 
