@@ -2451,6 +2451,7 @@ body.tt-magic-cursor #magic-cursor {
       transition: all 0.5s;
       padding: 10px;
       border-bottom: 1px solid var(--border-color3);
+
       a {
         color: var(--title-color);
         font-family: var(--font-dmsans);
@@ -2469,6 +2470,7 @@ body.tt-magic-cursor #magic-cursor {
           color: var(--primary-color2);
         }
       }
+
       &:last-child {
         border-bottom: unset;
       }
@@ -2578,6 +2580,9 @@ header.style-1 {
 
   @include xl-down-device() {
     padding: 10px 5px;
+  }
+  @include sm-down-device(){
+    padding: 15px 5px;
   }
 
   &.sticky {
@@ -7965,9 +7970,11 @@ header.style-4 {
   h3 {
     margin-bottom: 15px;
     line-height: 1;
+
     @include lg-device() {
       margin-bottom: 10px;
     }
+
     a {
       color: var(--white-color);
       font-family: var(--font-marcellus);
@@ -7986,7 +7993,8 @@ header.style-4 {
       @include md-device() {
         font-size: 24px;
       }
-      @include sm-down-device(){
+
+      @include sm-down-device() {
         font-size: 23px;
       }
     }
@@ -10850,7 +10858,7 @@ header.style-4 {
 .home2-testimonial-section {
   background-color: #F6F5E8;
   padding: 70px 0;
-  margin: 0 50px 120px 50px;
+  margin: 0 50px 130px 50px;
   position: relative;
 
   @include xxl-device() {
@@ -11102,7 +11110,7 @@ header.style-4 {
           padding: 10px 14px;
           transition: all 0.5s;
 
-          @include xl-down-device() {
+          @include xxl-down-device() {
             font-size: 19px;
           }
 
@@ -11497,7 +11505,7 @@ header.style-4 {
 .home2-about-section {
   background-color: #EDF5EF;
   padding: 70px 0;
-  margin: 0 50px 120px 50px;
+  margin: 0 50px 130px 50px;
   position: relative;
 
   @include xxl-device() {
@@ -11540,6 +11548,17 @@ header.style-4 {
 
     @include lg-down-device() {
       max-width: unset;
+    }
+
+    .section-title {
+      p {
+        @include lg-down-device() {
+          font-size: 17px;
+        }
+        @include sm-down-device(){
+          font-size: 15px;
+        }
+      }
     }
   }
 
@@ -17957,9 +17976,11 @@ header.style-4 {
       @include lg-down-device() {
         width: 320px;
       }
-      @include md-down-device(){
+
+      @include md-down-device() {
         width: 270px;
       }
+
       @include sm-down-device() {
         width: 220px;
       }
@@ -17997,10 +18018,12 @@ header.style-4 {
           font-size: 40px;
           margin-bottom: 15px;
         }
-        @include md-down-device(){
+
+        @include md-down-device() {
           font-size: 35px;
         }
-        @include sm-down-device(){
+
+        @include sm-down-device() {
           font-size: 32px;
         }
       }
@@ -18021,11 +18044,13 @@ header.style-4 {
           font-size: 17px;
           margin-bottom: 35px;
         }
+
         @include lg-down-device() {
           font-size: 17px;
           margin-bottom: 30px;
         }
-        @include sm-down-device(){
+
+        @include sm-down-device() {
           font-size: 15px;
         }
       }
@@ -18042,10 +18067,12 @@ header.style-4 {
         @include lg-device() {
           max-width: 280px;
         }
-        @include lg-down-device(){
+
+        @include lg-down-device() {
           max-width: 290px;
         }
-        @include sm-down-device(){
+
+        @include sm-down-device() {
           max-width: 200px;
         }
       }

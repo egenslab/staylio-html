@@ -208,6 +208,7 @@ if (header) {
       },
       992: {
         slidesPerView: 3,
+        spaceBetween: 15,
       },
       1200: {
         slidesPerView: 3,

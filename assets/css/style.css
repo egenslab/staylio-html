@@ -2251,6 +2251,11 @@ header.style-1 {
     padding: 10px 5px;
   }
 }
+@media (max-width: 576px) {
+  header.style-1 {
+    padding: 15px 5px;
+  }
+}
 header.style-1.sticky {
   box-sizing: border-box;
   background-color: var(--black-color);
@@ -9409,7 +9414,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .home2-testimonial-section {
   background-color: #F6F5E8;
   padding: 70px 0;
-  margin: 0 50px 120px 50px;
+  margin: 0 50px 130px 50px;
   position: relative;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
@@ -9671,7 +9676,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   padding: 10px 14px;
   transition: all 0.5s;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .explore-endulge-section .explore-list li a span {
     font-size: 19px;
   }
@@ -10036,7 +10041,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .home2-about-section {
   background-color: #EDF5EF;
   padding: 70px 0;
-  margin: 0 50px 120px 50px;
+  margin: 0 50px 130px 50px;
   position: relative;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
@@ -10086,6 +10091,16 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 @media (max-width: 991px) {
   .home2-about-section .about-content-wrapper {
     max-width: unset;
+  }
+}
+@media (max-width: 991px) {
+  .home2-about-section .about-content-wrapper .section-title p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 576px) {
+  .home2-about-section .about-content-wrapper .section-title p {
+    font-size: 15px;
   }
 }
 .home2-about-section .vector-img1 {
