@@ -10579,7 +10579,13 @@ header.style-4 {
         }
       }
     }
-
+    .section-title {
+      span {
+        @include sm-down-device(){
+          justify-content: center;
+        }
+      }
+    }
   }
 
   .vector-img {

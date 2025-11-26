@@ -9196,6 +9196,11 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .home2-room-and-suites-section .section-title-and-nav-pills .nav-pills .nav-item:first-child .nav-link::before {
   content: unset;
 }
+@media (max-width: 576px) {
+  .home2-room-and-suites-section .section-title-and-nav-pills .section-title span {
+    justify-content: center;
+  }
+}
 .home2-room-and-suites-section .vector-img {
   position: absolute;
   right: 0;
