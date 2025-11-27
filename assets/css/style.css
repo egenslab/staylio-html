@@ -1095,7 +1095,6 @@ body.tt-magic-cursor #magic-cursor {
   display: block;
   width: 0;
   height: 0;
-  border-radius: 36px;
   background-color: var(--title-color);
   transition: all 0.6s;
   transform: translate(-50%, -50%);
@@ -1154,7 +1153,6 @@ body.tt-magic-cursor #magic-cursor {
   display: block;
   width: 0;
   height: 0;
-  border-radius: 36px;
   background-color: var(--title-color);
   transition: all 0.6s;
   transform: translate(-50%, -50%);
@@ -1210,7 +1208,6 @@ body.tt-magic-cursor #magic-cursor {
   display: block;
   width: 0;
   height: 0;
-  border-radius: 36px;
   background-color: var(--title-color);
   transition: all 0.6s;
   transform: translate(-50%, -50%);
@@ -1269,7 +1266,6 @@ body.tt-magic-cursor #magic-cursor {
   display: block;
   width: 0;
   height: 0;
-  border-radius: 36px;
   background-color: var(--title-color);
   transition: all 0.6s;
   transform: translate(-50%, -50%);
@@ -1608,7 +1604,6 @@ body.tt-magic-cursor #magic-cursor {
   font-family: var(--font-dmsans);
   font-size: 16px;
   font-weight: 500;
-  border-radius: 10px;
   border: 1px solid #F0F0F0;
   padding: 20px 25px;
   min-height: 151px;
@@ -2103,7 +2098,6 @@ body.tt-magic-cursor #magic-cursor {
   width: 180px;
   background-color: var(--white-color);
   box-shadow: 0px 30px 80px rgba(8, 0, 42, 0.08);
-  border-radius: 10px;
   overflow: hidden;
   display: none;
   transform: scaleY(0) translateX(-50%);
@@ -2379,7 +2373,6 @@ header.style-1 .nav-right .mobile-menu-btn {
     min-width: 48px;
     max-width: 48px;
     height: 48px;
-    border-radius: 10px;
     border: 1px solid var(--borders-color);
   }
   header.style-1 .nav-right .mobile-menu-btn svg {
@@ -14243,7 +14236,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   height: 6px;
   background-color: rgba(82, 82, 82, 0.06);
   min-width: 220px;
-  border-radius: 5px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .room-details-area .customer-rating-area .rating-wrapper .progress-list .single-progress .rating-progress-bar-wrap .rating-progress-bar {
@@ -14261,7 +14253,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   }
 }
 .room-details-area .customer-rating-area .rating-wrapper .progress-list .single-progress .rating-progress-bar-wrap .rating-progress-bar .rating-progress-bar-per {
-  border-radius: 5px;
   height: 6px;
   background-color: var(--primary-color1);
   width: 0;

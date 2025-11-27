@@ -1228,7 +1228,6 @@ body.tt-magic-cursor #magic-cursor {
     display: block;
     width: 0;
     height: 0;
-    border-radius: 36px;
     background-color: var(--title-color);
     transition: all 0.6s;
     transform: translate(-50%, -50%);
@@ -1297,7 +1296,6 @@ body.tt-magic-cursor #magic-cursor {
     display: block;
     width: 0;
     height: 0;
-    border-radius: 36px;
     background-color: var(--title-color);
     transition: all 0.6s;
     transform: translate(-50%, -50%);
@@ -1362,7 +1360,6 @@ body.tt-magic-cursor #magic-cursor {
     display: block;
     width: 0;
     height: 0;
-    border-radius: 36px;
     background-color: var(--title-color);
     transition: all 0.6s;
     transform: translate(-50%, -50%);
@@ -1431,7 +1428,6 @@ body.tt-magic-cursor #magic-cursor {
     display: block;
     width: 0;
     height: 0;
-    border-radius: 36px;
     background-color: var(--title-color);
     transition: all 0.6s;
     transform: translate(-50%, -50%);
@@ -1790,7 +1786,6 @@ body.tt-magic-cursor #magic-cursor {
     font-family: var(--font-dmsans);
     font-size: 16px;
     font-weight: 500;
-    border-radius: 10px;
     border: 1px solid #F0F0F0;
     padding: 20px 25px;
     min-height: 151px;
@@ -2384,7 +2379,6 @@ body.tt-magic-cursor #magic-cursor {
     width: 180px;
     background-color: var(--white-color);
     box-shadow: 0px 30px 80px rgba(8, 0, 42, 0.08);
-    border-radius: 10px;
     overflow: hidden;
     display: none;
     transform: scaleY(0) translateX(-50%);
@@ -2706,7 +2700,6 @@ header.style-1 {
         min-width: 48px;
         max-width: 48px;
         height: 48px;
-        border-radius: 10px;
         border: 1px solid var(--borders-color);
 
         svg {
@@ -15881,7 +15874,6 @@ header.style-4 {
               height: 6px;
               background-color: rgba(#525252, 0.06);
               min-width: 220px;
-              border-radius: 5px;
 
               @include xl-device() {
                 min-width: 180px;
@@ -15896,7 +15888,6 @@ header.style-4 {
               }
 
               .rating-progress-bar-per {
-                border-radius: 5px;
                 height: 6px;
                 background-color: var(--primary-color1);
                 width: 0;
