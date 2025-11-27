@@ -1,5 +1,67 @@
 /*===========================
-  01.COMMON CSS
+Project Name: Staylio - Hotel & Resort Booking HTML Template
+Author: Egens Lab --> (https://www.egenslab.com/)
+Support: https://www.account.egenslab.com/
+Developer: Rashidul Islam --> hello@egenslab.com
+Version: 1.0
+
+01.COMMON CSS
+02. Mixins Css
+03. Header CSS
+04. Home1 Banner Section CSS
+05. About Us Section CSS
+06. Room And Suites Section CSS
+07. Home1 Signature Experiences Section CSS
+08.Home1 Dining And Cuisine Section CSS
+09. Home1 Event Section CSS
+10. Home1 Testimonial Section CSS
+11. Enchanting Moments Section CSS
+12. Home1 Blog Section CSS
+13. Footer Section CSS
+14.Home2 Banner Section CSS
+15.Home2 Room And Suites Section CSS
+16.Home2 Testimonial Section CSS
+17.Home2 Comfort And Signature Moments Section CSS
+18.Explore Endulge Section CSS
+19.Home2 Offer Section CSS
+20.Home2 About Section CSS
+21.Home3 Testimonial Section CSS
+22. Home3 Feature Section CSS
+23. Home3 Banner Section CSS
+24. Home3 Service Section CSS
+25. About Gallary Section CSS
+26. Home4 Banner Section CSS
+27. Offer Section CSS
+28. Why Stay With Us Section CSS
+29. Modern Comfort Vibes CSS
+30. Home4 Testimonial Section CSS
+31. Breadcrumb Section CSS
+32. Gallery Section Page CSS
+33. Event Card Page CSS
+34. FAQ Section CSS
+35. Event Contact Section CSS
+36. Why Host With Us Section CSS
+37. Blog Standard Page Section CSS
+38. Dining And Cuisine Page Card Section CSS
+39. Product view modal CSS
+40. Resturent Menu Section CSS
+41. Dining Testimonial Section CSS
+42. FAQ Page CSS
+43. Our Vision Section CSS
+44. Room Details Banner CSS
+45. Room Details Area CSS
+46. Offer Details Banner CSS
+47. Offer Details Area CSS
+48. Secvice List Section CSS
+49. Contact Page Contact Area CSS
+50. Contact Map Section CSS
+51. Activities & Attractions Section CSS
+52. Room Sidebar Start CSS
+53. Blog Details Thumbs Area CSS
+54. BLog Details Section Content CSS
+55. Blog Side Bar Section Page CSS
+56. Welcome Section Page CSS
+57. Error Page CSS
 ===========================*/
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Marcellus&display=swap');
@@ -11842,7 +11904,7 @@ header.style-4 {
 }
 
 /*=====================================
-  30. Home3 Feature Section CSS
+  22. Home3 Feature Section CSS
 ========================================*/
 .feature-section {
   background-color: #F6F5E8;
@@ -12116,7 +12178,7 @@ header.style-4 {
 }
 
 /*=====================================
-  31. Home3 Banner Section CSS
+  23. Home3 Banner Section CSS
 ========================================*/
 @keyframes textRotation {
   to {
@@ -12487,7 +12549,7 @@ header.style-4 {
 }
 
 /*=====================================
-  32. Home3 Service Section CSS
+  24. Home3 Service Section CSS
 ========================================*/
 .home3-service-section {
   .service-card {
@@ -12646,7 +12708,7 @@ header.style-4 {
 }
 
 /*=====================================
-  33. About Gallary Section CSS
+  25. About Gallary Section CSS
 ========================================*/
 .gallary-section {
 
@@ -12793,7 +12855,7 @@ header.style-4 {
 }
 
 /*=====================================
-  34. Home4 Banner Section CSS
+  26. Home4 Banner Section CSS
 ========================================*/
 .home4-banner-section {
   overflow: hidden;
@@ -13079,7 +13141,7 @@ header.style-4 {
 }
 
 /*=====================================
-  35. Offer Section CSS
+  27. Offer Section CSS
 ========================================*/
 .home4-offer-section {
   .offer-card {
@@ -13285,7 +13347,7 @@ header.style-4 {
 }
 
 /*=====================================
-  36. Why Stay With Us Section CSS
+  28. Why Stay With Us Section CSS
 ========================================*/
 .why-stay-with-us {
   .why-stay-with-us-img-wrap {
@@ -13419,7 +13481,7 @@ header.style-4 {
 }
 
 /*=====================================
-  37. Modern Comfort Vibes CSS
+  29. Modern Comfort Vibes CSS
 ========================================*/
 .modern-comfort-vibes-section {
   padding: 350px 0 110px;
@@ -13539,7 +13601,7 @@ header.style-4 {
 }
 
 /*=====================================
-  38. Home4 Testimonial Section CSS
+  30. Home4 Testimonial Section CSS
 ========================================*/
 .home4-testimonial-section {
   .testimonial-img-wrapper {
@@ -13602,7 +13664,7 @@ header.style-4 {
 }
 
 /*=====================================
-  39. Breadcrumb Section CSS
+  31. Breadcrumb Section CSS
 ========================================*/
 .breadcrumb-section {
   padding-top: 60px;
@@ -13678,7 +13740,7 @@ header.style-4 {
 }
 
 /*=====================================
-  40. Gallery Section Page CSS
+  32. Gallery Section Page CSS
 ========================================*/
 .gallery-section-page {
   .nav-pills {
@@ -13792,7 +13854,7 @@ header.style-4 {
 }
 
 /*=====================================
-  41. Event Card Page CSS
+  33. Event Card Page CSS
 ========================================*/
 .event-page {
   .event-page-card {
@@ -13938,7 +14000,7 @@ header.style-4 {
 }
 
 /*=====================================
-  42. FAQ Section CSS
+  34. FAQ Section CSS
 ========================================*/
 .faq-section {
   background-color: #E9ECF9;
@@ -14064,7 +14126,7 @@ header.style-4 {
 }
 
 /*=====================================
-  43. Event Contact Section CSS
+  35. Event Contact Section CSS
 ========================================*/
 .event-contact-section {
   .contact-wrapper {
@@ -14308,7 +14370,7 @@ header.style-4 {
 }
 
 /*=====================================
-  44. Why Host With Us Section CSS
+  36. Why Host With Us Section CSS
 ========================================*/
 .why-host-with-us {
   .host-list {
@@ -14422,7 +14484,7 @@ header.style-4 {
 }
 
 /*=====================================
-  46. Blog Standard Page Section CSS
+  37. Blog Standard Page Section CSS
 ========================================*/
 .blog-standard-section-page {
   .blog-card {
@@ -14482,7 +14544,7 @@ header.style-4 {
 }
 
 /*=====================================
-  47. Dining And Cuisine Page Card Section CSS
+  38. Dining And Cuisine Page Card Section CSS
 ========================================*/
 .dining-and-cuisine-page-card {
   .bottom-section {
@@ -14801,7 +14863,9 @@ header.style-4 {
   }
 }
 
-// Product view modal 
+/*=====================================
+  39. Product view modal CSS
+========================================*/
 .reserve-table-view-modal {
   .modal-dialog {
     max-width: 1096px;
@@ -14926,7 +14990,7 @@ header.style-4 {
 }
 
 /*=====================================
-  48. Resturent Menu Section CSS
+  40. Resturent Menu Section CSS
 ========================================*/
 .resturent-menu-section {
   padding: 0 13.5%;
@@ -15098,7 +15162,7 @@ header.style-4 {
 }
 
 /*=====================================
-  49. Dining Testimonial Section CSS
+  41. Dining Testimonial Section CSS
 ========================================*/
 .dining-testimonial-section {
   .slider-btn-grp {
@@ -15113,7 +15177,7 @@ header.style-4 {
 }
 
 /*=====================================
-  50. FAQ Page CSS
+  42. FAQ Page CSS
 ========================================*/
 .faq-page {
   .nav-links-and-contact-area {
@@ -15270,7 +15334,7 @@ header.style-4 {
 }
 
 /*=====================================
-  51. Our Vision Section CSS
+  43. Our Vision Section CSS
 ========================================*/
 .our-vision {
   .vision-img-wrapper {
@@ -15327,7 +15391,7 @@ header.style-4 {
 }
 
 /*=====================================
-  52. Room Details Banner CSS
+  44. Room Details Banner CSS
 ========================================*/
 .room-details-banner {
   padding: 20px 10% 0;
@@ -15416,7 +15480,7 @@ header.style-4 {
 }
 
 /*=====================================
-  53. Room Details Area CSS
+  45. Room Details Area CSS
 ========================================*/
 .room-details-area {
   .price-and-title-area {
@@ -17048,7 +17112,7 @@ header.style-4 {
 }
 
 /*=====================================
-  54. Offer Details Banner CSS
+  46. Offer Details Banner CSS
 ========================================*/
 .offer-details-banner {
   padding: 20px 100px 0;
@@ -17087,7 +17151,7 @@ header.style-4 {
 }
 
 /*=====================================
-  55. Offer Details Area CSS
+  47. Offer Details Area CSS
 ========================================*/
 .offer-details-area {
   .section-title {
@@ -17174,7 +17238,7 @@ header.style-4 {
 }
 
 /*=====================================
-  56. Secvice List Section CSS
+  48. Secvice List Section CSS
 ========================================*/
 .service-list-section {
   .nav-pills {
@@ -17258,7 +17322,7 @@ header.style-4 {
 }
 
 /*=====================================
-  57. Contact Page Contact Area CSS
+  49. Contact Page Contact Area CSS
 ========================================*/
 .contact-area {
   .section-title {
@@ -17416,7 +17480,7 @@ header.style-4 {
 }
 
 /*=====================================
-58. Contact Map Section CSS
+50. Contact Map Section CSS
 ========================================*/
 .contact-map-section {
   line-height: 1;
@@ -17445,7 +17509,7 @@ header.style-4 {
 }
 
 /*=====================================
-59. Activities & Attractions Section CSS
+51. Activities & Attractions Section CSS
 ========================================*/
 .activities-and-attractions {
   .activities-and-attractions-list {
@@ -17621,7 +17685,7 @@ header.style-4 {
 }
 
 /*=====================================
-60. Room Sidebar Start CSS
+52. Room Sidebar Start CSS
 ========================================*/
 .room-sidebar-wrapper {
   .room-sidebar-area {
@@ -18509,7 +18573,7 @@ header.style-4 {
 }
 
 /*=====================================
-61. Blog Details Thumbs Area CSS
+53. Blog Details Thumbs Area CSS
 ========================================*/
 .blog-details-thumbs-area {
   .blog-meta {
@@ -18663,7 +18727,7 @@ header.style-4 {
 }
 
 /*=====================================
-62. BLog Details Section Content CSS
+54. BLog Details Section Content CSS
 ========================================*/
 .blog-details-section-content {
   .blog-wrapper {
@@ -19016,7 +19080,7 @@ header.style-4 {
 }
 
 /*=====================================
-63. Blog Side Bar Section Page CSS
+55. Blog Side Bar Section Page CSS
 ========================================*/
 .filter-btn {
   display: flex;
@@ -19325,7 +19389,7 @@ header.style-4 {
 }
 
 /*=====================================
-64. Welcome Section Page CSS
+56. Welcome Section Page CSS
 ========================================*/
 .welcome-section {
   .section-title-and-list {
@@ -19414,7 +19478,7 @@ header.style-4 {
 }
 
 /*=====================================
-65. Error Page CSS
+57. Error Page CSS
 ========================================*/
 .error-page {
   height: 100vh;
