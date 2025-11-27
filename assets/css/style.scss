@@ -6452,7 +6452,7 @@ header.style-4 {
                           border-color: var(--primary-color3);
 
                           i {
-                            color: var(--primary-color2);
+                            color: var(--primary-color3);
                             transition: all 0.4s;
                           }
 
@@ -17054,12 +17054,9 @@ header.style-4 {
     }
 
     @include lg-down-device() {
-      margin-top: -100px;
+      margin-top: unset;
     }
 
-    @include md-down-device() {
-      margin-top: -80px;
-    }
   }
 
   &.offer-details {

@@ -5511,7 +5511,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-color: var(--primary-color3);
 }
 .book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a i {
-  color: var(--primary-color2);
+  color: var(--primary-color3);
   transition: all 0.4s;
 }
 .book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .single-info .single-field .custom-select-wrap .guest-count .single-item .quantity-counter a:hover {
@@ -15354,12 +15354,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 @media (max-width: 991px) {
   .room-details-sidebar.two {
-    margin-top: -100px;
-  }
-}
-@media (max-width: 767px) {
-  .room-details-sidebar.two {
-    margin-top: -80px;
+    margin-top: unset;
   }
 }
 .room-details-sidebar.offer-details {
