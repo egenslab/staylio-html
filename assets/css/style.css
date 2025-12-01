@@ -14857,361 +14857,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-color: var(--primary-color1);
   background-color: var(--white-color);
 }
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  width: 100%;
-  background: var(--white-color);
-  padding: 7px 20px;
-  height: 55px;
-  border: 1px solid #F0F0F0;
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box {
-    padding: 8px 15px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box {
-    padding: 8px 12px;
-    gap: 6px;
-    height: 50px;
-  }
-}
-@media (max-width: 991px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box {
-    height: 50px;
-  }
-}
-@media (max-width: 576px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box {
-    min-height: 52px;
-    padding: 8px 18px;
-  }
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box:after {
-  content: "";
-  display: block;
-  position: absolute;
-  pointer-events: none;
-  top: 50%;
-  transform: rotate(45deg);
-  height: 8px;
-  width: 8px;
-  border-bottom: 1px solid var(--primary-color1);
-  border-right: 1px solid var(--primary-color1);
-  right: 28px;
-  margin-top: -5px;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown {
-  line-height: 1;
-  width: 100%;
-  cursor: pointer;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown input {
-  background-color: transparent;
-  color: var(--text-color);
-  font-family: var(--font-dmsans);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  width: 100%;
-  border-bottom: unset;
-  padding-bottom: unset;
-  height: unset;
-  cursor: pointer;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown input {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown input {
-    font-size: 15px;
-  }
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown h6 {
-  color: var(--white-color);
-  font-family: var(--font-dmsans);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.3px;
-  width: 100%;
-  margin-bottom: 0;
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown h6 {
-    min-width: 150px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown h6 {
-    min-width: unset;
-    font-size: 14px;
-  }
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown > span {
-  font-size: 18px;
-  font-family: var(--font-dmsans);
-  color: var(--dark-text-color);
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 1.4;
-  display: block;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown > span {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown > span {
-    font-size: 15px;
-  }
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .selected-date h6,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
-  font-size: 16px;
-  font-family: var(--font-dmsans);
-  color: var(--white-color);
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .selected-date h6,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .selected-date h6,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
-    font-size: 15px;
-  }
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .selected-date span,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
-  font-size: 18px;
-  font-family: var(--font-dmsans);
-  color: var(--dark-text-color);
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 1;
-  display: block;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .selected-date span,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .selected-date span,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
-    font-size: 15px;
-  }
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkin .daterangepicker {
-  left: 0;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkout .daterangepicker {
-  right: 0 !important;
-  left: unset;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown.destination-dropdown input {
-  display: none;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap {
-  padding: 10px 0;
-  background-color: var(--white-color);
-  width: 100%;
-  max-height: 285px;
-  overflow-y: scroll;
-  position: absolute;
-  top: 65px;
-  left: 0;
-  z-index: 9;
-  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1019607843);
-  display: none;
-  transform: scaleY(0);
-  transform-origin: top;
-  min-width: 320px;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap::-webkit-scrollbar {
-  width: 5px;
-  /* width of the entire scrollbar */
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap::-webkit-scrollbar-track {
-  background: #f5f4f4;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap::-webkit-scrollbar-thumb {
-  background-color: #ddd;
-  /* color of the scroll thumb */
-  border-radius: 100px;
-  /* creates padding around scroll thumb */
-}
-@media (max-width: 1199px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap {
-    min-width: 280px;
-    top: 56px;
-  }
-}
-@media (max-width: 991px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap {
-    top: 60px;
-  }
-}
-@media (max-width: 576px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap {
-    left: 50%;
-  }
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: 0.5s;
-  cursor: pointer;
-  padding: 0 10px;
-  line-height: 1;
-  margin-bottom: 12px;
-  position: relative;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li:last-child,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li:last-child {
-  margin-bottom: 0;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .destination h6,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .destination h6 {
-  font-size: 14px;
-  font-family: var(--font-dmsans);
-  color: var(--title-color);
-  font-weight: 500;
-  line-height: 1.4;
-  margin-bottom: 0;
-}
-@media (max-width: 576px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .destination h6,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .destination h6 {
-    font-size: 13px;
-  }
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .destination span,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .destination span {
-  font-size: 12px;
-  font-family: var(--font-dmsans);
-  color: var(--text-color);
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 1.4;
-}
-@media (max-width: 576px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .destination span,
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .destination span {
-    font-size: 11px;
-  }
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .tour span,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .tour span {
-  color: var(--white-color);
-  font-weight: 400;
-  font-family: var(--font-dmsans);
-  font-size: 11px;
-  line-height: 1;
-  text-align: center;
-  background-color: var(--primary-color1);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li::before,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li::before {
-  content: "";
-  height: 100%;
-  width: 3px;
-  background-color: var(--title-color);
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: 0.5s;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li.single-item,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li.single-item {
-  padding: 10px 15px;
-  border-bottom: 1px solid #f5f4f4;
-  margin-bottom: 0;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li.single-item:last-child,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li.single-item:last-child {
-  border-bottom: none;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li.single-item h6,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li.single-item h6 {
-  font-size: 14px;
-  font-weight: 500;
-  font-family: var(--font-dmsans);
-  color: var(--text-color);
-  margin-bottom: 0;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li:hover,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li:hover {
-  background: rgba(211, 211, 211, 0.231372549);
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li:hover::before,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li:hover::before {
-  opacity: 1;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list.visa-list li,
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination.visa-list li {
-  padding: 12px 10px;
-  border-bottom: 1px solid #f5f4f4;
-  margin-bottom: 0;
-}
-.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap.active {
-  display: block;
-  transform: scaleY(1);
-  animation: fade-down 0.3s linear;
-}
-@keyframes fade-down2 {
-  0% {
-    opacity: 0;
-    transform: scaleY(0) translateX(-50%);
-    visibility: hidden;
-  }
-  100% {
-    opacity: 1;
-    transform: scaleY(1) translateX(-50%);
-    visibility: visible;
-  }
-}
-@media (max-width: 576px) {
-  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap.active {
-    transform: scaleY(1) translateX(-50%);
-    animation: fade-down2 0.3s linear;
-  }
-}
 .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-field {
   display: flex;
   align-items: center;
@@ -15407,6 +15052,499 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     transform: scaleY(1) translateX(-50%);
     animation: fade-down2 0.3s linear;
   }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  background: var(--white-color);
+  padding: 7px 20px;
+  height: 55px;
+  border: 1px solid #F0F0F0;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box {
+    padding: 8px 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+}
+@media (max-width: 576px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box {
+    min-height: 52px;
+    padding: 8px 18px;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box:after {
+  content: "";
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 8px;
+  width: 8px;
+  border-bottom: 1px solid var(--primary-color1);
+  border-right: 1px solid var(--primary-color1);
+  right: 28px;
+  margin-top: -5px;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown {
+  line-height: 1;
+  width: 100%;
+  cursor: pointer;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown input {
+  background-color: transparent;
+  color: var(--text-color);
+  font-family: var(--font-dmsans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  width: 100%;
+  border-bottom: unset;
+  padding-bottom: unset;
+  cursor: pointer;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown input {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+}
+@media (max-width: 576px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown input {
+    font-size: 15px;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown h6 {
+  color: var(--text-color);
+  font-family: var(--font-dmsans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  width: 100%;
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown h6 {
+    min-width: 150px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown h6 {
+    min-width: unset;
+    font-size: 14px;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkin .daterangepicker {
+  left: 0;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown .hotel-selected-date-checkout .daterangepicker {
+  right: 0 !important;
+  left: unset;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-dropdown.destination-dropdown input {
+  display: none;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap {
+  padding: 10px 0;
+  background-color: var(--white-color);
+  width: 100%;
+  max-height: 285px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1019607843);
+  display: none;
+  transform: scaleY(0);
+  transform-origin: top;
+  min-width: 320px;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap::-webkit-scrollbar {
+  width: 5px;
+  /* width of the entire scrollbar */
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap::-webkit-scrollbar-track {
+  background: #f5f4f4;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  /* color of the scroll thumb */
+  border-radius: 100px;
+  /* creates padding around scroll thumb */
+}
+@media (max-width: 1199px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap {
+    min-width: 280px;
+    top: 56px;
+  }
+}
+@media (max-width: 991px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap {
+    top: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap {
+    left: 50%;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 0 10px;
+  line-height: 1;
+  margin-bottom: 12px;
+  position: relative;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li:last-child,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li:last-child {
+  margin-bottom: 0;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .destination h6,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .destination h6 {
+  font-size: 14px;
+  font-family: var(--font-dmsans);
+  color: var(--title-color);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .destination h6,
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .destination h6 {
+    font-size: 13px;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .destination span,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .destination span {
+  font-size: 12px;
+  font-family: var(--font-dmsans);
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+@media (max-width: 576px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .destination span,
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .destination span {
+    font-size: 11px;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li .tour span,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li .tour span {
+  color: var(--white-color);
+  font-weight: 400;
+  font-family: var(--font-dmsans);
+  font-size: 11px;
+  line-height: 1;
+  text-align: center;
+  background-color: var(--primary-color1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li::before,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li::before {
+  content: "";
+  height: 100%;
+  width: 3px;
+  background-color: var(--title-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li.single-item,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li.single-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #f5f4f4;
+  margin-bottom: 0;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li.single-item:last-child,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li.single-item:last-child {
+  border-bottom: none;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li.single-item h6,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li.single-item h6 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-dmsans);
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li:hover,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li:hover {
+  background: rgba(211, 211, 211, 0.231372549);
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list li:hover::before,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination li:hover::before {
+  opacity: 1;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list.visa-list li,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap .option-list-destination.visa-list li {
+  padding: 12px 10px;
+  border-bottom: 1px solid #f5f4f4;
+  margin-bottom: 0;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap.active {
+  display: block;
+  transform: scaleY(1);
+  animation: fade-down 0.3s linear;
+}
+@keyframes fade-down2 {
+  0% {
+    opacity: 0;
+    transform: scaleY(0) translateX(-50%);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1) translateX(-50%);
+    visibility: visible;
+  }
+}
+@media (max-width: 576px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box .custom-select-wrap.active {
+    transform: scaleY(1) translateX(-50%);
+    animation: fade-down2 0.3s linear;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.date-field .custom-select-dropdown {
+  position: relative;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.date-field .custom-select-dropdown input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-dropdown {
+  cursor: pointer;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-dropdown h6 {
+  font-size: 16px;
+  font-family: var(--font-dmsans);
+  color: var(--white-color);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-dropdown h6 {
+    font-size: 14px;
+    margin-bottom: 1px;
+  }
+}
+@media (max-width: 576px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-dropdown h6 {
+    font-size: 15px;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-dropdown > span {
+  font-size: 18px;
+  font-family: var(--font-dmsans);
+  color: var(--dark-text-color);
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.4;
+  display: block;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-dropdown > span strong {
+  font-weight: 500;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-dropdown > span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-dropdown > span {
+    font-size: 15px;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap {
+  min-width: 320px;
+  right: 0;
+  max-height: unset;
+  padding: 25px 20px;
+}
+@media (max-width: 767px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap {
+    left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap {
+    left: 50%;
+    right: unset;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .title-area {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .title-area h6 {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .title-area span {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room {
+  border: 1px solid var(--borders-color);
+  margin-bottom: 5px;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .room-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #F0F0F0;
+  min-height: 45px;
+  cursor: pointer;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .room-title h6 {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .room-title svg {
+  fill: #FF0000;
+  min-width: 15px;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 25px 15px;
+  display: none;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item:last-child {
+  margin-bottom: 0;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .title h6 {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+@media (max-width: 1199px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .title h6 {
+    font-size: 15px;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .title span {
+  color: var(--text-color);
+  font-family: var(--font-dmsans);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+@media (max-width: 1199px) {
+  .room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .title span {
+    font-size: 15px;
+  }
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter {
+  display: flex;
+  align-items: center;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a {
+  height: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  font-size: 17px;
+  color: var(--primary-color1);
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color1);
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter input {
+  width: 40px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 1;
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-size: 14px;
+  font-weight: 500;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count.room-count .single-item {
+  padding: 14px 20px;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .primary-btn1,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .primary-btn2,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .primary-btn3 {
+  width: 100%;
+  justify-content: center;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .primary-btn1 svg,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .primary-btn2 svg,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .primary-btn3 svg {
+  min-width: unset;
+}
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .primary-btn1.add-btn.disabled,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .primary-btn2.add-btn.disabled,
+.room-details-sidebar .sidebar-wrapper form .single-info .form-inner .single-search-box.room-field .custom-select-wrap .primary-btn3.add-btn.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 .room-details-sidebar .sidebar-wrapper form .check-area {
   margin-bottom: 50px;
