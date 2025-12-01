@@ -222,6 +222,34 @@ body.hostel #ball .ball-close {
 body.bg-color {
   background-color: #FFFCF7;
 }
+body.daterangepicker-two td.active,
+body.daterangepicker-two td.active:hover {
+  background-color: var(--primary-color2);
+}
+body.daterangepicker-two .monthselect {
+  outline: none;
+}
+body.daterangepicker-two button {
+  outline: none;
+}
+body.daterangepicker-two .btn-primary {
+  background-color: var(--primary-color2);
+  border-color: var(--primary-color2);
+}
+body.daterangepicker-three td.active,
+body.daterangepicker-three td.active:hover {
+  background-color: var(--primary-color3);
+}
+body.daterangepicker-three .monthselect {
+  outline: none;
+}
+body.daterangepicker-three button {
+  outline: none;
+}
+body.daterangepicker-three .btn-primary {
+  background-color: var(--primary-color3);
+  border-color: var(--primary-color3);
+}
 
 h1,
 h2,
@@ -1757,19 +1785,19 @@ body.tt-magic-cursor #magic-cursor {
   background-color: var(--primary-color1);
   border-color: var(--primary-color1);
 }
-.daterangepicker.single td.active,
-.daterangepicker.single td.active:hover {
-  background-color: var(--primary-color1);
+.daterangepicker.two td.active,
+.daterangepicker.two td.active:hover {
+  background-color: var(--primary-color2);
 }
-.daterangepicker.single .monthselect {
+.daterangepicker.two .monthselect {
   outline: none;
 }
-.daterangepicker.single button {
+.daterangepicker.two button {
   outline: none;
 }
-.daterangepicker.single .btn-primary {
-  background-color: var(--primary-color1);
-  border-color: var(--primary-color1);
+.daterangepicker.two .btn-primary {
+  background-color: var(--primary-color2);
+  border-color: var(--primary-color2);
 }
 
 /*=====================================
@@ -4813,12 +4841,12 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   width: 100%;
   border-bottom: unset;
   padding-bottom: unset;
-  height: unset;
   cursor: pointer;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown input {
     font-size: 14px;
+    margin-bottom: 3px;
   }
 }
 @media (max-width: 576px) {
@@ -4827,9 +4855,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   }
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown h6 {
-  color: var(--white-color);
+  color: var(--text-color);
   font-family: var(--font-dmsans);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.3px;
@@ -4845,74 +4873,6 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown h6 {
     min-width: unset;
     font-size: 14px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown > span {
-  font-size: 18px;
-  font-family: var(--font-dmsans);
-  color: var(--dark-text-color);
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 1.4;
-  display: block;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown > span {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown > span {
-    font-size: 15px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date h6,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
-  font-size: 16px;
-  font-family: var(--font-dmsans);
-  color: var(--white-color);
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date h6,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date h6,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin h6,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout h6 {
-    font-size: 15px;
-  }
-}
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date span,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
-.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
-  font-size: 18px;
-  font-family: var(--font-dmsans);
-  color: var(--dark-text-color);
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 1;
-  display: block;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date span,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .selected-date span,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin span,
-  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkout span {
-    font-size: 15px;
   }
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box .custom-select-dropdown .hotel-selected-date-checkin .daterangepicker {
@@ -5104,6 +5064,218 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
     transform: scaleY(1) translateX(-50%);
     animation: fade-down2 0.3s linear;
   }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.date-field .custom-select-dropdown {
+  position: relative;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.date-field .custom-select-dropdown input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-dropdown {
+  cursor: pointer;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-dropdown h6 {
+  font-size: 16px;
+  font-family: var(--font-dmsans);
+  color: var(--white-color);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-dropdown h6 {
+    font-size: 14px;
+    margin-bottom: 1px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-dropdown h6 {
+    font-size: 15px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-dropdown > span {
+  font-size: 18px;
+  font-family: var(--font-dmsans);
+  color: var(--dark-text-color);
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.4;
+  display: block;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-dropdown > span strong {
+  font-weight: 500;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-dropdown > span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-dropdown > span {
+    font-size: 15px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap {
+  min-width: 320px;
+  right: 0;
+  max-height: unset;
+  padding: 25px 20px;
+}
+@media (max-width: 767px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap {
+    left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap {
+    left: 50%;
+    right: unset;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .title-area {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .title-area h6 {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .title-area span {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room {
+  border: 1px solid var(--borders-color);
+  margin-bottom: 5px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .room-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #F0F0F0;
+  min-height: 45px;
+  cursor: pointer;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .room-title h6 {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .room-title svg {
+  fill: #FF0000;
+  min-width: 15px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 25px 15px;
+  display: none;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item:last-child {
+  margin-bottom: 0;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .title h6 {
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+@media (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .title h6 {
+    font-size: 15px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .title span {
+  color: var(--text-color);
+  font-family: var(--font-dmsans);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+@media (max-width: 1199px) {
+  .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .title span {
+    font-size: 15px;
+  }
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter {
+  display: flex;
+  align-items: center;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a {
+  height: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  font-size: 17px;
+  color: var(--primary-color1);
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter a:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color1);
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count .single-item .quantity-counter input {
+  width: 40px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 1;
+  color: var(--title-color);
+  font-family: var(--font-dmsans);
+  font-size: 14px;
+  font-weight: 500;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .room-list .single-room .guest-count.room-count .single-item {
+  padding: 14px 20px;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .primary-btn1,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .primary-btn2,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .primary-btn3 {
+  width: 100%;
+  justify-content: center;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .primary-btn1 svg,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .primary-btn2 svg,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .primary-btn3 svg {
+  min-width: unset;
+}
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .primary-btn1.add-btn.disabled,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .primary-btn2.add-btn.disabled,
+.book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-search-box.room-field .custom-select-wrap .primary-btn3.add-btn.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 .book-now-form-modal .modal-dialog .modal-content .modal-body form .single-info .single-field {
   display: flex;
@@ -5494,6 +5666,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-color: var(--primary-color2);
 }
 .book-now-form-modal.resort-hover-color .modal-dialog .modal-content .modal-close:hover {
+  background-color: var(--primary-color2);
+}
+.book-now-form-modal.resort-hover-color .daterangepicker td.active {
   background-color: var(--primary-color2);
 }
 .book-now-form-modal.apartment-hover-color .modal-dialog .modal-content .modal-body form .check-area .form-check .form-check-input:checked {

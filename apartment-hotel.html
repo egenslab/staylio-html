@@ -34,7 +34,7 @@
     <link rel="icon" href="assets/fav-icon.svg" type="image/gif" sizes="20x20">
 </head>
 
-<body class="tt-magic-cursor apartment-hotel">
+<body class="tt-magic-cursor apartment-hotel daterangepicker-three">
 
     <div id="magic-cursor">
         <div id="ball"></div>
@@ -53,8 +53,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade book-now-form-modal apartment-hover-color" id="exampleModal" tabindex="-1"
-        aria-hidden="true">
+    <div class="modal fade book-now-form-modal apartment-hover-color" id="exampleModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
@@ -68,23 +67,25 @@
                                 <div class="col-md-6">
                                     <div class="form-inner">
                                         <label>Check-in Date</label>
-                                        <select>
-                                            <option>02/10/25</option>
-                                            <option>Dhaka, Bangladesh</option>
-                                            <option>India, Delhi</option>
-                                            <option>Canberra, Australia</option>
-                                        </select>
+                                        <div class="single-search-box date-field">
+                                            <div class="custom-select-dropdown">
+                                                <input type="text" name="daterange" class="book-modal-hotel-checkin"
+                                                    readonly value="June 16 - June 20">
+                                                <div class="book-modal-hotel-selected-date-checkin"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-inner">
                                         <label>Check-out Date</label>
-                                        <select>
-                                            <option>02/10/25</option>
-                                            <option>Dhaka, Bangladesh</option>
-                                            <option>India, Delhi</option>
-                                            <option>Canberra, Australia</option>
-                                        </select>
+                                        <div class="single-search-box date-field">
+                                            <div class="custom-select-dropdown">
+                                                <input type="text" name="daterange" class="book-modal-hotel-checkin"
+                                                    readonly value="June 16 - June 20">
+                                                <div class="book-modal-hotel-selected-date-checkout"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -92,7 +93,8 @@
                                         <label>Number of Adults & Children</label>
                                         <div class="single-field">
                                             <div class="custom-select-dropdown">
-                                                <h6><span class="adult-qty">1</span> Adults, <span class="child-qty">0</span>
+                                                <h6><span class="adult-qty">1</span> Adults, <span
+                                                        class="child-qty">0</span>
                                                     Child
                                                 </h6>
                                             </div>

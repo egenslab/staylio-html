@@ -51,31 +51,30 @@
     }
   });
 
-const header = document.querySelector(".home1-header");
-const eventSection = document.querySelector(".home1-event-section");
+  const header = document.querySelector(".home1-header");
+  const eventSection = document.querySelector(".home1-event-section");
 
-if (header) {
-  window.addEventListener("scroll", function () {
-    const scrollY = window.scrollY;
+  if (header) {
+    window.addEventListener("scroll", function () {
+      const scrollY = window.scrollY;
 
-    // Default sticky behavior
-    if (scrollY > 0) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
-
-    // Extra logic: Remove sticky inside event section
-    if (eventSection) {
-      const rect = eventSection.getBoundingClientRect();
-
-      if (rect.top <= 0 && rect.bottom >= 0) {
+      // Default sticky behavior
+      if (scrollY > 0) {
+        header.classList.add("sticky");
+      } else {
         header.classList.remove("sticky");
       }
-    }
-  });
-}
 
+      // Extra logic: Remove sticky inside event section
+      if (eventSection) {
+        const rect = eventSection.getBoundingClientRect();
+
+        if (rect.top <= 0 && rect.bottom >= 0) {
+          header.classList.remove("sticky");
+        }
+      }
+    });
+  }
 
   // FancyBox Js
   $('[data-fancybox="gallery-01"]').fancybox({
@@ -1372,6 +1371,39 @@ if (header) {
       );
     });
 
+    $("input.book-modal-hotel-checkin").each(function () {
+      const $input = $(this);
+      const $display = $input
+        .closest(".custom-select-dropdown, .hotel-box, .date-box")
+        .find(".book-modal-hotel-selected-date-checkin");
+      const $display2 = jQuery(document).find(".book-modal-hotel-selected-date-checkout");
+
+      $input.daterangepicker(
+        {
+          opens: "center",
+          startDate: today,
+          endDate: checkOutDefault,
+          minYear: 2025,
+          maxYear: 2026,
+          locale: {
+            format: "DD/MM/YY",
+          },
+        },
+        function (start, end) {
+          const formatted = start.format("DD/MM/YY");
+          $display.html(`<h6>${formatted}</h6>`);
+
+          const formattedCheckOut = end.format("DD/MM/YY");
+          $display2.html(`<h6>${formattedCheckOut}</h6>`);
+        }
+      );
+      // Default display before selection
+      $display.html(`<h6>${today.format("DD/MM/YY")}</h6>`);
+      $display2.html(
+        `<h6>${checkOutDefault.format("DD/MM/YY")}</h6>`
+      );
+    });
+
     // hotel details checkout
 
     $(".hotel-selected-date-checkin").html(
@@ -1395,7 +1427,6 @@ if (header) {
       e.preventDefault();
       $("#tour-booking-calendar").removeClass("active");
     });
-    
 
     // Tour details
     $(".booking-modal .selected-date").html(
@@ -1407,7 +1438,11 @@ if (header) {
       $("#tour-booking-calendar").toggleClass("active");
     });
     $(document).click(function (e) {
-      if (!$(e.target).closest("#tour-booking-calendar, .date-field, .custom-select-dropdown, .selected-date").length) {
+      if (
+        !$(e.target).closest(
+          "#tour-booking-calendar, .date-field, .custom-select-dropdown, .selected-date"
+        ).length
+      ) {
         $("#tour-booking-calendar").removeClass("active");
       }
     });
@@ -1415,7 +1450,7 @@ if (header) {
 
   //Quantity Increment Guest
   function updateGuestSummary($root) {
-  // Adult + Child counters
+    // Adult + Child counters
     let totalAdults = 0;
     let totalChildren = 0;
 
@@ -1500,48 +1535,52 @@ if (header) {
   });
 
   // Event delegation for plus/minus buttons
-  $(document).on("click", ".guest-quantity__plus, .guest-quantity__minus", function (e) {
-  e.preventDefault();
+  $(document).on(
+    "click",
+    ".guest-quantity__plus, .guest-quantity__minus",
+    function (e) {
+      e.preventDefault();
 
-  const $btn = $(this);
+      const $btn = $(this);
 
-  // Determine nearest parent container for this guest counter
-  let $root;
+      // Determine nearest parent container for this guest counter
+      let $root;
 
-  if ($btn.closest(".single-field").length) {
-    $root = $btn.closest(".single-field");
-  } else if ($btn.closest(".room-field").length) {
-    $root = $btn.closest(".room-field");
-  } else {
-    $root = $btn.closest(".single-search-box"); // fallback
-  }
+      if ($btn.closest(".single-field").length) {
+        $root = $btn.closest(".single-field");
+      } else if ($btn.closest(".room-field").length) {
+        $root = $btn.closest(".room-field");
+      } else {
+        $root = $btn.closest(".single-search-box"); // fallback
+      }
 
-  const $input = $btn.siblings(".quantity__input");
-  const type = $btn.data("type");
-  let value = parseInt($input.val(), 10) || 0;
+      const $input = $btn.siblings(".quantity__input");
+      const type = $btn.data("type");
+      let value = parseInt($input.val(), 10) || 0;
 
-  // Minus
-  if ($btn.hasClass("guest-quantity__minus")) {
-    if (type === "adult" && value > 1) value--;
-    if (type === "child" && value > 0) value--;
-  } 
-  // Plus
-  else {
-    value++;
-  }
+      // Minus
+      if ($btn.hasClass("guest-quantity__minus")) {
+        if (type === "adult" && value > 1) value--;
+        if (type === "child" && value > 0) value--;
+      }
+      // Plus
+      else {
+        value++;
+      }
 
-  $input.val(value);
+      $input.val(value);
 
-  // Update summary for this block only
-  updateGuestSummary($root);
-});
+      // Update summary for this block only
+      updateGuestSummary($root);
+    }
+  );
 
-// Optional: Initialize all summaries on page load
-$(document).ready(function () {
-  $(".single-field, .room-field").each(function () {
-    updateGuestSummary($(this));
+  // Optional: Initialize all summaries on page load
+  $(document).ready(function () {
+    $(".single-field, .room-field").each(function () {
+      updateGuestSummary($(this));
+    });
   });
-});
 
   // Delete room
   $(document).on("click", ".room-delete-btn", function (e) {

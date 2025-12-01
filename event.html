@@ -17,6 +17,9 @@
     <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
     <!-- Nice Select -->
     <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- Date Range -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
     <!-- Swiper slider CSS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- Slick slider CSS -->
@@ -64,23 +67,25 @@
                                 <div class="col-md-6">
                                     <div class="form-inner">
                                         <label>Check-in Date</label>
-                                        <select>
-                                            <option>02/10/25</option>
-                                            <option>Dhaka, Bangladesh</option>
-                                            <option>India, Delhi</option>
-                                            <option>Canberra, Australia</option>
-                                        </select>
+                                        <div class="single-search-box date-field">
+                                            <div class="custom-select-dropdown">
+                                                <input type="text" name="daterange" class="book-modal-hotel-checkin"
+                                                    readonly value="June 16 - June 20">
+                                                <div class="book-modal-hotel-selected-date-checkin"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-inner">
                                         <label>Check-out Date</label>
-                                        <select>
-                                            <option>02/10/25</option>
-                                            <option>Dhaka, Bangladesh</option>
-                                            <option>India, Delhi</option>
-                                            <option>Canberra, Australia</option>
-                                        </select>
+                                        <div class="single-search-box date-field">
+                                            <div class="custom-select-dropdown">
+                                                <input type="text" name="daterange" class="book-modal-hotel-checkin"
+                                                    readonly value="June 16 - June 20">
+                                                <div class="book-modal-hotel-selected-date-checkout"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -88,7 +93,8 @@
                                         <label>Number of Adults & Children</label>
                                         <div class="single-field">
                                             <div class="custom-select-dropdown">
-                                                <h6><span class="adult-qty">1</span> Adults, <span class="child-qty">0</span>
+                                                <h6><span class="adult-qty">1</span> Adults, <span
+                                                        class="child-qty">0</span>
                                                     Child
                                                 </h6>
                                             </div>
@@ -954,7 +960,7 @@
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/moment.min.js"></script>
-
+    <script src="assets/js/daterangepicker.min.js"></script>
     <!-- Popper and Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -965,16 +971,22 @@
     <script src="assets/js/waypoints.min.js"></script>
     <!-- Counterup JS -->
     <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.counterup.js"></script>
     <!-- Wow JS -->
     <script src="assets/js/wow.min.js"></script>
+    <!-- Circle -->
+    <script src="assets/js/circletype.min.js"></script>
     <!-- Nice Select -->
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <!-- Gsap  JS -->
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/ScrambleTextPlugin.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
+
 </body>
 
 </html>

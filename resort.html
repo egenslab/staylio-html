@@ -34,7 +34,7 @@
     <link rel="icon" href="assets/fav-icon.svg" type="image/gif" sizes="20x20">
 </head>
 
-<body class="tt-magic-cursor resort">
+<body class="tt-magic-cursor resort daterangepicker-two">
 
     <div id="magic-cursor">
         <div id="ball"></div>
@@ -67,23 +67,25 @@
                                 <div class="col-md-6">
                                     <div class="form-inner">
                                         <label>Check-in Date</label>
-                                        <select>
-                                            <option>02/10/25</option>
-                                            <option>Dhaka, Bangladesh</option>
-                                            <option>India, Delhi</option>
-                                            <option>Canberra, Australia</option>
-                                        </select>
+                                        <div class="single-search-box date-field">
+                                            <div class="custom-select-dropdown">
+                                                <input type="text" name="daterange" class="book-modal-hotel-checkin"
+                                                    readonly value="June 16 - June 20">
+                                                <div class="book-modal-hotel-selected-date-checkin"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-inner">
                                         <label>Check-out Date</label>
-                                        <select>
-                                            <option>02/10/25</option>
-                                            <option>Dhaka, Bangladesh</option>
-                                            <option>India, Delhi</option>
-                                            <option>Canberra, Australia</option>
-                                        </select>
+                                        <div class="single-search-box date-field">
+                                            <div class="custom-select-dropdown">
+                                                <input type="text" name="daterange" class="book-modal-hotel-checkin"
+                                                    readonly value="June 16 - June 20">
+                                                <div class="book-modal-hotel-selected-date-checkout"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -105,7 +107,7 @@
                                                     <li class="single-item">
                                                         <div class="title">
                                                             <h6>Adult</h6>
-                                                            <span>16 years+</span>
+                                                            <Span>16 years+</Span>
                                                         </div>
                                                         <div class="quantity-counter">
                                                             <a href="#" data-type="adult"
@@ -121,7 +123,7 @@
                                                     <li class="single-item">
                                                         <div class="title">
                                                             <h6>Children</h6>
-                                                            <span>0-16 years</span>
+                                                            <Span>0-16 years</Span>
                                                         </div>
                                                         <div class="quantity-counter">
                                                             <a href="#" data-type="child"
@@ -1276,12 +1278,14 @@
     <div class="home2-about-section">
         <div class="container">
             <div class="row gy-5 align-items-center justify-content-between mb-90">
-                <div class="col-lg-5 d-lg-block d-none wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="col-lg-5 d-lg-block d-none wow animate fadeInLeft" data-wow-delay="200ms"
+                    data-wow-duration="1500ms">
                     <div class="about-img-wrapper">
                         <img src="assets/img/home2/about-img.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-7 d-flex justify-content-lg-end wow animate fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <div class="col-lg-7 d-flex justify-content-lg-end wow animate fadeInRight" data-wow-delay="400ms"
+                    data-wow-duration="1500ms">
                     <div class="about-content-wrapper">
                         <div class="section-title mb-60">
                             <span class="two">
