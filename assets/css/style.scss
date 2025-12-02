@@ -6593,14 +6593,16 @@ header.style-4 {
       align-items: center;
 
       @include xxl-device() {
-        display: block;
+        display: flex;
+        align-items: baseline;
+        
       }
 
       .filter-input {
         gap: 50px;
 
         @include xxl-device() {
-          margin-bottom: 35px;
+          gap: 15px;
         }
 
         .primary-btn3 {
@@ -6648,6 +6650,10 @@ header.style-4 {
           .icon {
             padding: 19px 20px;
             border-right: 1px solid #B3A28514;
+
+            @include xxl-device() {
+              padding: 17px 15px;
+            }
 
             svg {
               fill: var(--white-color);
@@ -11757,21 +11763,6 @@ header.style-4 {
         max-height: 272px;
       }
 
-      @include xxl-device() {
-        min-height: 250px;
-        max-height: 250px;
-      }
-
-      @include xxl-down-device() {
-        min-height: 215px;
-        max-height: 215px;
-      }
-
-      @include lg-device() {
-        min-height: 170px;
-        max-height: 170px;
-      }
-
       @include lg-down-device() {
         min-height: 300px;
         max-height: 300px;
@@ -14363,6 +14354,59 @@ header.style-4 {
           &.swiper-pagination-bullet-active {
             background-color: var(--primary-color1);
           }
+        }
+      }
+    }
+
+    .single-slide {
+      img {
+        min-height: 615px;
+        max-height: 615px;
+        object-fit: cover;
+
+        @include seventeen-down-device() {
+          min-height: 570px;
+          max-height: 570px;
+        }
+
+        @include lg-device() {
+          min-height: 562px;
+          max-height: 562px;
+        }
+
+        @include md-down-device() {
+          min-height: 500px;
+          max-height: 500px;
+        }
+
+        @include sm-down-device() {
+          min-height: 400px;
+          max-height: 400px;
+        }
+      }
+
+      video {
+        min-height: 615px;
+        height: 615px;
+
+        @include seventeen-down-device() {
+          min-height: 570px;
+          height: 570px;
+        }
+
+        @include lg-device() {
+          min-height: 562px;
+          height: 562px;
+        }
+
+        @include md-down-device() {
+          min-height: 500px;
+          height: 500px;
+        }
+
+        @include sm-down-device() {
+          min-height: 400px;
+          height: 400px;
         }
       }
     }
