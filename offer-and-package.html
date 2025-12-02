@@ -52,197 +52,6 @@
         </svg>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade book-now-form-modal" id="exampleModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="bi bi-x-lg"></i>
-                </button>
-                <div class="modal-body">
-                    <h3>Your Reservation</h3>
-                    <form>
-                        <div class="single-info mb-25">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="form-inner">
-                                        <label>Check-in Date</label>
-                                        <div class="single-search-box date-field">
-                                            <div class="custom-select-dropdown">
-                                                <input type="text" name="daterange" class="book-modal-hotel-checkin"
-                                                    readonly value="June 16 - June 20">
-                                                <div class="book-modal-hotel-selected-date-checkin"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-inner">
-                                        <label>Check-out Date</label>
-                                        <div class="single-search-box date-field">
-                                            <div class="custom-select-dropdown">
-                                                <input type="text" name="daterange" class="book-modal-hotel-checkin"
-                                                    readonly value="June 16 - June 20">
-                                                <div class="book-modal-hotel-selected-date-checkout"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-inner">
-                                        <label>Number of Adults & Children</label>
-                                        <div class="single-field">
-                                            <div class="custom-select-dropdown">
-                                                <h6><span class="adult-qty">1</span> Adults, <span
-                                                        class="child-qty">0</span>
-                                                    Child
-                                                </h6>
-                                            </div>
-                                            <div class="custom-select-wrap">
-                                                <div class="title-area">
-                                                    <h6>Travelers</h6>
-                                                    <span>You can book for a maximum of 12 people</span>
-                                                </div>
-                                                <ul class="guest-count">
-                                                    <li class="single-item">
-                                                        <div class="title">
-                                                            <h6>Adult</h6>
-                                                            <Span>16 years+</Span>
-                                                        </div>
-                                                        <div class="quantity-counter">
-                                                            <a href="#" data-type="adult"
-                                                                class="guest-quantity__minus"><i
-                                                                    class="bi bi-dash"></i></a>
-                                                            <input name="adult_quantity" type="text"
-                                                                class="quantity__input" value="1">
-                                                            <a href="#" data-type="adult"
-                                                                class="guest-quantity__plus"><i
-                                                                    class="bi bi-plus"></i></a>
-                                                        </div>
-                                                    </li>
-                                                    <li class="single-item">
-                                                        <div class="title">
-                                                            <h6>Children</h6>
-                                                            <Span>0-16 years</Span>
-                                                        </div>
-                                                        <div class="quantity-counter">
-                                                            <a href="#" data-type="child"
-                                                                class="guest-quantity__minus"><i
-                                                                    class="bi bi-dash"></i></a>
-                                                            <input name="child_quantity" type="text"
-                                                                class="quantity__input" value="0">
-                                                            <a href="#" data-type="child"
-                                                                class="guest-quantity__plus"><i
-                                                                    class="bi bi-plus"></i></a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-inner">
-                                        <label>Room Type</label>
-                                        <div class="single-search-box">
-                                            <div class="custom-select-dropdown">
-                                                <input type="text" readonly value="The Royal Retreat">
-                                            </div>
-                                            <div class="custom-select-wrap">
-                                                <ul class="option-list">
-                                                    <li class="single-item">
-                                                        <h6>Sapphire Deluxe Room</h6>
-                                                    </li>
-                                                    <li class="single-item">
-                                                        <h6>Ruby Comfort Room</h6>
-                                                    </li>
-                                                    <li class="single-item">
-                                                        <h6>Ivory Comfort Room</h6>
-                                                    </li>
-                                                    <li class="single-item">
-                                                        <h6>The Royal Retreat</h6>
-                                                    </li>
-                                                    <li class="single-item">
-                                                        <h6>Golden Horizon Suite</h6>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="check-area">
-                            <h6>Extra Option</h6>
-                            <div class="row gy-3">
-                                <div class="col-md-6">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="check1" checked>
-                                        <label class="form-check-label" for="check1">
-                                            <span>Airport Pick-up Service</span>
-                                            <strong>$15.00</strong>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="check2">
-                                        <label class="form-check-label" for="check2">
-                                            <span>Extra Family Photoshoot</span>
-                                            <strong>$30.00</strong>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="check3">
-                                        <label class="form-check-label" for="check3">
-                                            <span>Airport Drop-off Service</span>
-                                            <strong>$10.00</strong>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="check4">
-                                        <label class="form-check-label" for="check4">
-                                            <span>Extra Bed</span>
-                                            <strong>$20.00</strong>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="expand">More Option</span>
-                        </div>
-                        <ul class="total-pricing-list">
-                            <li class="single-price">
-                                <span>$199.00 X 1 day</span>
-                                <span>$199.00</span>
-                            </li>
-                            <li class="single-price">
-                                <span>Airport Pick-up Service</span>
-                                <span>$15.00</span>
-                            </li>
-                            <li class="single-price">
-                                <strong>Total</strong>
-                                <strong>$214.00</strong>
-                            </li>
-                        </ul>
-                        <div class="btn-area">
-                            <button class="primary-btn1 btn-hover" type="submit">
-                                Submit Now
-                                <span></span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- header Section Start-->
     <header class="header-area style-1 two">
         <div class="container-fluid d-flex flex-nowrap align-items-center justify-content-between">
@@ -366,8 +175,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a class="primary-btn1 two btn-hover d-xl-none" href="#" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                    <a class="primary-btn1 two btn-hover d-xl-none" href="room-grid-Style-1.html">
                         Book Now
                         <span></span>
                     </a>
@@ -391,8 +199,7 @@
                     </div>
                 </div>
                 <div class="contact-area">
-                    <a href="#" class="primary-btn1 two btn-hover d-xl-flex d-none" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                    <a href="room-grid-Style-1.html" class="primary-btn1 two btn-hover d-xl-flex d-none">
                         Book Now
                         <span></span>
                     </a>
@@ -548,7 +355,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-logo-area">
                             <div class="footer-logo-and-title">
-                                <img class="footer-logo" src="assets/img/home1/footer-logo.svg" alt="">
+                                <img class="footer-logo" src="assets/img/footer-logo.svg" alt="">
                                 <div class="section-title">
                                     <p>Blending timeless charm with modern sophistication, we offer more than just a
                                         stay we
