@@ -1436,6 +1436,38 @@
         `<h6>${checkOutDefault.format("DD/MM/YY")}</h6>`
       );
     });
+    $("input.check-availability-hotel-checkin").each(function () {
+      const $input = $(this);
+      const $display = $input
+        .closest(".custom-select-dropdown, .hotel-box, .date-box")
+        .find(".check-availability-hotel-selected-date-checkin");
+      const $display2 = jQuery(document).find(".check-availability-hotel-selected-date-checkout");
+
+      $input.daterangepicker(
+        {
+          opens: "center",
+          startDate: today,
+          endDate: checkOutDefault,
+          minYear: 2025,
+          maxYear: 2026,
+          locale: {
+            format: "DD/MM/YY",
+          },
+        },
+        function (start, end) {
+          const formatted = start.format("DD/MM/YY");
+          $display.html(`<h6>${formatted}</h6>`);
+
+          const formattedCheckOut = end.format("DD/MM/YY");
+          $display2.html(`<h6>${formattedCheckOut}</h6>`);
+        }
+      );
+      // Default display before selection
+      $display.html(`<h6>${today.format("DD/MM/YY")}</h6>`);
+      $display2.html(
+        `<h6>${checkOutDefault.format("DD/MM/YY")}</h6>`
+      );
+    });
 
     // hotel details checkout
 
