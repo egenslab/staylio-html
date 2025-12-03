@@ -5831,6 +5831,10 @@ header.style-4 {
         gap: 18px;
         position: relative;
 
+        @include xxl-down-device() {
+          gap: 13px;
+        }
+
         @include lg-device() {
           gap: 6px;
         }
@@ -5899,6 +5903,10 @@ header.style-4 {
             margin-bottom: 0;
             line-height: 1.4;
             display: block;
+
+            @include xxl-down-device() {
+              font-size: 16px;
+            }
 
             @include lg-device() {
               font-size: 14px;
@@ -6595,7 +6603,15 @@ header.style-4 {
       @include xxl-device() {
         display: flex;
         align-items: baseline;
-        
+      }
+
+      @include lg-device() {
+        gap: 15px;
+      }
+
+      @include lg-down-device() {
+        flex-wrap: wrap;
+        gap: 40px;
       }
 
       .filter-input {
@@ -6603,6 +6619,19 @@ header.style-4 {
 
         @include xxl-device() {
           gap: 15px;
+        }
+
+        @include xxl-down-device() {
+          gap: 20px;
+        }
+
+        @include xl-down-device() {
+          width: 100%;
+          gap: 15px;
+        }
+
+        @include lg-down-device() {
+          gap: 25px;
         }
 
         .primary-btn3 {
@@ -6614,6 +6643,18 @@ header.style-4 {
           border: 1px solid #B3A28514;
           backdrop-filter: blur(10px);
           min-width: 280px;
+
+          @include xxl-down-device() {
+            min-width: unset;
+          }
+
+          @include lg-device() {
+            width: 100%;
+          }
+
+          @include lg-down-device() {
+            backdrop-filter: unset;
+          }
 
           &.room-field {
 
@@ -6652,11 +6693,19 @@ header.style-4 {
             border-right: 1px solid #B3A28514;
 
             @include xxl-device() {
-              padding: 17px 15px;
+              padding: 15px 12px;
+            }
+
+            @include xxl-down-device() {
+              padding: 15px 10px;
             }
 
             svg {
               fill: var(--white-color);
+
+              @include lg-device() {
+                width: 18px;
+              }
             }
           }
 
@@ -6679,10 +6728,6 @@ header.style-4 {
               margin-bottom: 3px;
             }
 
-            >span {
-              font-size: 15px;
-            }
-
             input {
               margin-bottom: 3px;
             }
@@ -6691,6 +6736,18 @@ header.style-4 {
           &::before {
             display: none;
           }
+        }
+      }
+
+      .primary-btn3 {
+        @include lg-device() {
+          justify-content: center;
+          font-size: 14px;
+        }
+
+        @include lg-down-device() {
+          width: 100%;
+          justify-content: center;
         }
       }
     }
@@ -12401,7 +12458,7 @@ header.style-4 {
   29. Modern Comfort Vibes CSS
 ========================================*/
 .modern-comfort-vibes-section {
-  padding: 350px 0 110px;
+  padding: 150px 0;
   position: relative;
 
   @include xxl-device() {
@@ -18927,5 +18984,406 @@ header.style-4 {
     top: 0;
     right: 0;
     z-index: -1;
+  }
+}
+
+/*=====================================
+58. Home1 Gallery Section CSS
+========================================*/
+.home1-gallery-section {
+  .section-title {
+    h2 {
+      font-size: 49px;
+
+      @include xl-device() {
+        font-size: 42px;
+      }
+
+      @include xl-down-device() {
+        font-size: 40px;
+      }
+
+      @include lg-down-device() {
+        font-size: 29px;
+      }
+    }
+  }
+
+  .home1-gallary-img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .rectangle-img {
+      max-width: 323px;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.5s;
+
+      @include md-down-device() {
+        max-width: unset;
+      }
+    }
+
+    .squre-img {
+      max-width: 250px;
+      width: 100%;
+
+      @include md-down-device() {
+        max-width: unset;
+      }
+    }
+
+    .squre-small-img {
+      max-width: 164px;
+      width: 100%;
+
+      @include md-down-device() {
+        max-width: unset;
+      }
+    }
+
+    .squre-big-img {
+      max-width: 528px;
+      width: 100%;
+      margin-bottom: 80px;
+
+      @include xxl-down-device() {
+        margin-bottom: 60px;
+      }
+
+      @include xl-down-device() {
+        margin-bottom: 40px;
+      }
+
+      @include md-down-device() {
+        max-width: unset;
+        margin-bottom: 24px;
+      }
+    }
+
+    .medium-squre-img {
+      max-width: 219px;
+      width: 100%;
+
+      @include md-down-device() {
+        max-width: unset;
+      }
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  .grp-img {
+    display: flex;
+    justify-content: space-between;
+
+    @include xxl-down-device() {
+      gap: 25px;
+    }
+
+    @include md-down-device() {
+      flex-wrap: wrap;
+    }
+  }
+
+  .mb-64 {
+    margin-bottom: 64px;
+
+    @include xxl-down-device() {
+      margin-bottom: 50px;
+    }
+
+    @include xl-down-device() {
+      margin-bottom: 40px;
+    }
+
+    @include md-down-device() {
+      margin-bottom: 24px;
+    }
+  }
+
+  .mb-41 {
+    margin-bottom: 41px;
+
+    @include md-down-device() {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+/*=====================================
+58. Home1 Gallery Section CSS
+========================================*/
+.location-section {
+  background-color: #FFFBEF;
+  padding-top: 70px;
+
+  .section-title-and-tab {
+    .nav-pills {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+
+      @include sm-down-device() {
+        gap: 20px;
+      }
+
+      .nav-item {
+
+        @include sm-down-device() {
+          &:last-child {
+            .nav-link::before {
+              content: unset;
+            }
+          }
+        }
+
+        .nav-link {
+          color: var(--text-color);
+          font-family: var(--font-dmsans);
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 1;
+          position: relative;
+
+          @include lg-down-device() {
+            font-size: 18px;
+          }
+
+          @include md-down-device() {
+            padding: 0;
+            font-size: 16px;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 10px;
+            top: 50%;
+            left: -16px;
+            transform: translateY(-50%);
+            background-color: #A6A6A6;
+
+            @include sm-down-device() {
+              left: -11px;
+            }
+          }
+
+          &.active {
+            background-color: unset;
+            color: var(--primary-color3);
+            font-weight: 500;
+          }
+        }
+
+        &:first-child {
+          .nav-link::before {
+            content: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .location-wrapper {
+    background-color: #FFF7DE;
+    padding: 30px;
+    padding-bottom: unset;
+
+    @include sm-down-device() {
+      padding: 10px;
+    }
+
+    .location-map-wrapper {
+      position: relative;
+
+      img {
+        object-fit: cover;
+
+        @include xl-device() {
+          min-height: 550px;
+        }
+
+        @include xl-down-device() {
+          min-height: 450px;
+        }
+      }
+
+      .location-details-list {
+        max-width: 292px;
+        width: 100%;
+        background-color: var(--white-color);
+        border: 1px solid #FFE4D0;
+        padding: 20px 22px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        @include lg-down-device() {
+          max-width: 280px;
+          padding: 15px;
+        }
+
+        @include sm-down-device() {
+          max-width: 270px;
+          padding: 10px;
+        }
+
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            line-height: 1;
+            padding-bottom: 13px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #FFE4D0;
+
+            .icon-and-title {
+              display: flex;
+              gap: 12px;
+              align-items: center;
+
+              svg {
+                fill: var(--title-color);
+
+                @include sm-down-device() {
+                  width: 17px;
+                }
+              }
+
+              h6 {
+                color: var(--title-color);
+                font-family: var(--font-dmsans);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1;
+                margin-bottom: 0;
+
+                @include lg-down-device() {
+                  font-size: 15px;
+                }
+
+                @include sm-down-device() {
+                  font-size: 14px;
+                }
+              }
+            }
+
+            span {
+              font-family: var(--font-dmsans);
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 1;
+              color: var(--title-color);
+              display: block;
+              margin-top: 4px;
+
+              @include lg-down-device() {
+                font-size: 15px;
+              }
+
+              @include sm-down-device() {
+                font-size: 14px;
+              }
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+              border-bottom: none;
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .location-icon-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          svg {
+            fill: var(--title-color);
+            transition: all 0.5s;
+            cursor: pointer;
+          }
+
+          &:nth-child(1) {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          &:nth-child(2) {
+            position: absolute;
+            left: 34%;
+            top: 43%;
+
+            @include lg-down-device() {
+              left: 30%;
+              top: 48%;
+            }
+
+            @include md-down-device() {
+              left: 23%;
+              top: 48%;
+            }
+
+            @include sm-down-device() {
+              left: 8%;
+              top: 47%;
+            }
+          }
+
+          &:nth-child(3) {
+            position: absolute;
+            left: 53%;
+            bottom: 17%;
+
+            @include sm-down-device() {
+              left: 58%;
+              bottom: 18%;
+            }
+          }
+
+          &:nth-child(4) {
+            position: absolute;
+            left: 62%;
+            top: 35%;
+
+            @include lg-down-device() {
+              left: 58%;
+              top: 26%;
+            }
+
+            @include md-down-device() {
+              left: 82%;
+              top: 40%;
+            }
+
+            @include sm-down-device() {
+              left: 86%;
+              top: 33%;
+            }
+          }
+
+          &:hover {
+            svg {
+              fill: var(--primary-color3);
+            }
+          }
+        }
+      }
+    }
   }
 }
