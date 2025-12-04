@@ -62,6 +62,7 @@ Version: 1.0
 55. Blog Side Bar Section Page CSS
 56. Welcome Section Page CSS
 57. Error Page CSS
+58.Home1 Gallery Section
 ===========================*/
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Marcellus&display=swap');
@@ -7098,6 +7099,11 @@ header.style-4 {
       font-weight: 400;
       font-size: 28px;
       line-height: 1;
+      background: linear-gradient(to bottom, var(--white-color) 0%, var(--white-color) 98%);
+      background-size: 0px 1px;
+      background-repeat: no-repeat;
+      background-position: right 90%;
+      transition: background-size 0.75s;
 
       @include xl-device() {
         font-size: 26px;
@@ -7113,6 +7119,11 @@ header.style-4 {
 
       @include sm-down-device() {
         font-size: 23px;
+      }
+
+      &:hover {
+        background-size: 100% 1px;
+        background-position: 0% 90%;
       }
     }
   }
