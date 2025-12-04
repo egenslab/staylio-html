@@ -17558,79 +17558,82 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   border-bottom: none;
   padding-bottom: 0;
 }
-.location-section .location-wrapper .location-map-wrapper .location-icon-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.location-section .location-wrapper .location-map-wrapper .location-icon-list li svg {
-  fill: var(--title-color);
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(1) {
+.location-section .location-wrapper .location-map-wrapper .location-icon-list .hotel-icon {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(2) {
+.location-section .location-wrapper .location-map-wrapper .location-icon-list .hotel-icon svg {
+  fill: var(--title-color);
+}
+.location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li svg {
+  fill: var(--title-color);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(1) {
   position: absolute;
   left: 34%;
   top: 43%;
 }
 @media (max-width: 991px) {
-  .location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(2) {
+  .location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(1) {
     left: 30%;
     top: 48%;
   }
 }
 @media (max-width: 767px) {
-  .location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(2) {
+  .location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(1) {
     left: 23%;
     top: 48%;
   }
 }
 @media (max-width: 576px) {
-  .location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(2) {
+  .location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(1) {
     left: 8%;
     top: 47%;
   }
 }
-.location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(3) {
+.location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(2) {
   position: absolute;
   left: 53%;
   bottom: 17%;
 }
 @media (max-width: 576px) {
-  .location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(3) {
+  .location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(2) {
     left: 58%;
     bottom: 18%;
   }
 }
-.location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(4) {
+.location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(3) {
   position: absolute;
   left: 62%;
   top: 35%;
 }
 @media (max-width: 991px) {
-  .location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(4) {
+  .location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(3) {
     left: 58%;
     top: 26%;
   }
 }
 @media (max-width: 767px) {
-  .location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(4) {
+  .location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(3) {
     left: 82%;
     top: 40%;
   }
 }
 @media (max-width: 576px) {
-  .location-section .location-wrapper .location-map-wrapper .location-icon-list li:nth-child(4) {
+  .location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:nth-child(3) {
     left: 86%;
     top: 33%;
   }
 }
-.location-section .location-wrapper .location-map-wrapper .location-icon-list li:hover svg {
+.location-section .location-wrapper .location-map-wrapper .location-icon-list .location-list-wrapper li:hover svg {
   fill: var(--primary-color3);
 }/*# sourceMappingURL=style.css.map */

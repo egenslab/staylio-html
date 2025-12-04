@@ -19317,80 +19317,86 @@ header.style-4 {
       }
 
       .location-icon-list {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-
-        li {
+        .hotel-icon {
           svg {
             fill: var(--title-color);
-            transition: all 0.5s;
-            cursor: pointer;
           }
 
-          &:nth-child(1) {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-          }
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
 
-          &:nth-child(2) {
-            position: absolute;
-            left: 34%;
-            top: 43%;
+        .location-list-wrapper {
+          padding: 0;
+          margin: 0;
+          list-style: none;
 
-            @include lg-down-device() {
-              left: 30%;
-              top: 48%;
-            }
-
-            @include md-down-device() {
-              left: 23%;
-              top: 48%;
-            }
-
-            @include sm-down-device() {
-              left: 8%;
-              top: 47%;
-            }
-          }
-
-          &:nth-child(3) {
-            position: absolute;
-            left: 53%;
-            bottom: 17%;
-
-            @include sm-down-device() {
-              left: 58%;
-              bottom: 18%;
-            }
-          }
-
-          &:nth-child(4) {
-            position: absolute;
-            left: 62%;
-            top: 35%;
-
-            @include lg-down-device() {
-              left: 58%;
-              top: 26%;
-            }
-
-            @include md-down-device() {
-              left: 82%;
-              top: 40%;
-            }
-
-            @include sm-down-device() {
-              left: 86%;
-              top: 33%;
-            }
-          }
-
-          &:hover {
+          li {
             svg {
-              fill: var(--primary-color3);
+              fill: var(--title-color);
+              transition: all 0.5s;
+              cursor: pointer;
+            }
+
+            &:nth-child(1) {
+              position: absolute;
+              left: 34%;
+              top: 43%;
+
+              @include lg-down-device() {
+                left: 30%;
+                top: 48%;
+              }
+
+              @include md-down-device() {
+                left: 23%;
+                top: 48%;
+              }
+
+              @include sm-down-device() {
+                left: 8%;
+                top: 47%;
+              }
+            }
+
+            &:nth-child(2) {
+              position: absolute;
+              left: 53%;
+              bottom: 17%;
+
+              @include sm-down-device() {
+                left: 58%;
+                bottom: 18%;
+              }
+            }
+
+            &:nth-child(3) {
+              position: absolute;
+              left: 62%;
+              top: 35%;
+
+              @include lg-down-device() {
+                left: 58%;
+                top: 26%;
+              }
+
+              @include md-down-device() {
+                left: 82%;
+                top: 40%;
+              }
+
+              @include sm-down-device() {
+                left: 86%;
+                top: 33%;
+              }
+            }
+
+            &:hover {
+              svg {
+                fill: var(--primary-color3);
+              }
             }
           }
         }
